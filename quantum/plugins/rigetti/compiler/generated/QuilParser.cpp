@@ -2,7 +2,7 @@
 // Generated from Quil.g4 by ANTLR 4.9.1
 
 
-#include "QuilListener.h"
+#include "QuilVisitor.h"
 
 #include "QuilParser.h"
 
@@ -63,16 +63,12 @@ size_t QuilParser::QuilContext::getRuleIndex() const {
   return QuilParser::RuleQuil;
 }
 
-void QuilParser::QuilContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterQuil(this);
-}
 
-void QuilParser::QuilContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitQuil(this);
+antlrcpp::Any QuilParser::QuilContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitQuil(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::QuilContext* QuilParser::quil() {
@@ -210,16 +206,12 @@ size_t QuilParser::AllInstrContext::getRuleIndex() const {
   return QuilParser::RuleAllInstr;
 }
 
-void QuilParser::AllInstrContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterAllInstr(this);
-}
 
-void QuilParser::AllInstrContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitAllInstr(this);
+antlrcpp::Any QuilParser::AllInstrContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitAllInstr(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::AllInstrContext* QuilParser::allInstr() {
@@ -362,16 +354,12 @@ size_t QuilParser::InstrContext::getRuleIndex() const {
   return QuilParser::RuleInstr;
 }
 
-void QuilParser::InstrContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterInstr(this);
-}
 
-void QuilParser::InstrContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitInstr(this);
+antlrcpp::Any QuilParser::InstrContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitInstr(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::InstrContext* QuilParser::instr() {
@@ -604,16 +592,12 @@ size_t QuilParser::GateContext::getRuleIndex() const {
   return QuilParser::RuleGate;
 }
 
-void QuilParser::GateContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterGate(this);
-}
 
-void QuilParser::GateContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitGate(this);
+antlrcpp::Any QuilParser::GateContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitGate(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::GateContext* QuilParser::gate() {
@@ -705,16 +689,12 @@ size_t QuilParser::NameContext::getRuleIndex() const {
   return QuilParser::RuleName;
 }
 
-void QuilParser::NameContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterName(this);
-}
 
-void QuilParser::NameContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitName(this);
+antlrcpp::Any QuilParser::NameContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitName(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::NameContext* QuilParser::name() {
@@ -758,16 +738,12 @@ size_t QuilParser::QubitContext::getRuleIndex() const {
   return QuilParser::RuleQubit;
 }
 
-void QuilParser::QubitContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterQubit(this);
-}
 
-void QuilParser::QubitContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitQubit(this);
+antlrcpp::Any QuilParser::QubitContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitQubit(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::QubitContext* QuilParser::qubit() {
@@ -811,16 +787,12 @@ size_t QuilParser::ParamContext::getRuleIndex() const {
   return QuilParser::RuleParam;
 }
 
-void QuilParser::ParamContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterParam(this);
-}
 
-void QuilParser::ParamContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitParam(this);
+antlrcpp::Any QuilParser::ParamContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitParam(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ParamContext* QuilParser::param() {
@@ -872,16 +844,12 @@ size_t QuilParser::ModifierContext::getRuleIndex() const {
   return QuilParser::RuleModifier;
 }
 
-void QuilParser::ModifierContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterModifier(this);
-}
 
-void QuilParser::ModifierContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitModifier(this);
+antlrcpp::Any QuilParser::ModifierContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitModifier(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ModifierContext* QuilParser::modifier() {
@@ -984,16 +952,12 @@ size_t QuilParser::DefGateContext::getRuleIndex() const {
   return QuilParser::RuleDefGate;
 }
 
-void QuilParser::DefGateContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterDefGate(this);
-}
 
-void QuilParser::DefGateContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitDefGate(this);
+antlrcpp::Any QuilParser::DefGateContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitDefGate(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::DefGateContext* QuilParser::defGate() {
@@ -1142,16 +1106,12 @@ size_t QuilParser::DefGateAsPauliContext::getRuleIndex() const {
   return QuilParser::RuleDefGateAsPauli;
 }
 
-void QuilParser::DefGateAsPauliContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterDefGateAsPauli(this);
-}
 
-void QuilParser::DefGateAsPauliContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitDefGateAsPauli(this);
+antlrcpp::Any QuilParser::DefGateAsPauliContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitDefGateAsPauli(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::DefGateAsPauliContext* QuilParser::defGateAsPauli() {
@@ -1246,16 +1206,12 @@ size_t QuilParser::VariableContext::getRuleIndex() const {
   return QuilParser::RuleVariable;
 }
 
-void QuilParser::VariableContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterVariable(this);
-}
 
-void QuilParser::VariableContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitVariable(this);
+antlrcpp::Any QuilParser::VariableContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitVariable(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::VariableContext* QuilParser::variable() {
@@ -1305,16 +1261,12 @@ size_t QuilParser::GatetypeContext::getRuleIndex() const {
   return QuilParser::RuleGatetype;
 }
 
-void QuilParser::GatetypeContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterGatetype(this);
-}
 
-void QuilParser::GatetypeContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitGatetype(this);
+antlrcpp::Any QuilParser::GatetypeContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitGatetype(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::GatetypeContext* QuilParser::gatetype() {
@@ -1380,16 +1332,12 @@ size_t QuilParser::MatrixContext::getRuleIndex() const {
   return QuilParser::RuleMatrix;
 }
 
-void QuilParser::MatrixContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMatrix(this);
-}
 
-void QuilParser::MatrixContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMatrix(this);
+antlrcpp::Any QuilParser::MatrixContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMatrix(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::MatrixContext* QuilParser::matrix() {
@@ -1464,16 +1412,12 @@ size_t QuilParser::MatrixRowContext::getRuleIndex() const {
   return QuilParser::RuleMatrixRow;
 }
 
-void QuilParser::MatrixRowContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMatrixRow(this);
-}
 
-void QuilParser::MatrixRowContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMatrixRow(this);
+antlrcpp::Any QuilParser::MatrixRowContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMatrixRow(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::MatrixRowContext* QuilParser::matrixRow() {
@@ -1544,16 +1488,12 @@ size_t QuilParser::PauliTermsContext::getRuleIndex() const {
   return QuilParser::RulePauliTerms;
 }
 
-void QuilParser::PauliTermsContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterPauliTerms(this);
-}
 
-void QuilParser::PauliTermsContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitPauliTerms(this);
+antlrcpp::Any QuilParser::PauliTermsContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitPauliTerms(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::PauliTermsContext* QuilParser::pauliTerms() {
@@ -1636,16 +1576,12 @@ size_t QuilParser::PauliTermContext::getRuleIndex() const {
   return QuilParser::RulePauliTerm;
 }
 
-void QuilParser::PauliTermContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterPauliTerm(this);
-}
 
-void QuilParser::PauliTermContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitPauliTerm(this);
+antlrcpp::Any QuilParser::PauliTermContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitPauliTerm(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::PauliTermContext* QuilParser::pauliTerm() {
@@ -1756,16 +1692,12 @@ size_t QuilParser::DefCircuitContext::getRuleIndex() const {
   return QuilParser::RuleDefCircuit;
 }
 
-void QuilParser::DefCircuitContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterDefCircuit(this);
-}
 
-void QuilParser::DefCircuitContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitDefCircuit(this);
+antlrcpp::Any QuilParser::DefCircuitContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitDefCircuit(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::DefCircuitContext* QuilParser::defCircuit() {
@@ -1852,16 +1784,12 @@ size_t QuilParser::QubitVariableContext::getRuleIndex() const {
   return QuilParser::RuleQubitVariable;
 }
 
-void QuilParser::QubitVariableContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterQubitVariable(this);
-}
 
-void QuilParser::QubitVariableContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitQubitVariable(this);
+antlrcpp::Any QuilParser::QubitVariableContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitQubitVariable(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::QubitVariableContext* QuilParser::qubitVariable() {
@@ -1909,16 +1837,12 @@ size_t QuilParser::CircuitQubitContext::getRuleIndex() const {
   return QuilParser::RuleCircuitQubit;
 }
 
-void QuilParser::CircuitQubitContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuitQubit(this);
-}
 
-void QuilParser::CircuitQubitContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuitQubit(this);
+antlrcpp::Any QuilParser::CircuitQubitContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuitQubit(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitQubitContext* QuilParser::circuitQubit() {
@@ -2011,16 +1935,12 @@ size_t QuilParser::CircuitGateContext::getRuleIndex() const {
   return QuilParser::RuleCircuitGate;
 }
 
-void QuilParser::CircuitGateContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuitGate(this);
-}
 
-void QuilParser::CircuitGateContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuitGate(this);
+antlrcpp::Any QuilParser::CircuitGateContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuitGate(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitGateContext* QuilParser::circuitGate() {
@@ -2109,16 +2029,12 @@ size_t QuilParser::CircuitMeasureContext::getRuleIndex() const {
   return QuilParser::RuleCircuitMeasure;
 }
 
-void QuilParser::CircuitMeasureContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuitMeasure(this);
-}
 
-void QuilParser::CircuitMeasureContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuitMeasure(this);
+antlrcpp::Any QuilParser::CircuitMeasureContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuitMeasure(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitMeasureContext* QuilParser::circuitMeasure() {
@@ -2179,16 +2095,12 @@ size_t QuilParser::CircuitResetStateContext::getRuleIndex() const {
   return QuilParser::RuleCircuitResetState;
 }
 
-void QuilParser::CircuitResetStateContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuitResetState(this);
-}
 
-void QuilParser::CircuitResetStateContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuitResetState(this);
+antlrcpp::Any QuilParser::CircuitResetStateContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuitResetState(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitResetStateContext* QuilParser::circuitResetState() {
@@ -2255,16 +2167,12 @@ size_t QuilParser::CircuitInstrContext::getRuleIndex() const {
   return QuilParser::RuleCircuitInstr;
 }
 
-void QuilParser::CircuitInstrContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuitInstr(this);
-}
 
-void QuilParser::CircuitInstrContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuitInstr(this);
+antlrcpp::Any QuilParser::CircuitInstrContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuitInstr(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitInstrContext* QuilParser::circuitInstr() {
@@ -2359,16 +2267,12 @@ size_t QuilParser::CircuitContext::getRuleIndex() const {
   return QuilParser::RuleCircuit;
 }
 
-void QuilParser::CircuitContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterCircuit(this);
-}
 
-void QuilParser::CircuitContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitCircuit(this);
+antlrcpp::Any QuilParser::CircuitContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitCircuit(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::CircuitContext* QuilParser::circuit() {
@@ -2439,16 +2343,12 @@ size_t QuilParser::MeasureContext::getRuleIndex() const {
   return QuilParser::RuleMeasure;
 }
 
-void QuilParser::MeasureContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMeasure(this);
-}
 
-void QuilParser::MeasureContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMeasure(this);
+antlrcpp::Any QuilParser::MeasureContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMeasure(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::MeasureContext* QuilParser::measure() {
@@ -2517,16 +2417,12 @@ size_t QuilParser::AddrContext::getRuleIndex() const {
   return QuilParser::RuleAddr;
 }
 
-void QuilParser::AddrContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterAddr(this);
-}
 
-void QuilParser::AddrContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitAddr(this);
+antlrcpp::Any QuilParser::AddrContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitAddr(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::AddrContext* QuilParser::addr() {
@@ -2604,16 +2500,12 @@ size_t QuilParser::DefLabelContext::getRuleIndex() const {
   return QuilParser::RuleDefLabel;
 }
 
-void QuilParser::DefLabelContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterDefLabel(this);
-}
 
-void QuilParser::DefLabelContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitDefLabel(this);
+antlrcpp::Any QuilParser::DefLabelContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitDefLabel(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::DefLabelContext* QuilParser::defLabel() {
@@ -2663,16 +2555,12 @@ size_t QuilParser::LabelContext::getRuleIndex() const {
   return QuilParser::RuleLabel;
 }
 
-void QuilParser::LabelContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterLabel(this);
-}
 
-void QuilParser::LabelContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitLabel(this);
+antlrcpp::Any QuilParser::LabelContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitLabel(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::LabelContext* QuilParser::label() {
@@ -2718,16 +2606,12 @@ size_t QuilParser::HaltContext::getRuleIndex() const {
   return QuilParser::RuleHalt;
 }
 
-void QuilParser::HaltContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterHalt(this);
-}
 
-void QuilParser::HaltContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitHalt(this);
+antlrcpp::Any QuilParser::HaltContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitHalt(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::HaltContext* QuilParser::halt() {
@@ -2775,16 +2659,12 @@ size_t QuilParser::JumpContext::getRuleIndex() const {
   return QuilParser::RuleJump;
 }
 
-void QuilParser::JumpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterJump(this);
-}
 
-void QuilParser::JumpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitJump(this);
+antlrcpp::Any QuilParser::JumpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitJump(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::JumpContext* QuilParser::jump() {
@@ -2838,16 +2718,12 @@ size_t QuilParser::JumpWhenContext::getRuleIndex() const {
   return QuilParser::RuleJumpWhen;
 }
 
-void QuilParser::JumpWhenContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterJumpWhen(this);
-}
 
-void QuilParser::JumpWhenContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitJumpWhen(this);
+antlrcpp::Any QuilParser::JumpWhenContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitJumpWhen(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::JumpWhenContext* QuilParser::jumpWhen() {
@@ -2903,16 +2779,12 @@ size_t QuilParser::JumpUnlessContext::getRuleIndex() const {
   return QuilParser::RuleJumpUnless;
 }
 
-void QuilParser::JumpUnlessContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterJumpUnless(this);
-}
 
-void QuilParser::JumpUnlessContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitJumpUnless(this);
+antlrcpp::Any QuilParser::JumpUnlessContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitJumpUnless(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::JumpUnlessContext* QuilParser::jumpUnless() {
@@ -2964,16 +2836,12 @@ size_t QuilParser::ResetStateContext::getRuleIndex() const {
   return QuilParser::RuleResetState;
 }
 
-void QuilParser::ResetStateContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterResetState(this);
-}
 
-void QuilParser::ResetStateContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitResetState(this);
+antlrcpp::Any QuilParser::ResetStateContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitResetState(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ResetStateContext* QuilParser::resetState() {
@@ -3026,16 +2894,12 @@ size_t QuilParser::WaitContext::getRuleIndex() const {
   return QuilParser::RuleWait;
 }
 
-void QuilParser::WaitContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterWait(this);
-}
 
-void QuilParser::WaitContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitWait(this);
+antlrcpp::Any QuilParser::WaitContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitWait(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::WaitContext* QuilParser::wait() {
@@ -3111,16 +2975,12 @@ size_t QuilParser::MemoryDescriptorContext::getRuleIndex() const {
   return QuilParser::RuleMemoryDescriptor;
 }
 
-void QuilParser::MemoryDescriptorContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMemoryDescriptor(this);
-}
 
-void QuilParser::MemoryDescriptorContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMemoryDescriptor(this);
+antlrcpp::Any QuilParser::MemoryDescriptorContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMemoryDescriptor(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::MemoryDescriptorContext* QuilParser::memoryDescriptor() {
@@ -3209,16 +3069,12 @@ size_t QuilParser::OffsetDescriptorContext::getRuleIndex() const {
   return QuilParser::RuleOffsetDescriptor;
 }
 
-void QuilParser::OffsetDescriptorContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterOffsetDescriptor(this);
-}
 
-void QuilParser::OffsetDescriptorContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitOffsetDescriptor(this);
+antlrcpp::Any QuilParser::OffsetDescriptorContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitOffsetDescriptor(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::OffsetDescriptorContext* QuilParser::offsetDescriptor() {
@@ -3282,16 +3138,12 @@ size_t QuilParser::ClassicalUnaryContext::getRuleIndex() const {
   return QuilParser::RuleClassicalUnary;
 }
 
-void QuilParser::ClassicalUnaryContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterClassicalUnary(this);
-}
 
-void QuilParser::ClassicalUnaryContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitClassicalUnary(this);
+antlrcpp::Any QuilParser::ClassicalUnaryContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitClassicalUnary(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ClassicalUnaryContext* QuilParser::classicalUnary() {
@@ -3365,16 +3217,12 @@ size_t QuilParser::ClassicalBinaryContext::getRuleIndex() const {
   return QuilParser::RuleClassicalBinary;
 }
 
-void QuilParser::ClassicalBinaryContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterClassicalBinary(this);
-}
 
-void QuilParser::ClassicalBinaryContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitClassicalBinary(this);
+antlrcpp::Any QuilParser::ClassicalBinaryContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitClassicalBinary(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ClassicalBinaryContext* QuilParser::classicalBinary() {
@@ -3486,16 +3334,12 @@ size_t QuilParser::LogicalBinaryOpContext::getRuleIndex() const {
   return QuilParser::RuleLogicalBinaryOp;
 }
 
-void QuilParser::LogicalBinaryOpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterLogicalBinaryOp(this);
-}
 
-void QuilParser::LogicalBinaryOpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitLogicalBinaryOp(this);
+antlrcpp::Any QuilParser::LogicalBinaryOpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitLogicalBinaryOp(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::LogicalBinaryOpContext* QuilParser::logicalBinaryOp() {
@@ -3596,16 +3440,12 @@ size_t QuilParser::ArithmeticBinaryOpContext::getRuleIndex() const {
   return QuilParser::RuleArithmeticBinaryOp;
 }
 
-void QuilParser::ArithmeticBinaryOpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterArithmeticBinaryOp(this);
-}
 
-void QuilParser::ArithmeticBinaryOpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitArithmeticBinaryOp(this);
+antlrcpp::Any QuilParser::ArithmeticBinaryOpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitArithmeticBinaryOp(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ArithmeticBinaryOpContext* QuilParser::arithmeticBinaryOp() {
@@ -3698,16 +3538,12 @@ size_t QuilParser::MoveContext::getRuleIndex() const {
   return QuilParser::RuleMove;
 }
 
-void QuilParser::MoveContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMove(this);
-}
 
-void QuilParser::MoveContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMove(this);
+antlrcpp::Any QuilParser::MoveContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMove(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::MoveContext* QuilParser::move() {
@@ -3784,16 +3620,12 @@ size_t QuilParser::ExchangeContext::getRuleIndex() const {
   return QuilParser::RuleExchange;
 }
 
-void QuilParser::ExchangeContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterExchange(this);
-}
 
-void QuilParser::ExchangeContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitExchange(this);
+antlrcpp::Any QuilParser::ExchangeContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitExchange(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ExchangeContext* QuilParser::exchange() {
@@ -3849,16 +3681,12 @@ size_t QuilParser::ConvertContext::getRuleIndex() const {
   return QuilParser::RuleConvert;
 }
 
-void QuilParser::ConvertContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterConvert(this);
-}
 
-void QuilParser::ConvertContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitConvert(this);
+antlrcpp::Any QuilParser::ConvertContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitConvert(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ConvertContext* QuilParser::convert() {
@@ -3918,16 +3746,12 @@ size_t QuilParser::LoadContext::getRuleIndex() const {
   return QuilParser::RuleLoad;
 }
 
-void QuilParser::LoadContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterLoad(this);
-}
 
-void QuilParser::LoadContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitLoad(this);
+antlrcpp::Any QuilParser::LoadContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitLoad(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::LoadContext* QuilParser::load() {
@@ -3993,16 +3817,12 @@ size_t QuilParser::StoreContext::getRuleIndex() const {
   return QuilParser::RuleStore;
 }
 
-void QuilParser::StoreContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterStore(this);
-}
 
-void QuilParser::StoreContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitStore(this);
+antlrcpp::Any QuilParser::StoreContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitStore(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::StoreContext* QuilParser::store() {
@@ -4101,16 +3921,12 @@ size_t QuilParser::ClassicalComparisonContext::getRuleIndex() const {
   return QuilParser::RuleClassicalComparison;
 }
 
-void QuilParser::ClassicalComparisonContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterClassicalComparison(this);
-}
 
-void QuilParser::ClassicalComparisonContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitClassicalComparison(this);
+antlrcpp::Any QuilParser::ClassicalComparisonContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitClassicalComparison(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ClassicalComparisonContext* QuilParser::classicalComparison() {
@@ -4194,16 +4010,12 @@ size_t QuilParser::NopContext::getRuleIndex() const {
   return QuilParser::RuleNop;
 }
 
-void QuilParser::NopContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterNop(this);
-}
 
-void QuilParser::NopContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitNop(this);
+antlrcpp::Any QuilParser::NopContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitNop(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::NopContext* QuilParser::nop() {
@@ -4251,16 +4063,12 @@ size_t QuilParser::IncludeContext::getRuleIndex() const {
   return QuilParser::RuleInclude;
 }
 
-void QuilParser::IncludeContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterInclude(this);
-}
 
-void QuilParser::IncludeContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitInclude(this);
+antlrcpp::Any QuilParser::IncludeContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitInclude(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::IncludeContext* QuilParser::include() {
@@ -4322,16 +4130,12 @@ size_t QuilParser::PragmaContext::getRuleIndex() const {
   return QuilParser::RulePragma;
 }
 
-void QuilParser::PragmaContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterPragma(this);
-}
 
-void QuilParser::PragmaContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitPragma(this);
+antlrcpp::Any QuilParser::PragmaContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitPragma(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::PragmaContext* QuilParser::pragma() {
@@ -4402,16 +4206,12 @@ size_t QuilParser::Pragma_nameContext::getRuleIndex() const {
   return QuilParser::RulePragma_name;
 }
 
-void QuilParser::Pragma_nameContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterPragma_name(this);
-}
 
-void QuilParser::Pragma_nameContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitPragma_name(this);
+antlrcpp::Any QuilParser::Pragma_nameContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitPragma_name(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::Pragma_nameContext* QuilParser::pragma_name() {
@@ -4473,15 +4273,12 @@ QuilParser::NumberContext* QuilParser::NumberExpContext::number() {
 
 QuilParser::NumberExpContext::NumberExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::NumberExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterNumberExp(this);
-}
-void QuilParser::NumberExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitNumberExp(this);
+
+antlrcpp::Any QuilParser::NumberExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitNumberExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- PowerExpContext ------------------------------------------------------------------
 
@@ -4499,15 +4296,12 @@ tree::TerminalNode* QuilParser::PowerExpContext::POWER() {
 
 QuilParser::PowerExpContext::PowerExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::PowerExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterPowerExp(this);
-}
-void QuilParser::PowerExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitPowerExp(this);
+
+antlrcpp::Any QuilParser::PowerExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitPowerExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- MulDivExpContext ------------------------------------------------------------------
 
@@ -4529,15 +4323,12 @@ tree::TerminalNode* QuilParser::MulDivExpContext::DIVIDE() {
 
 QuilParser::MulDivExpContext::MulDivExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::MulDivExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterMulDivExp(this);
-}
-void QuilParser::MulDivExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitMulDivExp(this);
+
+antlrcpp::Any QuilParser::MulDivExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitMulDivExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- ParenthesisExpContext ------------------------------------------------------------------
 
@@ -4555,15 +4346,12 @@ tree::TerminalNode* QuilParser::ParenthesisExpContext::RPAREN() {
 
 QuilParser::ParenthesisExpContext::ParenthesisExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::ParenthesisExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterParenthesisExp(this);
-}
-void QuilParser::ParenthesisExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitParenthesisExp(this);
+
+antlrcpp::Any QuilParser::ParenthesisExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitParenthesisExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- VariableExpContext ------------------------------------------------------------------
 
@@ -4573,15 +4361,12 @@ QuilParser::VariableContext* QuilParser::VariableExpContext::variable() {
 
 QuilParser::VariableExpContext::VariableExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::VariableExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterVariableExp(this);
-}
-void QuilParser::VariableExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitVariableExp(this);
+
+antlrcpp::Any QuilParser::VariableExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitVariableExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- AddrExpContext ------------------------------------------------------------------
 
@@ -4591,15 +4376,12 @@ QuilParser::AddrContext* QuilParser::AddrExpContext::addr() {
 
 QuilParser::AddrExpContext::AddrExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::AddrExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterAddrExp(this);
-}
-void QuilParser::AddrExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitAddrExp(this);
+
+antlrcpp::Any QuilParser::AddrExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitAddrExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- SignedExpContext ------------------------------------------------------------------
 
@@ -4613,15 +4395,12 @@ QuilParser::ExpressionContext* QuilParser::SignedExpContext::expression() {
 
 QuilParser::SignedExpContext::SignedExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::SignedExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterSignedExp(this);
-}
-void QuilParser::SignedExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitSignedExp(this);
+
+antlrcpp::Any QuilParser::SignedExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitSignedExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- AddSubExpContext ------------------------------------------------------------------
 
@@ -4643,15 +4422,12 @@ tree::TerminalNode* QuilParser::AddSubExpContext::MINUS() {
 
 QuilParser::AddSubExpContext::AddSubExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::AddSubExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterAddSubExp(this);
-}
-void QuilParser::AddSubExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitAddSubExp(this);
+
+antlrcpp::Any QuilParser::AddSubExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitAddSubExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 //----------------- FunctionExpContext ------------------------------------------------------------------
 
@@ -4673,15 +4449,12 @@ tree::TerminalNode* QuilParser::FunctionExpContext::RPAREN() {
 
 QuilParser::FunctionExpContext::FunctionExpContext(ExpressionContext *ctx) { copyFrom(ctx); }
 
-void QuilParser::FunctionExpContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterFunctionExp(this);
-}
-void QuilParser::FunctionExpContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitFunctionExp(this);
+
+antlrcpp::Any QuilParser::FunctionExpContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitFunctionExp(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ExpressionContext* QuilParser::expression() {
@@ -4902,16 +4675,12 @@ size_t QuilParser::FunctionContext::getRuleIndex() const {
   return QuilParser::RuleFunction;
 }
 
-void QuilParser::FunctionContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterFunction(this);
-}
 
-void QuilParser::FunctionContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitFunction(this);
+antlrcpp::Any QuilParser::FunctionContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitFunction(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::FunctionContext* QuilParser::function() {
@@ -4972,16 +4741,12 @@ size_t QuilParser::SignContext::getRuleIndex() const {
   return QuilParser::RuleSign;
 }
 
-void QuilParser::SignContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterSign(this);
-}
 
-void QuilParser::SignContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitSign(this);
+antlrcpp::Any QuilParser::SignContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitSign(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::SignContext* QuilParser::sign() {
@@ -5051,16 +4816,12 @@ size_t QuilParser::NumberContext::getRuleIndex() const {
   return QuilParser::RuleNumber;
 }
 
-void QuilParser::NumberContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterNumber(this);
-}
 
-void QuilParser::NumberContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitNumber(this);
+antlrcpp::Any QuilParser::NumberContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitNumber(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::NumberContext* QuilParser::number() {
@@ -5145,16 +4906,12 @@ size_t QuilParser::ImaginaryNContext::getRuleIndex() const {
   return QuilParser::RuleImaginaryN;
 }
 
-void QuilParser::ImaginaryNContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterImaginaryN(this);
-}
 
-void QuilParser::ImaginaryNContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitImaginaryN(this);
+antlrcpp::Any QuilParser::ImaginaryNContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitImaginaryN(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::ImaginaryNContext* QuilParser::imaginaryN() {
@@ -5204,16 +4961,12 @@ size_t QuilParser::RealNContext::getRuleIndex() const {
   return QuilParser::RuleRealN;
 }
 
-void QuilParser::RealNContext::enterRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->enterRealN(this);
-}
 
-void QuilParser::RealNContext::exitRule(tree::ParseTreeListener *listener) {
-  auto parserListener = dynamic_cast<QuilListener *>(listener);
-  if (parserListener != nullptr)
-    parserListener->exitRealN(this);
+antlrcpp::Any QuilParser::RealNContext::accept(tree::ParseTreeVisitor *visitor) {
+  if (auto parserVisitor = dynamic_cast<QuilVisitor*>(visitor))
+    return parserVisitor->visitRealN(this);
+  else
+    return visitor->visitChildren(this);
 }
 
 QuilParser::RealNContext* QuilParser::realN() {
