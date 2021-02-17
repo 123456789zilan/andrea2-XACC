@@ -51,7 +51,7 @@ bool QuilCompiler::canParse(const std::string &src) {
   parser.addErrorListener(new QuilThrowExceptionErrorListener());
 
   try {
-    tree::ParseTree *tree = parser.xaccsrc();
+    // tree::ParseTree *tree = parser.xaccsrc();
     return true;
   } catch (std::exception &e) {
     return false;
@@ -70,9 +70,9 @@ std::shared_ptr<IR> QuilCompiler::compile(const std::string &src,
 
   auto ir = xacc::getService<IRProvider>("quantum")->createIR();
 
-  tree::ParseTree *tree = parser.xaccsrc();
+//   tree::ParseTree *tree = parser.xaccsrc();
   QuilToXACCListener listener;
-  tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
+//   tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
 
   delete e;
   auto f = listener.getFunction();

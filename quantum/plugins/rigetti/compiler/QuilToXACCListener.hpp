@@ -13,7 +13,7 @@
 #ifndef XACC_RIGETTI_QUILTOXACCLISTENER_H
 #define XACC_RIGETTI_QUILTOXACCLISTENER_H
 
-#include "QuilBaseListener.h"
+#include "QuilBaseVisitor.h"
 #include "IR.hpp"
 #include "IRProvider.hpp"
 #include "expression_parsing_util.hpp"
@@ -22,7 +22,7 @@ using namespace quil;
 
 namespace xacc {
 namespace quantum {
-class QuilToXACCListener : public QuilBaseListener {
+class QuilToXACCListener : public QuilBaseVisitor {
 protected:
   std::shared_ptr<IRProvider> gateRegistry;
   std::shared_ptr<CompositeInstruction> function;
@@ -31,15 +31,12 @@ protected:
 public:
   QuilToXACCListener();
   std::shared_ptr<CompositeInstruction> getFunction() {return function;}
-  void enterXacckernel(QuilParser::XacckernelContext *ctx) override;
-
-  void exitGate(quil::QuilParser::GateContext *ctx) override;
-
-  void exitKernelcall(
-    quil::QuilParser::KernelcallContext *ctx) override;
-
-  void exitMeasure(quil::QuilParser::MeasureContext *ctx) override;
-
+//   void enterXacckernel(QuilParser::XacckernelContext *ctx) override;
+    antlrcpp::Any visitGate(QuilParser::GateContext *ctx) override;
+    antlrcpp::Any visitQuil(QuilParser::QuilContext *ctx) override;
+    antlrcpp::Any visitAllInstr(QuilParser::AllInstrContext *ctx) override;
+    antlrcpp::Any visitInstr(QuilParser::InstrContext *ctx) override;
+  
 };
 } // namespace quantum
 } // namespace xacc
