@@ -1,0 +1,249 @@
+Performing C++ SOURCE FILE Test XACC_COMPILER_SUPPORTS_-Wno-deprecated-copy_FLAG failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_01fa4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_01fa4.dir/build.make CMakeFiles/cmTC_01fa4.dir/build
+Building CXX object CMakeFiles/cmTC_01fa4.dir/src.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy -DXACC_COMPILER_SUPPORTS_-Wno-deprecated-copy_FLAG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -Wno-deprecated-copy -o CMakeFiles/cmTC_01fa4.dir/src.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+Linking CXX executable cmTC_01fa4
+/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01fa4.dir/link.txt --verbose=1
+/usr/local/bin/g++-8  -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy -DXACC_COMPILER_SUPPORTS_-Wno-deprecated-copy_FLAG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/curl/lib  CMakeFiles/cmTC_01fa4.dir/src.cxx.o -o cmTC_01fa4 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_CXX_FLAG__O1_fsanitize_thread failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59e64/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_59e64.dir/build.make CMakeFiles/cmTC_59e64.dir/build
+Building CXX object CMakeFiles/cmTC_59e64.dir/src.cxx.o
+/usr/local/bin/g++-8   -DHAS_CXX_FLAG__O1_fsanitize_thread -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk   -O1 -fsanitize=thread -o CMakeFiles/cmTC_59e64.dir/src.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_59e64
+/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59e64.dir/link.txt --verbose=1
+/usr/local/bin/g++-8  -DHAS_CXX_FLAG__O1_fsanitize_thread -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/curl/lib  CMakeFiles/cmTC_59e64.dir/src.cxx.o -o cmTC_59e64  -fsanitize=thread 
+Undefined symbols for architecture x86_64:
+  "___tsan_init", referenced from:
+      __GLOBAL__sub_I_00099_0_src.cxx in src.cxx.o
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_59e64] Error 1
+make: *** [cmTC_59e64/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the __linux__ exist failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e649c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e649c.dir/build.make CMakeFiles/cmTC_e649c.dir/build
+Building CXX object CMakeFiles/cmTC_e649c.dir/CheckSymbolExists.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_e649c.dir/CheckSymbolExists.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: '__linux__' was not declared in this scope
+   return ((int*)(&__linux__))[argc];
+                   ^~~~~~~~~
+At global scope:
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+make[1]: *** [CMakeFiles/cmTC_e649c.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_e649c/fast] Error 2
+
+
+File /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __linux__
+  return ((int*)(&__linux__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _WIN32 exist failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2d28/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e2d28.dir/build.make CMakeFiles/cmTC_e2d28.dir/build
+Building CXX object CMakeFiles/cmTC_e2d28.dir/CheckSymbolExists.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_e2d28.dir/CheckSymbolExists.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: '_WIN32' was not declared in this scope
+   return ((int*)(&_WIN32))[argc];
+                   ^~~~~~
+At global scope:
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+make[1]: *** [CMakeFiles/cmTC_e2d28.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_e2d28/fast] Error 2
+
+
+File /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _WIN32
+  return ((int*)(&_WIN32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __ANDROID__ exist failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0784e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0784e.dir/build.make CMakeFiles/cmTC_0784e.dir/build
+Building CXX object CMakeFiles/cmTC_0784e.dir/CheckSymbolExists.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_0784e.dir/CheckSymbolExists.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: '__ANDROID__' was not declared in this scope
+   return ((int*)(&__ANDROID__))[argc];
+                   ^~~~~~~~~~~
+At global scope:
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+make[1]: *** [CMakeFiles/cmTC_0784e.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_0784e/fast] Error 2
+
+
+File /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __ANDROID__
+  return ((int*)(&__ANDROID__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __FreeBSD__ exist failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86c9b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_86c9b.dir/build.make CMakeFiles/cmTC_86c9b.dir/build
+Building CXX object CMakeFiles/cmTC_86c9b.dir/CheckSymbolExists.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_86c9b.dir/CheckSymbolExists.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: '__FreeBSD__' was not declared in this scope
+   return ((int*)(&__FreeBSD__))[argc];
+                   ^~~~~~~~~~~
+At global scope:
+cc1plus: warning: unrecognized command line option '-Wno-deprecated-copy'
+make[1]: *** [CMakeFiles/cmTC_86c9b.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_86c9b/fast] Error 2
+
+
+File /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __FreeBSD__
+  return ((int*)(&__FreeBSD__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0dfe7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0dfe7.dir/build.make CMakeFiles/cmTC_0dfe7.dir/build
+Building C object CMakeFiles/cmTC_0dfe7.dir/test_mpi.c.o
+/usr/local/bin/gcc-8   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_0dfe7.dir/test_mpi.c.o -c /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.18/Modules/FindMPI/test_mpi.c
+/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.18/Modules/FindMPI/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+ #include <mpi.h>
+          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_0dfe7.dir/test_mpi.c.o] Error 1
+make: *** [cmTC_0dfe7/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64b0e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_64b0e.dir/build.make CMakeFiles/cmTC_64b0e.dir/build
+Building CXX object CMakeFiles/cmTC_64b0e.dir/test_mpi.cpp.o
+/usr/local/bin/g++-8   -Wno-attributes -DPATH_MAX=4096 -Wno-deprecated-copy  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -fPIE -o CMakeFiles/cmTC_64b0e.dir/test_mpi.cpp.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/FindMPI/test_mpi.cpp
+/Users/dhruvshah/git/xacc/build/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+ #include <mpi.h>
+          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_64b0e.dir/test_mpi.cpp.o] Error 1
+make: *** [cmTC_64b0e/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10524/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_10524.dir/build.make CMakeFiles/cmTC_10524.dir/build
+Building CXX object CMakeFiles/cmTC_10524.dir/CheckFunctionExists.cxx.o
+/usr/local/bin/g++-8   -Wno-attributes -DCHECK_FUNCTION_EXISTS=sgemm_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o CMakeFiles/cmTC_10524.dir/CheckFunctionExists.cxx.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_10524
+/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10524.dir/link.txt --verbose=1
+/usr/local/bin/g++-8  -Wno-attributes -DCHECK_FUNCTION_EXISTS=sgemm_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/curl/lib  CMakeFiles/cmTC_10524.dir/CheckFunctionExists.cxx.o -o cmTC_10524 
+Undefined symbols for architecture x86_64:
+  "_sgemm_", referenced from:
+      _main in CheckFunctionExists.cxx.o
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_10524] Error 1
+make: *** [cmTC_10524/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_THREAD_LOCAL_STORAGE failed with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f17b4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f17b4.dir/build.make CMakeFiles/cmTC_f17b4.dir/build
+Building C object CMakeFiles/cmTC_f17b4.dir/src.c.o
+/usr/local/bin/gcc-8   -DHAVE_THREAD_LOCAL_STORAGE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o CMakeFiles/cmTC_f17b4.dir/src.c.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c:2:5: warning: return type defaults to 'int' [-Wimplicit-int]
+     __declspec(thread) int tls;
+     ^~~~~~~~~~
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c: In function '__declspec':
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c:4:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+     int main(void) {
+                    ^
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c:2:5: warning: type of 'thread' defaults to 'int' [-Wimplicit-int]
+     __declspec(thread) int tls;
+     ^~~~~~~~~~
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c:2:28: error: declaration for parameter 'tls' but no such parameter
+     __declspec(thread) int tls;
+                            ^~~
+/Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp/src.c:6: error: expected '{' at end of input
+     }
+ 
+make[1]: *** [CMakeFiles/cmTC_f17b4.dir/src.c.o] Error 1
+make: *** [cmTC_f17b4/fast] Error 2
+
+
+Source file was:
+
+    __declspec(thread) int tls;
+
+    int main(void) {
+        return 0;
+    }
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /Users/dhruvshah/git/xacc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_63a4c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_63a4c.dir/build.make CMakeFiles/cmTC_63a4c.dir/build
+Building CXX object CMakeFiles/cmTC_63a4c.dir/test_mpi.cpp.o
+/usr/local/bin/g++-8   -Wno-attributes  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -o CMakeFiles/cmTC_63a4c.dir/test_mpi.cpp.o -c /Users/dhruvshah/git/xacc/build/CMakeFiles/FindMPI/test_mpi.cpp
+/Users/dhruvshah/git/xacc/build/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+ #include <mpi.h>
+          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_63a4c.dir/test_mpi.cpp.o] Error 1
+make: *** [cmTC_63a4c/fast] Error 2
+
+
+
