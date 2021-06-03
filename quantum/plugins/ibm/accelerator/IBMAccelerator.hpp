@@ -128,7 +128,7 @@ public:
   // Return the name of an IRTransformation of type Placement that is
   // preferred for this Accelerator
   const std::string defaultPlacementTransformation() override {
-    return "default-placement";
+    return "swap-shortest-path";
   }
 
   const std::string name() const override { return "ibm"; }
@@ -178,6 +178,7 @@ private:
 
   std::map<std::string, nlohmann::json> availableBackends;
   nlohmann::json chosenBackend;
+  bool multi_meas_enabled = false;
   bool initialized = false;
   nlohmann::json backends_root;
   std::map<std::string, nlohmann::json> backendProperties;

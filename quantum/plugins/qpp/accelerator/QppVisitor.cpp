@@ -307,8 +307,36 @@ namespace quantum {
             std::cout << ">> State after measurement: " << qpp::disp(m_stateVec, ", ") << "\n";
         }
 
-        // Add the measurement data to the acceleration buffer (e.g. for conditional execution branching)
-        m_buffer->measure(measure.bits()[0], randomSelectedResult);        
+        if (measure.hasClassicalRegAssignment()) 
+        {
+          // Store the measurement to the corresponding classical buffer.
+          m_buffer->measure(measure.getBufferNames()[1],
+                            measure.getClassicalBitIndex(),
+                            randomSelectedResult);
+        } 
+        else 
+        {
+          // Add the measurement data to the acceleration buffer (e.g. for
+          // conditional execution branching)
+          m_buffer->measure(measure.bits()[0], randomSelectedResult);
+        }
+    }
+    
+    void QppVisitor::visit(Reset& in_resetGate) 
+    {
+        if (xacc::verbose)
+        {
+            std::cout << ">> Applying Reset @ q[" << in_resetGate.bits()[0] << "] \n";
+            std::cout << ">> State before reset: " << qpp::disp(m_stateVec, ", ") << "\n";
+        }
+
+        const auto qubitIdx = xaccIdxToQppIdx(in_resetGate.bits()[0]);
+        m_stateVec = qpp::reset(m_stateVec, { qubitIdx });
+        
+        if (xacc::verbose)
+        {
+            std::cout << ">> State after reset: " << qpp::disp(m_stateVec, ", ") << "\n";
+        }
     }
 
     void QppVisitor::visit(IfStmt& ifStmt)
@@ -384,5 +412,24 @@ namespace quantum {
         // Restore the state vector
         m_stateVec = cachedStateVec;
         return result;
+    }
+
+    void QppVisitor::allocateQubits(size_t in_nbQubits) 
+    {
+        assert(in_nbQubits > 0);
+        if (xacc::verbose)
+        {
+            std::cout << ">> Allocate : " << in_nbQubits << " qubits.\n";
+            std::cout << ">> State before allocate: " << qpp::disp(m_stateVec, ", ") << "\n";
+        }
+        const std::vector<qpp::idx> initialState(in_nbQubits, 0);
+        auto new_stateVec = qpp::mket(initialState);
+        m_stateVec = qpp::kron(new_stateVec, m_stateVec);
+        const std::vector<qpp::idx> new_dims(in_nbQubits, 2);
+        m_dims.insert(m_dims.end(), new_dims.begin(), new_dims.end());
+        if (xacc::verbose)
+        {
+            std::cout << ">> State after allocate: " << qpp::disp(m_stateVec, ", ") << "\n";
+        }
     }
 }}

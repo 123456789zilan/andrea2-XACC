@@ -130,6 +130,8 @@ void storeBuffer(const std::string name,
                  std::shared_ptr<AcceleratorBuffer> buffer);
 std::shared_ptr<AcceleratorBuffer> getBuffer(const std::string &name);
 bool hasBuffer(const std::string &name);
+std::shared_ptr<AcceleratorBuffer>
+getClassicalRegHostBuffer(const std::string &cRegName);
 
 void setAccelerator(const std::string &acceleratorName);
 std::shared_ptr<Accelerator>
@@ -146,6 +148,7 @@ getAcceleratorDecorator(const std::string &decorator,
 bool hasAccelerator(const std::string &name);
 
 void setCompiler(const std::string &compilerName);
+std::shared_ptr<Compiler> getCompiler(const std::string &name, const xacc::HeterogeneousMap&& options);
 std::shared_ptr<Compiler> getCompiler(const std::string &name);
 std::shared_ptr<Compiler> getCompiler();
 bool hasCompiler(const std::string &name);

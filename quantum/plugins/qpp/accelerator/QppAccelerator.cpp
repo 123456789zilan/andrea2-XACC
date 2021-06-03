@@ -144,18 +144,22 @@ namespace {
 
     // Helper to determine if shot count distribution can be simulated by 
     // sampling the final state vector.
-    // Requirements: measure at the very end and nothing after measure.
+    // Requirements: no reset and measure at the very end and nothing after measure.
     bool shotCountFromFinalStateVec(const std::shared_ptr<CompositeInstruction>& in_composite)
     {
         InstructionIterator it(in_composite);
         bool measureAtTheEnd = true;
         bool measureEncountered = false;
-
+        bool hasReset = false;
         while (it.hasNext())
         {
             auto nextInst = it.next();
             if (nextInst->isEnabled())
             {
+                if (nextInst->name() == "Reset") {
+                    hasReset = true;
+                }
+
                 if (isMeasureGate(nextInst))
                 {
                     // Flag that we have seen a Measure gate.
@@ -170,9 +174,9 @@ namespace {
             }
         }
 
-        // If Measure gates are at the very end,
+        // If Measure gates are at the very end and no reset,
         // this Composite can be simulated by random sampling from the state vec.
-        return measureAtTheEnd;
+        return !hasReset && measureAtTheEnd;
     }
 
     Eigen::MatrixXcd convertToEigenMat(const NoiseModelUtils::cMat& in_stdMat)
@@ -313,6 +317,8 @@ namespace quantum {
                     generateMeasureBitString(buffer, measureBitIdxs, stateVec, m_shots, multiThreadEnabled);
                 }
             }
+            // Note: must save the state-vector before finalizing the visitor.
+            cacheExecutionInfo();
             m_visitor->finalize();
         }
     }
@@ -366,8 +372,22 @@ namespace quantum {
     {
         if (!m_visitor->isInitialized()) {
             m_visitor->initialize(buffer);
+            m_currentBuffer = std::make_pair(buffer.get(), buffer->size());
         }
-        
+
+        if (buffer.get() == m_currentBuffer.first &&
+            buffer->size() != m_currentBuffer.second) {
+            if (buffer->size() > m_currentBuffer.second) {
+                const auto nbQubitsToAlloc = buffer->size() - m_currentBuffer.second;
+                // std::cout << "Allocate " << nbQubitsToAlloc << " qubits.\n";
+                m_visitor->allocateQubits(nbQubitsToAlloc);
+                m_currentBuffer.second = buffer->size();
+            }
+            else {
+                xacc::error("Qubits deallocation is not supported.");
+            }
+        }
+
         if (inst->isComposite() || inst->isAnalog())
         {
             xacc::error("Only gates are allowed.");
@@ -383,6 +403,18 @@ namespace quantum {
             assert(gateCast);
             m_visitor->applyGate(*gateCast);
         }
+    }
+
+    void QppAccelerator::cacheExecutionInfo() {
+      // Cache the state-vector:
+      // Note: qpp stores wavefunction in Eigen vectors,
+      // hence, maps to std::vector.
+      auto stateVec = m_visitor->getStateVec();
+      ExecutionInfo::WaveFuncType waveFunc(stateVec.data(),
+                                           stateVec.data() + stateVec.size());
+      m_executionInfo = {
+          {ExecutionInfo::WaveFuncKey,
+           std::make_shared<ExecutionInfo::WaveFuncType>(std::move(waveFunc))}};
     }
 
     NoiseModelUtils::cMat DefaultNoiseModelUtils::krausToChoi(const std::vector<NoiseModelUtils::cMat>& in_krausMats) const

@@ -85,6 +85,8 @@ void AerAccelerator::initialize(const HeterogeneousMap &params) {
       // If pulse mode, must contribute pulse cmd-def.
       ibm->contributeInstructions();
     }
+    // Set connectivity based on the backend:
+    connectivity = ibm->getConnectivity();
   } else if (params.stringExists("noise-model")) {
     std::string noise_model_str = params.getString("noise-model");
     // Check if this is a file name
@@ -136,6 +138,32 @@ double AerAccelerator::calcExpectationValueZ(
     result += (hasEvenParity(i, in_bits) ? 1.0 : -1.0) *
               std::norm(std::complex<double>(in_stateVec[i].first,
                                              in_stateVec[i].second));
+  }
+
+  return result;
+}
+
+double AerAccelerator::calcExpectationValueZFromDensityMatrix(
+    const std::vector<std::vector<std::pair<double, double>>> &in_densityMat,
+    const std::vector<std::size_t> &in_bits) {
+  const auto hasEvenParity =
+      [](size_t x, const std::vector<size_t> &in_qubitIndices) -> bool {
+    size_t count = 0;
+    for (const auto &bitIdx : in_qubitIndices) {
+      if (x & (1ULL << bitIdx)) {
+        count++;
+      }
+    }
+    return (count % 2) == 0;
+  };
+
+  double result = 0.0;
+  for (uint64_t i = 0; i < in_densityMat.size(); ++i) {
+    const auto &diag_elem = in_densityMat[i][i];
+    // The diag. elements of the DM should be real.
+    assert(std::abs(diag_elem.second) < 1e-3);
+    // When using DM elements, don't need the square-norm.
+    result += ((hasEvenParity(i, in_bits) ? 1.0 : -1.0) * diag_elem.first);
   }
 
   return result;
@@ -261,8 +289,11 @@ void AerAccelerator::execute(
         measured_bits.push_back(next->bits()[0]);
       }
     }
-    auto qobj_str = xacc_to_qobj->translate(tmp);
+    // In "density_matrix" simulation mode, always include Id gates
+    // if they are explicitly added to the Composite.
+    auto qobj_str = xacc_to_qobj->translate(tmp, {{"skip-id-gates", false}});
     nlohmann::json j = nlohmann::json::parse(qobj_str)["qObject"];
+    xacc::info("Qobj:\n" + j.dump());
     j["config"]["noise_model"] = noise_model;
     j["config"]["method"] = "density_matrix";
     auto snapshotInst = nlohmann::json::object();
@@ -271,10 +302,10 @@ void AerAccelerator::execute(
     snapshotInst["snapshot_type"] = "density_matrix";
     auto& exprJson = *(j["experiments"].begin());
     exprJson["instructions"].push_back(snapshotInst);
-    std::cout << "Qobj:\n" << j.dump(2);
+    // std::cout << "Qobj:\n" << j.dump(2);
     auto results_json = nlohmann::json::parse(
         AER::controller_execute_json<AER::Simulator::QasmController>(j.dump()));
-    std::cout << "Result:\n" << results_json.dump() << "\n";
+    // std::cout << "Result:\n" << results_json.dump() << "\n";
     auto results = *results_json["results"].begin();
     auto dm_mat =
         (*(results["data"]["snapshots"]["density_matrix"]["dm_snapshot"]
@@ -285,6 +316,8 @@ void AerAccelerator::execute(
       flattenDm.insert(flattenDm.end(), row.begin(), row.end());
     }
     buffer->addExtraInfo("density_matrix", flattenDm);
+    auto exp_val = calcExpectationValueZFromDensityMatrix(dm_mat, measured_bits);
+    buffer->addExtraInfo("exp-val-z", exp_val);
   }
   else {
     // statevector
@@ -697,8 +730,8 @@ std::string IbmqNoiseModel::toJson() const {
     // For mapping purposes:
     // U2 == Hadamard gate
     // U3 == X gate
-    Hadamard gateU2({qIdx});
-    X gateU3({qIdx});
+    Hadamard gateU2(qIdx);
+    X gateU3(qIdx);
     const std::unordered_map<std::string, xacc::quantum::Gate *> gateMap{
         {"u2", &gateU2}, {"u3", &gateU3}};
 

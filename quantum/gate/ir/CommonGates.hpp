@@ -345,6 +345,13 @@ public:
 
   int getClassicalBitIndex() { return mpark::get<int>(parameters[0]); }
   const int nRequiredBits() const override { return 1; }
+  bool hasClassicalRegAssignment() const {
+    return buffer_names.size() > nRequiredBits();
+  }
+
+  void
+  setBufferNames(const std::vector<std::string> bufferNamesPerIdx) override;
+
   const std::string toString() override {
     auto bufferVarName = "q";
     auto str = gateName;
@@ -360,13 +367,18 @@ public:
     // Remove trailing comma
     str = str.substr(0, str.length() - 1);
 
+    if (hasClassicalRegAssignment()) {
+      str +=
+          (" -> " + getBufferName(1) + std::to_string(getClassicalBitIndex()));
+    }
+
     return str;
   }
   DEFINE_CLONE(Measure)
   DEFINE_VISITABLE()
 };
 
-class CZ : public virtual Gate {
+class CZ : public Gate {
 public:
   CZ() : Gate("CZ") {}
   CZ(std::vector<std::size_t> qbits) : Gate("CZ", qbits) {}
@@ -379,7 +391,7 @@ public:
   DEFINE_VISITABLE()
 };
 
-class CPhase : public virtual Gate {
+class CPhase : public Gate {
 public:
   CPhase()
       : Gate("CPhase",
@@ -394,6 +406,24 @@ public:
   const int nRequiredBits() const override { return 2; }
 
   DEFINE_CLONE(CPhase)
+  DEFINE_VISITABLE()
+};
+
+class XY : public Gate {
+public:
+  XY()
+      : Gate("XY",
+             std::vector<InstructionParameter>{InstructionParameter(0.0)}) {}
+  XY(std::size_t controlQubit, std::size_t targetQubit, double theta)
+      : Gate("XY", std::vector<std::size_t>{controlQubit, targetQubit},
+             std::vector<InstructionParameter>{InstructionParameter(theta)}) {}
+  XY(std::vector<std::size_t> qbits)
+      : Gate("XY", qbits,
+             std::vector<InstructionParameter>{InstructionParameter(0.0)}) {}
+
+  const int nRequiredBits() const override { return 2; }
+
+  DEFINE_CLONE(XY)
   DEFINE_VISITABLE()
 };
 
@@ -477,7 +507,7 @@ public:
   DEFINE_VISITABLE()
 };
 
-class CRZ : public virtual Gate {
+class CRZ : public Gate {
 public:
   CRZ()
       : Gate("CRZ",
@@ -493,6 +523,16 @@ public:
   const int nRequiredBits() const override { return 2; }
 
   DEFINE_CLONE(CRZ)
+  DEFINE_VISITABLE()
+};
+
+class Reset : public Gate {
+public:
+  Reset() : Gate("Reset") {}
+  Reset(std::vector<std::size_t> qbit) : Gate("Reset", qbit) {}
+  Reset(std::size_t qbit) : Reset(std::vector<std::size_t>{qbit}) {}
+  const int nRequiredBits() const override { return 1; }
+  DEFINE_CLONE(Reset)
   DEFINE_VISITABLE()
 };
 

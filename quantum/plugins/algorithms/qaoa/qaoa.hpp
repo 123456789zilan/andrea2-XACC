@@ -13,8 +13,9 @@
 #pragma once
 
 #include "Algorithm.hpp"
-#include "AlgorithmGradientStrategy.hpp"
+#include "IRProvider.hpp"
 #include "CompositeInstruction.hpp"
+#include "AlgorithmGradientStrategy.hpp"
 
 namespace xacc {
 namespace algorithm {
@@ -29,8 +30,6 @@ public:
     const std::string description() const override { return ""; }
     DEFINE_ALGORITHM_CLONE(QAOA)
 private:
-    Observable* constructMaxCutHam(xacc::Graph* in_graph) const;
-private:
     Observable* m_costHamObs;
     Observable* m_refHamObs;
     Accelerator* m_qpu;
@@ -40,8 +39,9 @@ private:
     std::shared_ptr<CompositeInstruction> m_single_exec_kernel;
     int m_nbSteps;
     std::string m_parameterizedMode;
-    bool m_maxcutProblem;
     bool m_maximize = false;
+    CompositeInstruction* m_initial_state = nullptr;
+    bool m_shuffleTerms = false;
 };
 } // namespace algorithm
 } // namespace xacc

@@ -23,6 +23,7 @@
 #include "py_algorithm.hpp"
 #include "py_optimizer.hpp"
 #include "py_observable.hpp"
+#include "py_graph.hpp"
 #include "xacc-quantum-py.hpp"
 
 namespace py = pybind11;
@@ -42,7 +43,7 @@ PYBIND11_MODULE(_pyxacc, m) {
   bind_optimizer(m);
   bind_observable(m);
   bind_quantum(m);
-
+  bind_graph(m);
   // Expose XACC API functions
   m.def("Initialize", (void (*)(std::vector<std::string>)) & xacc::Initialize,
         "Initialize the framework. Can provide a list of strings to model "
@@ -115,8 +116,9 @@ PYBIND11_MODULE(_pyxacc, m) {
       },
       "Set a number of options at once.");
   m.def("getAcceleratorDecorator",
-        [](const std::string name, std::shared_ptr<Accelerator> acc) -> std::shared_ptr<Accelerator> {
-          auto accd = xacc::getAcceleratorDecorator(name,acc);
+        [](const std::string name,
+           std::shared_ptr<Accelerator> acc) -> std::shared_ptr<Accelerator> {
+          auto accd = xacc::getAcceleratorDecorator(name, acc);
           return accd;
         });
   m.def("getAcceleratorDecorator",
@@ -127,7 +129,7 @@ PYBIND11_MODULE(_pyxacc, m) {
             PyHeterogeneousMap2HeterogeneousMap vis(m, item.first);
             mpark::visit(vis, item.second);
           }
-          auto accd = xacc::getAcceleratorDecorator(name,acc, m);
+          auto accd = xacc::getAcceleratorDecorator(name, acc, m);
           return accd;
         });
   m.def("asComposite", &xacc::ir::asComposite, "");
@@ -178,7 +180,25 @@ PYBIND11_MODULE(_pyxacc, m) {
         return xacc::getAlgorithm(algo, m);
       },
       "");
-  m.def("storeBuffer", [](std::shared_ptr<AcceleratorBuffer> buffer) { xacc::storeBuffer(buffer);},"");
+  m.def(
+      "getCompiler",
+      [](const std::string c, const PyHeterogeneousMap &options) {
+        HeterogeneousMap m;
+        for (auto &item : options) {
+          PyHeterogeneousMap2HeterogeneousMap vis(m, item.first);
+          mpark::visit(vis, item.second);
+        }
+        auto compiler = xacc::getCompiler(c);
+        compiler->setExtraOptions(m);
+        return compiler;
+      },
+      "");
+  m.def(
+      "storeBuffer",
+      [](std::shared_ptr<AcceleratorBuffer> buffer) {
+        xacc::storeBuffer(buffer);
+      },
+      "");
   m.def("getOptimizer",
         (std::shared_ptr<xacc::Optimizer>(*)(const std::string)) &
             xacc::getOptimizer,

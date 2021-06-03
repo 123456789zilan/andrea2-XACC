@@ -14,6 +14,7 @@
 #include "AcceleratorBuffer.hpp"
 #include "AcceleratorDecorator.hpp"
 #include "py_heterogeneous_map.hpp"
+#include "xacc_service.hpp"
 
 void bind_accelerator(py::module &m) {
   // Expose the Accelerator
@@ -62,6 +63,14 @@ void bind_accelerator(py::module &m) {
                   // this is probably a pyquil program
                   py::object functor = _circ.attr("out");
                   auto composite = mapper(functor, "quilc");
+                  programs.push_back(composite);
+                } else {
+                  // Assume this is a py::list of XACC Composite.
+                  // Note: This overload seems to be prioritized over the
+                  // std::vector<std::shared_ptr<CompositeInstruction>>
+                  // overload.
+                  std::shared_ptr<CompositeInstruction> composite =
+                      _circ.cast<std::shared_ptr<CompositeInstruction>>();
                   programs.push_back(composite);
                 }
               }
@@ -189,5 +198,38 @@ void bind_accelerator(py::module &m) {
            (std::vector<std::shared_ptr<AcceleratorBuffer>>(
                xacc::AcceleratorBuffer::*)(const std::string, ExtraInfo)) &
                xacc::AcceleratorBuffer::getChildren,
-           "");
+           "")
+      .def(
+          "getMarginalCounts",
+          // Default to MSB if not explicitly specified
+          [](AcceleratorBuffer &b, const std::vector<int> &idxs) {
+            return b.getMarginalCounts(idxs, AcceleratorBuffer::BitOrder::MSB);
+          },
+          "Return the mapping of marginal measure bit strings to their "
+          "counts.")
+      .def("getMarginalCounts", &xacc::AcceleratorBuffer::getMarginalCounts,
+           "Return the mapping of marginal measure bit strings to their "
+           "counts.");
+  py::enum_<xacc::AcceleratorBuffer::BitOrder>(m, "BitOrder")
+      .value("LSB", xacc::AcceleratorBuffer::BitOrder::LSB)
+      .value("MSB", xacc::AcceleratorBuffer::BitOrder::MSB)
+      .export_values();
+  // Expose xacc::NoiseModel
+  py::class_<xacc::NoiseModel, std::shared_ptr<xacc::NoiseModel>, PyNoiseModel>
+      noise_model(m, "NoiseModel", "");
+  noise_model.def(py::init<>())
+      .def("initialize", &xacc::NoiseModel::initialize, "")
+      .def("toJson", &xacc::NoiseModel::toJson, "");
+  m.def("getNoiseModel",
+        [](const std::string name, const PyHeterogeneousMap &options)
+            -> std::shared_ptr<xacc::NoiseModel> {
+          HeterogeneousMap m;
+          for (auto &item : options) {
+            PyHeterogeneousMap2HeterogeneousMap vis(m, item.first);
+            mpark::visit(vis, item.second);
+          }
+          auto noise_model = xacc::getService<xacc::NoiseModel>(name);
+          noise_model->initialize(m);
+          return noise_model;
+        });
 }

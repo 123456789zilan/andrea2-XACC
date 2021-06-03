@@ -99,7 +99,15 @@ std::vector<xacc::ibm_pulse::Instruction> alignMeasurePulseInstructions(
   if (!acquiredBits.empty()) {
     auto mergedAcquire = acquireInsts.front();
     mergedAcquire.set_qubits(acquiredBits);
-    mergedAcquire.set_memory_slot(acquiredBits);
+    // Use the same logic as QASM-based measurements:
+    // i.e. use memory slots from 0 onward.
+    // This is important for the AcceleratorBuffer to summarize the bit count
+    // later.
+    // e.g. when only measure qubit 1 (acquire pulse), we need to map the result
+    // to memory slot 0, not 1.
+    std::vector<int64_t> memory_slots(acquiredBits.size());
+    std::iota(std::begin(memory_slots), std::end(memory_slots), 0);
+    mergedAcquire.set_memory_slot(memory_slots);
     result.emplace_back(mergedAcquire);
   }
 
@@ -152,6 +160,28 @@ std::vector<xacc::ibm_pulse::Instruction> orderFrameChangeInsts(
   }
   assert(result.size() == in_originalPulseSchedule.size());
   return result;
+}
+
+bool hasMidCircuitMeasurement(
+    const std::shared_ptr<CompositeInstruction> &in_circuit) {
+  InstructionIterator it(in_circuit);
+  bool measureEncountered = false;
+  while (it.hasNext()) {
+    auto nextInst = it.next();
+    if (nextInst->isEnabled()) {
+      if (nextInst->name() == "Measure") {
+        // Flag that we have seen a Measure gate.
+        measureEncountered = true;
+      }
+
+      // We have seen a Measure gate but this one is not another Measure gate.
+      if (measureEncountered && nextInst->name() != "Measure") {
+        // This circuit has mid-circuit measurement
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 void IBMAccelerator::initialize(const HeterogeneousMap &params) {
@@ -235,7 +265,8 @@ void IBMAccelerator::initialize(const HeterogeneousMap &params) {
     }
 
     chosenBackend = availableBackends[backend];
-
+    xacc::info("Backend config:\n" + chosenBackend.dump());
+    multi_meas_enabled = chosenBackend.value("multi_meas_enabled", false);
     defaults_response =
         get(IBM_API_URL,
             IBM_CREDENTIALS_PATH + "/devices/" + backend + "/defaults", {},
@@ -475,6 +506,11 @@ void IBMAccelerator::execute(
   // either pulse or qasm
   std::string qobj_type = mode;
   for (auto &c : circuits) {
+    if (hasMidCircuitMeasurement(c) && !multi_meas_enabled) {
+      xacc::error("Circuit '" + c->name() +
+                  "' has mid-circuit measurement instructions but the backend "
+                  "doesn't support multiple measurement");
+    }
     // If there is an analog instruction (pulse),
     // always use 'pulse' mode.
     if (c->isAnalog()) {
@@ -792,6 +828,7 @@ HeterogeneousMap IBMAccelerator::getProperties() {
 
     m.insert("p01s", p01s);
     m.insert("p10s", p10s);
+    m.insert("multi_meas_enabled", multi_meas_enabled);
   }
 
   return m;
@@ -856,7 +893,7 @@ void IBMAccelerator::contributeInstructions(
 
     if (cmd_def_name == "u3") {
       cmd_def->addVariables({"P0", "P1", "P2"});
-    } else if (cmd_def_name == "u1") {
+    } else if ((cmd_def_name == "u1") || (cmd_def_name == "rz")) {
       cmd_def->addVariables({"P0"});
     } else if (cmd_def_name == "u2") {
       cmd_def->addVariables({"P0", "P1"});
