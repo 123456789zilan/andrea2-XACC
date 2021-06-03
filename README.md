@@ -19,7 +19,7 @@ Documentation
 
 Quick Start
 -----------
-Click [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/eclipse/xacc) 
+Click [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Dhruvkumarshah/xacc) 
 to open up a pre-configured Eclipse Theia IDE. You should immediately be able to 
 run any of the C++ or Python examples from the included terminal:
 ```bash
