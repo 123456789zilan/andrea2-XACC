@@ -24,4 +24,4 @@ quantum/plugins/ibm/accelerator/json/tests/CMakeFiles/QObjectTester.dir/QObjectT
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-type-util.h
  ../tpls/mpark-variant/variant.hpp
  ../tpls/nlohmann/json.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/QObjectTester.cpp
+ /workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/QObjectTester.cpp

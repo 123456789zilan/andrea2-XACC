@@ -506,27 +506,31 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp
 rotoselect.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/cppmicroservices/ServiceProperties.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp
 rotoselect.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/xacc_service.hpp
 random
 -
 algorithm
@@ -542,9 +546,9 @@ cassert
 cmath
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/rotoselect/Algorithm.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

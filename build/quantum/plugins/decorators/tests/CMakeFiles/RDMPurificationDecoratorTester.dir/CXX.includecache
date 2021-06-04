@@ -764,21 +764,21 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/RDMPurificationDecoratorTester.cpp
+/workspace/xacc/quantum/plugins/decorators/tests/RDMPurificationDecoratorTester.cpp
 AcceleratorDecorator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/AcceleratorDecorator.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/AcceleratorDecorator.hpp
 Instruction.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/Instruction.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/Instruction.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/xacc.hpp
 gtest/gtest.h
 -
 memory
 -
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/xacc_service.hpp
 FermionOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/FermionOperator.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/FermionOperator.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

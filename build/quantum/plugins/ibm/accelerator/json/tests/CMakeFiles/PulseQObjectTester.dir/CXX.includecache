@@ -544,13 +544,13 @@ vector
 utility
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObjectTester.cpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObjectTester.cpp
 PulseQObject.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObject.hpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObject.hpp
 gtest/gtest.h
 -
 xacc_config.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/xacc_config.hpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/xacc_config.hpp
 fstream
 -
 

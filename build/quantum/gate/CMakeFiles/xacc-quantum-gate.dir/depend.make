@@ -443,6 +443,8 @@ quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o: quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o: quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp
+
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o: ../quantum/observable/fermion/FermionOperator.hpp
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o: ../quantum/observable/pauli/PauliOperator.hpp
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h

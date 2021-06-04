@@ -272,7 +272,7 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp
+ /workspace/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -326,8 +326,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/aswap/aswap.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/aswap/aswap.hpp
+ /workspace/xacc/quantum/plugins/circuits/aswap/aswap.cpp
+ /workspace/xacc/quantum/plugins/circuits/aswap/aswap.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -616,8 +616,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/exp/exp.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/exp/exp.hpp
+ /workspace/xacc/quantum/plugins/circuits/exp/exp.cpp
+ /workspace/xacc/quantum/plugins/circuits/exp/exp.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -671,8 +671,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/hwe.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/hwe.hpp
+ /workspace/xacc/quantum/plugins/circuits/hwe/hwe.cpp
+ /workspace/xacc/quantum/plugins/circuits/hwe/hwe.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -968,8 +968,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/kak.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/kak.hpp
+ /workspace/xacc/quantum/plugins/circuits/kak/kak.cpp
+ /workspace/xacc/quantum/plugins/circuits/kak/kak.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1266,8 +1266,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qfast/qfast.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qfast/qfast.hpp
+ /workspace/xacc/quantum/plugins/circuits/qfast/qfast.cpp
+ /workspace/xacc/quantum/plugins/circuits/qfast/qfast.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1319,8 +1319,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/InverseQFT.hpp
+ /workspace/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp
+ /workspace/xacc/quantum/plugins/circuits/qft/InverseQFT.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1374,8 +1374,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/QFT.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/QFT.hpp
+ /workspace/xacc/quantum/plugins/circuits/qft/QFT.cpp
+ /workspace/xacc/quantum/plugins/circuits/qft/QFT.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1429,8 +1429,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/range/range.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/range/range.hpp
+ /workspace/xacc/quantum/plugins/circuits/range/range.cpp
+ /workspace/xacc/quantum/plugins/circuits/range/range.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1484,8 +1484,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc1/ucc1.hpp
+ /workspace/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp
+ /workspace/xacc/quantum/plugins/circuits/ucc1/ucc1.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1539,8 +1539,8 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc3/ucc3.hpp
+ /workspace/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp
+ /workspace/xacc/quantum/plugins/circuits/ucc3/ucc3.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1756,12 +1756,14 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/uccsd.hpp
+ /workspace/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp
+ /workspace/xacc/quantum/plugins/circuits/uccsd/uccsd.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp

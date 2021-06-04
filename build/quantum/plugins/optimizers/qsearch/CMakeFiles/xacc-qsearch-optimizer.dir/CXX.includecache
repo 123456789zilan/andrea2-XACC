@@ -1758,29 +1758,33 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/qsearch.cpp
+/workspace/xacc/build/quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/optimizers/qsearch/qsearch.cpp
 qsearch.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/qsearch.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/qsearch.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/xacc.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/xacc_service.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/xacc_service.hpp
 xacc_plugin.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/xacc_plugin.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/xacc_plugin.hpp
 numeric
 -
 InstructionIterator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/InstructionIterator.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/InstructionIterator.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/qsearch.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/qsearch.hpp
 AllGateVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/AllGateVisitor.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/AllGateVisitor.hpp
 IRTransformation.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimizers/qsearch/IRTransformation.hpp
+/workspace/xacc/quantum/plugins/optimizers/qsearch/IRTransformation.hpp
 Eigen/Dense
 -
 

@@ -78,3 +78,5 @@ quantum/plugins/qsim/CMakeFiles/xacc-qsim.dir/xacc-qsim/cppmicroservices_init.cp
 quantum/plugins/qsim/CMakeFiles/xacc-qsim.dir/xacc-qsim/cppmicroservices_init.cpp.o: quantum/plugins/qsim/xacc-qsim/cppmicroservices_init.cpp
 quantum/plugins/qsim/CMakeFiles/xacc-qsim.dir/xacc-qsim/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/qsim/CMakeFiles/xacc-qsim.dir/xacc-qsim/cppmicroservices_resources.cpp.o: quantum/plugins/qsim/xacc-qsim/cppmicroservices_resources.cpp
+

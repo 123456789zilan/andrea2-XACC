@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/provider
+# Install script for directory: /workspace/xacc/quantum/provider
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,32 +43,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/plugins" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/provider/libxacc-quantum-irprovider.dylib")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/gate"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/annealing"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path/../lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so"
+         RPATH "$ORIGIN/../lib")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/plugins" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/provider/libxacc-quantum-irprovider.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/gate:/workspace/xacc/build/quantum/annealing:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-quantum-irprovider.so")
     endif()
   endif()
 endif()

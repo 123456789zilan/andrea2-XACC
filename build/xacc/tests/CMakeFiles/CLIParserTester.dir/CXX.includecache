@@ -284,11 +284,11 @@ map
 
 ../xacc/utils/Singleton.hpp
 
-/Users/dhruvshah/git/xacc/xacc/tests/CLIParserTester.cpp
+/workspace/xacc/xacc/tests/CLIParserTester.cpp
 gtest/gtest.h
 -
 CLIParser.hpp
-/Users/dhruvshah/git/xacc/xacc/tests/CLIParser.hpp
+/workspace/xacc/xacc/tests/CLIParser.hpp
 RuntimeOptions.hpp
-/Users/dhruvshah/git/xacc/xacc/tests/RuntimeOptions.hpp
+/workspace/xacc/xacc/tests/RuntimeOptions.hpp
 

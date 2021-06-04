@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-optimizer-nlopt.dir/nlopt_optimizer.cpp.o"
   "CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimizer-nlopt/cppmicroservices_init.cpp.o"
-  "libxacc-optimizer-nlopt.dylib"
+  "CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimizer-nlopt/cppmicroservices_resources.cpp.o"
   "libxacc-optimizer-nlopt.pdb"
-  "xacc-optimizer-nlopt/cppmicroservices_resources.o"
+  "libxacc-optimizer-nlopt.so"
+  "xacc-optimizer-nlopt/cppmicroservices_resources.cpp"
   "xacc-optimizer-nlopt/res_0.zip"
 )
 

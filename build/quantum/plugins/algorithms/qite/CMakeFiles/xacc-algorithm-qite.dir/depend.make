@@ -672,3 +672,5 @@ quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorith
 quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorithm-qite/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_init.cpp
 quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorithm-qite/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorithm-qite/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_resources.cpp
+

@@ -336,3 +336,5 @@ quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-
 quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/rdm/xacc-algorithm-rdm/cppmicroservices_init.cpp
 quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/rdm/xacc-algorithm-rdm/cppmicroservices_resources.cpp
+

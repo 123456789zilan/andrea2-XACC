@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/depend.make
@@ -76,74 +76,88 @@ include python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/progress.ma
 # Include the compile flags for this target's objects.
 include python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/flags.make
 
-python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.o: python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-scikit-quant"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant && /usr/local/bin/g++-8 -Wno-attributes -Wno-deprecated-declarations -fno-strict-aliasing -O2 -g -pipe -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wformat -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=native -D_GNU_SOURCE -fPIC -fwrapv -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.o
+python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp: python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-scikit-quant"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp
 
 python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip: ../python/plugins/scikit-quant/manifest.json
 python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-scikit-quant"
-	cd /Users/dhruvshah/git/xacc/python/plugins/scikit-quant && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant
-	cd /Users/dhruvshah/git/xacc/python/plugins/scikit-quant && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip -n xacc_scikit_quant -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-scikit-quant"
+	cd /workspace/xacc/python/plugins/scikit-quant && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant
+	cd /workspace/xacc/python/plugins/scikit-quant && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip -n xacc_scikit_quant -r manifest.json
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/flags.make
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o: python/plugins/scikit-quant/scikit_quant_optimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o -c /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o -c /workspace/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp > CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.i
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp > CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.i
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp -o CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.s
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/scikit-quant/scikit_quant_optimizer.cpp -o CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.s
+
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/flags.make
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o: python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp
+
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp > CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.i
+
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.s
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/flags.make
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o: python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o -c /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp > CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp > CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.i
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/python/plugins/scikit-quant && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_init.cpp -o CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-scikit-quant
 xacc__scikit__quant_OBJECTS = \
 "CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o" \
+"CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-scikit-quant
-xacc__scikit__quant_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.o"
+xacc__scikit__quant_EXTERNAL_OBJECTS =
 
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.o
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/build.make
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: xacc/libxacc.dylib
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-python/plugins/scikit-quant/libxacc-scikit-quant.dylib: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libxacc-scikit-quant.dylib"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-scikit-quant.dir/link.txt --verbose=$(VERBOSE)
+python/plugins/scikit-quant/libxacc-scikit-quant.so: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/scikit_quant_optimizer.cpp.o
+python/plugins/scikit-quant/libxacc-scikit-quant.so: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_resources.cpp.o
+python/plugins/scikit-quant/libxacc-scikit-quant.so: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/xacc-scikit-quant/cppmicroservices_init.cpp.o
+python/plugins/scikit-quant/libxacc-scikit-quant.so: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/build.make
+python/plugins/scikit-quant/libxacc-scikit-quant.so: xacc/libxacc.so
+python/plugins/scikit-quant/libxacc-scikit-quant.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+python/plugins/scikit-quant/libxacc-scikit-quant.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+python/plugins/scikit-quant/libxacc-scikit-quant.so: python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-scikit-quant.so"
+	cd /workspace/xacc/build/python/plugins/scikit-quant && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-scikit-quant.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-scikit-quant"
+	cd /workspace/xacc/python/plugins/scikit-quant && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/python/plugins/scikit-quant/libxacc-scikit-quant.so -z /workspace/xacc/build/python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip
 
 # Rule to build all files generated by this target.
-python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/build: python/plugins/scikit-quant/libxacc-scikit-quant.dylib
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/build: python/plugins/scikit-quant/libxacc-scikit-quant.so
 
 .PHONY : python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/build
 
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant && $(CMAKE_COMMAND) -P CMakeFiles/xacc-scikit-quant.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/python/plugins/scikit-quant && $(CMAKE_COMMAND) -P CMakeFiles/xacc-scikit-quant.dir/cmake_clean.cmake
 .PHONY : python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/clean
 
-python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/depend: python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.o
+python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/depend: python/plugins/scikit-quant/xacc-scikit-quant/cppmicroservices_resources.cpp
 python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/depend: python/plugins/scikit-quant/xacc-scikit-quant/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/python/plugins/scikit-quant /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant /Users/dhruvshah/git/xacc/build/python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/python/plugins/scikit-quant /workspace/xacc/build /workspace/xacc/build/python/plugins/scikit-quant /workspace/xacc/build/python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/plugins/scikit-quant/CMakeFiles/xacc-scikit-quant.dir/depend
 

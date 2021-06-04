@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/dhruvshah/git/xacc/quantum/plugins/circuits
-# Build directory: /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits
+# Source directory: /workspace/xacc/quantum/plugins/circuits
+# Build directory: /workspace/xacc/build/quantum/plugins/circuits
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

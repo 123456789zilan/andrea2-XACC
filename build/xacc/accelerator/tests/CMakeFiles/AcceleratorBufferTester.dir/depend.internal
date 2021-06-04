@@ -26,4 +26,4 @@ xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferT
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp
+ /workspace/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp

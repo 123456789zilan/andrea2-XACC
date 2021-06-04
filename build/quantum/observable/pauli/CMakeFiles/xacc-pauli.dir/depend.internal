@@ -28,8 +28,8 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+ /workspace/xacc/quantum/observable/pauli/PauliActivator.cpp
+ /workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -207,9 +207,9 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+ /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
+ /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
+ /workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o
  ../quantum/observable/pauli/generated/PauliOperatorBaseListener.h
  ../quantum/observable/pauli/generated/PauliOperatorLexer.h
@@ -1153,9 +1153,9 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+ /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
+ /workspace/xacc/quantum/observable/pauli/PauliOperator.cpp
+ /workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1316,10 +1316,10 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseLi
  ../tpls/antlr/runtime/src/tree/xpath/XPathTokenElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardAnywhereElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardElement.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o
  ../tpls/antlr/runtime/src/ANTLRErrorListener.h
  ../tpls/antlr/runtime/src/ANTLRErrorStrategy.h
@@ -1477,8 +1477,8 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.
  ../tpls/antlr/runtime/src/tree/xpath/XPathTokenElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardAnywhereElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardElement.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o
  ../tpls/antlr/runtime/src/ANTLRErrorListener.h
  ../tpls/antlr/runtime/src/ANTLRErrorStrategy.h
@@ -1636,9 +1636,9 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListen
  ../tpls/antlr/runtime/src/tree/xpath/XPathTokenElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardAnywhereElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardElement.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o
  ../tpls/antlr/runtime/src/ANTLRErrorListener.h
  ../tpls/antlr/runtime/src/ANTLRErrorStrategy.h
@@ -1796,10 +1796,12 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser
  ../tpls/antlr/runtime/src/tree/xpath/XPathTokenElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardAnywhereElement.h
  ../tpls/antlr/runtime/src/tree/xpath/XPathWildcardElement.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
+ /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp

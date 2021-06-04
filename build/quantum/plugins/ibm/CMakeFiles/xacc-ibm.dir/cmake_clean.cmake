@@ -10,9 +10,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-ibm.dir/compiler/generated/OQASM2Listener.cpp.o"
   "CMakeFiles/xacc-ibm.dir/compiler/generated/OQASM2Parser.cpp.o"
   "CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_init.cpp.o"
-  "libxacc-ibm.dylib"
+  "CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_resources.cpp.o"
   "libxacc-ibm.pdb"
-  "xacc-ibm/cppmicroservices_resources.o"
+  "libxacc-ibm.so"
+  "xacc-ibm/cppmicroservices_resources.cpp"
   "xacc-ibm/res_0.zip"
 )
 

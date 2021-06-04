@@ -23,5 +23,5 @@ quantum/plugins/ibm/accelerator/json/tests/CMakeFiles/PropertiesTester.dir/Prope
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-tuple.h
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-type-util.h
  ../tpls/nlohmann/json.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/PropertiesTester.cpp
+ /workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/PropertiesTester.cpp
  xacc_config.hpp

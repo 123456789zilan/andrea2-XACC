@@ -1803,3 +1803,5 @@ quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_i
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o: quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o: quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
+

@@ -546,9 +546,9 @@ vector
 utility
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ionq/tests/IonQProgramTester.cpp
+/workspace/xacc/quantum/plugins/ionq/tests/IonQProgramTester.cpp
 ionq_program.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ionq/tests/ionq_program.hpp
+/workspace/xacc/quantum/plugins/ionq/tests/ionq_program.hpp
 gtest/gtest.h
 -
 

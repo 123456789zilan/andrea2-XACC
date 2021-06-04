@@ -1978,17 +1978,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/AutodiffTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/AutodiffTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/xacc_observable.hpp
 Autodiff.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/Autodiff.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/tests/Autodiff.hpp
 random
 -
 

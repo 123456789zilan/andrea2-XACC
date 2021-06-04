@@ -30,4 +30,4 @@ quantum/annealing/ir/tests/CMakeFiles/DWQMITester.dir/DWQMITester.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/DWQMITester.cpp
+ /workspace/xacc/quantum/annealing/ir/tests/DWQMITester.cpp

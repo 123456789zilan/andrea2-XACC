@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dhruvshah/git/xacc/build/quantum/plugins/ibm/aer/py-aer/aer_python_adapter.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/ibm/aer/py-aer/CMakeFiles/xacc-py-aer-adapter.dir/aer_python_adapter.cpp.o"
+  "/workspace/xacc/build/quantum/plugins/ibm/aer/py-aer/aer_python_adapter.cpp" "/workspace/xacc/build/quantum/plugins/ibm/aer/py-aer/CMakeFiles/xacc-py-aer-adapter.dir/aer_python_adapter.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../quantum/plugins/ibm/aer/py-aer/."
   "../tpls/pybind11/include"
   "."
-  "/Library/Frameworks/Python.framework/Versions/3.9/include/python3.9"
+  "/usr/include/python3.8"
   )
 
 # Targets to which this target links.

@@ -278,12 +278,14 @@ quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
+ /workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.cpp
+ /workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_resources.cpp

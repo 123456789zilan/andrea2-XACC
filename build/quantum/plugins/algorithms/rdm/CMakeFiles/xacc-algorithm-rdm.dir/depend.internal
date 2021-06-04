@@ -31,8 +31,8 @@ quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/RDMActivator.cp
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rdm/RDMActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rdm/rdm.hpp
+ /workspace/xacc/quantum/plugins/algorithms/rdm/RDMActivator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/rdm/rdm.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -330,9 +330,11 @@ quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/rdm.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rdm/rdm.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rdm/rdm.hpp
+ /workspace/xacc/quantum/plugins/algorithms/rdm/rdm.cpp
+ /workspace/xacc/quantum/plugins/algorithms/rdm/rdm.hpp
 quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rdm/xacc-algorithm-rdm/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/rdm/xacc-algorithm-rdm/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/rdm/CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/rdm/xacc-algorithm-rdm/cppmicroservices_resources.cpp

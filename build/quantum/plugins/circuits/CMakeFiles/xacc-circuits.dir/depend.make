@@ -1765,3 +1765,5 @@ quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroserv
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o: quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o: quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp
+

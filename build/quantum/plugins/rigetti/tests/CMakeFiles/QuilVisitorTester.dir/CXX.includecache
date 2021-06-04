@@ -584,17 +584,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/QuilVisitorTester.cpp
+/workspace/xacc/quantum/plugins/rigetti/tests/QuilVisitorTester.cpp
 memory
 -
 gtest/gtest.h
 -
 QuilVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/QuilVisitor.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/QuilVisitor.hpp
 InstructionIterator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/InstructionIterator.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/InstructionIterator.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/xacc.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/Circuit.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/Circuit.hpp
 

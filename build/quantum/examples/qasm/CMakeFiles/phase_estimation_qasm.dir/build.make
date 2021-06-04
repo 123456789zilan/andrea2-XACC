@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/flags.make
 
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/flags.make
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o: ../quantum/examples/qasm/phase_estimation_10q.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qasm && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o -c /Users/dhruvshah/git/xacc/quantum/examples/qasm/phase_estimation_10q.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o"
+	cd /workspace/xacc/build/quantum/examples/qasm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o -c /workspace/xacc/quantum/examples/qasm/phase_estimation_10q.cpp
 
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qasm && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/examples/qasm/phase_estimation_10q.cpp > CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i
+	cd /workspace/xacc/build/quantum/examples/qasm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/examples/qasm/phase_estimation_10q.cpp > CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i
 
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qasm && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/examples/qasm/phase_estimation_10q.cpp -o CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s
+	cd /workspace/xacc/build/quantum/examples/qasm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/examples/qasm/phase_estimation_10q.cpp -o CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s
 
 # Object files for target phase_estimation_qasm
 phase_estimation_qasm_OBJECTS = \
@@ -98,15 +98,14 @@ phase_estimation_qasm_EXTERNAL_OBJECTS =
 
 quantum/examples/qasm/phase_estimation_qasm: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o
 quantum/examples/qasm/phase_estimation_qasm: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make
-quantum/examples/qasm/phase_estimation_qasm: quantum/gate/libxacc-quantum-gate.dylib
-quantum/examples/qasm/phase_estimation_qasm: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/examples/qasm/phase_estimation_qasm: ../dist/libantlr4-runtime.dylib
-quantum/examples/qasm/phase_estimation_qasm: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/examples/qasm/phase_estimation_qasm: xacc/libxacc.dylib
-quantum/examples/qasm/phase_estimation_qasm: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/examples/qasm/phase_estimation_qasm: quantum/gate/libxacc-quantum-gate.so
+quantum/examples/qasm/phase_estimation_qasm: quantum/observable/pauli/libxacc-pauli.so
+quantum/examples/qasm/phase_estimation_qasm: quantum/observable/fermion/libxacc-fermion.so
+quantum/examples/qasm/phase_estimation_qasm: xacc/libxacc.so
+quantum/examples/qasm/phase_estimation_qasm: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/examples/qasm/phase_estimation_qasm: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable phase_estimation_qasm"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qasm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phase_estimation_qasm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable phase_estimation_qasm"
+	cd /workspace/xacc/build/quantum/examples/qasm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phase_estimation_qasm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build: quantum/examples/qasm/phase_estimation_qasm
@@ -114,10 +113,10 @@ quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build: quantum/exampl
 .PHONY : quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build
 
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qasm && $(CMAKE_COMMAND) -P CMakeFiles/phase_estimation_qasm.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/examples/qasm && $(CMAKE_COMMAND) -P CMakeFiles/phase_estimation_qasm.dir/cmake_clean.cmake
 .PHONY : quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/clean
 
 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/examples/qasm /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/examples/qasm /Users/dhruvshah/git/xacc/build/quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/examples/qasm /workspace/xacc/build /workspace/xacc/build/quantum/examples/qasm /workspace/xacc/build/quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/depend
 

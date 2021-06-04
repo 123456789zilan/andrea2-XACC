@@ -32,8 +32,8 @@ quantum/plugins/algorithms/vqe/CMakeFiles/xacc-algorithm-vqe.dir/VQEActivator.cp
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/vqe/VQEActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/vqe/vqe.hpp
+ /workspace/xacc/quantum/plugins/algorithms/vqe/VQEActivator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/vqe/vqe.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -84,12 +84,14 @@ quantum/plugins/algorithms/vqe/CMakeFiles/xacc-algorithm-vqe.dir/vqe.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/vqe/vqe.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/vqe/vqe.hpp
+ /workspace/xacc/quantum/plugins/algorithms/vqe/vqe.cpp
+ /workspace/xacc/quantum/plugins/algorithms/vqe/vqe.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/algorithms/vqe/CMakeFiles/xacc-algorithm-vqe.dir/xacc-algorithm-vqe/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/vqe/xacc-algorithm-vqe/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/vqe/xacc-algorithm-vqe/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/vqe/CMakeFiles/xacc-algorithm-vqe.dir/xacc-algorithm-vqe/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/vqe/xacc-algorithm-vqe/cppmicroservices_resources.cpp

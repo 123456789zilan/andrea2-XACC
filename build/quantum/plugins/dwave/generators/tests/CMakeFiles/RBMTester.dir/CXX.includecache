@@ -770,15 +770,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/tests/RBMTester.cpp
+/workspace/xacc/quantum/plugins/dwave/generators/tests/RBMTester.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/dwave/generators/tests/xacc.hpp
 gtest/gtest.h
 -
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/dwave/generators/tests/xacc_service.hpp
 AnnealingProgram.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/tests/AnnealingProgram.hpp
+/workspace/xacc/quantum/plugins/dwave/generators/tests/AnnealingProgram.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

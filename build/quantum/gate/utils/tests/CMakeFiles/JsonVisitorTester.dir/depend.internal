@@ -68,4 +68,4 @@ quantum/gate/utils/tests/CMakeFiles/JsonVisitorTester.dir/JsonVisitorTester.cpp.
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/gate/utils/tests/JsonVisitorTester.cpp
+ /workspace/xacc/quantum/gate/utils/tests/JsonVisitorTester.cpp

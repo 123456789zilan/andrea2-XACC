@@ -528,3 +528,5 @@ quantum/plugins/staq/CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmic
 quantum/plugins/staq/CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmicroservices_init.cpp.o: quantum/plugins/staq/xacc-staq-compiler/cppmicroservices_init.cpp
 quantum/plugins/staq/CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/staq/CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmicroservices_resources.cpp.o: quantum/plugins/staq/xacc-staq-compiler/cppmicroservices_resources.cpp
+

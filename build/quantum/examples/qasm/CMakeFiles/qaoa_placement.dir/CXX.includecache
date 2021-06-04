@@ -528,17 +528,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/qaoa_placement.cpp
+/workspace/xacc/quantum/examples/qasm/qaoa_placement.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc.hpp
+/workspace/xacc/quantum/examples/qasm/xacc.hpp
 Optimizer.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/Optimizer.hpp
+/workspace/xacc/quantum/examples/qasm/Optimizer.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_service.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_observable.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_observable.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/PauliOperator.hpp
+/workspace/xacc/quantum/examples/qasm/PauliOperator.hpp
 iomanip
 -
 

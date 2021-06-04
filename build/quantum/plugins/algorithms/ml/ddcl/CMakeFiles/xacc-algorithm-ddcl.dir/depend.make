@@ -331,3 +331,5 @@ quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algor
 quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_init.cpp
 quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_resources.cpp
+

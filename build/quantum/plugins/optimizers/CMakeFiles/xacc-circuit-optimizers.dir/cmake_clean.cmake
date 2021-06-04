@@ -7,9 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o"
   "CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o"
   "CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o"
-  "libxacc-circuit-optimizers.dylib"
+  "CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o"
   "libxacc-circuit-optimizers.pdb"
-  "xacc-circuit-optimizers/cppmicroservices_resources.o"
+  "libxacc-circuit-optimizers.so"
+  "xacc-circuit-optimizers/cppmicroservices_resources.cpp"
   "xacc-circuit-optimizers/res_0.zip"
 )
 

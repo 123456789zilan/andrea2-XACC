@@ -56,7 +56,7 @@ add_library(CppMicroServices SHARED IMPORTED)
 set_target_properties(CppMicroServices PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_variadic_templates;cxx_nullptr"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/cppmicroservices4"
-  INTERFACE_LINK_LIBRARIES "dl"
+  INTERFACE_LINK_LIBRARIES "dl;-pthread"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

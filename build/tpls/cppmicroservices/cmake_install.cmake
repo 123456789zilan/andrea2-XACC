@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/tpls/cppmicroservices
+# Install script for directory: /workspace/xacc/tpls/cppmicroservices
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -41,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake"
-         "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake")
+         "/workspace/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake/CppMicroServicesTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -50,41 +55,41 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES "/workspace/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES "/workspace/xacc/build/tpls/cppmicroservices/CMakeFiles/Export/share/cppmicroservices4/cmake/CppMicroServicesTargets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/BundleInit.cpp"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionGenerateBundleInit.cmake"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionAddResources.cmake"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionEmbedResources.cmake"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionGetResourceSource.cmake"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionCheckResourceLinking.cmake"
-    "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionCheckCompilerFlags.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/BundleInit.cpp"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionGenerateBundleInit.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionAddResources.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionEmbedResources.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionGetResourceSource.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionCheckResourceLinking.cmake"
+    "/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionCheckCompilerFlags.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cppmicroservices4/cppmicroservices" TYPE FILE FILES "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cppmicroservices4/cppmicroservices" TYPE FILE FILES "/workspace/xacc/build/tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xsdkx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cppmicroservices4/cmake" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/CMakeFiles/CppMicroServicesConfig.cmake"
-    "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/CppMicroServicesConfigVersion.cmake"
+    "/workspace/xacc/build/tpls/cppmicroservices/CMakeFiles/CppMicroServicesConfig.cmake"
+    "/workspace/xacc/build/tpls/cppmicroservices/CppMicroServicesConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/tools/rc/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/util/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/cmake_install.cmake")
+  include("/workspace/xacc/build/tpls/cppmicroservices/tools/rc/cmake_install.cmake")
+  include("/workspace/xacc/build/tpls/cppmicroservices/util/cmake_install.cmake")
+  include("/workspace/xacc/build/tpls/cppmicroservices/framework/cmake_install.cmake")
 
 endif()
 

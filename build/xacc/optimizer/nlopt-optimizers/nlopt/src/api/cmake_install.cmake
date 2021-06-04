@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api
+# Install script for directory: /workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,9 +44,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man3" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt.3"
-    "/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt_minimize.3"
-    "/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt_minimize_constrained.3"
+    "/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt.3"
+    "/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt_minimize.3"
+    "/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/api/nlopt_minimize_constrained.3"
     )
 endif()
 

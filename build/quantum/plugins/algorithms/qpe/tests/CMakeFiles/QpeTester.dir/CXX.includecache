@@ -748,15 +748,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/QpeTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/QpeTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/xacc_service.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/Algorithm.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

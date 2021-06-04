@@ -572,57 +572,61 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.cpp
 ControlledGateApplicator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/xacc_service.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/xacc.hpp
 AllGateVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/AllGateVisitor.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/AllGateVisitor.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/QpeActivator.cpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/QpeActivator.cpp
 qpe.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
 ControlledGateApplicator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/algorithms/qpe/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.cpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/qpe.cpp
 qpe.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/xacc_observable.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/Circuit.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/Circuit.hpp
 cassert
 -
 iomanip
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/Algorithm.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

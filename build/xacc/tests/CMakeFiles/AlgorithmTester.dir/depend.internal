@@ -44,4 +44,4 @@ xacc/tests/CMakeFiles/AlgorithmTester.dir/AlgorithmTester.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/xacc/tests/AlgorithmTester.cpp
+ /workspace/xacc/xacc/tests/AlgorithmTester.cpp

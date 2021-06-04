@@ -12,9 +12,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o"
   "CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o"
   "CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o"
-  "libxacc-circuits.dylib"
+  "CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o"
   "libxacc-circuits.pdb"
-  "xacc-circuits/cppmicroservices_resources.o"
+  "libxacc-circuits.so"
+  "xacc-circuits/cppmicroservices_resources.cpp"
   "xacc-circuits/res_0.zip"
 )
 

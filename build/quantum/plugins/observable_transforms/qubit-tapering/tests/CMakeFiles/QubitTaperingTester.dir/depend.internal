@@ -301,7 +301,7 @@ quantum/plugins/observable_transforms/qubit-tapering/tests/CMakeFiles/QubitTaper
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/observable_transforms/qubit-tapering/tests/QubitTaperingTester.cpp
+ /workspace/xacc/quantum/plugins/observable_transforms/qubit-tapering/tests/QubitTaperingTester.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h

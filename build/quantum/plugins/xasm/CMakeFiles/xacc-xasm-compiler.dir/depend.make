@@ -645,6 +645,8 @@ quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmic
 quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmicroservices_init.cpp.o: quantum/plugins/xasm/xacc-xasm-compiler/cppmicroservices_init.cpp
 quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmicroservices_resources.cpp.o: quantum/plugins/xasm/xacc-xasm-compiler/cppmicroservices_resources.cpp
+
 quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xasm_activator.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
 quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xasm_activator.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleActivator.h
 quantum/plugins/xasm/CMakeFiles/xacc-xasm-compiler.dir/xasm_activator.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleContext.h

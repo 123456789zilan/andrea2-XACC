@@ -518,9 +518,9 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/xacc/tests/XACCAPITester.cpp
+/workspace/xacc/xacc/tests/XACCAPITester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/xacc/tests/xacc.hpp
+/workspace/xacc/xacc/tests/xacc.hpp
 

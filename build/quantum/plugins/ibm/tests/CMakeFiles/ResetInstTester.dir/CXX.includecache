@@ -518,11 +518,11 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/ResetInstTester.cpp
+/workspace/xacc/quantum/plugins/ibm/tests/ResetInstTester.cpp
 memory
 -
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/ibm/tests/xacc.hpp
 

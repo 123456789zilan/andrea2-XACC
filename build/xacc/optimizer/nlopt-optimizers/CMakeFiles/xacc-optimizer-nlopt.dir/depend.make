@@ -49,3 +49,5 @@ xacc/optimizer/nlopt-optimizers/CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimiz
 xacc/optimizer/nlopt-optimizers/CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimizer-nlopt/cppmicroservices_init.cpp.o: xacc/optimizer/nlopt-optimizers/xacc-optimizer-nlopt/cppmicroservices_init.cpp
 xacc/optimizer/nlopt-optimizers/CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimizer-nlopt/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+xacc/optimizer/nlopt-optimizers/CMakeFiles/xacc-optimizer-nlopt.dir/xacc-optimizer-nlopt/cppmicroservices_resources.cpp.o: xacc/optimizer/nlopt-optimizers/xacc-optimizer-nlopt/cppmicroservices_resources.cpp
+

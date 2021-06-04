@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-autodiff.dir/Autodiff.cpp.o"
   "CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_init.cpp.o"
-  "libxacc-autodiff.dylib"
+  "CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_resources.cpp.o"
   "libxacc-autodiff.pdb"
-  "xacc-autodiff/cppmicroservices_resources.o"
+  "libxacc-autodiff.so"
+  "xacc-autodiff/cppmicroservices_resources.cpp"
   "xacc-autodiff/res_0.zip"
 )
 

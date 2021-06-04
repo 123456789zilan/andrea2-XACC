@@ -24,4 +24,4 @@ quantum/annealing/compiler/tests/CMakeFiles/EmbeddingTester.dir/EmbeddingTester.
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-type-util.h
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/EmbeddingTester.cpp
+ /workspace/xacc/quantum/annealing/compiler/tests/EmbeddingTester.cpp

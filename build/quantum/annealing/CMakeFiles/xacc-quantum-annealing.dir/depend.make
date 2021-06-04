@@ -159,3 +159,5 @@ quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/c
 quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/cppmicroservices_init.cpp.o: quantum/annealing/xacc-quantum-annealing/cppmicroservices_init.cpp
 quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/cppmicroservices_resources.cpp.o: quantum/annealing/xacc-quantum-annealing/cppmicroservices_resources.cpp
+

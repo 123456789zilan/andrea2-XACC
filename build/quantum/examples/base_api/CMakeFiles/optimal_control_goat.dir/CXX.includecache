@@ -264,7 +264,7 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/optimal_control_goat.cpp
+/workspace/xacc/quantum/examples/base_api/optimal_control_goat.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/xacc.hpp
+/workspace/xacc/quantum/examples/base_api/xacc.hpp
 

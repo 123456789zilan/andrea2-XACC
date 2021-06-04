@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/depend.make
@@ -78,16 +78,16 @@ include xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/flags.make
 
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o: xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/flags.make
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o: ../xacc/accelerator/tests/AcceleratorBufferTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o -c /Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o"
+	cd /workspace/xacc/build/xacc/accelerator/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o -c /workspace/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp
 
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp > CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.i
+	cd /workspace/xacc/build/xacc/accelerator/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp > CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.i
 
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp -o CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.s
+	cd /workspace/xacc/build/xacc/accelerator/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp -o CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.s
 
 # Object files for target AcceleratorBufferTester
 AcceleratorBufferTester_OBJECTS = \
@@ -98,12 +98,12 @@ AcceleratorBufferTester_EXTERNAL_OBJECTS =
 
 xacc/accelerator/tests/AcceleratorBufferTester: xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/AcceleratorBufferTester.cpp.o
 xacc/accelerator/tests/AcceleratorBufferTester: xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/build.make
-xacc/accelerator/tests/AcceleratorBufferTester: tpls/cpr/opt/googletest/libgtest.dylib
-xacc/accelerator/tests/AcceleratorBufferTester: xacc/libxacc.dylib
-xacc/accelerator/tests/AcceleratorBufferTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+xacc/accelerator/tests/AcceleratorBufferTester: tpls/cpr/opt/googletest/libgtest.so
+xacc/accelerator/tests/AcceleratorBufferTester: xacc/libxacc.so
+xacc/accelerator/tests/AcceleratorBufferTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 xacc/accelerator/tests/AcceleratorBufferTester: xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AcceleratorBufferTester"
-	cd /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AcceleratorBufferTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AcceleratorBufferTester"
+	cd /workspace/xacc/build/xacc/accelerator/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AcceleratorBufferTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/build: xacc/accelerator/tests/AcceleratorBufferTester
@@ -111,10 +111,10 @@ xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/build: xacc/accele
 .PHONY : xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/build
 
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests && $(CMAKE_COMMAND) -P CMakeFiles/AcceleratorBufferTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc/accelerator/tests && $(CMAKE_COMMAND) -P CMakeFiles/AcceleratorBufferTester.dir/cmake_clean.cmake
 .PHONY : xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/clean
 
 xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc/accelerator/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests /Users/dhruvshah/git/xacc/build/xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc/accelerator/tests /workspace/xacc/build /workspace/xacc/build/xacc/accelerator/tests /workspace/xacc/build/xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/accelerator/tests/CMakeFiles/AcceleratorBufferTester.dir/depend
 

@@ -572,13 +572,13 @@ vector
 utility
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/BackendsTester.cpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/BackendsTester.cpp
 Backends.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/Backends.hpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/Backends.hpp
 gtest/gtest.h
 -
 xacc_config.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/xacc_config.hpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/xacc_config.hpp
 fstream
 -
 

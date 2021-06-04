@@ -50,8 +50,8 @@ quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embe
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.hpp
+ /workspace/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.cpp
+ /workspace/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -92,12 +92,14 @@ quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embe
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysicalActivator.cpp
+ /workspace/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysical.hpp
+ /workspace/xacc/quantum/plugins/placement/minor_graph_embedding/MapToPhysicalActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/placement/minor_graph_embedding/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/placement/minor_graph_embedding/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/placement/minor_graph_embedding/xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp

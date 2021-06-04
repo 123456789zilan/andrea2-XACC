@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,37 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,44 +121,10 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -154,10 +132,21 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -165,10 +154,21 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -178,14 +178,14 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/quantum/plugins/circuits//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/rule
 .PHONY : quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ xacc-circuits: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/rule
 
 # fast build rule for target.
 xacc-circuits/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build
 .PHONY : xacc-circuits/fast
 
 GeneratorsActivator.o: GeneratorsActivator.cpp.o
@@ -229,7 +229,7 @@ GeneratorsActivator.o: GeneratorsActivator.cpp.o
 
 # target to build an object file
 GeneratorsActivator.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o
 .PHONY : GeneratorsActivator.cpp.o
 
 GeneratorsActivator.i: GeneratorsActivator.cpp.i
@@ -238,7 +238,7 @@ GeneratorsActivator.i: GeneratorsActivator.cpp.i
 
 # target to preprocess a source file
 GeneratorsActivator.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i
 .PHONY : GeneratorsActivator.cpp.i
 
 GeneratorsActivator.s: GeneratorsActivator.cpp.s
@@ -247,7 +247,7 @@ GeneratorsActivator.s: GeneratorsActivator.cpp.s
 
 # target to generate assembly for a file
 GeneratorsActivator.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s
 .PHONY : GeneratorsActivator.cpp.s
 
 aswap/aswap.o: aswap/aswap.cpp.o
@@ -256,7 +256,7 @@ aswap/aswap.o: aswap/aswap.cpp.o
 
 # target to build an object file
 aswap/aswap.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o
 .PHONY : aswap/aswap.cpp.o
 
 aswap/aswap.i: aswap/aswap.cpp.i
@@ -265,7 +265,7 @@ aswap/aswap.i: aswap/aswap.cpp.i
 
 # target to preprocess a source file
 aswap/aswap.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i
 .PHONY : aswap/aswap.cpp.i
 
 aswap/aswap.s: aswap/aswap.cpp.s
@@ -274,7 +274,7 @@ aswap/aswap.s: aswap/aswap.cpp.s
 
 # target to generate assembly for a file
 aswap/aswap.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s
 .PHONY : aswap/aswap.cpp.s
 
 exp/exp.o: exp/exp.cpp.o
@@ -283,7 +283,7 @@ exp/exp.o: exp/exp.cpp.o
 
 # target to build an object file
 exp/exp.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o
 .PHONY : exp/exp.cpp.o
 
 exp/exp.i: exp/exp.cpp.i
@@ -292,7 +292,7 @@ exp/exp.i: exp/exp.cpp.i
 
 # target to preprocess a source file
 exp/exp.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i
 .PHONY : exp/exp.cpp.i
 
 exp/exp.s: exp/exp.cpp.s
@@ -301,7 +301,7 @@ exp/exp.s: exp/exp.cpp.s
 
 # target to generate assembly for a file
 exp/exp.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s
 .PHONY : exp/exp.cpp.s
 
 hwe/hwe.o: hwe/hwe.cpp.o
@@ -310,7 +310,7 @@ hwe/hwe.o: hwe/hwe.cpp.o
 
 # target to build an object file
 hwe/hwe.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o
 .PHONY : hwe/hwe.cpp.o
 
 hwe/hwe.i: hwe/hwe.cpp.i
@@ -319,7 +319,7 @@ hwe/hwe.i: hwe/hwe.cpp.i
 
 # target to preprocess a source file
 hwe/hwe.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i
 .PHONY : hwe/hwe.cpp.i
 
 hwe/hwe.s: hwe/hwe.cpp.s
@@ -328,7 +328,7 @@ hwe/hwe.s: hwe/hwe.cpp.s
 
 # target to generate assembly for a file
 hwe/hwe.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s
 .PHONY : hwe/hwe.cpp.s
 
 kak/kak.o: kak/kak.cpp.o
@@ -337,7 +337,7 @@ kak/kak.o: kak/kak.cpp.o
 
 # target to build an object file
 kak/kak.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o
 .PHONY : kak/kak.cpp.o
 
 kak/kak.i: kak/kak.cpp.i
@@ -346,7 +346,7 @@ kak/kak.i: kak/kak.cpp.i
 
 # target to preprocess a source file
 kak/kak.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i
 .PHONY : kak/kak.cpp.i
 
 kak/kak.s: kak/kak.cpp.s
@@ -355,7 +355,7 @@ kak/kak.s: kak/kak.cpp.s
 
 # target to generate assembly for a file
 kak/kak.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s
 .PHONY : kak/kak.cpp.s
 
 qfast/qfast.o: qfast/qfast.cpp.o
@@ -364,7 +364,7 @@ qfast/qfast.o: qfast/qfast.cpp.o
 
 # target to build an object file
 qfast/qfast.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o
 .PHONY : qfast/qfast.cpp.o
 
 qfast/qfast.i: qfast/qfast.cpp.i
@@ -373,7 +373,7 @@ qfast/qfast.i: qfast/qfast.cpp.i
 
 # target to preprocess a source file
 qfast/qfast.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i
 .PHONY : qfast/qfast.cpp.i
 
 qfast/qfast.s: qfast/qfast.cpp.s
@@ -382,7 +382,7 @@ qfast/qfast.s: qfast/qfast.cpp.s
 
 # target to generate assembly for a file
 qfast/qfast.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s
 .PHONY : qfast/qfast.cpp.s
 
 qft/InverseQFT.o: qft/InverseQFT.cpp.o
@@ -391,7 +391,7 @@ qft/InverseQFT.o: qft/InverseQFT.cpp.o
 
 # target to build an object file
 qft/InverseQFT.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o
 .PHONY : qft/InverseQFT.cpp.o
 
 qft/InverseQFT.i: qft/InverseQFT.cpp.i
@@ -400,7 +400,7 @@ qft/InverseQFT.i: qft/InverseQFT.cpp.i
 
 # target to preprocess a source file
 qft/InverseQFT.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i
 .PHONY : qft/InverseQFT.cpp.i
 
 qft/InverseQFT.s: qft/InverseQFT.cpp.s
@@ -409,7 +409,7 @@ qft/InverseQFT.s: qft/InverseQFT.cpp.s
 
 # target to generate assembly for a file
 qft/InverseQFT.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s
 .PHONY : qft/InverseQFT.cpp.s
 
 qft/QFT.o: qft/QFT.cpp.o
@@ -418,7 +418,7 @@ qft/QFT.o: qft/QFT.cpp.o
 
 # target to build an object file
 qft/QFT.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o
 .PHONY : qft/QFT.cpp.o
 
 qft/QFT.i: qft/QFT.cpp.i
@@ -427,7 +427,7 @@ qft/QFT.i: qft/QFT.cpp.i
 
 # target to preprocess a source file
 qft/QFT.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i
 .PHONY : qft/QFT.cpp.i
 
 qft/QFT.s: qft/QFT.cpp.s
@@ -436,7 +436,7 @@ qft/QFT.s: qft/QFT.cpp.s
 
 # target to generate assembly for a file
 qft/QFT.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s
 .PHONY : qft/QFT.cpp.s
 
 range/range.o: range/range.cpp.o
@@ -445,7 +445,7 @@ range/range.o: range/range.cpp.o
 
 # target to build an object file
 range/range.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o
 .PHONY : range/range.cpp.o
 
 range/range.i: range/range.cpp.i
@@ -454,7 +454,7 @@ range/range.i: range/range.cpp.i
 
 # target to preprocess a source file
 range/range.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.i
 .PHONY : range/range.cpp.i
 
 range/range.s: range/range.cpp.s
@@ -463,7 +463,7 @@ range/range.s: range/range.cpp.s
 
 # target to generate assembly for a file
 range/range.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.s
 .PHONY : range/range.cpp.s
 
 ucc1/ucc1.o: ucc1/ucc1.cpp.o
@@ -472,7 +472,7 @@ ucc1/ucc1.o: ucc1/ucc1.cpp.o
 
 # target to build an object file
 ucc1/ucc1.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o
 .PHONY : ucc1/ucc1.cpp.o
 
 ucc1/ucc1.i: ucc1/ucc1.cpp.i
@@ -481,7 +481,7 @@ ucc1/ucc1.i: ucc1/ucc1.cpp.i
 
 # target to preprocess a source file
 ucc1/ucc1.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i
 .PHONY : ucc1/ucc1.cpp.i
 
 ucc1/ucc1.s: ucc1/ucc1.cpp.s
@@ -490,7 +490,7 @@ ucc1/ucc1.s: ucc1/ucc1.cpp.s
 
 # target to generate assembly for a file
 ucc1/ucc1.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s
 .PHONY : ucc1/ucc1.cpp.s
 
 ucc3/ucc3.o: ucc3/ucc3.cpp.o
@@ -499,7 +499,7 @@ ucc3/ucc3.o: ucc3/ucc3.cpp.o
 
 # target to build an object file
 ucc3/ucc3.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o
 .PHONY : ucc3/ucc3.cpp.o
 
 ucc3/ucc3.i: ucc3/ucc3.cpp.i
@@ -508,7 +508,7 @@ ucc3/ucc3.i: ucc3/ucc3.cpp.i
 
 # target to preprocess a source file
 ucc3/ucc3.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i
 .PHONY : ucc3/ucc3.cpp.i
 
 ucc3/ucc3.s: ucc3/ucc3.cpp.s
@@ -517,7 +517,7 @@ ucc3/ucc3.s: ucc3/ucc3.cpp.s
 
 # target to generate assembly for a file
 ucc3/ucc3.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s
 .PHONY : ucc3/ucc3.cpp.s
 
 uccsd/uccsd.o: uccsd/uccsd.cpp.o
@@ -526,7 +526,7 @@ uccsd/uccsd.o: uccsd/uccsd.cpp.o
 
 # target to build an object file
 uccsd/uccsd.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o
 .PHONY : uccsd/uccsd.cpp.o
 
 uccsd/uccsd.i: uccsd/uccsd.cpp.i
@@ -535,7 +535,7 @@ uccsd/uccsd.i: uccsd/uccsd.cpp.i
 
 # target to preprocess a source file
 uccsd/uccsd.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i
 .PHONY : uccsd/uccsd.cpp.i
 
 uccsd/uccsd.s: uccsd/uccsd.cpp.s
@@ -544,7 +544,7 @@ uccsd/uccsd.s: uccsd/uccsd.cpp.s
 
 # target to generate assembly for a file
 uccsd/uccsd.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s
 .PHONY : uccsd/uccsd.cpp.s
 
 xacc-circuits/cppmicroservices_init.o: xacc-circuits/cppmicroservices_init.cpp.o
@@ -553,7 +553,7 @@ xacc-circuits/cppmicroservices_init.o: xacc-circuits/cppmicroservices_init.cpp.o
 
 # target to build an object file
 xacc-circuits/cppmicroservices_init.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o
 .PHONY : xacc-circuits/cppmicroservices_init.cpp.o
 
 xacc-circuits/cppmicroservices_init.i: xacc-circuits/cppmicroservices_init.cpp.i
@@ -562,7 +562,7 @@ xacc-circuits/cppmicroservices_init.i: xacc-circuits/cppmicroservices_init.cpp.i
 
 # target to preprocess a source file
 xacc-circuits/cppmicroservices_init.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i
 .PHONY : xacc-circuits/cppmicroservices_init.cpp.i
 
 xacc-circuits/cppmicroservices_init.s: xacc-circuits/cppmicroservices_init.cpp.s
@@ -571,8 +571,35 @@ xacc-circuits/cppmicroservices_init.s: xacc-circuits/cppmicroservices_init.cpp.s
 
 # target to generate assembly for a file
 xacc-circuits/cppmicroservices_init.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s
 .PHONY : xacc-circuits/cppmicroservices_init.cpp.s
+
+xacc-circuits/cppmicroservices_resources.o: xacc-circuits/cppmicroservices_resources.cpp.o
+
+.PHONY : xacc-circuits/cppmicroservices_resources.o
+
+# target to build an object file
+xacc-circuits/cppmicroservices_resources.cpp.o:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o
+.PHONY : xacc-circuits/cppmicroservices_resources.cpp.o
+
+xacc-circuits/cppmicroservices_resources.i: xacc-circuits/cppmicroservices_resources.cpp.i
+
+.PHONY : xacc-circuits/cppmicroservices_resources.i
+
+# target to preprocess a source file
+xacc-circuits/cppmicroservices_resources.cpp.i:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.i
+.PHONY : xacc-circuits/cppmicroservices_resources.cpp.i
+
+xacc-circuits/cppmicroservices_resources.s: xacc-circuits/cppmicroservices_resources.cpp.s
+
+.PHONY : xacc-circuits/cppmicroservices_resources.s
+
+# target to generate assembly for a file
+xacc-circuits/cppmicroservices_resources.cpp.s:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.s
+.PHONY : xacc-circuits/cppmicroservices_resources.cpp.s
 
 # Help Target
 help:
@@ -629,6 +656,9 @@ help:
 	@echo "... xacc-circuits/cppmicroservices_init.o"
 	@echo "... xacc-circuits/cppmicroservices_init.i"
 	@echo "... xacc-circuits/cppmicroservices_init.s"
+	@echo "... xacc-circuits/cppmicroservices_resources.o"
+	@echo "... xacc-circuits/cppmicroservices_resources.i"
+	@echo "... xacc-circuits/cppmicroservices_resources.s"
 .PHONY : help
 
 
@@ -640,6 +670,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -23,4 +23,4 @@ quantum/plugins/ionq/tests/CMakeFiles/IonQProgramTester.dir/IonQProgramTester.cp
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-tuple.h
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-type-util.h
  ../tpls/nlohmann/json.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/ionq/tests/IonQProgramTester.cpp
+ /workspace/xacc/quantum/plugins/ionq/tests/IonQProgramTester.cpp

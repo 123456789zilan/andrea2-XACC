@@ -25,4 +25,4 @@ quantum/examples/qst-publication/CMakeFiles/base_api.dir/base_api.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/examples/qst-publication/base_api.cpp
+ /workspace/xacc/quantum/examples/qst-publication/base_api.cpp

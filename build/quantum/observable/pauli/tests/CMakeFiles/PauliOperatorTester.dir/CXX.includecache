@@ -1960,19 +1960,19 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
+/workspace/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
 gtest/gtest.h
 -
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperator.hpp
+/workspace/xacc/quantum/observable/pauli/tests/PauliOperator.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/xacc.hpp
+/workspace/xacc/quantum/observable/pauli/tests/xacc.hpp
 IRProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/IRProvider.hpp
+/workspace/xacc/quantum/observable/pauli/tests/IRProvider.hpp
 Eigen/Dense
 -
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/xacc_service.hpp
+/workspace/xacc/quantum/observable/pauli/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/depend.make
@@ -76,120 +76,132 @@ include quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 
-quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.o: quantum/plugins/rigetti/xacc-rigetti/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-rigetti"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.o
+quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp: quantum/plugins/rigetti/xacc-rigetti/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-rigetti"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
 
 quantum/plugins/rigetti/xacc-rigetti/res_0.zip: ../quantum/plugins/rigetti/manifest.json
 quantum/plugins/rigetti/xacc-rigetti/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-rigetti"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/rigetti && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/rigetti && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/res_0.zip -n xacc_rigetti -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-rigetti"
+	cd /workspace/xacc/quantum/plugins/rigetti && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti
+	cd /workspace/xacc/quantum/plugins/rigetti && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/res_0.zip -n xacc_rigetti -r manifest.json
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o: ../quantum/plugins/rigetti/RigettiActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/RigettiActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/RigettiActivator.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/RigettiActivator.cpp > CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/RigettiActivator.cpp > CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/RigettiActivator.cpp -o CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/RigettiActivator.cpp -o CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o: ../quantum/plugins/rigetti/compiler/QuilCompiler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp > CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp > CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o: ../quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o: ../quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o: ../quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o: ../quantum/plugins/rigetti/compiler/generated/QuilListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o: ../quantum/plugins/rigetti/compiler/generated/QuilParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp > CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp -o CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s
+
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
+
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp > CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.i
+
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.s
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/flags.make
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp > CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp > CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp -o CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-rigetti
 xacc__rigetti_OBJECTS = \
@@ -200,44 +212,45 @@ xacc__rigetti_OBJECTS = \
 "CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o" \
 "CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o" \
 "CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o" \
+"CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-rigetti
-xacc__rigetti_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.o"
+xacc__rigetti_EXTERNAL_OBJECTS =
 
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.o
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/gate/libxacc-quantum-gate.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: xacc/libxacc.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/rigetti/libxacc-rigetti.dylib: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libxacc-rigetti.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-rigetti.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/gate/libxacc-quantum-gate.so
+quantum/plugins/rigetti/libxacc-rigetti.so: ../dist/libantlr4-runtime.so
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/rigetti/libxacc-rigetti.so: xacc/libxacc.so
+quantum/plugins/rigetti/libxacc-rigetti.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/rigetti/libxacc-rigetti.so: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libxacc-rigetti.so"
+	cd /workspace/xacc/build/quantum/plugins/rigetti && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-rigetti.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-rigetti"
+	cd /workspace/xacc/quantum/plugins/rigetti && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/rigetti/libxacc-rigetti.so -z /workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build: quantum/plugins/rigetti/libxacc-rigetti.dylib
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build: quantum/plugins/rigetti/libxacc-rigetti.so
 
 .PHONY : quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build
 
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti && $(CMAKE_COMMAND) -P CMakeFiles/xacc-rigetti.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/rigetti && $(CMAKE_COMMAND) -P CMakeFiles/xacc-rigetti.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/clean
 
-quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/depend: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.o
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/depend: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/depend: quantum/plugins/rigetti/xacc-rigetti/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/rigetti /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/rigetti /workspace/xacc/build /workspace/xacc/build/quantum/plugins/rigetti /workspace/xacc/build/quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/depend
 

@@ -51,4 +51,4 @@ quantum/plugins/rigetti/tests/CMakeFiles/QuilVisitorTester.dir/QuilVisitorTester
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/QuilVisitorTester.cpp
+ /workspace/xacc/quantum/plugins/rigetti/tests/QuilVisitorTester.cpp

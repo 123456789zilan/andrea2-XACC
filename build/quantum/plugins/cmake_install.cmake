@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/plugins
+# Install script for directory: /workspace/xacc/quantum/plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,28 +43,28 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quantum/gate" TYPE FILE FILES "/Users/dhruvshah/git/xacc/quantum/plugins/utils/OperatorPool.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quantum/gate" TYPE FILE FILES "/workspace/xacc/quantum/plugins/utils/OperatorPool.hpp")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/ibm/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/ionq/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/placement/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/xasm/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/qpp/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/staq/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/observable_transforms/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/optimal_control/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/noise_model/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/ibm/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/rigetti/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/dwave/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/algorithms/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/decorators/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/circuits/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/optimizers/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/ionq/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/placement/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/xasm/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/qpp/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/staq/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/observable_transforms/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/optimal_control/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/qsim/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/atos_qlm/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/noise_model/cmake_install.cmake")
 
 endif()
 

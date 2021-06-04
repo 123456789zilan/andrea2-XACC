@@ -494,13 +494,13 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/circuit_optimization.cpp
+/workspace/xacc/quantum/examples/base_api/circuit_optimization.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/xacc.hpp
+/workspace/xacc/quantum/examples/base_api/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/xacc_service.hpp
+/workspace/xacc/quantum/examples/base_api/xacc_service.hpp
 IRTransformation.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/IRTransformation.hpp
+/workspace/xacc/quantum/examples/base_api/IRTransformation.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

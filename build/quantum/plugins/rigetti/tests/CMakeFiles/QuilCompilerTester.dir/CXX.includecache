@@ -836,19 +836,19 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/QuilCompilerTester.cpp
+/workspace/xacc/quantum/plugins/rigetti/tests/QuilCompilerTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/xacc.hpp
 QuilVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/QuilVisitor.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/QuilVisitor.hpp
 CountGatesOfTypeVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/CountGatesOfTypeVisitor.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/CountGatesOfTypeVisitor.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/rigetti/tests/xacc_service.hpp
 qalloc
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/tests/qalloc
+/workspace/xacc/quantum/plugins/rigetti/tests/qalloc
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

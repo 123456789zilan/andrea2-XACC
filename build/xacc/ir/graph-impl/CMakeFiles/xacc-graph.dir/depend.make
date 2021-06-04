@@ -8569,3 +8569,5 @@ xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cp
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o: xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o: xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp
+

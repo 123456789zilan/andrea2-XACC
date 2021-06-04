@@ -294,3 +294,5 @@ quantum/plugins/optimizers/qsearch/CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qs
 quantum/plugins/optimizers/qsearch/CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qsearch-optimizer/cppmicroservices_init.cpp.o: quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices_init.cpp
 quantum/plugins/optimizers/qsearch/CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qsearch-optimizer/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/optimizers/qsearch/CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qsearch-optimizer/cppmicroservices_resources.cpp.o: quantum/plugins/optimizers/qsearch/xacc-qsearch-optimizer/cppmicroservices_resources.cpp
+

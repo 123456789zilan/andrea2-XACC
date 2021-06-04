@@ -264,7 +264,7 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/deuteron_2qbit_xasm_X0X1.cpp
+/workspace/xacc/quantum/examples/base_api/deuteron_2qbit_xasm_X0X1.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/base_api/xacc.hpp
+/workspace/xacc/quantum/examples/base_api/xacc.hpp
 

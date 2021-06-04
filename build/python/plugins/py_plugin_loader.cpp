@@ -21,7 +21,7 @@ bool PythonPluginLoader::load() {
   xacc::debug("[PyPluginLoader] Loading all contributed Python plugins.");
 
   if (!XACC_IS_APPLE){
-    libpython_handle = dlopen("libpython3.9.dylib", RTLD_LAZY | RTLD_GLOBAL);
+    libpython_handle = dlopen("libpython3.8.so", RTLD_LAZY | RTLD_GLOBAL);
   }
   py::initialize_interpreter();
   try {

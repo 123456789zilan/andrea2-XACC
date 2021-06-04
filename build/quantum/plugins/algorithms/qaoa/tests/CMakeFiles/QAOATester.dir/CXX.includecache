@@ -756,21 +756,21 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/QAOATester.cpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/QAOATester.cpp
 random
 -
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/xacc.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/Algorithm.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/Observable.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qaoa/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qaoa/tests/xacc_observable.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

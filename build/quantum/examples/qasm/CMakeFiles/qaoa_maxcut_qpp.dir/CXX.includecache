@@ -502,13 +502,13 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/qaoa_maxcut_qpp.cpp
+/workspace/xacc/quantum/examples/qasm/qaoa_maxcut_qpp.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc.hpp
+/workspace/xacc/quantum/examples/qasm/xacc.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_observable.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_observable.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_service.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

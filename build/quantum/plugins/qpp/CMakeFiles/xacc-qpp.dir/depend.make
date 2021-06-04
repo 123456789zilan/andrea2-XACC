@@ -916,3 +916,5 @@ quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_init.cpp.o
 quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_init.cpp.o: quantum/plugins/qpp/xacc-qpp/cppmicroservices_init.cpp
 quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_resources.cpp.o: quantum/plugins/qpp/xacc-qpp/cppmicroservices_resources.cpp
+

@@ -348,11 +348,11 @@ complex
 any
 -
 
-/Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp
+/workspace/xacc/xacc/accelerator/tests/AcceleratorBufferTester.cpp
 gtest/gtest.h
 -
 AcceleratorBuffer.hpp
-/Users/dhruvshah/git/xacc/xacc/accelerator/tests/AcceleratorBuffer.hpp
+/workspace/xacc/xacc/accelerator/tests/AcceleratorBuffer.hpp
 cmath
 -
 

@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o"
   "CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o"
   "CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o"
-  "libxacc-exprtk-parsing.dylib"
+  "CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o"
   "libxacc-exprtk-parsing.pdb"
-  "xacc-exprtk-parsing/cppmicroservices_resources.o"
+  "libxacc-exprtk-parsing.so"
+  "xacc-exprtk-parsing/cppmicroservices_resources.cpp"
   "xacc-exprtk-parsing/res_0.zip"
 )
 

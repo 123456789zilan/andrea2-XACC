@@ -867,3 +867,5 @@ quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-taper
 quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_init.cpp.o: quantum/plugins/observable_transforms/qubit-tapering/xacc-qubit-tapering/cppmicroservices_init.cpp
 quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_resources.cpp.o: quantum/plugins/observable_transforms/qubit-tapering/xacc-qubit-tapering/cppmicroservices_resources.cpp
+

@@ -722,17 +722,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/JsonVisitorTester.cpp
+/workspace/xacc/quantum/gate/utils/tests/JsonVisitorTester.cpp
 gtest/gtest.h
 -
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/Circuit.hpp
+/workspace/xacc/quantum/gate/utils/tests/Circuit.hpp
 JsonVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/JsonVisitor.hpp
+/workspace/xacc/quantum/gate/utils/tests/JsonVisitor.hpp
 CommonGates.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/CommonGates.hpp
+/workspace/xacc/quantum/gate/utils/tests/CommonGates.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/xacc.hpp
+/workspace/xacc/quantum/gate/utils/tests/xacc.hpp
 rapidjson/prettywriter.h
-/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/rapidjson/prettywriter.h
+/workspace/xacc/quantum/gate/utils/tests/rapidjson/prettywriter.h
 

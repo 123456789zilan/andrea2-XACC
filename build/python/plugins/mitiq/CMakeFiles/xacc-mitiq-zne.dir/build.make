@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/depend.make
@@ -76,74 +76,88 @@ include python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/progress.make
 # Include the compile flags for this target's objects.
 include python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/flags.make
 
-python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.o: python/plugins/mitiq/xacc-mitiq-zne/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-mitiq-zne"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne && /usr/local/bin/g++-8 -Wno-attributes -Wno-deprecated-declarations -fno-strict-aliasing -O2 -g -pipe -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wformat -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=native -D_GNU_SOURCE -fPIC -fwrapv -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.o
+python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp: python/plugins/mitiq/xacc-mitiq-zne/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-mitiq-zne"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp
 
 python/plugins/mitiq/xacc-mitiq-zne/res_0.zip: ../python/plugins/mitiq/manifest.json
 python/plugins/mitiq/xacc-mitiq-zne/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-mitiq-zne"
-	cd /Users/dhruvshah/git/xacc/python/plugins/mitiq && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne
-	cd /Users/dhruvshah/git/xacc/python/plugins/mitiq && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/res_0.zip -n xacc_mitiq_zne -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-mitiq-zne"
+	cd /workspace/xacc/python/plugins/mitiq && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne
+	cd /workspace/xacc/python/plugins/mitiq && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/res_0.zip -n xacc_mitiq_zne -r manifest.json
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/flags.make
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o: python/plugins/mitiq/mitiq_zne_decorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o -c /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o -c /workspace/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp > CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.i
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp > CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.i
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp -o CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.s
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/mitiq/mitiq_zne_decorator.cpp -o CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.s
+
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/flags.make
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o: python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp
+
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp > CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.i
+
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.s
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/flags.make
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o: python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o -c /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp > CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp > CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.i
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/python/plugins/mitiq && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_init.cpp -o CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-mitiq-zne
 xacc__mitiq__zne_OBJECTS = \
 "CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o" \
+"CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-mitiq-zne
-xacc__mitiq__zne_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.o"
+xacc__mitiq__zne_EXTERNAL_OBJECTS =
 
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.o
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/build.make
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: xacc/libxacc.dylib
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-python/plugins/mitiq/libxacc-mitiq-zne.dylib: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libxacc-mitiq-zne.dylib"
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-mitiq-zne.dir/link.txt --verbose=$(VERBOSE)
+python/plugins/mitiq/libxacc-mitiq-zne.so: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o
+python/plugins/mitiq/libxacc-mitiq-zne.so: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o
+python/plugins/mitiq/libxacc-mitiq-zne.so: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o
+python/plugins/mitiq/libxacc-mitiq-zne.so: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/build.make
+python/plugins/mitiq/libxacc-mitiq-zne.so: xacc/libxacc.so
+python/plugins/mitiq/libxacc-mitiq-zne.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+python/plugins/mitiq/libxacc-mitiq-zne.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+python/plugins/mitiq/libxacc-mitiq-zne.so: python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-mitiq-zne.so"
+	cd /workspace/xacc/build/python/plugins/mitiq && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-mitiq-zne.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-mitiq-zne"
+	cd /workspace/xacc/python/plugins/mitiq && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/python/plugins/mitiq/libxacc-mitiq-zne.so -z /workspace/xacc/build/python/plugins/mitiq/xacc-mitiq-zne/res_0.zip
 
 # Rule to build all files generated by this target.
-python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/build: python/plugins/mitiq/libxacc-mitiq-zne.dylib
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/build: python/plugins/mitiq/libxacc-mitiq-zne.so
 
 .PHONY : python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/build
 
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/python/plugins/mitiq && $(CMAKE_COMMAND) -P CMakeFiles/xacc-mitiq-zne.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/python/plugins/mitiq && $(CMAKE_COMMAND) -P CMakeFiles/xacc-mitiq-zne.dir/cmake_clean.cmake
 .PHONY : python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/clean
 
-python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/depend: python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.o
+python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/depend: python/plugins/mitiq/xacc-mitiq-zne/cppmicroservices_resources.cpp
 python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/depend: python/plugins/mitiq/xacc-mitiq-zne/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/python/plugins/mitiq /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/python/plugins/mitiq /Users/dhruvshah/git/xacc/build/python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/python/plugins/mitiq /workspace/xacc/build /workspace/xacc/build/python/plugins/mitiq /workspace/xacc/build/python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/plugins/mitiq/CMakeFiles/xacc-mitiq-zne.dir/depend
 

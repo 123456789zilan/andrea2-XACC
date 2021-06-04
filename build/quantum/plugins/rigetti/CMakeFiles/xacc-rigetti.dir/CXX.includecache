@@ -1784,115 +1784,119 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/RigettiActivator.cpp
+/workspace/xacc/build/quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/rigetti/RigettiActivator.cpp
 QuilCompiler.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/QuilCompiler.hpp
+/workspace/xacc/quantum/plugins/rigetti/QuilCompiler.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/rigetti/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/rigetti/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/rigetti/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.cpp
 QuilCompiler.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.hpp
 QuilVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilVisitor.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilVisitor.hpp
 QuilLexer.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilLexer.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilLexer.h
 QuilParser.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilParser.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilParser.h
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/xacc.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/xacc.hpp
 IRProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
 QuilToXACCListener.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
 QuilErrorListener.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilErrorListener.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilErrorListener.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/xacc_service.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/xacc_service.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilCompiler.hpp
 Compiler.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/Compiler.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/Compiler.hpp
 Utils.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/Utils.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/Utils.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilErrorListener.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilErrorListener.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.cpp
 exprtk.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/exprtk.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/exprtk.hpp
 QuilToXACCListener.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
 QuilBaseListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilBaseListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilBaseListener.h
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/xacc.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/xacc.hpp
 IRProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
 IR.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/IR.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/IR.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/xacc_service.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/xacc_service.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilToXACCListener.hpp
 QuilBaseListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/QuilBaseListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/QuilBaseListener.h
 IR.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/IR.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/IR.hpp
 IRProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/IRProvider.hpp
 expression_parsing_util.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/expression_parsing_util.hpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/expression_parsing_util.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.cpp
 QuilBaseListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilBaseListener.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
 QuilListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.cpp
 QuilLexer.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilLexer.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.cpp
 QuilListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
 QuilParser.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.cpp
 QuilListener.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilListener.h
 QuilParser.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/QuilParser.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
+/workspace/xacc/quantum/plugins/rigetti/compiler/generated/antlr4-runtime.h
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

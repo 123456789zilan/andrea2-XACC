@@ -30,7 +30,7 @@ quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/AnnealingActivator.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/AnnealingActivator.cpp
+ /workspace/xacc/quantum/annealing/AnnealingActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -61,8 +61,8 @@ quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/compiler/default/Default
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/default/DefaultParameterSetter.cpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/default/DefaultParameterSetter.hpp
+ /workspace/xacc/quantum/annealing/compiler/default/DefaultParameterSetter.cpp
+ /workspace/xacc/quantum/annealing/compiler/default/DefaultParameterSetter.hpp
 quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/compiler/default/TrivialEmbeddingAlgorithm.cpp.o
  ../quantum/annealing/compiler/Embedding.hpp
  ../quantum/annealing/compiler/EmbeddingAlgorithm.hpp
@@ -75,8 +75,8 @@ quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/compiler/default/Trivial
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/default/TrivialEmbeddingAlgorithm.cpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/default/TrivialEmbeddingAlgorithm.hpp
+ /workspace/xacc/quantum/annealing/compiler/default/TrivialEmbeddingAlgorithm.cpp
+ /workspace/xacc/quantum/annealing/compiler/default/TrivialEmbeddingAlgorithm.hpp
 quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/ir/AnnealingProgram.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/AnyMap.h
@@ -149,13 +149,15 @@ quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/ir/AnnealingProgram.cpp.
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/ir/AnnealingProgram.cpp
- /Users/dhruvshah/git/xacc/quantum/annealing/ir/AnnealingProgram.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/ir/DWQMI.hpp
+ /workspace/xacc/quantum/annealing/ir/AnnealingProgram.cpp
+ /workspace/xacc/quantum/annealing/ir/AnnealingProgram.hpp
+ /workspace/xacc/quantum/annealing/ir/DWQMI.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/annealing/xacc-quantum-annealing/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/annealing/xacc-quantum-annealing/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/xacc-quantum-annealing/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/annealing/xacc-quantum-annealing/cppmicroservices_resources.cpp

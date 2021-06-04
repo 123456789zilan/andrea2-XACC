@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-noise-model-json.dir/noise_model.cpp.o"
   "CMakeFiles/xacc-noise-model-json.dir/xacc-noise-model-json/cppmicroservices_init.cpp.o"
-  "libxacc-noise-model-json.dylib"
+  "CMakeFiles/xacc-noise-model-json.dir/xacc-noise-model-json/cppmicroservices_resources.cpp.o"
   "libxacc-noise-model-json.pdb"
-  "xacc-noise-model-json/cppmicroservices_resources.o"
+  "libxacc-noise-model-json.so"
+  "xacc-noise-model-json/cppmicroservices_resources.cpp"
   "xacc-noise-model-json/res_0.zip"
 )
 

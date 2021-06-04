@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/examples
+# Install script for directory: /workspace/xacc/quantum/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/examples/base_api/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/examples/qasm/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/examples/hpc_virtualization/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/examples/pulse/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/examples/base_api/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/examples/qasm/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/examples/qst-publication/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/examples/hpc_virtualization/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/examples/pulse/cmake_install.cmake")
 
 endif()
 

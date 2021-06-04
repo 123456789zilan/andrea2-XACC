@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-py-qfactor.dir/py_qfactor.cpp.o"
   "CMakeFiles/xacc-py-qfactor.dir/xacc-py-qfactor/cppmicroservices_init.cpp.o"
-  "libxacc-py-qfactor.dylib"
+  "CMakeFiles/xacc-py-qfactor.dir/xacc-py-qfactor/cppmicroservices_resources.cpp.o"
   "libxacc-py-qfactor.pdb"
-  "xacc-py-qfactor/cppmicroservices_resources.o"
+  "libxacc-py-qfactor.so"
+  "xacc-py-qfactor/cppmicroservices_resources.cpp"
   "xacc-py-qfactor/res_0.zip"
 )
 

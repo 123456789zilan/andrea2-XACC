@@ -46,4 +46,4 @@ quantum/plugins/ibm/aer/tests/CMakeFiles/AerAcceleratorTester.dir/AerAccelerator
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/ibm/aer/tests/AerAcceleratorTester.cpp
+ /workspace/xacc/quantum/plugins/ibm/aer/tests/AerAcceleratorTester.cpp

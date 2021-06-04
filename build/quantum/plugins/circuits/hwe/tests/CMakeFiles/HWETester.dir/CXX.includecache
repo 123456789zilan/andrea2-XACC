@@ -792,15 +792,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/tests/HWETester.cpp
+/workspace/xacc/quantum/plugins/circuits/hwe/tests/HWETester.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/circuits/hwe/tests/xacc.hpp
 gtest/gtest.h
 -
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/tests/Circuit.hpp
+/workspace/xacc/quantum/plugins/circuits/hwe/tests/Circuit.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/circuits/hwe/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

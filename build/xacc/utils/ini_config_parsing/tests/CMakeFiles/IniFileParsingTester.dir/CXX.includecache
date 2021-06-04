@@ -754,15 +754,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/xacc/utils/ini_config_parsing/tests/IniFileParsingTester.cpp
+/workspace/xacc/xacc/utils/ini_config_parsing/tests/IniFileParsingTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/xacc/utils/ini_config_parsing/tests/xacc.hpp
+/workspace/xacc/xacc/utils/ini_config_parsing/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/xacc/utils/ini_config_parsing/tests/xacc_service.hpp
+/workspace/xacc/xacc/utils/ini_config_parsing/tests/xacc_service.hpp
 config_file_parser.hpp
-/Users/dhruvshah/git/xacc/xacc/utils/ini_config_parsing/tests/config_file_parser.hpp
+/workspace/xacc/xacc/utils/ini_config_parsing/tests/config_file_parser.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

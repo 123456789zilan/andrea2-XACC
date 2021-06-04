@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,37 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,22 +121,32 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -135,7 +157,7 @@ test/fast: test
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -143,32 +165,10 @@ package/fast: package
 
 .PHONY : package/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -178,14 +178,14 @@ package_source/fast: package_source
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/quantum/gate//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/quantum/gate//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/rule
 .PHONY : quantum/gate/CMakeFiles/xacc-quantum-gate.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ xacc-quantum-gate: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/rule
 
 # fast build rule for target.
 xacc-quantum-gate/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build
 .PHONY : xacc-quantum-gate/fast
 
 GateQuantumActivator.o: GateQuantumActivator.cpp.o
@@ -229,7 +229,7 @@ GateQuantumActivator.o: GateQuantumActivator.cpp.o
 
 # target to build an object file
 GateQuantumActivator.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o
 .PHONY : GateQuantumActivator.cpp.o
 
 GateQuantumActivator.i: GateQuantumActivator.cpp.i
@@ -238,7 +238,7 @@ GateQuantumActivator.i: GateQuantumActivator.cpp.i
 
 # target to preprocess a source file
 GateQuantumActivator.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i
 .PHONY : GateQuantumActivator.cpp.i
 
 GateQuantumActivator.s: GateQuantumActivator.cpp.s
@@ -247,7 +247,7 @@ GateQuantumActivator.s: GateQuantumActivator.cpp.s
 
 # target to generate assembly for a file
 GateQuantumActivator.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s
 .PHONY : GateQuantumActivator.cpp.s
 
 ir/Circuit.o: ir/Circuit.cpp.o
@@ -256,7 +256,7 @@ ir/Circuit.o: ir/Circuit.cpp.o
 
 # target to build an object file
 ir/Circuit.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o
 .PHONY : ir/Circuit.cpp.o
 
 ir/Circuit.i: ir/Circuit.cpp.i
@@ -265,7 +265,7 @@ ir/Circuit.i: ir/Circuit.cpp.i
 
 # target to preprocess a source file
 ir/Circuit.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i
 .PHONY : ir/Circuit.cpp.i
 
 ir/Circuit.s: ir/Circuit.cpp.s
@@ -274,7 +274,7 @@ ir/Circuit.s: ir/Circuit.cpp.s
 
 # target to generate assembly for a file
 ir/Circuit.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s
 .PHONY : ir/Circuit.cpp.s
 
 ir/CommonGates.o: ir/CommonGates.cpp.o
@@ -283,7 +283,7 @@ ir/CommonGates.o: ir/CommonGates.cpp.o
 
 # target to build an object file
 ir/CommonGates.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o
 .PHONY : ir/CommonGates.cpp.o
 
 ir/CommonGates.i: ir/CommonGates.cpp.i
@@ -292,7 +292,7 @@ ir/CommonGates.i: ir/CommonGates.cpp.i
 
 # target to preprocess a source file
 ir/CommonGates.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i
 .PHONY : ir/CommonGates.cpp.i
 
 ir/CommonGates.s: ir/CommonGates.cpp.s
@@ -301,7 +301,7 @@ ir/CommonGates.s: ir/CommonGates.cpp.s
 
 # target to generate assembly for a file
 ir/CommonGates.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s
 .PHONY : ir/CommonGates.cpp.s
 
 ir/Gate.o: ir/Gate.cpp.o
@@ -310,7 +310,7 @@ ir/Gate.o: ir/Gate.cpp.o
 
 # target to build an object file
 ir/Gate.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o
 .PHONY : ir/Gate.cpp.o
 
 ir/Gate.i: ir/Gate.cpp.i
@@ -319,7 +319,7 @@ ir/Gate.i: ir/Gate.cpp.i
 
 # target to preprocess a source file
 ir/Gate.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i
 .PHONY : ir/Gate.cpp.i
 
 ir/Gate.s: ir/Gate.cpp.s
@@ -328,7 +328,7 @@ ir/Gate.s: ir/Gate.cpp.s
 
 # target to generate assembly for a file
 ir/Gate.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s
 .PHONY : ir/Gate.cpp.s
 
 ir/GateIR.o: ir/GateIR.cpp.o
@@ -337,7 +337,7 @@ ir/GateIR.o: ir/GateIR.cpp.o
 
 # target to build an object file
 ir/GateIR.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o
 .PHONY : ir/GateIR.cpp.o
 
 ir/GateIR.i: ir/GateIR.cpp.i
@@ -346,7 +346,7 @@ ir/GateIR.i: ir/GateIR.cpp.i
 
 # target to preprocess a source file
 ir/GateIR.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i
 .PHONY : ir/GateIR.cpp.i
 
 ir/GateIR.s: ir/GateIR.cpp.s
@@ -355,7 +355,7 @@ ir/GateIR.s: ir/GateIR.cpp.s
 
 # target to generate assembly for a file
 ir/GateIR.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s
 .PHONY : ir/GateIR.cpp.s
 
 ir/Pulse.o: ir/Pulse.cpp.o
@@ -364,7 +364,7 @@ ir/Pulse.o: ir/Pulse.cpp.o
 
 # target to build an object file
 ir/Pulse.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o
 .PHONY : ir/Pulse.cpp.o
 
 ir/Pulse.i: ir/Pulse.cpp.i
@@ -373,7 +373,7 @@ ir/Pulse.i: ir/Pulse.cpp.i
 
 # target to preprocess a source file
 ir/Pulse.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i
 .PHONY : ir/Pulse.cpp.i
 
 ir/Pulse.s: ir/Pulse.cpp.s
@@ -382,7 +382,7 @@ ir/Pulse.s: ir/Pulse.cpp.s
 
 # target to generate assembly for a file
 ir/Pulse.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s
 .PHONY : ir/Pulse.cpp.s
 
 ir/PulseScheduler.o: ir/PulseScheduler.cpp.o
@@ -391,7 +391,7 @@ ir/PulseScheduler.o: ir/PulseScheduler.cpp.o
 
 # target to build an object file
 ir/PulseScheduler.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o
 .PHONY : ir/PulseScheduler.cpp.o
 
 ir/PulseScheduler.i: ir/PulseScheduler.cpp.i
@@ -400,7 +400,7 @@ ir/PulseScheduler.i: ir/PulseScheduler.cpp.i
 
 # target to preprocess a source file
 ir/PulseScheduler.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i
 .PHONY : ir/PulseScheduler.cpp.i
 
 ir/PulseScheduler.s: ir/PulseScheduler.cpp.s
@@ -409,7 +409,7 @@ ir/PulseScheduler.s: ir/PulseScheduler.cpp.s
 
 # target to generate assembly for a file
 ir/PulseScheduler.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s
 .PHONY : ir/PulseScheduler.cpp.s
 
 utils/IRToGraphVisitor.o: utils/IRToGraphVisitor.cpp.o
@@ -418,7 +418,7 @@ utils/IRToGraphVisitor.o: utils/IRToGraphVisitor.cpp.o
 
 # target to build an object file
 utils/IRToGraphVisitor.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o
 .PHONY : utils/IRToGraphVisitor.cpp.o
 
 utils/IRToGraphVisitor.i: utils/IRToGraphVisitor.cpp.i
@@ -427,7 +427,7 @@ utils/IRToGraphVisitor.i: utils/IRToGraphVisitor.cpp.i
 
 # target to preprocess a source file
 utils/IRToGraphVisitor.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i
 .PHONY : utils/IRToGraphVisitor.cpp.i
 
 utils/IRToGraphVisitor.s: utils/IRToGraphVisitor.cpp.s
@@ -436,7 +436,7 @@ utils/IRToGraphVisitor.s: utils/IRToGraphVisitor.cpp.s
 
 # target to generate assembly for a file
 utils/IRToGraphVisitor.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s
 .PHONY : utils/IRToGraphVisitor.cpp.s
 
 utils/IRUtils.o: utils/IRUtils.cpp.o
@@ -445,7 +445,7 @@ utils/IRUtils.o: utils/IRUtils.cpp.o
 
 # target to build an object file
 utils/IRUtils.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o
 .PHONY : utils/IRUtils.cpp.o
 
 utils/IRUtils.i: utils/IRUtils.cpp.i
@@ -454,7 +454,7 @@ utils/IRUtils.i: utils/IRUtils.cpp.i
 
 # target to preprocess a source file
 utils/IRUtils.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i
 .PHONY : utils/IRUtils.cpp.i
 
 utils/IRUtils.s: utils/IRUtils.cpp.s
@@ -463,7 +463,7 @@ utils/IRUtils.s: utils/IRUtils.cpp.s
 
 # target to generate assembly for a file
 utils/IRUtils.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s
 .PHONY : utils/IRUtils.cpp.s
 
 utils/JsonVisitor.o: utils/JsonVisitor.cpp.o
@@ -472,7 +472,7 @@ utils/JsonVisitor.o: utils/JsonVisitor.cpp.o
 
 # target to build an object file
 utils/JsonVisitor.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o
 .PHONY : utils/JsonVisitor.cpp.o
 
 utils/JsonVisitor.i: utils/JsonVisitor.cpp.i
@@ -481,7 +481,7 @@ utils/JsonVisitor.i: utils/JsonVisitor.cpp.i
 
 # target to preprocess a source file
 utils/JsonVisitor.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i
 .PHONY : utils/JsonVisitor.cpp.i
 
 utils/JsonVisitor.s: utils/JsonVisitor.cpp.s
@@ -490,7 +490,7 @@ utils/JsonVisitor.s: utils/JsonVisitor.cpp.s
 
 # target to generate assembly for a file
 utils/JsonVisitor.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s
 .PHONY : utils/JsonVisitor.cpp.s
 
 xacc-quantum-gate/cppmicroservices_init.o: xacc-quantum-gate/cppmicroservices_init.cpp.o
@@ -499,7 +499,7 @@ xacc-quantum-gate/cppmicroservices_init.o: xacc-quantum-gate/cppmicroservices_in
 
 # target to build an object file
 xacc-quantum-gate/cppmicroservices_init.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o
 .PHONY : xacc-quantum-gate/cppmicroservices_init.cpp.o
 
 xacc-quantum-gate/cppmicroservices_init.i: xacc-quantum-gate/cppmicroservices_init.cpp.i
@@ -508,7 +508,7 @@ xacc-quantum-gate/cppmicroservices_init.i: xacc-quantum-gate/cppmicroservices_in
 
 # target to preprocess a source file
 xacc-quantum-gate/cppmicroservices_init.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i
 .PHONY : xacc-quantum-gate/cppmicroservices_init.cpp.i
 
 xacc-quantum-gate/cppmicroservices_init.s: xacc-quantum-gate/cppmicroservices_init.cpp.s
@@ -517,8 +517,35 @@ xacc-quantum-gate/cppmicroservices_init.s: xacc-quantum-gate/cppmicroservices_in
 
 # target to generate assembly for a file
 xacc-quantum-gate/cppmicroservices_init.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s
 .PHONY : xacc-quantum-gate/cppmicroservices_init.cpp.s
+
+xacc-quantum-gate/cppmicroservices_resources.o: xacc-quantum-gate/cppmicroservices_resources.cpp.o
+
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.o
+
+# target to build an object file
+xacc-quantum-gate/cppmicroservices_resources.cpp.o:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.cpp.o
+
+xacc-quantum-gate/cppmicroservices_resources.i: xacc-quantum-gate/cppmicroservices_resources.cpp.i
+
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.i
+
+# target to preprocess a source file
+xacc-quantum-gate/cppmicroservices_resources.cpp.i:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.i
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.cpp.i
+
+xacc-quantum-gate/cppmicroservices_resources.s: xacc-quantum-gate/cppmicroservices_resources.cpp.s
+
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.s
+
+# target to generate assembly for a file
+xacc-quantum-gate/cppmicroservices_resources.cpp.s:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.s
+.PHONY : xacc-quantum-gate/cppmicroservices_resources.cpp.s
 
 xacc_quantum_gate_api.o: xacc_quantum_gate_api.cpp.o
 
@@ -526,7 +553,7 @@ xacc_quantum_gate_api.o: xacc_quantum_gate_api.cpp.o
 
 # target to build an object file
 xacc_quantum_gate_api.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o
 .PHONY : xacc_quantum_gate_api.cpp.o
 
 xacc_quantum_gate_api.i: xacc_quantum_gate_api.cpp.i
@@ -535,7 +562,7 @@ xacc_quantum_gate_api.i: xacc_quantum_gate_api.cpp.i
 
 # target to preprocess a source file
 xacc_quantum_gate_api.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i
 .PHONY : xacc_quantum_gate_api.cpp.i
 
 xacc_quantum_gate_api.s: xacc_quantum_gate_api.cpp.s
@@ -544,7 +571,7 @@ xacc_quantum_gate_api.s: xacc_quantum_gate_api.cpp.s
 
 # target to generate assembly for a file
 xacc_quantum_gate_api.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s
 .PHONY : xacc_quantum_gate_api.cpp.s
 
 # Help Target
@@ -596,6 +623,9 @@ help:
 	@echo "... xacc-quantum-gate/cppmicroservices_init.o"
 	@echo "... xacc-quantum-gate/cppmicroservices_init.i"
 	@echo "... xacc-quantum-gate/cppmicroservices_init.s"
+	@echo "... xacc-quantum-gate/cppmicroservices_resources.o"
+	@echo "... xacc-quantum-gate/cppmicroservices_resources.i"
+	@echo "... xacc-quantum-gate/cppmicroservices_resources.s"
 	@echo "... xacc_quantum_gate_api.o"
 	@echo "... xacc_quantum_gate_api.i"
 	@echo "... xacc_quantum_gate_api.s"
@@ -610,6 +640,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

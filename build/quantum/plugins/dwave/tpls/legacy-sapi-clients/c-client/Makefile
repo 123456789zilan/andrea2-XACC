@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,93 +78,38 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-
-.PHONY : package/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -176,16 +121,71 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/rule
 .PHONY : quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ dwave_sapi: quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/d
 
 # fast build rule for target.
 dwave_sapi/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build
 .PHONY : dwave_sapi/fast
 
 __/find-embedding/src/find_embedding.o: __/find-embedding/src/find_embedding.cpp.o
@@ -229,7 +229,7 @@ __/find-embedding/src/find_embedding.o: __/find-embedding/src/find_embedding.cpp
 
 # target to build an object file
 __/find-embedding/src/find_embedding.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.o
 .PHONY : __/find-embedding/src/find_embedding.cpp.o
 
 __/find-embedding/src/find_embedding.i: __/find-embedding/src/find_embedding.cpp.i
@@ -238,7 +238,7 @@ __/find-embedding/src/find_embedding.i: __/find-embedding/src/find_embedding.cpp
 
 # target to preprocess a source file
 __/find-embedding/src/find_embedding.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.i
 .PHONY : __/find-embedding/src/find_embedding.cpp.i
 
 __/find-embedding/src/find_embedding.s: __/find-embedding/src/find_embedding.cpp.s
@@ -247,7 +247,7 @@ __/find-embedding/src/find_embedding.s: __/find-embedding/src/find_embedding.cpp
 
 # target to generate assembly for a file
 __/find-embedding/src/find_embedding.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.s
 .PHONY : __/find-embedding/src/find_embedding.cpp.s
 
 __/fix-variables/src/fix_variables.o: __/fix-variables/src/fix_variables.cpp.o
@@ -256,7 +256,7 @@ __/fix-variables/src/fix_variables.o: __/fix-variables/src/fix_variables.cpp.o
 
 # target to build an object file
 __/fix-variables/src/fix_variables.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.o
 .PHONY : __/fix-variables/src/fix_variables.cpp.o
 
 __/fix-variables/src/fix_variables.i: __/fix-variables/src/fix_variables.cpp.i
@@ -265,7 +265,7 @@ __/fix-variables/src/fix_variables.i: __/fix-variables/src/fix_variables.cpp.i
 
 # target to preprocess a source file
 __/fix-variables/src/fix_variables.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.i
 .PHONY : __/fix-variables/src/fix_variables.cpp.i
 
 __/fix-variables/src/fix_variables.s: __/fix-variables/src/fix_variables.cpp.s
@@ -274,7 +274,7 @@ __/fix-variables/src/fix_variables.s: __/fix-variables/src/fix_variables.cpp.s
 
 # target to generate assembly for a file
 __/fix-variables/src/fix_variables.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.s
 .PHONY : __/fix-variables/src/fix_variables.cpp.s
 
 __/local-solvers/src/problems.o: __/local-solvers/src/problems.cpp.o
@@ -283,7 +283,7 @@ __/local-solvers/src/problems.o: __/local-solvers/src/problems.cpp.o
 
 # target to build an object file
 __/local-solvers/src/problems.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.o
 .PHONY : __/local-solvers/src/problems.cpp.o
 
 __/local-solvers/src/problems.i: __/local-solvers/src/problems.cpp.i
@@ -292,7 +292,7 @@ __/local-solvers/src/problems.i: __/local-solvers/src/problems.cpp.i
 
 # target to preprocess a source file
 __/local-solvers/src/problems.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.i
 .PHONY : __/local-solvers/src/problems.cpp.i
 
 __/local-solvers/src/problems.s: __/local-solvers/src/problems.cpp.s
@@ -301,7 +301,7 @@ __/local-solvers/src/problems.s: __/local-solvers/src/problems.cpp.s
 
 # target to generate assembly for a file
 __/local-solvers/src/problems.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.s
 .PHONY : __/local-solvers/src/problems.cpp.s
 
 __/remote/src/answer-service.o: __/remote/src/answer-service.cpp.o
@@ -310,7 +310,7 @@ __/remote/src/answer-service.o: __/remote/src/answer-service.cpp.o
 
 # target to build an object file
 __/remote/src/answer-service.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.o
 .PHONY : __/remote/src/answer-service.cpp.o
 
 __/remote/src/answer-service.i: __/remote/src/answer-service.cpp.i
@@ -319,7 +319,7 @@ __/remote/src/answer-service.i: __/remote/src/answer-service.cpp.i
 
 # target to preprocess a source file
 __/remote/src/answer-service.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.i
 .PHONY : __/remote/src/answer-service.cpp.i
 
 __/remote/src/answer-service.s: __/remote/src/answer-service.cpp.s
@@ -328,7 +328,7 @@ __/remote/src/answer-service.s: __/remote/src/answer-service.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/answer-service.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.s
 .PHONY : __/remote/src/answer-service.cpp.s
 
 __/remote/src/await.o: __/remote/src/await.cpp.o
@@ -337,7 +337,7 @@ __/remote/src/await.o: __/remote/src/await.cpp.o
 
 # target to build an object file
 __/remote/src/await.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.o
 .PHONY : __/remote/src/await.cpp.o
 
 __/remote/src/await.i: __/remote/src/await.cpp.i
@@ -346,7 +346,7 @@ __/remote/src/await.i: __/remote/src/await.cpp.i
 
 # target to preprocess a source file
 __/remote/src/await.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.i
 .PHONY : __/remote/src/await.cpp.i
 
 __/remote/src/await.s: __/remote/src/await.cpp.s
@@ -355,7 +355,7 @@ __/remote/src/await.s: __/remote/src/await.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/await.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.s
 .PHONY : __/remote/src/await.cpp.s
 
 __/remote/src/base64.o: __/remote/src/base64.cpp.o
@@ -364,7 +364,7 @@ __/remote/src/base64.o: __/remote/src/base64.cpp.o
 
 # target to build an object file
 __/remote/src/base64.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.o
 .PHONY : __/remote/src/base64.cpp.o
 
 __/remote/src/base64.i: __/remote/src/base64.cpp.i
@@ -373,7 +373,7 @@ __/remote/src/base64.i: __/remote/src/base64.cpp.i
 
 # target to preprocess a source file
 __/remote/src/base64.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.i
 .PHONY : __/remote/src/base64.cpp.i
 
 __/remote/src/base64.s: __/remote/src/base64.cpp.s
@@ -382,7 +382,7 @@ __/remote/src/base64.s: __/remote/src/base64.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/base64.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.s
 .PHONY : __/remote/src/base64.cpp.s
 
 __/remote/src/decode-answer.o: __/remote/src/decode-answer.cpp.o
@@ -391,7 +391,7 @@ __/remote/src/decode-answer.o: __/remote/src/decode-answer.cpp.o
 
 # target to build an object file
 __/remote/src/decode-answer.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.o
 .PHONY : __/remote/src/decode-answer.cpp.o
 
 __/remote/src/decode-answer.i: __/remote/src/decode-answer.cpp.i
@@ -400,7 +400,7 @@ __/remote/src/decode-answer.i: __/remote/src/decode-answer.cpp.i
 
 # target to preprocess a source file
 __/remote/src/decode-answer.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.i
 .PHONY : __/remote/src/decode-answer.cpp.i
 
 __/remote/src/decode-answer.s: __/remote/src/decode-answer.cpp.s
@@ -409,7 +409,7 @@ __/remote/src/decode-answer.s: __/remote/src/decode-answer.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/decode-answer.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.s
 .PHONY : __/remote/src/decode-answer.cpp.s
 
 __/remote/src/decode-qp.o: __/remote/src/decode-qp.cpp.o
@@ -418,7 +418,7 @@ __/remote/src/decode-qp.o: __/remote/src/decode-qp.cpp.o
 
 # target to build an object file
 __/remote/src/decode-qp.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.o
 .PHONY : __/remote/src/decode-qp.cpp.o
 
 __/remote/src/decode-qp.i: __/remote/src/decode-qp.cpp.i
@@ -427,7 +427,7 @@ __/remote/src/decode-qp.i: __/remote/src/decode-qp.cpp.i
 
 # target to preprocess a source file
 __/remote/src/decode-qp.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.i
 .PHONY : __/remote/src/decode-qp.cpp.i
 
 __/remote/src/decode-qp.s: __/remote/src/decode-qp.cpp.s
@@ -436,7 +436,7 @@ __/remote/src/decode-qp.s: __/remote/src/decode-qp.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/decode-qp.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.s
 .PHONY : __/remote/src/decode-qp.cpp.s
 
 __/remote/src/encode-qp.o: __/remote/src/encode-qp.cpp.o
@@ -445,7 +445,7 @@ __/remote/src/encode-qp.o: __/remote/src/encode-qp.cpp.o
 
 # target to build an object file
 __/remote/src/encode-qp.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.o
 .PHONY : __/remote/src/encode-qp.cpp.o
 
 __/remote/src/encode-qp.i: __/remote/src/encode-qp.cpp.i
@@ -454,7 +454,7 @@ __/remote/src/encode-qp.i: __/remote/src/encode-qp.cpp.i
 
 # target to preprocess a source file
 __/remote/src/encode-qp.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.i
 .PHONY : __/remote/src/encode-qp.cpp.i
 
 __/remote/src/encode-qp.s: __/remote/src/encode-qp.cpp.s
@@ -463,7 +463,7 @@ __/remote/src/encode-qp.s: __/remote/src/encode-qp.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/encode-qp.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.s
 .PHONY : __/remote/src/encode-qp.cpp.s
 
 __/remote/src/http-service.o: __/remote/src/http-service.cpp.o
@@ -472,7 +472,7 @@ __/remote/src/http-service.o: __/remote/src/http-service.cpp.o
 
 # target to build an object file
 __/remote/src/http-service.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.o
 .PHONY : __/remote/src/http-service.cpp.o
 
 __/remote/src/http-service.i: __/remote/src/http-service.cpp.i
@@ -481,7 +481,7 @@ __/remote/src/http-service.i: __/remote/src/http-service.cpp.i
 
 # target to preprocess a source file
 __/remote/src/http-service.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.i
 .PHONY : __/remote/src/http-service.cpp.i
 
 __/remote/src/http-service.s: __/remote/src/http-service.cpp.s
@@ -490,7 +490,7 @@ __/remote/src/http-service.s: __/remote/src/http-service.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/http-service.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.s
 .PHONY : __/remote/src/http-service.cpp.s
 
 __/remote/src/json.o: __/remote/src/json.cpp.o
@@ -499,7 +499,7 @@ __/remote/src/json.o: __/remote/src/json.cpp.o
 
 # target to build an object file
 __/remote/src/json.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.o
 .PHONY : __/remote/src/json.cpp.o
 
 __/remote/src/json.i: __/remote/src/json.cpp.i
@@ -508,7 +508,7 @@ __/remote/src/json.i: __/remote/src/json.cpp.i
 
 # target to preprocess a source file
 __/remote/src/json.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.i
 .PHONY : __/remote/src/json.cpp.i
 
 __/remote/src/json.s: __/remote/src/json.cpp.s
@@ -517,7 +517,7 @@ __/remote/src/json.s: __/remote/src/json.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/json.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.s
 .PHONY : __/remote/src/json.cpp.s
 
 __/remote/src/problem-manager.o: __/remote/src/problem-manager.cpp.o
@@ -526,7 +526,7 @@ __/remote/src/problem-manager.o: __/remote/src/problem-manager.cpp.o
 
 # target to build an object file
 __/remote/src/problem-manager.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.o
 .PHONY : __/remote/src/problem-manager.cpp.o
 
 __/remote/src/problem-manager.i: __/remote/src/problem-manager.cpp.i
@@ -535,7 +535,7 @@ __/remote/src/problem-manager.i: __/remote/src/problem-manager.cpp.i
 
 # target to preprocess a source file
 __/remote/src/problem-manager.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.i
 .PHONY : __/remote/src/problem-manager.cpp.i
 
 __/remote/src/problem-manager.s: __/remote/src/problem-manager.cpp.s
@@ -544,7 +544,7 @@ __/remote/src/problem-manager.s: __/remote/src/problem-manager.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/problem-manager.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.s
 .PHONY : __/remote/src/problem-manager.cpp.s
 
 __/remote/src/retry-service.o: __/remote/src/retry-service.cpp.o
@@ -553,7 +553,7 @@ __/remote/src/retry-service.o: __/remote/src/retry-service.cpp.o
 
 # target to build an object file
 __/remote/src/retry-service.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.o
 .PHONY : __/remote/src/retry-service.cpp.o
 
 __/remote/src/retry-service.i: __/remote/src/retry-service.cpp.i
@@ -562,7 +562,7 @@ __/remote/src/retry-service.i: __/remote/src/retry-service.cpp.i
 
 # target to preprocess a source file
 __/remote/src/retry-service.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.i
 .PHONY : __/remote/src/retry-service.cpp.i
 
 __/remote/src/retry-service.s: __/remote/src/retry-service.cpp.s
@@ -571,7 +571,7 @@ __/remote/src/retry-service.s: __/remote/src/retry-service.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/retry-service.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.s
 .PHONY : __/remote/src/retry-service.cpp.s
 
 __/remote/src/sapi-service.o: __/remote/src/sapi-service.cpp.o
@@ -580,7 +580,7 @@ __/remote/src/sapi-service.o: __/remote/src/sapi-service.cpp.o
 
 # target to build an object file
 __/remote/src/sapi-service.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.o
 .PHONY : __/remote/src/sapi-service.cpp.o
 
 __/remote/src/sapi-service.i: __/remote/src/sapi-service.cpp.i
@@ -589,7 +589,7 @@ __/remote/src/sapi-service.i: __/remote/src/sapi-service.cpp.i
 
 # target to preprocess a source file
 __/remote/src/sapi-service.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.i
 .PHONY : __/remote/src/sapi-service.cpp.i
 
 __/remote/src/sapi-service.s: __/remote/src/sapi-service.cpp.s
@@ -598,7 +598,7 @@ __/remote/src/sapi-service.s: __/remote/src/sapi-service.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/sapi-service.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.s
 .PHONY : __/remote/src/sapi-service.cpp.s
 
 __/remote/src/threadpool.o: __/remote/src/threadpool.cpp.o
@@ -607,7 +607,7 @@ __/remote/src/threadpool.o: __/remote/src/threadpool.cpp.o
 
 # target to build an object file
 __/remote/src/threadpool.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.o
 .PHONY : __/remote/src/threadpool.cpp.o
 
 __/remote/src/threadpool.i: __/remote/src/threadpool.cpp.i
@@ -616,7 +616,7 @@ __/remote/src/threadpool.i: __/remote/src/threadpool.cpp.i
 
 # target to preprocess a source file
 __/remote/src/threadpool.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.i
 .PHONY : __/remote/src/threadpool.cpp.i
 
 __/remote/src/threadpool.s: __/remote/src/threadpool.cpp.s
@@ -625,7 +625,7 @@ __/remote/src/threadpool.s: __/remote/src/threadpool.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/threadpool.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.s
 .PHONY : __/remote/src/threadpool.cpp.s
 
 __/remote/src/user-agent.o: __/remote/src/user-agent.cpp.o
@@ -634,7 +634,7 @@ __/remote/src/user-agent.o: __/remote/src/user-agent.cpp.o
 
 # target to build an object file
 __/remote/src/user-agent.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.o
 .PHONY : __/remote/src/user-agent.cpp.o
 
 __/remote/src/user-agent.i: __/remote/src/user-agent.cpp.i
@@ -643,7 +643,7 @@ __/remote/src/user-agent.i: __/remote/src/user-agent.cpp.i
 
 # target to preprocess a source file
 __/remote/src/user-agent.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.i
 .PHONY : __/remote/src/user-agent.cpp.i
 
 __/remote/src/user-agent.s: __/remote/src/user-agent.cpp.s
@@ -652,7 +652,7 @@ __/remote/src/user-agent.s: __/remote/src/user-agent.cpp.s
 
 # target to generate assembly for a file
 __/remote/src/user-agent.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.s
 .PHONY : __/remote/src/user-agent.cpp.s
 
 src/conversions.o: src/conversions.cpp.o
@@ -661,7 +661,7 @@ src/conversions.o: src/conversions.cpp.o
 
 # target to build an object file
 src/conversions.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.o
 .PHONY : src/conversions.cpp.o
 
 src/conversions.i: src/conversions.cpp.i
@@ -670,7 +670,7 @@ src/conversions.i: src/conversions.cpp.i
 
 # target to preprocess a source file
 src/conversions.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.i
 .PHONY : src/conversions.cpp.i
 
 src/conversions.s: src/conversions.cpp.s
@@ -679,7 +679,7 @@ src/conversions.s: src/conversions.cpp.s
 
 # target to generate assembly for a file
 src/conversions.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.s
 .PHONY : src/conversions.cpp.s
 
 src/defaults.o: src/defaults.cpp.o
@@ -688,7 +688,7 @@ src/defaults.o: src/defaults.cpp.o
 
 # target to build an object file
 src/defaults.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.o
 .PHONY : src/defaults.cpp.o
 
 src/defaults.i: src/defaults.cpp.i
@@ -697,7 +697,7 @@ src/defaults.i: src/defaults.cpp.i
 
 # target to preprocess a source file
 src/defaults.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.i
 .PHONY : src/defaults.cpp.i
 
 src/defaults.s: src/defaults.cpp.s
@@ -706,7 +706,7 @@ src/defaults.s: src/defaults.cpp.s
 
 # target to generate assembly for a file
 src/defaults.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.s
 .PHONY : src/defaults.cpp.s
 
 src/dwave_sapi.o: src/dwave_sapi.cpp.o
@@ -715,7 +715,7 @@ src/dwave_sapi.o: src/dwave_sapi.cpp.o
 
 # target to build an object file
 src/dwave_sapi.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.o
 .PHONY : src/dwave_sapi.cpp.o
 
 src/dwave_sapi.i: src/dwave_sapi.cpp.i
@@ -724,7 +724,7 @@ src/dwave_sapi.i: src/dwave_sapi.cpp.i
 
 # target to preprocess a source file
 src/dwave_sapi.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.i
 .PHONY : src/dwave_sapi.cpp.i
 
 src/dwave_sapi.s: src/dwave_sapi.cpp.s
@@ -733,7 +733,7 @@ src/dwave_sapi.s: src/dwave_sapi.cpp.s
 
 # target to generate assembly for a file
 src/dwave_sapi.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.s
 .PHONY : src/dwave_sapi.cpp.s
 
 src/embed-problem.o: src/embed-problem.cpp.o
@@ -742,7 +742,7 @@ src/embed-problem.o: src/embed-problem.cpp.o
 
 # target to build an object file
 src/embed-problem.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.o
 .PHONY : src/embed-problem.cpp.o
 
 src/embed-problem.i: src/embed-problem.cpp.i
@@ -751,7 +751,7 @@ src/embed-problem.i: src/embed-problem.cpp.i
 
 # target to preprocess a source file
 src/embed-problem.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.i
 .PHONY : src/embed-problem.cpp.i
 
 src/embed-problem.s: src/embed-problem.cpp.s
@@ -760,7 +760,7 @@ src/embed-problem.s: src/embed-problem.cpp.s
 
 # target to generate assembly for a file
 src/embed-problem.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.s
 .PHONY : src/embed-problem.cpp.s
 
 src/fix-variables.o: src/fix-variables.cpp.o
@@ -769,7 +769,7 @@ src/fix-variables.o: src/fix-variables.cpp.o
 
 # target to build an object file
 src/fix-variables.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.o
 .PHONY : src/fix-variables.cpp.o
 
 src/fix-variables.i: src/fix-variables.cpp.i
@@ -778,7 +778,7 @@ src/fix-variables.i: src/fix-variables.cpp.i
 
 # target to preprocess a source file
 src/fix-variables.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.i
 .PHONY : src/fix-variables.cpp.i
 
 src/fix-variables.s: src/fix-variables.cpp.s
@@ -787,7 +787,7 @@ src/fix-variables.s: src/fix-variables.cpp.s
 
 # target to generate assembly for a file
 src/fix-variables.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.s
 .PHONY : src/fix-variables.cpp.s
 
 src/freefuncs.o: src/freefuncs.cpp.o
@@ -796,7 +796,7 @@ src/freefuncs.o: src/freefuncs.cpp.o
 
 # target to build an object file
 src/freefuncs.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.o
 .PHONY : src/freefuncs.cpp.o
 
 src/freefuncs.i: src/freefuncs.cpp.i
@@ -805,7 +805,7 @@ src/freefuncs.i: src/freefuncs.cpp.i
 
 # target to preprocess a source file
 src/freefuncs.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.i
 .PHONY : src/freefuncs.cpp.i
 
 src/freefuncs.s: src/freefuncs.cpp.s
@@ -814,7 +814,7 @@ src/freefuncs.s: src/freefuncs.cpp.s
 
 # target to generate assembly for a file
 src/freefuncs.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.s
 .PHONY : src/freefuncs.cpp.s
 
 src/global.o: src/global.cpp.o
@@ -823,7 +823,7 @@ src/global.o: src/global.cpp.o
 
 # target to build an object file
 src/global.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.o
 .PHONY : src/global.cpp.o
 
 src/global.i: src/global.cpp.i
@@ -832,7 +832,7 @@ src/global.i: src/global.cpp.i
 
 # target to preprocess a source file
 src/global.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.i
 .PHONY : src/global.cpp.i
 
 src/global.s: src/global.cpp.s
@@ -841,7 +841,7 @@ src/global.s: src/global.cpp.s
 
 # target to generate assembly for a file
 src/global.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.s
 .PHONY : src/global.cpp.s
 
 src/internal.o: src/internal.cpp.o
@@ -850,7 +850,7 @@ src/internal.o: src/internal.cpp.o
 
 # target to build an object file
 src/internal.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.o
 .PHONY : src/internal.cpp.o
 
 src/internal.i: src/internal.cpp.i
@@ -859,7 +859,7 @@ src/internal.i: src/internal.cpp.i
 
 # target to preprocess a source file
 src/internal.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.i
 .PHONY : src/internal.cpp.i
 
 src/internal.s: src/internal.cpp.s
@@ -868,7 +868,7 @@ src/internal.s: src/internal.cpp.s
 
 # target to generate assembly for a file
 src/internal.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.s
 .PHONY : src/internal.cpp.s
 
 src/remote.o: src/remote.cpp.o
@@ -877,7 +877,7 @@ src/remote.o: src/remote.cpp.o
 
 # target to build an object file
 src/remote.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.o
 .PHONY : src/remote.cpp.o
 
 src/remote.i: src/remote.cpp.i
@@ -886,7 +886,7 @@ src/remote.i: src/remote.cpp.i
 
 # target to preprocess a source file
 src/remote.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.i
 .PHONY : src/remote.cpp.i
 
 src/remote.s: src/remote.cpp.s
@@ -895,7 +895,7 @@ src/remote.s: src/remote.cpp.s
 
 # target to generate assembly for a file
 src/remote.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.s
 .PHONY : src/remote.cpp.s
 
 src/sapi-impl.o: src/sapi-impl.cpp.o
@@ -904,7 +904,7 @@ src/sapi-impl.o: src/sapi-impl.cpp.o
 
 # target to build an object file
 src/sapi-impl.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.o
 .PHONY : src/sapi-impl.cpp.o
 
 src/sapi-impl.i: src/sapi-impl.cpp.i
@@ -913,7 +913,7 @@ src/sapi-impl.i: src/sapi-impl.cpp.i
 
 # target to preprocess a source file
 src/sapi-impl.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.i
 .PHONY : src/sapi-impl.cpp.i
 
 src/sapi-impl.s: src/sapi-impl.cpp.s
@@ -922,7 +922,7 @@ src/sapi-impl.s: src/sapi-impl.cpp.s
 
 # target to generate assembly for a file
 src/sapi-impl.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.s
 .PHONY : src/sapi-impl.cpp.s
 
 src/unembed-answer.o: src/unembed-answer.cpp.o
@@ -931,7 +931,7 @@ src/unembed-answer.o: src/unembed-answer.cpp.o
 
 # target to build an object file
 src/unembed-answer.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.o
 .PHONY : src/unembed-answer.cpp.o
 
 src/unembed-answer.i: src/unembed-answer.cpp.i
@@ -940,7 +940,7 @@ src/unembed-answer.i: src/unembed-answer.cpp.i
 
 # target to preprocess a source file
 src/unembed-answer.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.i
 .PHONY : src/unembed-answer.cpp.i
 
 src/unembed-answer.s: src/unembed-answer.cpp.s
@@ -949,7 +949,7 @@ src/unembed-answer.s: src/unembed-answer.cpp.s
 
 # target to generate assembly for a file
 src/unembed-answer.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.s
 .PHONY : src/unembed-answer.cpp.s
 
 src/version.o: src/version.c.o
@@ -958,7 +958,7 @@ src/version.o: src/version.c.o
 
 # target to build an object file
 src/version.c.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.o
 .PHONY : src/version.c.o
 
 src/version.i: src/version.c.i
@@ -967,7 +967,7 @@ src/version.i: src/version.c.i
 
 # target to preprocess a source file
 src/version.c.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.i
 .PHONY : src/version.c.i
 
 src/version.s: src/version.c.s
@@ -976,7 +976,7 @@ src/version.s: src/version.c.s
 
 # target to generate assembly for a file
 src/version.c.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/build.make quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.s
 .PHONY : src/version.c.s
 
 # Help Target
@@ -1090,6 +1090,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

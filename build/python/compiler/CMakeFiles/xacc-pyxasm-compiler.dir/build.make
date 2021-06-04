@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/depend.make
@@ -76,120 +76,132 @@ include python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/progress.make
 # Include the compile flags for this target's objects.
 include python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 
-python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.o: python/compiler/xacc-pyxasm-compiler/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-pyxasm-compiler"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.o
+python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp: python/compiler/xacc-pyxasm-compiler/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-pyxasm-compiler"
+	cd /workspace/xacc/build/python/compiler && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp
 
 python/compiler/xacc-pyxasm-compiler/res_0.zip: ../python/compiler/manifest.json
 python/compiler/xacc-pyxasm-compiler/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-pyxasm-compiler"
-	cd /Users/dhruvshah/git/xacc/python/compiler && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler
-	cd /Users/dhruvshah/git/xacc/python/compiler && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/res_0.zip -n xacc_pyxasm_compiler -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-pyxasm-compiler"
+	cd /workspace/xacc/python/compiler && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler
+	cd /workspace/xacc/python/compiler && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/res_0.zip -n xacc_pyxasm_compiler -r manifest.json
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o: ../python/compiler/generated/pyxasmBaseListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmBaseListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o -c /workspace/xacc/python/compiler/generated/pyxasmBaseListener.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmBaseListener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/generated/pyxasmBaseListener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmBaseListener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/generated/pyxasmBaseListener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o: ../python/compiler/generated/pyxasmLexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmLexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o -c /workspace/xacc/python/compiler/generated/pyxasmLexer.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmLexer.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/generated/pyxasmLexer.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmLexer.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/generated/pyxasmLexer.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o: ../python/compiler/generated/pyxasmListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o -c /workspace/xacc/python/compiler/generated/pyxasmListener.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmListener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/generated/pyxasmListener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmListener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/generated/pyxasmListener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o: ../python/compiler/generated/pyxasmParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o -c /workspace/xacc/python/compiler/generated/pyxasmParser.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmParser.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/generated/pyxasmParser.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/generated/pyxasmParser.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/generated/pyxasmParser.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o: ../python/compiler/pyxasm_activator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/pyxasm_activator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o -c /workspace/xacc/python/compiler/pyxasm_activator.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/pyxasm_activator.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/pyxasm_activator.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/pyxasm_activator.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/pyxasm_activator.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o: ../python/compiler/pyxasm_compiler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/pyxasm_compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o -c /workspace/xacc/python/compiler/pyxasm_compiler.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/pyxasm_compiler.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/pyxasm_compiler.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/pyxasm_compiler.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/pyxasm_compiler.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o: ../python/compiler/pyxasm_listener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o -c /Users/dhruvshah/git/xacc/python/compiler/pyxasm_listener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o -c /workspace/xacc/python/compiler/pyxasm_listener.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/compiler/pyxasm_listener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/compiler/pyxasm_listener.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/compiler/pyxasm_listener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/compiler/pyxasm_listener.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.s
+
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o: python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp
+
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.i
+
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.s
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/flags.make
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o: python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o -c /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp > CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.i
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/python/compiler && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp -o CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-pyxasm-compiler
 xacc__pyxasm__compiler_OBJECTS = \
@@ -200,45 +212,46 @@ xacc__pyxasm__compiler_OBJECTS = \
 "CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o" \
 "CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o" \
 "CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o" \
+"CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-pyxasm-compiler
-xacc__pyxasm__compiler_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.o"
+xacc__pyxasm__compiler_EXTERNAL_OBJECTS =
 
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.o
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/build.make
-python/compiler/libxacc-pyxasm-compiler.dylib: quantum/gate/libxacc-quantum-gate.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: quantum/annealing/libxacc-quantum-annealing.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: ../dist/libantlr4-runtime.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: ../dist/libantlr4-runtime.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: xacc/libxacc.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-python/compiler/libxacc-pyxasm-compiler.dylib: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libxacc-pyxasm-compiler.dylib"
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-pyxasm-compiler.dir/link.txt --verbose=$(VERBOSE)
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmBaseListener.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmLexer.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmListener.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/generated/pyxasmParser.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_activator.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/build.make
+python/compiler/libxacc-pyxasm-compiler.so: quantum/gate/libxacc-quantum-gate.so
+python/compiler/libxacc-pyxasm-compiler.so: quantum/annealing/libxacc-quantum-annealing.so
+python/compiler/libxacc-pyxasm-compiler.so: ../dist/libantlr4-runtime.so
+python/compiler/libxacc-pyxasm-compiler.so: quantum/observable/pauli/libxacc-pauli.so
+python/compiler/libxacc-pyxasm-compiler.so: quantum/observable/fermion/libxacc-fermion.so
+python/compiler/libxacc-pyxasm-compiler.so: xacc/libxacc.so
+python/compiler/libxacc-pyxasm-compiler.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+python/compiler/libxacc-pyxasm-compiler.so: python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libxacc-pyxasm-compiler.so"
+	cd /workspace/xacc/build/python/compiler && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-pyxasm-compiler.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-pyxasm-compiler"
+	cd /workspace/xacc/python/compiler && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/python/compiler/libxacc-pyxasm-compiler.so -z /workspace/xacc/build/python/compiler/xacc-pyxasm-compiler/res_0.zip
 
 # Rule to build all files generated by this target.
-python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/build: python/compiler/libxacc-pyxasm-compiler.dylib
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/build: python/compiler/libxacc-pyxasm-compiler.so
 
 .PHONY : python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/build
 
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/python/compiler && $(CMAKE_COMMAND) -P CMakeFiles/xacc-pyxasm-compiler.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/python/compiler && $(CMAKE_COMMAND) -P CMakeFiles/xacc-pyxasm-compiler.dir/cmake_clean.cmake
 .PHONY : python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/clean
 
-python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/depend: python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.o
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/depend: python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/depend: python/compiler/xacc-pyxasm-compiler/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/python/compiler /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/python/compiler /Users/dhruvshah/git/xacc/build/python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/python/compiler /workspace/xacc/build /workspace/xacc/build/python/compiler /workspace/xacc/build/python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/depend
 

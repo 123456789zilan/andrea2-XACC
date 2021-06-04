@@ -94,15 +94,15 @@ miniz.c
 intrin.h
 -
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/json.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/json.h
 cpptl/config.h
 -
 config.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/config.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/config.h
 forwards.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/forwards.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/forwards.h
 forwards.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/forwards.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/forwards.h
 string
 -
 vector
@@ -116,9 +116,9 @@ cpptl/smallmap.h
 cpptl/forwards.h
 -
 features.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/features.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/features.h
 value.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/value.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/value.h
 deque
 -
 iosfwd
@@ -130,7 +130,7 @@ string
 istream
 -
 value.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/value.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/value.h
 vector
 -
 string
@@ -142,11 +142,11 @@ stdlib.h
 sstream
 -
 config.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/config.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/config.h
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/jsoncpp.cpp
+/workspace/xacc/tpls/cppmicroservices/third_party/jsoncpp.cpp
 json/json.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json/json.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json/json.h
 json/assertions.h
 -
 json/reader.h
@@ -154,7 +154,7 @@ json/reader.h
 json/value.h
 -
 json_tool.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json_tool.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json_tool.h
 utility
 -
 cstdio
@@ -196,11 +196,11 @@ cstddef
 algorithm
 -
 json_valueiterator.inl
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json_valueiterator.inl
+/workspace/xacc/tpls/cppmicroservices/third_party/json_valueiterator.inl
 json/writer.h
 -
 json_tool.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/third_party/json_tool.h
+/workspace/xacc/tpls/cppmicroservices/third_party/json_tool.h
 iomanip
 -
 memory
@@ -226,9 +226,9 @@ cmath
 float.h
 -
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/tools/rc/ResourceCompiler.cpp
+/workspace/xacc/tpls/cppmicroservices/tools/rc/ResourceCompiler.cpp
 miniz.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/tools/rc/miniz.h
+/workspace/xacc/tpls/cppmicroservices/tools/rc/miniz.h
 cassert
 -
 cstdio
@@ -254,9 +254,9 @@ unordered_map
 utility
 -
 json/json.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/tools/rc/json/json.h
+/workspace/xacc/tpls/cppmicroservices/tools/rc/json/json.h
 optionparser.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/tools/rc/optionparser.h
+/workspace/xacc/tpls/cppmicroservices/tools/rc/optionparser.h
 windows.h
 -
 unistd.h

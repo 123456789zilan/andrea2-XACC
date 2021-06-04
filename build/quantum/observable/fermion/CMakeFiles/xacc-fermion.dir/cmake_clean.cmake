@@ -7,9 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-fermion.dir/generated/FermionOperatorListener.cpp.o"
   "CMakeFiles/xacc-fermion.dir/generated/FermionOperatorParser.cpp.o"
   "CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroservices_init.cpp.o"
-  "libxacc-fermion.dylib"
+  "CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroservices_resources.cpp.o"
   "libxacc-fermion.pdb"
-  "xacc-fermion/cppmicroservices_resources.o"
+  "libxacc-fermion.so"
+  "xacc-fermion/cppmicroservices_resources.cpp"
   "xacc-fermion/res_0.zip"
 )
 

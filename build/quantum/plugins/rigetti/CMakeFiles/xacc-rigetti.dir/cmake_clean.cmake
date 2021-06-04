@@ -7,9 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o"
   "CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o"
   "CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o"
-  "libxacc-rigetti.dylib"
+  "CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o"
   "libxacc-rigetti.pdb"
-  "xacc-rigetti/cppmicroservices_resources.o"
+  "libxacc-rigetti.so"
+  "xacc-rigetti/cppmicroservices_resources.cpp"
   "xacc-rigetti/res_0.zip"
 )
 

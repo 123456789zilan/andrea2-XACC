@@ -37630,23 +37630,23 @@ boost/winapi/detail/header.hpp
 boost/winapi/detail/footer.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.cpp
 conversions.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.h
 algorithm
 -
 coding.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/coding.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/coding.hpp
 internal.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/defaults.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/defaults.cpp
 limits
 -
 dwave_sapi.h
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.cpp
 algorithm
 -
 vector
@@ -37666,17 +37666,17 @@ boost/foreach.hpp
 boost/random.hpp
 -
 find_embedding.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/find_embedding.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/find_embedding.hpp
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 conversions.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 sapi-impl.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/embed-problem.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/embed-problem.cpp
 cmath
 -
 cstring
@@ -37708,11 +37708,11 @@ vector
 boost/foreach.hpp
 -
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/fix-variables.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/fix-variables.cpp
 exception
 -
 map
@@ -37728,17 +37728,17 @@ compressed_matrix.hpp
 fix_variables.hpp
 -
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/freefuncs.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/freefuncs.cpp
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 remote.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/global.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/global.cpp
 memory
 -
 mutex
@@ -37750,13 +37750,13 @@ boost/noncopyable.hpp
 retry-service.hpp
 -
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 local.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.cpp
 cstring
 -
 exception
@@ -37772,11 +37772,11 @@ fix_variables.hpp
 find_embedding.hpp
 -
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.cpp
 algorithm
 -
 exception
@@ -37808,7 +37808,7 @@ internal.hpp
 remote.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/sapi-impl.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/sapi-impl.cpp
 cstring
 -
 exception
@@ -37830,7 +37830,7 @@ dwave_sapi.h
 sapi-impl.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/unembed-answer.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/unembed-answer.cpp
 cstddef
 -
 cmath
@@ -37848,13 +37848,13 @@ boost/foreach.hpp
 boost/random.hpp
 -
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 internal.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.cpp
 find_embedding.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.hpp
 functional
 -
 limits
@@ -37878,11 +37878,11 @@ sstream
 boost/random.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.cpp
 fix_variables.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.hpp
 compressed_matrix.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/compressed_matrix.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/compressed_matrix.hpp
 algorithm
 -
 cmath
@@ -37914,11 +37914,11 @@ fstream
 time.h
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/local-solvers/src/problems.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/local-solvers/src/problems.cpp
 sapi-local/problems.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/answer-service.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/answer-service.cpp
 exception
 -
 functional
@@ -37938,7 +37938,7 @@ problem.hpp
 json.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/await.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/await.cpp
 chrono
 -
 condition_variable
@@ -37958,7 +37958,7 @@ boost/foreach.hpp
 problem.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/base64.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/base64.cpp
 cassert
 -
 stdexcept
@@ -37974,13 +37974,13 @@ base64.hpp
 exceptions.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-answer.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-answer.cpp
 coding.hpp
 -
 json.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-qp.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-qp.cpp
 cstdint
 -
 cstring
@@ -38006,7 +38006,7 @@ base64.hpp
 coding.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/encode-qp.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/encode-qp.cpp
 algorithm
 -
 exception
@@ -38042,7 +38042,7 @@ solver.hpp
 coding.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/http-service.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/http-service.cpp
 cstddef
 -
 exception
@@ -38086,7 +38086,7 @@ http-service.hpp
 threadpool.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/json.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/json.cpp
 cstdarg
 -
 cstddef
@@ -38116,9 +38116,9 @@ boost/foreach.hpp
 json.hpp
 -
 debug-new.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/debug-new.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/debug-new.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/problem-manager.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/problem-manager.cpp
 algorithm
 -
 condition_variable
@@ -38166,7 +38166,7 @@ json.hpp
 exceptions.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/retry-service.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/retry-service.cpp
 functional
 -
 memory
@@ -38196,7 +38196,7 @@ retry-service.hpp
 exceptions.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/sapi-service.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/sapi-service.cpp
 cctype
 -
 cstdio
@@ -38226,9 +38226,9 @@ sapi-service.hpp
 json.hpp
 -
 user-agent.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/threadpool.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/threadpool.cpp
 condition_variable
 -
 functional
@@ -38250,7 +38250,7 @@ threadpool.hpp
 exceptions.hpp
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.cpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.cpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
 

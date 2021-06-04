@@ -27,8 +27,8 @@ quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/QuantumIRActivator.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/provider/QuantumIRActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/provider/QuantumIRProvider.hpp
+ /workspace/xacc/quantum/provider/QuantumIRActivator.cpp
+ /workspace/xacc/quantum/provider/QuantumIRProvider.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -87,12 +87,14 @@ quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/QuantumIRProvider.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/provider/QuantumIRProvider.cpp
- /Users/dhruvshah/git/xacc/quantum/provider/QuantumIRProvider.hpp
+ /workspace/xacc/quantum/provider/QuantumIRProvider.cpp
+ /workspace/xacc/quantum/provider/QuantumIRProvider.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/provider/xacc-quantum-irprovider/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/provider/xacc-quantum-irprovider/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/provider/xacc-quantum-irprovider/cppmicroservices_resources.cpp

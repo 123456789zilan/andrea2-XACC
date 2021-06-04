@@ -814,23 +814,23 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/XASMCompilerTester.cpp
+/workspace/xacc/quantum/plugins/xasm/tests/XASMCompilerTester.cpp
 gtest/gtest.h
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/gtest/gtest.h
+/workspace/xacc/quantum/plugins/xasm/tests/gtest/gtest.h
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/xacc.hpp
 xacc_quantum_gate_api.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/xacc_quantum_gate_api.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/xacc_quantum_gate_api.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/xacc_service.hpp
 Utils.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/Utils.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/Utils.hpp
 xacc_internal_compiler.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/xacc_internal_compiler.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/xacc_internal_compiler.hpp
 qalloc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/qalloc.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/qalloc.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/xasm/tests/Circuit.hpp
+/workspace/xacc/quantum/plugins/xasm/tests/Circuit.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

@@ -40,7 +40,7 @@ MitiqZNE::~MitiqZNE() {
 void MitiqZNE::initialize(const HeterogeneousMap &params) {
   if (!guard && !Py_IsInitialized()) {
     guard = std::make_unique<py::scoped_interpreter>();
-    libpython_handle = dlopen("libpython3.9.dylib", RTLD_LAZY | RTLD_GLOBAL);
+    libpython_handle = dlopen("libpython3.8.so", RTLD_LAZY | RTLD_GLOBAL);
   }
 
   if (Py_IsInitialized()) {

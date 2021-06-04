@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/depend.make
@@ -76,105 +76,119 @@ include xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/progress.make
 # Include the compile flags for this target's objects.
 include xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
 
-xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.o: xacc/ir/graph-impl/xacc-graph/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-graph"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.o
+xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp: xacc/ir/graph-impl/xacc-graph/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-graph"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp
 
 xacc/ir/graph-impl/xacc-graph/res_0.zip: ../xacc/ir/graph-impl/manifest.json
 xacc/ir/graph-impl/xacc-graph/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-graph"
-	cd /Users/dhruvshah/git/xacc/xacc/ir/graph-impl && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph
-	cd /Users/dhruvshah/git/xacc/xacc/ir/graph-impl && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/res_0.zip -n xacc_quantum_graph -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-graph"
+	cd /workspace/xacc/xacc/ir/graph-impl && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph
+	cd /workspace/xacc/xacc/ir/graph-impl && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/res_0.zip -n xacc_quantum_graph -r manifest.json
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o: ../xacc/ir/graph-impl/UtilsActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o -c /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/UtilsActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o -c /workspace/xacc/xacc/ir/graph-impl/UtilsActivator.cpp
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/UtilsActivator.cpp > CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.i
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/ir/graph-impl/UtilsActivator.cpp > CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.i
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/UtilsActivator.cpp -o CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.s
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/ir/graph-impl/UtilsActivator.cpp -o CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.s
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o: ../xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o -c /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o -c /workspace/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp > CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.i
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp > CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.i
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp -o CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.s
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/ir/graph-impl/boost/DirectedBoostGraph.cpp -o CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.s
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o: ../xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o -c /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o -c /workspace/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp > CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.i
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp > CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.i
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp -o CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.s
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/ir/graph-impl/boost/UndirectedBoostGraph.cpp -o CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.s
+
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o: xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp
+
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp > CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.i
+
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.s
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/flags.make
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o: xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o -c /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp > CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp > CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.i
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/xacc/ir/graph-impl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_init.cpp -o CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-graph
 xacc__graph_OBJECTS = \
 "CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o" \
 "CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o" \
 "CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o" \
+"CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-graph
-xacc__graph_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.o"
+xacc__graph_EXTERNAL_OBJECTS =
 
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.o
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/build.make
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/libxacc.dylib
-xacc/ir/graph-impl/libxacc-graph.dylib: tpls/boost-cmake/libboost_graph.a
-xacc/ir/graph-impl/libxacc-graph.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-xacc/ir/graph-impl/libxacc-graph.dylib: tpls/boost-cmake/libboost_regex.a
-xacc/ir/graph-impl/libxacc-graph.dylib: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libxacc-graph.dylib"
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-graph.dir/link.txt --verbose=$(VERBOSE)
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/UtilsActivator.cpp.o
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/build.make
+xacc/ir/graph-impl/libxacc-graph.so: xacc/libxacc.so
+xacc/ir/graph-impl/libxacc-graph.so: tpls/boost-cmake/libboost_graph.a
+xacc/ir/graph-impl/libxacc-graph.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+xacc/ir/graph-impl/libxacc-graph.so: tpls/boost-cmake/libboost_regex.a
+xacc/ir/graph-impl/libxacc-graph.so: xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libxacc-graph.so"
+	cd /workspace/xacc/build/xacc/ir/graph-impl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-graph.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-graph"
+	cd /workspace/xacc/xacc/ir/graph-impl && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/xacc/ir/graph-impl/libxacc-graph.so -z /workspace/xacc/build/xacc/ir/graph-impl/xacc-graph/res_0.zip
 
 # Rule to build all files generated by this target.
-xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/build: xacc/ir/graph-impl/libxacc-graph.dylib
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/build: xacc/ir/graph-impl/libxacc-graph.so
 
 .PHONY : xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/build
 
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl && $(CMAKE_COMMAND) -P CMakeFiles/xacc-graph.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc/ir/graph-impl && $(CMAKE_COMMAND) -P CMakeFiles/xacc-graph.dir/cmake_clean.cmake
 .PHONY : xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/clean
 
-xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/depend: xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.o
+xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/depend: xacc/ir/graph-impl/xacc-graph/cppmicroservices_resources.cpp
 xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/depend: xacc/ir/graph-impl/xacc-graph/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc/ir/graph-impl /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl /Users/dhruvshah/git/xacc/build/xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc/ir/graph-impl /workspace/xacc/build /workspace/xacc/build/xacc/ir/graph-impl /workspace/xacc/build/xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/ir/graph-impl/CMakeFiles/xacc-graph.dir/depend
 

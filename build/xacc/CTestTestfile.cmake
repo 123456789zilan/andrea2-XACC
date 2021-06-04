@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/dhruvshah/git/xacc/xacc
-# Build directory: /Users/dhruvshah/git/xacc/build/xacc
+# Source directory: /workspace/xacc/xacc
+# Build directory: /workspace/xacc/build/xacc
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

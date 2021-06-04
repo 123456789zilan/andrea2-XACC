@@ -808,7 +808,7 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/qEOMTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/qEOMTester.cpp
 gtest/gtest.h
 -
 memory
@@ -818,21 +818,21 @@ utility
 vector
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/xacc_service.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/Observable.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/Algorithm.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/xacc_observable.hpp
 OperatorPool.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/OperatorPool.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/OperatorPool.hpp
 FermionOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/FermionOperator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/FermionOperator.hpp
 ObservableTransform.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qeom/tests/ObservableTransform.hpp
+/workspace/xacc/quantum/plugins/algorithms/qeom/tests/ObservableTransform.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

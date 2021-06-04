@@ -502,15 +502,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/nah_ucc3_psi4.cpp
+/workspace/xacc/quantum/examples/qasm/nah_ucc3_psi4.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc.hpp
+/workspace/xacc/quantum/examples/qasm/xacc.hpp
 Optimizer.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/Optimizer.hpp
+/workspace/xacc/quantum/examples/qasm/Optimizer.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_observable.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_observable.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc_service.hpp
+/workspace/xacc/quantum/examples/qasm/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

@@ -10,7 +10,7 @@
 stddef.h
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/version.c
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/version.c
 dwave_sapi.h
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
+/workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.h
 

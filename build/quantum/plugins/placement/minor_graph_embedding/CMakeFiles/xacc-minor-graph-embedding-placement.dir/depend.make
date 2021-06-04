@@ -101,3 +101,5 @@ quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embe
 quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp.o: quantum/plugins/placement/minor_graph_embedding/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp
 quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/placement/minor_graph_embedding/CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp.o: quantum/plugins/placement/minor_graph_embedding/xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp
+

@@ -279,7 +279,7 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActi
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp
+ /workspace/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -566,8 +566,8 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/Gat
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.hpp
+ /workspace/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp
+ /workspace/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -596,8 +596,8 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.hpp
+ /workspace/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp
+ /workspace/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.hpp
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o
  ../quantum/gate/ir/Circuit.hpp
  ../quantum/gate/ir/CommonGates.hpp
@@ -858,8 +858,8 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusi
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.hpp
+ /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp
+ /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.hpp
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o
  ../quantum/gate/ir/Circuit.hpp
  ../quantum/gate/ir/CommonGates.hpp
@@ -1144,9 +1144,9 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTra
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/PulseTransform.hpp
+ /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.hpp
+ /workspace/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp
+ /workspace/xacc/quantum/plugins/optimizers/pulse/PulseTransform.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1203,9 +1203,9 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/Circuit
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.hpp
+ /workspace/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp
+ /workspace/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.hpp
+ /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -1218,9 +1218,11 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePo
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.hpp
+ /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp
+ /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.hpp
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp

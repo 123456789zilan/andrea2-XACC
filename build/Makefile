@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,37 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,44 +121,10 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -156,8 +134,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -165,10 +143,21 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -176,11 +165,22 @@ package/fast: package
 
 .PHONY : package/fast
 
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -207,6 +207,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named format
+
+# Build rule for target.
+format: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 format
+.PHONY : format
+
+# fast build rule for target.
+format/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
+.PHONY : format/fast
 
 #=============================================================================
 # Target rules for targets named usResourceCompiler
@@ -261,19 +274,6 @@ cpr/fast:
 .PHONY : cpr/fast
 
 #=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f tpls/cpr/opt/googletest/CMakeFiles/gtest_main.dir/build.make tpls/cpr/opt/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -287,43 +287,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named Boost_serialization
+# Target rules for targets named gtest_main
 
 # Build rule for target.
-Boost_serialization: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_serialization
-.PHONY : Boost_serialization
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
 
 # fast build rule for target.
-Boost_serialization/fast:
-	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_serialization.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_serialization.dir/build
-.PHONY : Boost_serialization/fast
-
-#=============================================================================
-# Target rules for targets named Boost_system
-
-# Build rule for target.
-Boost_system: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_system
-.PHONY : Boost_system
-
-# fast build rule for target.
-Boost_system/fast:
-	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_system.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_system.dir/build
-.PHONY : Boost_system/fast
-
-#=============================================================================
-# Target rules for targets named Boost_regex
-
-# Build rule for target.
-Boost_regex: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_regex
-.PHONY : Boost_regex
-
-# fast build rule for target.
-Boost_regex/fast:
-	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_regex.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_regex.dir/build
-.PHONY : Boost_regex/fast
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f tpls/cpr/opt/googletest/CMakeFiles/gtest_main.dir/build.make tpls/cpr/opt/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 #=============================================================================
 # Target rules for targets named Boost_graph
@@ -339,17 +313,43 @@ Boost_graph/fast:
 .PHONY : Boost_graph/fast
 
 #=============================================================================
-# Target rules for targets named make_lib_output_dir
+# Target rules for targets named Boost_regex
 
 # Build rule for target.
-make_lib_output_dir: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 make_lib_output_dir
-.PHONY : make_lib_output_dir
+Boost_regex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_regex
+.PHONY : Boost_regex
 
 # fast build rule for target.
-make_lib_output_dir/fast:
-	$(MAKE) $(MAKESILENT) -f tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build.make tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build
-.PHONY : make_lib_output_dir/fast
+Boost_regex/fast:
+	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_regex.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_regex.dir/build
+.PHONY : Boost_regex/fast
+
+#=============================================================================
+# Target rules for targets named Boost_system
+
+# Build rule for target.
+Boost_system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_system
+.PHONY : Boost_system
+
+# fast build rule for target.
+Boost_system/fast:
+	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_system.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_system.dir/build
+.PHONY : Boost_system/fast
+
+#=============================================================================
+# Target rules for targets named Boost_serialization
+
+# Build rule for target.
+Boost_serialization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Boost_serialization
+.PHONY : Boost_serialization
+
+# fast build rule for target.
+Boost_serialization/fast:
+	$(MAKE) $(MAKESILENT) -f tpls/boost-cmake/CMakeFiles/Boost_serialization.dir/build.make tpls/boost-cmake/CMakeFiles/Boost_serialization.dir/build
+.PHONY : Boost_serialization/fast
 
 #=============================================================================
 # Target rules for targets named antlr4_shared
@@ -363,6 +363,19 @@ antlr4_shared: cmake_check_build_system
 antlr4_shared/fast:
 	$(MAKE) $(MAKESILENT) -f tpls/antlr/runtime/CMakeFiles/antlr4_shared.dir/build.make tpls/antlr/runtime/CMakeFiles/antlr4_shared.dir/build
 .PHONY : antlr4_shared/fast
+
+#=============================================================================
+# Target rules for targets named make_lib_output_dir
+
+# Build rule for target.
+make_lib_output_dir: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 make_lib_output_dir
+.PHONY : make_lib_output_dir
+
+# fast build rule for target.
+make_lib_output_dir/fast:
+	$(MAKE) $(MAKESILENT) -f tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build.make tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build
+.PHONY : make_lib_output_dir/fast
 
 #=============================================================================
 # Target rules for targets named xacc
@@ -391,30 +404,17 @@ AcceleratorBufferTester/fast:
 .PHONY : AcceleratorBufferTester/fast
 
 #=============================================================================
-# Target rules for targets named InternalCompilerTester
+# Target rules for targets named CLIParserTester
 
 # Build rule for target.
-InternalCompilerTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InternalCompilerTester
-.PHONY : InternalCompilerTester
+CLIParserTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CLIParserTester
+.PHONY : CLIParserTester
 
 # fast build rule for target.
-InternalCompilerTester/fast:
-	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/InternalCompilerTester.dir/build.make xacc/tests/CMakeFiles/InternalCompilerTester.dir/build
-.PHONY : InternalCompilerTester/fast
-
-#=============================================================================
-# Target rules for targets named HeterogeneousTester
-
-# Build rule for target.
-HeterogeneousTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HeterogeneousTester
-.PHONY : HeterogeneousTester
-
-# fast build rule for target.
-HeterogeneousTester/fast:
-	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/HeterogeneousTester.dir/build.make xacc/tests/CMakeFiles/HeterogeneousTester.dir/build
-.PHONY : HeterogeneousTester/fast
+CLIParserTester/fast:
+	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/CLIParserTester.dir/build.make xacc/tests/CMakeFiles/CLIParserTester.dir/build
+.PHONY : CLIParserTester/fast
 
 #=============================================================================
 # Target rules for targets named AlgorithmTester
@@ -430,19 +430,6 @@ AlgorithmTester/fast:
 .PHONY : AlgorithmTester/fast
 
 #=============================================================================
-# Target rules for targets named CLIParserTester
-
-# Build rule for target.
-CLIParserTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CLIParserTester
-.PHONY : CLIParserTester
-
-# fast build rule for target.
-CLIParserTester/fast:
-	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/CLIParserTester.dir/build.make xacc/tests/CMakeFiles/CLIParserTester.dir/build
-.PHONY : CLIParserTester/fast
-
-#=============================================================================
 # Target rules for targets named XACCAPITester
 
 # Build rule for target.
@@ -454,6 +441,32 @@ XACCAPITester: cmake_check_build_system
 XACCAPITester/fast:
 	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/XACCAPITester.dir/build.make xacc/tests/CMakeFiles/XACCAPITester.dir/build
 .PHONY : XACCAPITester/fast
+
+#=============================================================================
+# Target rules for targets named HeterogeneousTester
+
+# Build rule for target.
+HeterogeneousTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HeterogeneousTester
+.PHONY : HeterogeneousTester
+
+# fast build rule for target.
+HeterogeneousTester/fast:
+	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/HeterogeneousTester.dir/build.make xacc/tests/CMakeFiles/HeterogeneousTester.dir/build
+.PHONY : HeterogeneousTester/fast
+
+#=============================================================================
+# Target rules for targets named InternalCompilerTester
+
+# Build rule for target.
+InternalCompilerTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InternalCompilerTester
+.PHONY : InternalCompilerTester
+
+# fast build rule for target.
+InternalCompilerTester/fast:
+	$(MAKE) $(MAKESILENT) -f xacc/tests/CMakeFiles/InternalCompilerTester.dir/build.make xacc/tests/CMakeFiles/InternalCompilerTester.dir/build
+.PHONY : InternalCompilerTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-optimizer-nlopt
@@ -560,19 +573,6 @@ xacc-graph/fast:
 .PHONY : xacc-graph/fast
 
 #=============================================================================
-# Target rules for targets named UndirectedBoostGraphTester
-
-# Build rule for target.
-UndirectedBoostGraphTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UndirectedBoostGraphTester
-.PHONY : UndirectedBoostGraphTester
-
-# fast build rule for target.
-UndirectedBoostGraphTester/fast:
-	$(MAKE) $(MAKESILENT) -f xacc/ir/graph-impl/boost/tests/CMakeFiles/UndirectedBoostGraphTester.dir/build.make xacc/ir/graph-impl/boost/tests/CMakeFiles/UndirectedBoostGraphTester.dir/build
-.PHONY : UndirectedBoostGraphTester/fast
-
-#=============================================================================
 # Target rules for targets named DirectedBoostGraphTester
 
 # Build rule for target.
@@ -584,6 +584,19 @@ DirectedBoostGraphTester: cmake_check_build_system
 DirectedBoostGraphTester/fast:
 	$(MAKE) $(MAKESILENT) -f xacc/ir/graph-impl/boost/tests/CMakeFiles/DirectedBoostGraphTester.dir/build.make xacc/ir/graph-impl/boost/tests/CMakeFiles/DirectedBoostGraphTester.dir/build
 .PHONY : DirectedBoostGraphTester/fast
+
+#=============================================================================
+# Target rules for targets named UndirectedBoostGraphTester
+
+# Build rule for target.
+UndirectedBoostGraphTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UndirectedBoostGraphTester
+.PHONY : UndirectedBoostGraphTester
+
+# fast build rule for target.
+UndirectedBoostGraphTester/fast:
+	$(MAKE) $(MAKESILENT) -f xacc/ir/graph-impl/boost/tests/CMakeFiles/UndirectedBoostGraphTester.dir/build.make xacc/ir/graph-impl/boost/tests/CMakeFiles/UndirectedBoostGraphTester.dir/build
+.PHONY : UndirectedBoostGraphTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-ini-config-parsing
@@ -625,32 +638,6 @@ xacc-quantum-gate/fast:
 .PHONY : xacc-quantum-gate/fast
 
 #=============================================================================
-# Target rules for targets named GateTester
-
-# Build rule for target.
-GateTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GateTester
-.PHONY : GateTester
-
-# fast build rule for target.
-GateTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/gate/ir/tests/CMakeFiles/GateTester.dir/build.make quantum/gate/ir/tests/CMakeFiles/GateTester.dir/build
-.PHONY : GateTester/fast
-
-#=============================================================================
-# Target rules for targets named IfStmtTester
-
-# Build rule for target.
-IfStmtTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IfStmtTester
-.PHONY : IfStmtTester
-
-# fast build rule for target.
-IfStmtTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/gate/ir/tests/CMakeFiles/IfStmtTester.dir/build.make quantum/gate/ir/tests/CMakeFiles/IfStmtTester.dir/build
-.PHONY : IfStmtTester/fast
-
-#=============================================================================
 # Target rules for targets named PulseTester
 
 # Build rule for target.
@@ -675,6 +662,45 @@ PulseSchedulerTester: cmake_check_build_system
 PulseSchedulerTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/gate/ir/tests/CMakeFiles/PulseSchedulerTester.dir/build.make quantum/gate/ir/tests/CMakeFiles/PulseSchedulerTester.dir/build
 .PHONY : PulseSchedulerTester/fast
+
+#=============================================================================
+# Target rules for targets named IfStmtTester
+
+# Build rule for target.
+IfStmtTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IfStmtTester
+.PHONY : IfStmtTester
+
+# fast build rule for target.
+IfStmtTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/gate/ir/tests/CMakeFiles/IfStmtTester.dir/build.make quantum/gate/ir/tests/CMakeFiles/IfStmtTester.dir/build
+.PHONY : IfStmtTester/fast
+
+#=============================================================================
+# Target rules for targets named GateTester
+
+# Build rule for target.
+GateTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GateTester
+.PHONY : GateTester
+
+# fast build rule for target.
+GateTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/gate/ir/tests/CMakeFiles/GateTester.dir/build.make quantum/gate/ir/tests/CMakeFiles/GateTester.dir/build
+.PHONY : GateTester/fast
+
+#=============================================================================
+# Target rules for targets named AllGateVisitorTester
+
+# Build rule for target.
+AllGateVisitorTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AllGateVisitorTester
+.PHONY : AllGateVisitorTester
+
+# fast build rule for target.
+AllGateVisitorTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/gate/utils/tests/CMakeFiles/AllGateVisitorTester.dir/build.make quantum/gate/utils/tests/CMakeFiles/AllGateVisitorTester.dir/build
+.PHONY : AllGateVisitorTester/fast
 
 #=============================================================================
 # Target rules for targets named IRToGraphVisitorTester
@@ -716,19 +742,6 @@ JsonVisitorTester/fast:
 .PHONY : JsonVisitorTester/fast
 
 #=============================================================================
-# Target rules for targets named AllGateVisitorTester
-
-# Build rule for target.
-AllGateVisitorTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AllGateVisitorTester
-.PHONY : AllGateVisitorTester
-
-# fast build rule for target.
-AllGateVisitorTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/gate/utils/tests/CMakeFiles/AllGateVisitorTester.dir/build.make quantum/gate/utils/tests/CMakeFiles/AllGateVisitorTester.dir/build
-.PHONY : AllGateVisitorTester/fast
-
-#=============================================================================
 # Target rules for targets named xacc-quantum-annealing
 
 # Build rule for target.
@@ -740,19 +753,6 @@ xacc-quantum-annealing: cmake_check_build_system
 xacc-quantum-annealing/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/build.make quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/build
 .PHONY : xacc-quantum-annealing/fast
-
-#=============================================================================
-# Target rules for targets named DWQMITester
-
-# Build rule for target.
-DWQMITester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DWQMITester
-.PHONY : DWQMITester
-
-# fast build rule for target.
-DWQMITester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/annealing/ir/tests/CMakeFiles/DWQMITester.dir/build.make quantum/annealing/ir/tests/CMakeFiles/DWQMITester.dir/build
-.PHONY : DWQMITester/fast
 
 #=============================================================================
 # Target rules for targets named AnnealingProgramTester
@@ -768,17 +768,17 @@ AnnealingProgramTester/fast:
 .PHONY : AnnealingProgramTester/fast
 
 #=============================================================================
-# Target rules for targets named TrivialEmbeddingAlgorithmTester
+# Target rules for targets named DWQMITester
 
 # Build rule for target.
-TrivialEmbeddingAlgorithmTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TrivialEmbeddingAlgorithmTester
-.PHONY : TrivialEmbeddingAlgorithmTester
+DWQMITester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DWQMITester
+.PHONY : DWQMITester
 
 # fast build rule for target.
-TrivialEmbeddingAlgorithmTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build.make quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build
-.PHONY : TrivialEmbeddingAlgorithmTester/fast
+DWQMITester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/annealing/ir/tests/CMakeFiles/DWQMITester.dir/build.make quantum/annealing/ir/tests/CMakeFiles/DWQMITester.dir/build
+.PHONY : DWQMITester/fast
 
 #=============================================================================
 # Target rules for targets named EmbeddingTester
@@ -792,6 +792,19 @@ EmbeddingTester: cmake_check_build_system
 EmbeddingTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/annealing/compiler/tests/CMakeFiles/EmbeddingTester.dir/build.make quantum/annealing/compiler/tests/CMakeFiles/EmbeddingTester.dir/build
 .PHONY : EmbeddingTester/fast
+
+#=============================================================================
+# Target rules for targets named TrivialEmbeddingAlgorithmTester
+
+# Build rule for target.
+TrivialEmbeddingAlgorithmTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TrivialEmbeddingAlgorithmTester
+.PHONY : TrivialEmbeddingAlgorithmTester
+
+# fast build rule for target.
+TrivialEmbeddingAlgorithmTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build.make quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build
+.PHONY : TrivialEmbeddingAlgorithmTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-quantum-irprovider
@@ -937,19 +950,6 @@ AerAcceleratorTester/fast:
 .PHONY : AerAcceleratorTester/fast
 
 #=============================================================================
-# Target rules for targets named QObjectCompilerTester
-
-# Build rule for target.
-QObjectCompilerTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QObjectCompilerTester
-.PHONY : QObjectCompilerTester
-
-# fast build rule for target.
-QObjectCompilerTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/ibm/tests/CMakeFiles/QObjectCompilerTester.dir/build.make quantum/plugins/ibm/tests/CMakeFiles/QObjectCompilerTester.dir/build
-.PHONY : QObjectCompilerTester/fast
-
-#=============================================================================
 # Target rules for targets named MidCircuitMeasurementTester
 
 # Build rule for target.
@@ -987,6 +987,19 @@ ResetInstTester: cmake_check_build_system
 ResetInstTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/ibm/tests/CMakeFiles/ResetInstTester.dir/build.make quantum/plugins/ibm/tests/CMakeFiles/ResetInstTester.dir/build
 .PHONY : ResetInstTester/fast
+
+#=============================================================================
+# Target rules for targets named QObjectCompilerTester
+
+# Build rule for target.
+QObjectCompilerTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QObjectCompilerTester
+.PHONY : QObjectCompilerTester
+
+# fast build rule for target.
+QObjectCompilerTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/ibm/tests/CMakeFiles/QObjectCompilerTester.dir/build.make quantum/plugins/ibm/tests/CMakeFiles/QObjectCompilerTester.dir/build
+.PHONY : QObjectCompilerTester/fast
 
 #=============================================================================
 # Target rules for targets named QObjectTester
@@ -1054,19 +1067,6 @@ xacc-rigetti/fast:
 .PHONY : xacc-rigetti/fast
 
 #=============================================================================
-# Target rules for targets named QuilVisitorTester
-
-# Build rule for target.
-QuilVisitorTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuilVisitorTester
-.PHONY : QuilVisitorTester
-
-# fast build rule for target.
-QuilVisitorTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/tests/CMakeFiles/QuilVisitorTester.dir/build.make quantum/plugins/rigetti/tests/CMakeFiles/QuilVisitorTester.dir/build
-.PHONY : QuilVisitorTester/fast
-
-#=============================================================================
 # Target rules for targets named QuilCompilerTester
 
 # Build rule for target.
@@ -1078,6 +1078,19 @@ QuilCompilerTester: cmake_check_build_system
 QuilCompilerTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/tests/CMakeFiles/QuilCompilerTester.dir/build.make quantum/plugins/rigetti/tests/CMakeFiles/QuilCompilerTester.dir/build
 .PHONY : QuilCompilerTester/fast
+
+#=============================================================================
+# Target rules for targets named QuilVisitorTester
+
+# Build rule for target.
+QuilVisitorTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuilVisitorTester
+.PHONY : QuilVisitorTester
+
+# fast build rule for target.
+QuilVisitorTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/tests/CMakeFiles/QuilVisitorTester.dir/build.make quantum/plugins/rigetti/tests/CMakeFiles/QuilVisitorTester.dir/build
+.PHONY : QuilVisitorTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-rigetti-qcs
@@ -1327,19 +1340,6 @@ xacc-algorithm-qpe/fast:
 .PHONY : xacc-algorithm-qpe/fast
 
 #=============================================================================
-# Target rules for targets named ControlledGateTester
-
-# Build rule for target.
-ControlledGateTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ControlledGateTester
-.PHONY : ControlledGateTester
-
-# fast build rule for target.
-ControlledGateTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qpe/tests/CMakeFiles/ControlledGateTester.dir/build.make quantum/plugins/algorithms/qpe/tests/CMakeFiles/ControlledGateTester.dir/build
-.PHONY : ControlledGateTester/fast
-
-#=============================================================================
 # Target rules for targets named QpeTester
 
 # Build rule for target.
@@ -1351,6 +1351,19 @@ QpeTester: cmake_check_build_system
 QpeTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qpe/tests/CMakeFiles/QpeTester.dir/build.make quantum/plugins/algorithms/qpe/tests/CMakeFiles/QpeTester.dir/build
 .PHONY : QpeTester/fast
+
+#=============================================================================
+# Target rules for targets named ControlledGateTester
+
+# Build rule for target.
+ControlledGateTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ControlledGateTester
+.PHONY : ControlledGateTester
+
+# fast build rule for target.
+ControlledGateTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qpe/tests/CMakeFiles/ControlledGateTester.dir/build.make quantum/plugins/algorithms/qpe/tests/CMakeFiles/ControlledGateTester.dir/build
+.PHONY : ControlledGateTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-gradient-strategies
@@ -1366,19 +1379,6 @@ xacc-gradient-strategies/fast:
 .PHONY : xacc-gradient-strategies/fast
 
 #=============================================================================
-# Target rules for targets named QuantumNatualGradientTester
-
-# Build rule for target.
-QuantumNatualGradientTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuantumNatualGradientTester
-.PHONY : QuantumNatualGradientTester
-
-# fast build rule for target.
-QuantumNatualGradientTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/QuantumNatualGradientTester.dir/build.make quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/QuantumNatualGradientTester.dir/build
-.PHONY : QuantumNatualGradientTester/fast
-
-#=============================================================================
 # Target rules for targets named GradientStrategiesTester
 
 # Build rule for target.
@@ -1390,6 +1390,19 @@ GradientStrategiesTester: cmake_check_build_system
 GradientStrategiesTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/GradientStrategiesTester.dir/build.make quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/GradientStrategiesTester.dir/build
 .PHONY : GradientStrategiesTester/fast
+
+#=============================================================================
+# Target rules for targets named QuantumNatualGradientTester
+
+# Build rule for target.
+QuantumNatualGradientTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuantumNatualGradientTester
+.PHONY : QuantumNatualGradientTester
+
+# fast build rule for target.
+QuantumNatualGradientTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/QuantumNatualGradientTester.dir/build.make quantum/plugins/algorithms/gradient_strategies/tests/CMakeFiles/QuantumNatualGradientTester.dir/build
+.PHONY : QuantumNatualGradientTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-autodiff
@@ -1431,19 +1444,6 @@ xacc-algorithm-qite/fast:
 .PHONY : xacc-algorithm-qite/fast
 
 #=============================================================================
-# Target rules for targets named QLanczosTester
-
-# Build rule for target.
-QLanczosTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QLanczosTester
-.PHONY : QLanczosTester
-
-# fast build rule for target.
-QLanczosTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qite/tests/CMakeFiles/QLanczosTester.dir/build.make quantum/plugins/algorithms/qite/tests/CMakeFiles/QLanczosTester.dir/build
-.PHONY : QLanczosTester/fast
-
-#=============================================================================
 # Target rules for targets named QITETester
 
 # Build rule for target.
@@ -1455,6 +1455,19 @@ QITETester: cmake_check_build_system
 QITETester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qite/tests/CMakeFiles/QITETester.dir/build.make quantum/plugins/algorithms/qite/tests/CMakeFiles/QITETester.dir/build
 .PHONY : QITETester/fast
+
+#=============================================================================
+# Target rules for targets named QLanczosTester
+
+# Build rule for target.
+QLanczosTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QLanczosTester
+.PHONY : QLanczosTester
+
+# fast build rule for target.
+QLanczosTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/algorithms/qite/tests/CMakeFiles/QLanczosTester.dir/build.make quantum/plugins/algorithms/qite/tests/CMakeFiles/QLanczosTester.dir/build
+.PHONY : QLanczosTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-algorithm-qcmx
@@ -1522,6 +1535,19 @@ xacc-decorators/fast:
 .PHONY : xacc-decorators/fast
 
 #=============================================================================
+# Target rules for targets named RDMPurificationDecoratorTester
+
+# Build rule for target.
+RDMPurificationDecoratorTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RDMPurificationDecoratorTester
+.PHONY : RDMPurificationDecoratorTester
+
+# fast build rule for target.
+RDMPurificationDecoratorTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/decorators/tests/CMakeFiles/RDMPurificationDecoratorTester.dir/build.make quantum/plugins/decorators/tests/CMakeFiles/RDMPurificationDecoratorTester.dir/build
+.PHONY : RDMPurificationDecoratorTester/fast
+
+#=============================================================================
 # Target rules for targets named RichExtrapDecoratorTester
 
 # Build rule for target.
@@ -1533,19 +1559,6 @@ RichExtrapDecoratorTester: cmake_check_build_system
 RichExtrapDecoratorTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/decorators/tests/CMakeFiles/RichExtrapDecoratorTester.dir/build.make quantum/plugins/decorators/tests/CMakeFiles/RichExtrapDecoratorTester.dir/build
 .PHONY : RichExtrapDecoratorTester/fast
-
-#=============================================================================
-# Target rules for targets named ROErrorDecoratorTester
-
-# Build rule for target.
-ROErrorDecoratorTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ROErrorDecoratorTester
-.PHONY : ROErrorDecoratorTester
-
-# fast build rule for target.
-ROErrorDecoratorTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/decorators/tests/CMakeFiles/ROErrorDecoratorTester.dir/build.make quantum/plugins/decorators/tests/CMakeFiles/ROErrorDecoratorTester.dir/build
-.PHONY : ROErrorDecoratorTester/fast
 
 #=============================================================================
 # Target rules for targets named ImprovedSamplingDecoratorTester
@@ -1561,17 +1574,17 @@ ImprovedSamplingDecoratorTester/fast:
 .PHONY : ImprovedSamplingDecoratorTester/fast
 
 #=============================================================================
-# Target rules for targets named RDMPurificationDecoratorTester
+# Target rules for targets named ROErrorDecoratorTester
 
 # Build rule for target.
-RDMPurificationDecoratorTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RDMPurificationDecoratorTester
-.PHONY : RDMPurificationDecoratorTester
+ROErrorDecoratorTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ROErrorDecoratorTester
+.PHONY : ROErrorDecoratorTester
 
 # fast build rule for target.
-RDMPurificationDecoratorTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/decorators/tests/CMakeFiles/RDMPurificationDecoratorTester.dir/build.make quantum/plugins/decorators/tests/CMakeFiles/RDMPurificationDecoratorTester.dir/build
-.PHONY : RDMPurificationDecoratorTester/fast
+ROErrorDecoratorTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/decorators/tests/CMakeFiles/ROErrorDecoratorTester.dir/build.make quantum/plugins/decorators/tests/CMakeFiles/ROErrorDecoratorTester.dir/build
+.PHONY : ROErrorDecoratorTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-circuits
@@ -1626,19 +1639,6 @@ RangeTester/fast:
 .PHONY : RangeTester/fast
 
 #=============================================================================
-# Target rules for targets named InverseQFTTester
-
-# Build rule for target.
-InverseQFTTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InverseQFTTester
-.PHONY : InverseQFTTester
-
-# fast build rule for target.
-InverseQFTTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/qft/tests/CMakeFiles/InverseQFTTester.dir/build.make quantum/plugins/circuits/qft/tests/CMakeFiles/InverseQFTTester.dir/build
-.PHONY : InverseQFTTester/fast
-
-#=============================================================================
 # Target rules for targets named QFTTester
 
 # Build rule for target.
@@ -1650,6 +1650,19 @@ QFTTester: cmake_check_build_system
 QFTTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/qft/tests/CMakeFiles/QFTTester.dir/build.make quantum/plugins/circuits/qft/tests/CMakeFiles/QFTTester.dir/build
 .PHONY : QFTTester/fast
+
+#=============================================================================
+# Target rules for targets named InverseQFTTester
+
+# Build rule for target.
+InverseQFTTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InverseQFTTester
+.PHONY : InverseQFTTester
+
+# fast build rule for target.
+InverseQFTTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/circuits/qft/tests/CMakeFiles/InverseQFTTester.dir/build.make quantum/plugins/circuits/qft/tests/CMakeFiles/InverseQFTTester.dir/build
+.PHONY : InverseQFTTester/fast
 
 #=============================================================================
 # Target rules for targets named UCCSDTester
@@ -1886,6 +1899,32 @@ QPlacementTester/fast:
 .PHONY : QPlacementTester/fast
 
 #=============================================================================
+# Target rules for targets named xacc-triq-placement
+
+# Build rule for target.
+xacc-triq-placement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc-triq-placement
+.PHONY : xacc-triq-placement
+
+# fast build rule for target.
+xacc-triq-placement/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/placement/triq/CMakeFiles/xacc-triq-placement.dir/build.make quantum/plugins/placement/triq/CMakeFiles/xacc-triq-placement.dir/build
+.PHONY : xacc-triq-placement/fast
+
+#=============================================================================
+# Target rules for targets named TriQPlacementTester
+
+# Build rule for target.
+TriQPlacementTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TriQPlacementTester
+.PHONY : TriQPlacementTester
+
+# fast build rule for target.
+TriQPlacementTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/placement/triq/tests/CMakeFiles/TriQPlacementTester.dir/build.make quantum/plugins/placement/triq/tests/CMakeFiles/TriQPlacementTester.dir/build
+.PHONY : TriQPlacementTester/fast
+
+#=============================================================================
 # Target rules for targets named xacc-xasm-compiler
 
 # Build rule for target.
@@ -1964,19 +2003,6 @@ StaqCompilerTester/fast:
 .PHONY : StaqCompilerTester/fast
 
 #=============================================================================
-# Target rules for targets named MappingTester
-
-# Build rule for target.
-MappingTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MappingTester
-.PHONY : MappingTester
-
-# fast build rule for target.
-MappingTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/staq/transformations/tests/CMakeFiles/MappingTester.dir/build.make quantum/plugins/staq/transformations/tests/CMakeFiles/MappingTester.dir/build
-.PHONY : MappingTester/fast
-
-#=============================================================================
 # Target rules for targets named RotationFoldingTester
 
 # Build rule for target.
@@ -1988,6 +2014,19 @@ RotationFoldingTester: cmake_check_build_system
 RotationFoldingTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/staq/transformations/tests/CMakeFiles/RotationFoldingTester.dir/build.make quantum/plugins/staq/transformations/tests/CMakeFiles/RotationFoldingTester.dir/build
 .PHONY : RotationFoldingTester/fast
+
+#=============================================================================
+# Target rules for targets named MappingTester
+
+# Build rule for target.
+MappingTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MappingTester
+.PHONY : MappingTester
+
+# fast build rule for target.
+MappingTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/staq/transformations/tests/CMakeFiles/MappingTester.dir/build.make quantum/plugins/staq/transformations/tests/CMakeFiles/MappingTester.dir/build
+.PHONY : MappingTester/fast
 
 #=============================================================================
 # Target rules for targets named xacc-qubit-tapering
@@ -2029,19 +2068,6 @@ xacc-optimal-control/fast:
 .PHONY : xacc-optimal-control/fast
 
 #=============================================================================
-# Target rules for targets named GrapeOptimTester
-
-# Build rule for target.
-GrapeOptimTester: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GrapeOptimTester
-.PHONY : GrapeOptimTester
-
-# fast build rule for target.
-GrapeOptimTester/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/plugins/optimal_control/tests/CMakeFiles/GrapeOptimTester.dir/build.make quantum/plugins/optimal_control/tests/CMakeFiles/GrapeOptimTester.dir/build
-.PHONY : GrapeOptimTester/fast
-
-#=============================================================================
 # Target rules for targets named OptimalControlTester
 
 # Build rule for target.
@@ -2053,6 +2079,19 @@ OptimalControlTester: cmake_check_build_system
 OptimalControlTester/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/plugins/optimal_control/tests/CMakeFiles/OptimalControlTester.dir/build.make quantum/plugins/optimal_control/tests/CMakeFiles/OptimalControlTester.dir/build
 .PHONY : OptimalControlTester/fast
+
+#=============================================================================
+# Target rules for targets named GrapeOptimTester
+
+# Build rule for target.
+GrapeOptimTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GrapeOptimTester
+.PHONY : GrapeOptimTester
+
+# fast build rule for target.
+GrapeOptimTester/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/plugins/optimal_control/tests/CMakeFiles/GrapeOptimTester.dir/build.make quantum/plugins/optimal_control/tests/CMakeFiles/GrapeOptimTester.dir/build
+.PHONY : GrapeOptimTester/fast
 
 #=============================================================================
 # Target rules for targets named GOATTester
@@ -2133,43 +2172,17 @@ JsonNoiseModelTester/fast:
 .PHONY : JsonNoiseModelTester/fast
 
 #=============================================================================
-# Target rules for targets named circuit_optimization
+# Target rules for targets named deuteron_2qbit_xasm_X0X1
 
 # Build rule for target.
-circuit_optimization: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circuit_optimization
-.PHONY : circuit_optimization
+deuteron_2qbit_xasm_X0X1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteron_2qbit_xasm_X0X1
+.PHONY : deuteron_2qbit_xasm_X0X1
 
 # fast build rule for target.
-circuit_optimization/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/circuit_optimization.dir/build.make quantum/examples/base_api/CMakeFiles/circuit_optimization.dir/build
-.PHONY : circuit_optimization/fast
-
-#=============================================================================
-# Target rules for targets named optimal_control_goat
-
-# Build rule for target.
-optimal_control_goat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 optimal_control_goat
-.PHONY : optimal_control_goat
-
-# fast build rule for target.
-optimal_control_goat/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/optimal_control_goat.dir/build.make quantum/examples/base_api/CMakeFiles/optimal_control_goat.dir/build
-.PHONY : optimal_control_goat/fast
-
-#=============================================================================
-# Target rules for targets named circuit_with_classical_control
-
-# Build rule for target.
-circuit_with_classical_control: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circuit_with_classical_control
-.PHONY : circuit_with_classical_control
-
-# fast build rule for target.
-circuit_with_classical_control/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/circuit_with_classical_control.dir/build.make quantum/examples/base_api/CMakeFiles/circuit_with_classical_control.dir/build
-.PHONY : circuit_with_classical_control/fast
+deuteron_2qbit_xasm_X0X1/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/deuteron_2qbit_xasm_X0X1.dir/build.make quantum/examples/base_api/CMakeFiles/deuteron_2qbit_xasm_X0X1.dir/build
+.PHONY : deuteron_2qbit_xasm_X0X1/fast
 
 #=============================================================================
 # Target rules for targets named deuteron_2qbit_ir_api_X0X1
@@ -2185,17 +2198,17 @@ deuteron_2qbit_ir_api_X0X1/fast:
 .PHONY : deuteron_2qbit_ir_api_X0X1/fast
 
 #=============================================================================
-# Target rules for targets named deuteron_2qbit_xasm_X0X1
+# Target rules for targets named circuit_optimization
 
 # Build rule for target.
-deuteron_2qbit_xasm_X0X1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteron_2qbit_xasm_X0X1
-.PHONY : deuteron_2qbit_xasm_X0X1
+circuit_optimization: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circuit_optimization
+.PHONY : circuit_optimization
 
 # fast build rule for target.
-deuteron_2qbit_xasm_X0X1/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/deuteron_2qbit_xasm_X0X1.dir/build.make quantum/examples/base_api/CMakeFiles/deuteron_2qbit_xasm_X0X1.dir/build
-.PHONY : deuteron_2qbit_xasm_X0X1/fast
+circuit_optimization/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/circuit_optimization.dir/build.make quantum/examples/base_api/CMakeFiles/circuit_optimization.dir/build
+.PHONY : circuit_optimization/fast
 
 #=============================================================================
 # Target rules for targets named bell_xasm_ibm_local
@@ -2211,6 +2224,32 @@ bell_xasm_ibm_local/fast:
 .PHONY : bell_xasm_ibm_local/fast
 
 #=============================================================================
+# Target rules for targets named circuit_with_classical_control
+
+# Build rule for target.
+circuit_with_classical_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circuit_with_classical_control
+.PHONY : circuit_with_classical_control
+
+# fast build rule for target.
+circuit_with_classical_control/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/circuit_with_classical_control.dir/build.make quantum/examples/base_api/CMakeFiles/circuit_with_classical_control.dir/build
+.PHONY : circuit_with_classical_control/fast
+
+#=============================================================================
+# Target rules for targets named optimal_control_goat
+
+# Build rule for target.
+optimal_control_goat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 optimal_control_goat
+.PHONY : optimal_control_goat
+
+# fast build rule for target.
+optimal_control_goat/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/optimal_control_goat.dir/build.make quantum/examples/base_api/CMakeFiles/optimal_control_goat.dir/build
+.PHONY : optimal_control_goat/fast
+
+#=============================================================================
 # Target rules for targets named bell_quil_ibm_local
 
 # Build rule for target.
@@ -2222,149 +2261,6 @@ bell_quil_ibm_local: cmake_check_build_system
 bell_quil_ibm_local/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/examples/base_api/CMakeFiles/bell_quil_ibm_local.dir/build.make quantum/examples/base_api/CMakeFiles/bell_quil_ibm_local.dir/build
 .PHONY : bell_quil_ibm_local/fast
-
-#=============================================================================
-# Target rules for targets named qaoa_placement
-
-# Build rule for target.
-qaoa_placement: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_placement
-.PHONY : qaoa_placement
-
-# fast build rule for target.
-qaoa_placement/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build
-.PHONY : qaoa_placement/fast
-
-#=============================================================================
-# Target rules for targets named bell_noisy
-
-# Build rule for target.
-bell_noisy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bell_noisy
-.PHONY : bell_noisy
-
-# fast build rule for target.
-bell_noisy/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build
-.PHONY : bell_noisy/fast
-
-#=============================================================================
-# Target rules for targets named quantum_phase_estimation
-
-# Build rule for target.
-quantum_phase_estimation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum_phase_estimation
-.PHONY : quantum_phase_estimation
-
-# fast build rule for target.
-quantum_phase_estimation/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build
-.PHONY : quantum_phase_estimation/fast
-
-#=============================================================================
-# Target rules for targets named qaoa_qubo
-
-# Build rule for target.
-qaoa_qubo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_qubo
-.PHONY : qaoa_qubo
-
-# fast build rule for target.
-qaoa_qubo/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build
-.PHONY : qaoa_qubo/fast
-
-#=============================================================================
-# Target rules for targets named deuteron_from_qasm_vqe_algo
-
-# Build rule for target.
-deuteron_from_qasm_vqe_algo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteron_from_qasm_vqe_algo
-.PHONY : deuteron_from_qasm_vqe_algo
-
-# fast build rule for target.
-deuteron_from_qasm_vqe_algo/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build
-.PHONY : deuteron_from_qasm_vqe_algo/fast
-
-#=============================================================================
-# Target rules for targets named phase_estimation_qasm
-
-# Build rule for target.
-phase_estimation_qasm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phase_estimation_qasm
-.PHONY : phase_estimation_qasm
-
-# fast build rule for target.
-phase_estimation_qasm/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build
-.PHONY : phase_estimation_qasm/fast
-
-#=============================================================================
-# Target rules for targets named nah_ucc3
-
-# Build rule for target.
-nah_ucc3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nah_ucc3
-.PHONY : nah_ucc3
-
-# fast build rule for target.
-nah_ucc3/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build
-.PHONY : nah_ucc3/fast
-
-#=============================================================================
-# Target rules for targets named rotoselect
-
-# Build rule for target.
-rotoselect: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotoselect
-.PHONY : rotoselect
-
-# fast build rule for target.
-rotoselect/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/build
-.PHONY : rotoselect/fast
-
-#=============================================================================
-# Target rules for targets named ddcl_example
-
-# Build rule for target.
-ddcl_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ddcl_example
-.PHONY : ddcl_example
-
-# fast build rule for target.
-ddcl_example/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build
-.PHONY : ddcl_example/fast
-
-#=============================================================================
-# Target rules for targets named deuteronH3_from_qasm_vqe_algo
-
-# Build rule for target.
-deuteronH3_from_qasm_vqe_algo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteronH3_from_qasm_vqe_algo
-.PHONY : deuteronH3_from_qasm_vqe_algo
-
-# fast build rule for target.
-deuteronH3_from_qasm_vqe_algo/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build
-.PHONY : deuteronH3_from_qasm_vqe_algo/fast
-
-#=============================================================================
-# Target rules for targets named qaoa_maxcut_qpp
-
-# Build rule for target.
-qaoa_maxcut_qpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_maxcut_qpp
-.PHONY : qaoa_maxcut_qpp
-
-# fast build rule for target.
-qaoa_maxcut_qpp/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build
-.PHONY : qaoa_maxcut_qpp/fast
 
 #=============================================================================
 # Target rules for targets named qeom_h2_sto-3g
@@ -2393,6 +2289,149 @@ deuteron_from_qasm/fast:
 .PHONY : deuteron_from_qasm/fast
 
 #=============================================================================
+# Target rules for targets named qaoa_qubo
+
+# Build rule for target.
+qaoa_qubo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_qubo
+.PHONY : qaoa_qubo
+
+# fast build rule for target.
+qaoa_qubo/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build
+.PHONY : qaoa_qubo/fast
+
+#=============================================================================
+# Target rules for targets named deuteron_from_qasm_vqe_algo
+
+# Build rule for target.
+deuteron_from_qasm_vqe_algo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteron_from_qasm_vqe_algo
+.PHONY : deuteron_from_qasm_vqe_algo
+
+# fast build rule for target.
+deuteron_from_qasm_vqe_algo/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build
+.PHONY : deuteron_from_qasm_vqe_algo/fast
+
+#=============================================================================
+# Target rules for targets named rotoselect
+
+# Build rule for target.
+rotoselect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotoselect
+.PHONY : rotoselect
+
+# fast build rule for target.
+rotoselect/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/build
+.PHONY : rotoselect/fast
+
+#=============================================================================
+# Target rules for targets named ddcl_example
+
+# Build rule for target.
+ddcl_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ddcl_example
+.PHONY : ddcl_example
+
+# fast build rule for target.
+ddcl_example/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build
+.PHONY : ddcl_example/fast
+
+#=============================================================================
+# Target rules for targets named bell_noisy
+
+# Build rule for target.
+bell_noisy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bell_noisy
+.PHONY : bell_noisy
+
+# fast build rule for target.
+bell_noisy/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build
+.PHONY : bell_noisy/fast
+
+#=============================================================================
+# Target rules for targets named deuteronH3_from_qasm_vqe_algo
+
+# Build rule for target.
+deuteronH3_from_qasm_vqe_algo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deuteronH3_from_qasm_vqe_algo
+.PHONY : deuteronH3_from_qasm_vqe_algo
+
+# fast build rule for target.
+deuteronH3_from_qasm_vqe_algo/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build
+.PHONY : deuteronH3_from_qasm_vqe_algo/fast
+
+#=============================================================================
+# Target rules for targets named nah_ucc3
+
+# Build rule for target.
+nah_ucc3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nah_ucc3
+.PHONY : nah_ucc3
+
+# fast build rule for target.
+nah_ucc3/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build
+.PHONY : nah_ucc3/fast
+
+#=============================================================================
+# Target rules for targets named qaoa_placement
+
+# Build rule for target.
+qaoa_placement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_placement
+.PHONY : qaoa_placement
+
+# fast build rule for target.
+qaoa_placement/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build
+.PHONY : qaoa_placement/fast
+
+#=============================================================================
+# Target rules for targets named qaoa_maxcut_qpp
+
+# Build rule for target.
+qaoa_maxcut_qpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qaoa_maxcut_qpp
+.PHONY : qaoa_maxcut_qpp
+
+# fast build rule for target.
+qaoa_maxcut_qpp/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build
+.PHONY : qaoa_maxcut_qpp/fast
+
+#=============================================================================
+# Target rules for targets named quantum_phase_estimation
+
+# Build rule for target.
+quantum_phase_estimation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum_phase_estimation
+.PHONY : quantum_phase_estimation
+
+# fast build rule for target.
+quantum_phase_estimation/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build
+.PHONY : quantum_phase_estimation/fast
+
+#=============================================================================
+# Target rules for targets named phase_estimation_qasm
+
+# Build rule for target.
+phase_estimation_qasm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phase_estimation_qasm
+.PHONY : phase_estimation_qasm
+
+# fast build rule for target.
+phase_estimation_qasm/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build
+.PHONY : phase_estimation_qasm/fast
+
+#=============================================================================
 # Target rules for targets named kernel_compilation
 
 # Build rule for target.
@@ -2404,6 +2443,19 @@ kernel_compilation: cmake_check_build_system
 kernel_compilation/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/examples/qst-publication/CMakeFiles/kernel_compilation.dir/build.make quantum/examples/qst-publication/CMakeFiles/kernel_compilation.dir/build
 .PHONY : kernel_compilation/fast
+
+#=============================================================================
+# Target rules for targets named hybrid_deuteron
+
+# Build rule for target.
+hybrid_deuteron: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hybrid_deuteron
+.PHONY : hybrid_deuteron
+
+# fast build rule for target.
+hybrid_deuteron/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/qst-publication/CMakeFiles/hybrid_deuteron.dir/build.make quantum/examples/qst-publication/CMakeFiles/hybrid_deuteron.dir/build
+.PHONY : hybrid_deuteron/fast
 
 #=============================================================================
 # Target rules for targets named hybrid_ddcl
@@ -2432,19 +2484,6 @@ base_api/fast:
 .PHONY : base_api/fast
 
 #=============================================================================
-# Target rules for targets named hybrid_deuteron
-
-# Build rule for target.
-hybrid_deuteron: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hybrid_deuteron
-.PHONY : hybrid_deuteron
-
-# fast build rule for target.
-hybrid_deuteron/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/qst-publication/CMakeFiles/hybrid_deuteron.dir/build.make quantum/examples/qst-publication/CMakeFiles/hybrid_deuteron.dir/build
-.PHONY : hybrid_deuteron/fast
-
-#=============================================================================
 # Target rules for targets named h4_chain_8qbit_hpc_virt
 
 # Build rule for target.
@@ -2471,19 +2510,6 @@ tnqvm_hpc_virt/fast:
 .PHONY : tnqvm_hpc_virt/fast
 
 #=============================================================================
-# Target rules for targets named test_aer_pulse_sim
-
-# Build rule for target.
-test_aer_pulse_sim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_aer_pulse_sim
-.PHONY : test_aer_pulse_sim
-
-# fast build rule for target.
-test_aer_pulse_sim/fast:
-	$(MAKE) $(MAKESILENT) -f quantum/examples/pulse/CMakeFiles/test_aer_pulse_sim.dir/build.make quantum/examples/pulse/CMakeFiles/test_aer_pulse_sim.dir/build
-.PHONY : test_aer_pulse_sim/fast
-
-#=============================================================================
 # Target rules for targets named test_open_pulse
 
 # Build rule for target.
@@ -2495,6 +2521,19 @@ test_open_pulse: cmake_check_build_system
 test_open_pulse/fast:
 	$(MAKE) $(MAKESILENT) -f quantum/examples/pulse/CMakeFiles/test_open_pulse.dir/build.make quantum/examples/pulse/CMakeFiles/test_open_pulse.dir/build
 .PHONY : test_open_pulse/fast
+
+#=============================================================================
+# Target rules for targets named test_aer_pulse_sim
+
+# Build rule for target.
+test_aer_pulse_sim: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_aer_pulse_sim
+.PHONY : test_aer_pulse_sim
+
+# fast build rule for target.
+test_aer_pulse_sim/fast:
+	$(MAKE) $(MAKESILENT) -f quantum/examples/pulse/CMakeFiles/test_aer_pulse_sim.dir/build.make quantum/examples/pulse/CMakeFiles/test_aer_pulse_sim.dir/build
+.PHONY : test_aer_pulse_sim/fast
 
 #=============================================================================
 # Target rules for targets named _pyxacc
@@ -2602,6 +2641,7 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... format"
 	@echo "... make_lib_output_dir"
 	@echo "... ASwapTester"
 	@echo "... AcceleratorBufferTester"
@@ -2686,6 +2726,7 @@ help:
 	@echo "... RotationFoldingTester"
 	@echo "... RotoselectTester"
 	@echo "... StaqCompilerTester"
+	@echo "... TriQPlacementTester"
 	@echo "... TrivialEmbeddingAlgorithmTester"
 	@echo "... UCC1Tester"
 	@echo "... UCC3Tester"
@@ -2784,6 +2825,7 @@ help:
 	@echo "... xacc-rigetti-qcs"
 	@echo "... xacc-scikit-quant"
 	@echo "... xacc-staq-compiler"
+	@echo "... xacc-triq-placement"
 	@echo "... xacc-xasm-compiler"
 .PHONY : help
 

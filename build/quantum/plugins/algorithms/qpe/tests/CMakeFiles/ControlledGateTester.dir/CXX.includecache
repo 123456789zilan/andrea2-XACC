@@ -810,17 +810,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/ControlledGateTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/ControlledGateTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/xacc_service.hpp
 CommonGates.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/CommonGates.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/CommonGates.hpp
 qalloc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/tests/qalloc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qpe/tests/qalloc.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

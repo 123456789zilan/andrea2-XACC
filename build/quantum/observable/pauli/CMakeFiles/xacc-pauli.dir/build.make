@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/depend.make
@@ -76,120 +76,132 @@ include quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 
-quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.o: quantum/observable/pauli/xacc-pauli/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-pauli"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.o
+quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp: quantum/observable/pauli/xacc-pauli/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-pauli"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
 
 quantum/observable/pauli/xacc-pauli/res_0.zip: ../quantum/observable/pauli/manifest.json
 quantum/observable/pauli/xacc-pauli/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-pauli"
-	cd /Users/dhruvshah/git/xacc/quantum/observable/pauli && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli
-	cd /Users/dhruvshah/git/xacc/quantum/observable/pauli && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/res_0.zip -n xacc_pauli -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-pauli"
+	cd /workspace/xacc/quantum/observable/pauli && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/observable/pauli/xacc-pauli
+	cd /workspace/xacc/quantum/observable/pauli && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/res_0.zip -n xacc_pauli -r manifest.json
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o: ../quantum/observable/pauli/PauliActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o -c /workspace/xacc/quantum/observable/pauli/PauliActivator.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliActivator.cpp > CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/PauliActivator.cpp > CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliActivator.cpp -o CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/PauliActivator.cpp -o CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o: ../quantum/observable/pauli/PauliListenerImpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o -c /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.cpp > CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.cpp > CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.cpp -o CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/PauliListenerImpl.cpp -o CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o: ../quantum/observable/pauli/PauliOperator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o -c /workspace/xacc/quantum/observable/pauli/PauliOperator.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.cpp > CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/PauliOperator.cpp > CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.cpp -o CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/PauliOperator.cpp -o CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o: ../quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o -c /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o: ../quantum/observable/pauli/generated/PauliOperatorLexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o -c /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o: ../quantum/observable/pauli/generated/PauliOperatorListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o -c /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o: ../quantum/observable/pauli/generated/PauliOperatorParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o -c /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp > CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp -o CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.s
+
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o: quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
+
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp > CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.i
+
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.s
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/flags.make
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o: quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp > CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp > CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.i
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp -o CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-pauli
 xacc__pauli_OBJECTS = \
@@ -200,40 +212,42 @@ xacc__pauli_OBJECTS = \
 "CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o" \
 "CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o" \
 "CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o" \
+"CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-pauli
-xacc__pauli_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.o"
+xacc__pauli_EXTERNAL_OBJECTS =
 
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.o
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/build.make
-quantum/observable/pauli/libxacc-pauli.dylib: xacc/libxacc.dylib
-quantum/observable/pauli/libxacc-pauli.dylib: ../dist/libantlr4-runtime.dylib
-quantum/observable/pauli/libxacc-pauli.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/observable/pauli/libxacc-pauli.dylib: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libxacc-pauli.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-pauli.dir/link.txt --verbose=$(VERBOSE)
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliActivator.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliListenerImpl.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/PauliOperator.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorBaseListener.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorLexer.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/build.make
+quantum/observable/pauli/libxacc-pauli.so: xacc/libxacc.so
+quantum/observable/pauli/libxacc-pauli.so: ../dist/libantlr4-runtime.so
+quantum/observable/pauli/libxacc-pauli.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/observable/pauli/libxacc-pauli.so: quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libxacc-pauli.so"
+	cd /workspace/xacc/build/quantum/observable/pauli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-pauli.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-pauli"
+	cd /workspace/xacc/quantum/observable/pauli && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/observable/pauli/libxacc-pauli.so -z /workspace/xacc/build/quantum/observable/pauli/xacc-pauli/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/build: quantum/observable/pauli/libxacc-pauli.dylib
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/build: quantum/observable/pauli/libxacc-pauli.so
 
 .PHONY : quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/build
 
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli && $(CMAKE_COMMAND) -P CMakeFiles/xacc-pauli.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/observable/pauli && $(CMAKE_COMMAND) -P CMakeFiles/xacc-pauli.dir/cmake_clean.cmake
 .PHONY : quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/clean
 
-quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/depend: quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.o
+quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/depend: quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
 quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/depend: quantum/observable/pauli/xacc-pauli/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/observable/pauli /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/observable/pauli /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/observable/pauli /workspace/xacc/build /workspace/xacc/build/quantum/observable/pauli /workspace/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/depend
 

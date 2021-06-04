@@ -91,3 +91,5 @@ quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/x
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
+

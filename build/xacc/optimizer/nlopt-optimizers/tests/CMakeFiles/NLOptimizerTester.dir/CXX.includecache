@@ -756,15 +756,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/tests/NLOptimizerTester.cpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/tests/NLOptimizerTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/tests/xacc.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/tests/xacc_service.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/tests/xacc_service.hpp
 nlopt_optimizer.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/tests/nlopt_optimizer.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/tests/nlopt_optimizer.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

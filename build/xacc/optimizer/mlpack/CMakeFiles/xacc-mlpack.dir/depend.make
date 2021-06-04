@@ -836,3 +836,5 @@ xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_in
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp
+

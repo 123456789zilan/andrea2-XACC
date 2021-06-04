@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt
-# Build directory: /Users/dhruvshah/git/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt
+# Source directory: /workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt
+# Build directory: /workspace/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/observable/pauli
+# Install script for directory: /workspace/xacc/quantum/observable/pauli
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,26 +44,27 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quantum/gate" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp"
+    "/workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp"
+    "/workspace/xacc/quantum/observable/pauli/PauliOperator.hpp"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/libxacc-pauli.dylib")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so"
+         RPATH "$ORIGIN")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/observable/pauli/libxacc-pauli.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so"
+         OLD_RPATH "/workspace/xacc/build/xacc:/workspace/xacc/dist:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-pauli.so")
     endif()
   endif()
 endif()
@@ -68,7 +74,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/observable/pauli/tests/cmake_install.cmake")
 
 endif()
 

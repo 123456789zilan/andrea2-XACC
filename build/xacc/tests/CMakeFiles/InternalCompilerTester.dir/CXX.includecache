@@ -542,13 +542,13 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/xacc/tests/InternalCompilerTester.cpp
+/workspace/xacc/build/xacc/tests/InternalCompilerTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/build/xacc/tests/xacc.hpp
+/workspace/xacc/build/xacc/tests/xacc.hpp
 xacc_internal_compiler.hpp
-/Users/dhruvshah/git/xacc/build/xacc/tests/xacc_internal_compiler.hpp
+/workspace/xacc/build/xacc/tests/xacc_internal_compiler.hpp
 qalloc
 -
 

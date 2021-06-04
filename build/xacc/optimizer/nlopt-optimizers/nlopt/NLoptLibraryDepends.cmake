@@ -46,15 +46,15 @@ add_library(NLopt::nlopt SHARED IMPORTED)
 
 set_target_properties(NLopt::nlopt PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "NLOPT_DLL"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/dhruvshah/git/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt/src/api"
+  INTERFACE_INCLUDE_DIRECTORIES "/workspace/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt/src/api"
 )
 
 # Import target "NLopt::nlopt" for configuration "Release"
 set_property(TARGET NLopt::nlopt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(NLopt::nlopt PROPERTIES
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "m"
-  IMPORTED_LOCATION_RELEASE "/Users/dhruvshah/git/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt/libnlopt.0.10.0.dylib"
-  IMPORTED_SONAME_RELEASE "@rpath/libnlopt.0.dylib"
+  IMPORTED_LOCATION_RELEASE "/workspace/xacc/build/xacc/optimizer/nlopt-optimizers/nlopt/libnlopt.so.0.10.0"
+  IMPORTED_SONAME_RELEASE "libnlopt.so.0"
   )
 
 # This file does not depend on other imported targets which have

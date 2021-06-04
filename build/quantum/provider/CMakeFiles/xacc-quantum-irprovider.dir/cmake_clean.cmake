@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-quantum-irprovider.dir/QuantumIRActivator.cpp.o"
   "CMakeFiles/xacc-quantum-irprovider.dir/QuantumIRProvider.cpp.o"
   "CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_init.cpp.o"
-  "libxacc-quantum-irprovider.dylib"
+  "CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_resources.cpp.o"
   "libxacc-quantum-irprovider.pdb"
-  "xacc-quantum-irprovider/cppmicroservices_resources.o"
+  "libxacc-quantum-irprovider.so"
+  "xacc-quantum-irprovider/cppmicroservices_resources.cpp"
   "xacc-quantum-irprovider/res_0.zip"
 )
 

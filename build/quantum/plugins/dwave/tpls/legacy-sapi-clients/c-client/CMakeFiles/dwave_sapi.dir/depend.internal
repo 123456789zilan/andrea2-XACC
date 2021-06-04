@@ -3,7 +3,7 @@
 
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/version.c.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/version.c
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/version.c
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/find-embedding/src/find_embedding.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/include/compressed_matrix.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/include/find_embedding.hpp
@@ -697,7 +697,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/utility/enable_if.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/utility/identity_type.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/src/find_embedding.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/fix-variables/src/fix_variables.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/find-embedding/include/compressed_matrix.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/include/fix_variables.hpp
@@ -2633,10 +2633,10 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/visit_each.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/weak_ptr.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/fix-variables/src/fix_variables.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/local-solvers/src/problems.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/local-solvers/include/sapi-local/problems.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/local-solvers/src/problems.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/local-solvers/src/problems.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/answer-service.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/answer-service.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/json.hpp
@@ -3330,7 +3330,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/answer-service.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/answer-service.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/await.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/json.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/problem.hpp
@@ -4056,7 +4056,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/await.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/await.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/base64.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/base64.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/exceptions.hpp
@@ -4490,7 +4490,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/utility/addressof.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/utility/enable_if.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/base64.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/base64.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-answer.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/coding.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/json.hpp
@@ -5182,7 +5182,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-answer.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-answer.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/decode-qp.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/base64.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/coding.hpp
@@ -5933,7 +5933,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-qp.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/decode-qp.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/encode-qp.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/base64.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/coding.hpp
@@ -6687,7 +6687,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/encode-qp.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/encode-qp.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/http-service.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/exceptions.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/http-service.hpp
@@ -8398,7 +8398,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/local_memory.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/time.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/timers.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/http-service.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/http-service.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/json.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/json.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/aligned_storage.hpp
@@ -9122,7 +9122,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/json.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/json.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/problem-manager.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/answer-service.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/coding.hpp
@@ -9857,7 +9857,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/problem-manager.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/problem-manager.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/retry-service.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/exceptions.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/retry-service.hpp
@@ -10991,7 +10991,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/local_memory.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/time.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/winapi/timers.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/retry-service.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/retry-service.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/sapi-service.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/exceptions.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/http-service.hpp
@@ -11719,8 +11719,8 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/sapi-service.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/sapi-service.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.hpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/threadpool.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/exceptions.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/include/threadpool.hpp
@@ -11789,9 +11789,9 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/config/user.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/core/noncopyable.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/noncopyable.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/threadpool.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/threadpool.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/__/remote/src/user-agent.cpp.o
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/remote/src/user-agent.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/conversions.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/conversions.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
@@ -12496,10 +12496,10 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/conversions.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/defaults.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/defaults.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/defaults.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/dwave_sapi.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/conversions.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
@@ -13357,7 +13357,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/dwave_sapi.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/embed-problem.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -14094,7 +14094,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/embed-problem.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/embed-problem.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/fix-variables.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -14833,7 +14833,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/fix-variables.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/fix-variables.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/freefuncs.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -15540,7 +15540,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/freefuncs.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/freefuncs.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/global.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -16247,7 +16247,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/global.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/global.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/internal.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -16956,7 +16956,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/internal.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/remote.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -17695,7 +17695,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/remote.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -18433,7 +18433,7 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/sapi-impl.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/sapi-impl.cpp
 quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.o
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/internal.hpp
@@ -19286,4 +19286,4 @@ quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.di
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/variant_fwd.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/variant/visitor_ptr.hpp
  ../tpls/boost-cmake/boost/boost_1_75_0/boost/version.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/unembed-answer.cpp
+ /workspace/xacc/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/src/unembed-answer.cpp

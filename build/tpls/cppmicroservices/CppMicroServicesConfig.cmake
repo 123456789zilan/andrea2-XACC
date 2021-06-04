@@ -50,11 +50,11 @@ set(US_ENABLE_THREADING_SUPPORT ON)
 
 cmake_minimum_required(VERSION ${US_CMAKE_MINIMUM_REQUIRED_VERSION})
 
-list(APPEND CMAKE_MODULE_PATH "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake")
+list(APPEND CMAKE_MODULE_PATH "/workspace/xacc/tpls/cppmicroservices/cmake")
 
-set(US_BUNDLE_INIT_TEMPLATE "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/BundleInit.cpp")
-set(US_RESOURCE_RC_TEMPLATE "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/cppmicroservices_resources.rc.in")
-set(US_CMAKE_RESOURCE_DEPENDENCIES_CPP "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp")
+set(US_BUNDLE_INIT_TEMPLATE "/workspace/xacc/tpls/cppmicroservices/cmake/BundleInit.cpp")
+set(US_RESOURCE_RC_TEMPLATE "/workspace/xacc/tpls/cppmicroservices/cmake/cppmicroservices_resources.rc.in")
+set(US_CMAKE_RESOURCE_DEPENDENCIES_CPP "/workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp")
 
 set(US_RCC_EXECUTABLE_TARGET usResourceCompiler)
 if(NOT TARGET ${US_RCC_EXECUTABLE_TARGET})
@@ -65,12 +65,12 @@ endif()
 include(CMakeParseArguments)
 include(FindPackageHandleStandardArgs)
 
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionGenerateBundleInit.cmake")
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionAddResources.cmake")
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionCheckCompilerFlags.cmake")
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionEmbedResources.cmake")
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionCheckResourceLinking.cmake")
-include("/Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/usFunctionGetResourceSource.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionGenerateBundleInit.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionAddResources.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionCheckCompilerFlags.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionEmbedResources.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionCheckResourceLinking.cmake")
+include("/workspace/xacc/tpls/cppmicroservices/cmake/usFunctionGetResourceSource.cmake")
 
 usFunctionCheckResourceLinking()
 

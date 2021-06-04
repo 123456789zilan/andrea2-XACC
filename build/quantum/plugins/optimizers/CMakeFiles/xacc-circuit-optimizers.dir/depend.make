@@ -1224,3 +1224,5 @@ quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-o
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp
+

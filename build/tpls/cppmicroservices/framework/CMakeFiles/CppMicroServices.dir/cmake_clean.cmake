@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "../lib/libCppMicroServices.4.0.0.dylib"
-  "../lib/libCppMicroServices.dylib"
   "../lib/libCppMicroServices.pdb"
+  "../lib/libCppMicroServices.so"
+  "../lib/libCppMicroServices.so.4.0.0"
+  "CMakeFiles/CppMicroServices.dir/CppMicroServices/cppmicroservices_resources.cpp.o"
   "CMakeFiles/CppMicroServices.dir/__/third_party/jsoncpp.cpp.o"
   "CMakeFiles/CppMicroServices.dir/__/third_party/miniz.c.o"
   "CMakeFiles/CppMicroServices.dir/src/bundle/Bundle.cpp.o"
@@ -55,7 +56,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CppMicroServices.dir/src/util/Properties.cpp.o"
   "CMakeFiles/CppMicroServices.dir/src/util/SharedLibrary.cpp.o"
   "CMakeFiles/CppMicroServices.dir/src/util/Utils.cpp.o"
-  "CppMicroServices/cppmicroservices_resources.o"
+  "CppMicroServices/cppmicroservices_resources.cpp"
   "CppMicroServices/res_0.zip"
 )
 

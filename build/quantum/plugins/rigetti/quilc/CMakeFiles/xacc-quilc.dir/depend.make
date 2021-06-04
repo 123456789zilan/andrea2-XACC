@@ -117,3 +117,5 @@ quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservi
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp
+

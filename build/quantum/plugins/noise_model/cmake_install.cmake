@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/plugins/noise_model
+# Install script for directory: /workspace/xacc/quantum/plugins/noise_model
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,29 +43,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/plugins" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/plugins/noise_model/libxacc-noise-model-json.dylib")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/gate"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so"
+         RPATH "/lib")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/plugins" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/plugins/noise_model/libxacc-noise-model-json.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/gate:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/plugins/libxacc-noise-model-json.so")
     endif()
   endif()
 endif()
@@ -70,7 +67,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/noise_model/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/noise_model/tests/cmake_install.cmake")
 
 endif()
 

@@ -564,19 +564,19 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/JWTester.cpp
+/workspace/xacc/quantum/observable/transforms/tests/JWTester.cpp
 gtest/gtest.h
 -
 JW.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/JW.hpp
+/workspace/xacc/quantum/observable/transforms/tests/JW.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/xacc.hpp
+/workspace/xacc/quantum/observable/transforms/tests/xacc.hpp
 memory
 -
 regex
 -
 FermionOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/FermionOperator.hpp
+/workspace/xacc/quantum/observable/transforms/tests/FermionOperator.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/PauliOperator.hpp
+/workspace/xacc/quantum/observable/transforms/tests/PauliOperator.hpp
 

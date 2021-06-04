@@ -1656,33 +1656,37 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.cpp
 Autodiff.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
 xacc_plugin.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc_plugin.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc_plugin.hpp
 AllGateVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/AllGateVisitor.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/AllGateVisitor.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/xacc.hpp
 numeric
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Autodiff.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Observable.hpp
 Eigen/Dense
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Eigen/Dense
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/Eigen/Dense
 autodiff/forward.hpp
 -
 autodiff/forward/eigen.hpp
 -
 AlgorithmGradientStrategy.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/AlgorithmGradientStrategy.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/autodiff/AlgorithmGradientStrategy.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

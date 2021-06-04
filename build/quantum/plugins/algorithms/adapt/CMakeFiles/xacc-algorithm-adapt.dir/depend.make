@@ -140,3 +140,5 @@ quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algori
 quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algorithm-adapt/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/adapt/xacc-algorithm-adapt/cppmicroservices_init.cpp
 quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algorithm-adapt/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algorithm-adapt/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/adapt/xacc-algorithm-adapt/cppmicroservices_resources.cpp
+

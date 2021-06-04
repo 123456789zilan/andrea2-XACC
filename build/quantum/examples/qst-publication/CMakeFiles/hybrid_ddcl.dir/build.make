@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/flags.make
 
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o: quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/flags.make
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o: ../quantum/examples/qst-publication/hybrid_ddcl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o -c /Users/dhruvshah/git/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o"
+	cd /workspace/xacc/build/quantum/examples/qst-publication && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o -c /workspace/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp
 
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp > CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.i
+	cd /workspace/xacc/build/quantum/examples/qst-publication && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp > CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.i
 
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp -o CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.s
+	cd /workspace/xacc/build/quantum/examples/qst-publication && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp -o CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.s
 
 # Object files for target hybrid_ddcl
 hybrid_ddcl_OBJECTS = \
@@ -98,11 +98,11 @@ hybrid_ddcl_EXTERNAL_OBJECTS =
 
 quantum/examples/qst-publication/hybrid_ddcl: quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o
 quantum/examples/qst-publication/hybrid_ddcl: quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/build.make
-quantum/examples/qst-publication/hybrid_ddcl: xacc/libxacc.dylib
-quantum/examples/qst-publication/hybrid_ddcl: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/examples/qst-publication/hybrid_ddcl: xacc/libxacc.so
+quantum/examples/qst-publication/hybrid_ddcl: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/examples/qst-publication/hybrid_ddcl: quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hybrid_ddcl"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hybrid_ddcl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hybrid_ddcl"
+	cd /workspace/xacc/build/quantum/examples/qst-publication && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hybrid_ddcl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/build: quantum/examples/qst-publication/hybrid_ddcl
@@ -110,10 +110,10 @@ quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/build: quantum/examp
 .PHONY : quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/build
 
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication && $(CMAKE_COMMAND) -P CMakeFiles/hybrid_ddcl.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/examples/qst-publication && $(CMAKE_COMMAND) -P CMakeFiles/hybrid_ddcl.dir/cmake_clean.cmake
 .PHONY : quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/clean
 
 quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/examples/qst-publication /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication /Users/dhruvshah/git/xacc/build/quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/examples/qst-publication /workspace/xacc/build /workspace/xacc/build/quantum/examples/qst-publication /workspace/xacc/build/quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/depend
 

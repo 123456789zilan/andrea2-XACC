@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/CMakeFiles/xacc.dir/depend.make
@@ -78,120 +78,120 @@ include xacc/CMakeFiles/xacc.dir/flags.make
 
 xacc/CMakeFiles/xacc.dir/xacc.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/xacc.cpp.o: ../xacc/xacc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/CMakeFiles/xacc.dir/xacc.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/xacc.cpp.o -c /Users/dhruvshah/git/xacc/xacc/xacc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/CMakeFiles/xacc.dir/xacc.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/xacc.cpp.o -c /workspace/xacc/xacc/xacc.cpp
 
 xacc/CMakeFiles/xacc.dir/xacc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/xacc.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/xacc.cpp > CMakeFiles/xacc.dir/xacc.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/xacc.cpp > CMakeFiles/xacc.dir/xacc.cpp.i
 
 xacc/CMakeFiles/xacc.dir/xacc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/xacc.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/xacc.cpp -o CMakeFiles/xacc.dir/xacc.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/xacc.cpp -o CMakeFiles/xacc.dir/xacc.cpp.s
 
 xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o: ../xacc/accelerator/AcceleratorBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o -c /Users/dhruvshah/git/xacc/xacc/accelerator/AcceleratorBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o -c /workspace/xacc/xacc/accelerator/AcceleratorBuffer.cpp
 
 xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/accelerator/AcceleratorBuffer.cpp > CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/accelerator/AcceleratorBuffer.cpp > CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i
 
 xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/accelerator/AcceleratorBuffer.cpp -o CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/accelerator/AcceleratorBuffer.cpp -o CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s
 
 xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o: ../xacc/utils/Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/utils/Utils.cpp.o -c /Users/dhruvshah/git/xacc/xacc/utils/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/utils/Utils.cpp.o -c /workspace/xacc/xacc/utils/Utils.cpp
 
 xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/utils/Utils.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/utils/Utils.cpp > CMakeFiles/xacc.dir/utils/Utils.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/utils/Utils.cpp > CMakeFiles/xacc.dir/utils/Utils.cpp.i
 
 xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/utils/Utils.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/utils/Utils.cpp -o CMakeFiles/xacc.dir/utils/Utils.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/utils/Utils.cpp -o CMakeFiles/xacc.dir/utils/Utils.cpp.s
 
 xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o: ../xacc/utils/CLIParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/utils/CLIParser.cpp.o -c /Users/dhruvshah/git/xacc/xacc/utils/CLIParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/utils/CLIParser.cpp.o -c /workspace/xacc/xacc/utils/CLIParser.cpp
 
 xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/utils/CLIParser.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/utils/CLIParser.cpp > CMakeFiles/xacc.dir/utils/CLIParser.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/utils/CLIParser.cpp > CMakeFiles/xacc.dir/utils/CLIParser.cpp.i
 
 xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/utils/CLIParser.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/utils/CLIParser.cpp -o CMakeFiles/xacc.dir/utils/CLIParser.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/utils/CLIParser.cpp -o CMakeFiles/xacc.dir/utils/CLIParser.cpp.s
 
 xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o: ../xacc/compiler/xacc_internal_compiler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o -c /Users/dhruvshah/git/xacc/xacc/compiler/xacc_internal_compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o -c /workspace/xacc/xacc/compiler/xacc_internal_compiler.cpp
 
 xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/compiler/xacc_internal_compiler.cpp > CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/compiler/xacc_internal_compiler.cpp > CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i
 
 xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/compiler/xacc_internal_compiler.cpp -o CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/compiler/xacc_internal_compiler.cpp -o CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s
 
 xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o: ../xacc/compiler/qalloc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/compiler/qalloc.cpp.o -c /Users/dhruvshah/git/xacc/xacc/compiler/qalloc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/compiler/qalloc.cpp.o -c /workspace/xacc/xacc/compiler/qalloc.cpp
 
 xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/compiler/qalloc.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/compiler/qalloc.cpp > CMakeFiles/xacc.dir/compiler/qalloc.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/compiler/qalloc.cpp > CMakeFiles/xacc.dir/compiler/qalloc.cpp.i
 
 xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/compiler/qalloc.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/compiler/qalloc.cpp -o CMakeFiles/xacc.dir/compiler/qalloc.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/compiler/qalloc.cpp -o CMakeFiles/xacc.dir/compiler/qalloc.cpp.s
 
 xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o: ../xacc/service/ServiceRegistry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o -c /Users/dhruvshah/git/xacc/xacc/service/ServiceRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o -c /workspace/xacc/xacc/service/ServiceRegistry.cpp
 
 xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/service/ServiceRegistry.cpp > CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/service/ServiceRegistry.cpp > CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i
 
 xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/service/ServiceRegistry.cpp -o CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/service/ServiceRegistry.cpp -o CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s
 
 xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o: ../xacc/service/xacc_service.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/service/xacc_service.cpp.o -c /Users/dhruvshah/git/xacc/xacc/service/xacc_service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/service/xacc_service.cpp.o -c /workspace/xacc/xacc/service/xacc_service.cpp
 
 xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/service/xacc_service.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/service/xacc_service.cpp > CMakeFiles/xacc.dir/service/xacc_service.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/service/xacc_service.cpp > CMakeFiles/xacc.dir/service/xacc_service.cpp.i
 
 xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/service/xacc_service.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/service/xacc_service.cpp -o CMakeFiles/xacc.dir/service/xacc_service.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/service/xacc_service.cpp -o CMakeFiles/xacc.dir/service/xacc_service.cpp.s
 
 xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o: xacc/CMakeFiles/xacc.dir/flags.make
 xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o: ../xacc/accelerator/remote/RemoteAccelerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o -c /Users/dhruvshah/git/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o"
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o -c /workspace/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp
 
 xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp > CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp > CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i
 
 xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp -o CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s
+	cd /workspace/xacc/build/xacc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/accelerator/remote/RemoteAccelerator.cpp -o CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s
 
 # Object files for target xacc
 xacc_OBJECTS = \
@@ -208,33 +208,35 @@ xacc_OBJECTS = \
 # External object files for target xacc
 xacc_EXTERNAL_OBJECTS =
 
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/xacc.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/build.make
-xacc/libxacc.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-xacc/libxacc.dylib: lib/libcpr.a
-xacc/libxacc.dylib: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libcurl.tbd
-xacc/libxacc.dylib: xacc/CMakeFiles/xacc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libxacc.dylib"
-	cd /Users/dhruvshah/git/xacc/build/xacc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc.dir/link.txt --verbose=$(VERBOSE)
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/xacc.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/build.make
+xacc/libxacc.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+xacc/libxacc.so: lib/libcpr.a
+xacc/libxacc.so: /usr/lib/x86_64-linux-gnu/libunwind.so
+xacc/libxacc.so: /usr/lib/x86_64-linux-gnu/libunwind-x86_64.so
+xacc/libxacc.so: /usr/lib/x86_64-linux-gnu/libcurl.so
+xacc/libxacc.so: xacc/CMakeFiles/xacc.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libxacc.so"
+	cd /workspace/xacc/build/xacc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-xacc/CMakeFiles/xacc.dir/build: xacc/libxacc.dylib
+xacc/CMakeFiles/xacc.dir/build: xacc/libxacc.so
 
 .PHONY : xacc/CMakeFiles/xacc.dir/build
 
 xacc/CMakeFiles/xacc.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc && $(CMAKE_COMMAND) -P CMakeFiles/xacc.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc && $(CMAKE_COMMAND) -P CMakeFiles/xacc.dir/cmake_clean.cmake
 .PHONY : xacc/CMakeFiles/xacc.dir/clean
 
 xacc/CMakeFiles/xacc.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc /Users/dhruvshah/git/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc /workspace/xacc/build /workspace/xacc/build/xacc /workspace/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/CMakeFiles/xacc.dir/depend
 

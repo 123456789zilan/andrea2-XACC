@@ -82,7 +82,7 @@ TEST(InternalCompilerTester, checkStaqAdd) {
   c.store();
 
   auto src = R"(__qpu__ void add(qreg a, qreg b, qreg c) {
-      oracle adder a0,a1,a2,a3,b0,b1,b2,b3,c0,c1,c2,c3 { "/Users/dhruvshah/git/xacc/quantum/plugins/staq/compiler/tests/adder_4.v" }
+      oracle adder a0,a1,a2,a3,b0,b1,b2,b3,c0,c1,c2,c3 { "/workspace/xacc/quantum/plugins/staq/compiler/tests/adder_4.v" }
       creg result[4];
       // a = 3
       x a[0];

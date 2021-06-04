@@ -17,3 +17,9 @@ on "API Tokens" in the menu under your user name.
 You can find some example code in the examples subdirectory.
 
 
+Linux users: if you see an error message like this:
+
+  libssl3.so: cannot open shared object file: No such file or directory
+
+your system is likely missing NSS libraries.  Install the libnss3 (Ubuntu,
+Debian) or nss (Fedora, Red Hat) package.

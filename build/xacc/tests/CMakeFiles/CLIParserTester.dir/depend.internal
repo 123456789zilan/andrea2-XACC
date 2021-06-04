@@ -25,4 +25,4 @@ xacc/tests/CMakeFiles/CLIParserTester.dir/CLIParserTester.cpp.o
  ../xacc/utils/OptionsProvider.hpp
  ../xacc/utils/RuntimeOptions.hpp
  ../xacc/utils/Singleton.hpp
- /Users/dhruvshah/git/xacc/xacc/tests/CLIParserTester.cpp
+ /workspace/xacc/xacc/tests/CLIParserTester.cpp

@@ -5,9 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-staq-compiler.dir/transformations/staq_swap_short.cpp.o"
   "CMakeFiles/xacc-staq-compiler.dir/utils/staq_visitors.cpp.o"
   "CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmicroservices_init.cpp.o"
-  "libxacc-staq-compiler.dylib"
+  "CMakeFiles/xacc-staq-compiler.dir/xacc-staq-compiler/cppmicroservices_resources.cpp.o"
   "libxacc-staq-compiler.pdb"
-  "xacc-staq-compiler/cppmicroservices_resources.o"
+  "libxacc-staq-compiler.so"
+  "xacc-staq-compiler/cppmicroservices_resources.cpp"
   "xacc-staq-compiler/res_0.zip"
 )
 

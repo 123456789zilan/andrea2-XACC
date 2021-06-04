@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-mitiq-zne.dir/mitiq_zne_decorator.cpp.o"
   "CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_init.cpp.o"
-  "libxacc-mitiq-zne.dylib"
+  "CMakeFiles/xacc-mitiq-zne.dir/xacc-mitiq-zne/cppmicroservices_resources.cpp.o"
   "libxacc-mitiq-zne.pdb"
-  "xacc-mitiq-zne/cppmicroservices_resources.o"
+  "libxacc-mitiq-zne.so"
+  "xacc-mitiq-zne/cppmicroservices_resources.cpp"
   "xacc-mitiq-zne/res_0.zip"
 )
 

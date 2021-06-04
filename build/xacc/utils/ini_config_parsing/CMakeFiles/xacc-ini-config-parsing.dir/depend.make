@@ -977,3 +977,5 @@ xacc/utils/ini_config_parsing/CMakeFiles/xacc-ini-config-parsing.dir/xacc-ini-co
 xacc/utils/ini_config_parsing/CMakeFiles/xacc-ini-config-parsing.dir/xacc-ini-config-parsing/cppmicroservices_init.cpp.o: xacc/utils/ini_config_parsing/xacc-ini-config-parsing/cppmicroservices_init.cpp
 xacc/utils/ini_config_parsing/CMakeFiles/xacc-ini-config-parsing.dir/xacc-ini-config-parsing/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+xacc/utils/ini_config_parsing/CMakeFiles/xacc-ini-config-parsing.dir/xacc-ini-config-parsing/cppmicroservices_resources.cpp.o: xacc/utils/ini_config_parsing/xacc-ini-config-parsing/cppmicroservices_resources.cpp
+

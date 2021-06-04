@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/ddcl.cpp.o"
-  "/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl_activator.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/ddcl_activator.cpp.o"
-  "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_init.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/ddcl.cpp.o"
+  "/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl_activator.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/ddcl_activator.cpp.o"
+  "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_init.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_resources.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/CMakeFiles/xacc-algorithm-ddcl.dir/xacc-algorithm-ddcl/cppmicroservices_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -40,8 +41,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/dhruvshah/git/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
+  "/workspace/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
+  "/workspace/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

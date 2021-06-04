@@ -3,9 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-algorithm-qpe.dir/QpeActivator.cpp.o"
   "CMakeFiles/xacc-algorithm-qpe.dir/qpe.cpp.o"
   "CMakeFiles/xacc-algorithm-qpe.dir/xacc-algorithm-qpe/cppmicroservices_init.cpp.o"
-  "libxacc-algorithm-qpe.dylib"
+  "CMakeFiles/xacc-algorithm-qpe.dir/xacc-algorithm-qpe/cppmicroservices_resources.cpp.o"
   "libxacc-algorithm-qpe.pdb"
-  "xacc-algorithm-qpe/cppmicroservices_resources.o"
+  "libxacc-algorithm-qpe.so"
+  "xacc-algorithm-qpe/cppmicroservices_resources.cpp"
   "xacc-algorithm-qpe/res_0.zip"
 )
 

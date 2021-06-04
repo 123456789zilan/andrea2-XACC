@@ -264,7 +264,7 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/ddcl_example.cpp
+/workspace/xacc/quantum/examples/qasm/ddcl_example.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/examples/qasm/xacc.hpp
+/workspace/xacc/quantum/examples/qasm/xacc.hpp
 

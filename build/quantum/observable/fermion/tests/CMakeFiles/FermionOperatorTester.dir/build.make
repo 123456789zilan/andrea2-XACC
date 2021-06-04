@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/fl
 
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o: quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/flags.make
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o: ../quantum/observable/fermion/tests/FermionOperatorTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/fermion/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o -c /workspace/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp
 
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp > CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.i
+	cd /workspace/xacc/build/quantum/observable/fermion/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp > CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.i
 
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp -o CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.s
+	cd /workspace/xacc/build/quantum/observable/fermion/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/fermion/tests/FermionOperatorTester.cpp -o CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.s
 
 # Object files for target FermionOperatorTester
 FermionOperatorTester_OBJECTS = \
@@ -98,13 +98,13 @@ FermionOperatorTester_EXTERNAL_OBJECTS =
 
 quantum/observable/fermion/tests/FermionOperatorTester: quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/FermionOperatorTester.cpp.o
 quantum/observable/fermion/tests/FermionOperatorTester: quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/build.make
-quantum/observable/fermion/tests/FermionOperatorTester: tpls/cpr/opt/googletest/libgtest.dylib
-quantum/observable/fermion/tests/FermionOperatorTester: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/observable/fermion/tests/FermionOperatorTester: xacc/libxacc.dylib
-quantum/observable/fermion/tests/FermionOperatorTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/observable/fermion/tests/FermionOperatorTester: tpls/cpr/opt/googletest/libgtest.so
+quantum/observable/fermion/tests/FermionOperatorTester: quantum/observable/fermion/libxacc-fermion.so
+quantum/observable/fermion/tests/FermionOperatorTester: xacc/libxacc.so
+quantum/observable/fermion/tests/FermionOperatorTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/observable/fermion/tests/FermionOperatorTester: quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FermionOperatorTester"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FermionOperatorTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FermionOperatorTester"
+	cd /workspace/xacc/build/quantum/observable/fermion/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FermionOperatorTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/build: quantum/observable/fermion/tests/FermionOperatorTester
@@ -112,10 +112,10 @@ quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/build: qua
 .PHONY : quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/build
 
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests && $(CMAKE_COMMAND) -P CMakeFiles/FermionOperatorTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/observable/fermion/tests && $(CMAKE_COMMAND) -P CMakeFiles/FermionOperatorTester.dir/cmake_clean.cmake
 .PHONY : quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/clean
 
 quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/observable/fermion/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests /Users/dhruvshah/git/xacc/build/quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/observable/fermion/tests /workspace/xacc/build /workspace/xacc/build/quantum/observable/fermion/tests /workspace/xacc/build/quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/observable/fermion/tests/CMakeFiles/FermionOperatorTester.dir/depend
 

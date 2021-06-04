@@ -568,15 +568,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/gate/ir/tests/GateTester.cpp
+/workspace/xacc/quantum/gate/ir/tests/GateTester.cpp
 gtest/gtest.h
 -
 stdexcept
 -
 CommonGates.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/ir/tests/CommonGates.hpp
+/workspace/xacc/quantum/gate/ir/tests/CommonGates.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/ir/tests/Circuit.hpp
+/workspace/xacc/quantum/gate/ir/tests/Circuit.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/gate/ir/tests/xacc.hpp
+/workspace/xacc/quantum/gate/ir/tests/xacc.hpp
 

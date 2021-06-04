@@ -283,3 +283,5 @@ quantum/plugins/noise_model/CMakeFiles/xacc-noise-model-json.dir/xacc-noise-mode
 quantum/plugins/noise_model/CMakeFiles/xacc-noise-model-json.dir/xacc-noise-model-json/cppmicroservices_init.cpp.o: quantum/plugins/noise_model/xacc-noise-model-json/cppmicroservices_init.cpp
 quantum/plugins/noise_model/CMakeFiles/xacc-noise-model-json.dir/xacc-noise-model-json/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/noise_model/CMakeFiles/xacc-noise-model-json.dir/xacc-noise-model-json/cppmicroservices_resources.cpp.o: quantum/plugins/noise_model/xacc-noise-model-json/cppmicroservices_resources.cpp
+

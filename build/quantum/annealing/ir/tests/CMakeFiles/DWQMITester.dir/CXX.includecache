@@ -366,9 +366,9 @@ complex
 any
 -
 
-/Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/DWQMITester.cpp
+/workspace/xacc/quantum/annealing/ir/tests/DWQMITester.cpp
 gtest/gtest.h
 -
 DWQMI.hpp
-/Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/DWQMI.hpp
+/workspace/xacc/quantum/annealing/ir/tests/DWQMI.hpp
 

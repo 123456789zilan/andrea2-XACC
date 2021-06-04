@@ -33,8 +33,8 @@ quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/QITEActivator
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/QITEActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qite/QITEActivator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/qite/qite.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -663,12 +663,14 @@ quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/qite.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qite/qite.cpp
+ /workspace/xacc/quantum/plugins/algorithms/qite/qite.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorithm-qite/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/qite/CMakeFiles/xacc-algorithm-qite.dir/xacc-algorithm-qite/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_resources.cpp

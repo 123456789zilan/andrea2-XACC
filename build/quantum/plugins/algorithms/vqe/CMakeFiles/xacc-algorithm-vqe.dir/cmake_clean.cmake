@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-algorithm-vqe.dir/VQEActivator.cpp.o"
   "CMakeFiles/xacc-algorithm-vqe.dir/vqe.cpp.o"
   "CMakeFiles/xacc-algorithm-vqe.dir/xacc-algorithm-vqe/cppmicroservices_init.cpp.o"
-  "libxacc-algorithm-vqe.dylib"
+  "CMakeFiles/xacc-algorithm-vqe.dir/xacc-algorithm-vqe/cppmicroservices_resources.cpp.o"
   "libxacc-algorithm-vqe.pdb"
-  "xacc-algorithm-vqe/cppmicroservices_resources.o"
+  "libxacc-algorithm-vqe.so"
+  "xacc-algorithm-vqe/cppmicroservices_resources.cpp"
   "xacc-algorithm-vqe/res_0.zip"
 )
 

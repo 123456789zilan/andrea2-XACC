@@ -1063,3 +1063,5 @@ quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroserv
 quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroservices_init.cpp.o: quantum/observable/fermion/xacc-fermion/cppmicroservices_init.cpp
 quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/xacc-fermion/cppmicroservices_resources.cpp.o: quantum/observable/fermion/xacc-fermion/cppmicroservices_resources.cpp
+

@@ -290,9 +290,9 @@ map
 chrono
 -
 
-/Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/EmbeddingTester.cpp
+/workspace/xacc/quantum/annealing/compiler/tests/EmbeddingTester.cpp
 gtest/gtest.h
 -
 Embedding.hpp
-/Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/Embedding.hpp
+/workspace/xacc/quantum/annealing/compiler/tests/Embedding.hpp
 

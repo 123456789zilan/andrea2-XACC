@@ -257,8 +257,8 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelD
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp
+ /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleActivator.h
@@ -526,12 +526,12 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp
+ /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -561,8 +561,8 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecora
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp
+ /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o
  ../quantum/observable/fermion/FermionOperator.hpp
  ../quantum/observable/pauli/PauliOperator.hpp
@@ -860,8 +860,8 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorat
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp
+ /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o
  ../tpls/mpark-variant/variant.hpp
  ../tpls/rapidjson/include/rapidjson/allocators.h
@@ -908,8 +908,8 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp
+ /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/AnyMap.h
@@ -957,12 +957,14 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp
+ /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp
+ /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp

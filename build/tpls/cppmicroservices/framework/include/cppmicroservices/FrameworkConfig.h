@@ -23,6 +23,6 @@
 // Macros used by the unit tests
 //-------------------------------------------------------------------
 
-#define US_FRAMEWORK_SOURCE_DIR "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/framework"
+#define US_FRAMEWORK_SOURCE_DIR "/workspace/xacc/tpls/cppmicroservices/framework"
 
 #endif // CPPMICROSERVICES_FRAMEWORKCONFIG_H

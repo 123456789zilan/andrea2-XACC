@@ -45,10 +45,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/nlopt.dir/src/util/sobolseq.c.o"
   "CMakeFiles/nlopt.dir/src/util/stop.c.o"
   "CMakeFiles/nlopt.dir/src/util/timer.c.o"
-  "libnlopt.0.10.0.dylib"
-  "libnlopt.0.dylib"
-  "libnlopt.dylib"
   "libnlopt.pdb"
+  "libnlopt.so"
+  "libnlopt.so.0"
+  "libnlopt.so.0.10.0"
 )
 
 # Per-language clean rules from dependency scanning.

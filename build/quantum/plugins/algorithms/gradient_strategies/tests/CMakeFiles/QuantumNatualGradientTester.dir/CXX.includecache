@@ -3150,17 +3150,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/QuantumNatualGradientTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/QuantumNatualGradientTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_service.hpp
 QuantumNaturalGradient.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/QuantumNaturalGradient.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/QuantumNaturalGradient.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Observable.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,37 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,44 +121,10 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -154,10 +132,21 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -165,10 +154,21 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -178,14 +178,14 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/xacc//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/xacc//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xacc/CMakeFiles/xacc.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/CMakeFiles/xacc.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xacc/CMakeFiles/xacc.dir/rule
 .PHONY : xacc/CMakeFiles/xacc.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ xacc: xacc/CMakeFiles/xacc.dir/rule
 
 # fast build rule for target.
 xacc/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/build
 .PHONY : xacc/fast
 
 accelerator/AcceleratorBuffer.o: accelerator/AcceleratorBuffer.cpp.o
@@ -229,7 +229,7 @@ accelerator/AcceleratorBuffer.o: accelerator/AcceleratorBuffer.cpp.o
 
 # target to build an object file
 accelerator/AcceleratorBuffer.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.o
 .PHONY : accelerator/AcceleratorBuffer.cpp.o
 
 accelerator/AcceleratorBuffer.i: accelerator/AcceleratorBuffer.cpp.i
@@ -238,7 +238,7 @@ accelerator/AcceleratorBuffer.i: accelerator/AcceleratorBuffer.cpp.i
 
 # target to preprocess a source file
 accelerator/AcceleratorBuffer.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.i
 .PHONY : accelerator/AcceleratorBuffer.cpp.i
 
 accelerator/AcceleratorBuffer.s: accelerator/AcceleratorBuffer.cpp.s
@@ -247,7 +247,7 @@ accelerator/AcceleratorBuffer.s: accelerator/AcceleratorBuffer.cpp.s
 
 # target to generate assembly for a file
 accelerator/AcceleratorBuffer.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/AcceleratorBuffer.cpp.s
 .PHONY : accelerator/AcceleratorBuffer.cpp.s
 
 accelerator/remote/RemoteAccelerator.o: accelerator/remote/RemoteAccelerator.cpp.o
@@ -256,7 +256,7 @@ accelerator/remote/RemoteAccelerator.o: accelerator/remote/RemoteAccelerator.cpp
 
 # target to build an object file
 accelerator/remote/RemoteAccelerator.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.o
 .PHONY : accelerator/remote/RemoteAccelerator.cpp.o
 
 accelerator/remote/RemoteAccelerator.i: accelerator/remote/RemoteAccelerator.cpp.i
@@ -265,7 +265,7 @@ accelerator/remote/RemoteAccelerator.i: accelerator/remote/RemoteAccelerator.cpp
 
 # target to preprocess a source file
 accelerator/remote/RemoteAccelerator.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.i
 .PHONY : accelerator/remote/RemoteAccelerator.cpp.i
 
 accelerator/remote/RemoteAccelerator.s: accelerator/remote/RemoteAccelerator.cpp.s
@@ -274,7 +274,7 @@ accelerator/remote/RemoteAccelerator.s: accelerator/remote/RemoteAccelerator.cpp
 
 # target to generate assembly for a file
 accelerator/remote/RemoteAccelerator.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/accelerator/remote/RemoteAccelerator.cpp.s
 .PHONY : accelerator/remote/RemoteAccelerator.cpp.s
 
 compiler/qalloc.o: compiler/qalloc.cpp.o
@@ -283,7 +283,7 @@ compiler/qalloc.o: compiler/qalloc.cpp.o
 
 # target to build an object file
 compiler/qalloc.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.o
 .PHONY : compiler/qalloc.cpp.o
 
 compiler/qalloc.i: compiler/qalloc.cpp.i
@@ -292,7 +292,7 @@ compiler/qalloc.i: compiler/qalloc.cpp.i
 
 # target to preprocess a source file
 compiler/qalloc.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.i
 .PHONY : compiler/qalloc.cpp.i
 
 compiler/qalloc.s: compiler/qalloc.cpp.s
@@ -301,7 +301,7 @@ compiler/qalloc.s: compiler/qalloc.cpp.s
 
 # target to generate assembly for a file
 compiler/qalloc.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/qalloc.cpp.s
 .PHONY : compiler/qalloc.cpp.s
 
 compiler/xacc_internal_compiler.o: compiler/xacc_internal_compiler.cpp.o
@@ -310,7 +310,7 @@ compiler/xacc_internal_compiler.o: compiler/xacc_internal_compiler.cpp.o
 
 # target to build an object file
 compiler/xacc_internal_compiler.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.o
 .PHONY : compiler/xacc_internal_compiler.cpp.o
 
 compiler/xacc_internal_compiler.i: compiler/xacc_internal_compiler.cpp.i
@@ -319,7 +319,7 @@ compiler/xacc_internal_compiler.i: compiler/xacc_internal_compiler.cpp.i
 
 # target to preprocess a source file
 compiler/xacc_internal_compiler.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.i
 .PHONY : compiler/xacc_internal_compiler.cpp.i
 
 compiler/xacc_internal_compiler.s: compiler/xacc_internal_compiler.cpp.s
@@ -328,7 +328,7 @@ compiler/xacc_internal_compiler.s: compiler/xacc_internal_compiler.cpp.s
 
 # target to generate assembly for a file
 compiler/xacc_internal_compiler.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/compiler/xacc_internal_compiler.cpp.s
 .PHONY : compiler/xacc_internal_compiler.cpp.s
 
 service/ServiceRegistry.o: service/ServiceRegistry.cpp.o
@@ -337,7 +337,7 @@ service/ServiceRegistry.o: service/ServiceRegistry.cpp.o
 
 # target to build an object file
 service/ServiceRegistry.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.o
 .PHONY : service/ServiceRegistry.cpp.o
 
 service/ServiceRegistry.i: service/ServiceRegistry.cpp.i
@@ -346,7 +346,7 @@ service/ServiceRegistry.i: service/ServiceRegistry.cpp.i
 
 # target to preprocess a source file
 service/ServiceRegistry.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.i
 .PHONY : service/ServiceRegistry.cpp.i
 
 service/ServiceRegistry.s: service/ServiceRegistry.cpp.s
@@ -355,7 +355,7 @@ service/ServiceRegistry.s: service/ServiceRegistry.cpp.s
 
 # target to generate assembly for a file
 service/ServiceRegistry.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/ServiceRegistry.cpp.s
 .PHONY : service/ServiceRegistry.cpp.s
 
 service/xacc_service.o: service/xacc_service.cpp.o
@@ -364,7 +364,7 @@ service/xacc_service.o: service/xacc_service.cpp.o
 
 # target to build an object file
 service/xacc_service.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.o
 .PHONY : service/xacc_service.cpp.o
 
 service/xacc_service.i: service/xacc_service.cpp.i
@@ -373,7 +373,7 @@ service/xacc_service.i: service/xacc_service.cpp.i
 
 # target to preprocess a source file
 service/xacc_service.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.i
 .PHONY : service/xacc_service.cpp.i
 
 service/xacc_service.s: service/xacc_service.cpp.s
@@ -382,7 +382,7 @@ service/xacc_service.s: service/xacc_service.cpp.s
 
 # target to generate assembly for a file
 service/xacc_service.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/service/xacc_service.cpp.s
 .PHONY : service/xacc_service.cpp.s
 
 utils/CLIParser.o: utils/CLIParser.cpp.o
@@ -391,7 +391,7 @@ utils/CLIParser.o: utils/CLIParser.cpp.o
 
 # target to build an object file
 utils/CLIParser.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.o
 .PHONY : utils/CLIParser.cpp.o
 
 utils/CLIParser.i: utils/CLIParser.cpp.i
@@ -400,7 +400,7 @@ utils/CLIParser.i: utils/CLIParser.cpp.i
 
 # target to preprocess a source file
 utils/CLIParser.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.i
 .PHONY : utils/CLIParser.cpp.i
 
 utils/CLIParser.s: utils/CLIParser.cpp.s
@@ -409,7 +409,7 @@ utils/CLIParser.s: utils/CLIParser.cpp.s
 
 # target to generate assembly for a file
 utils/CLIParser.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/CLIParser.cpp.s
 .PHONY : utils/CLIParser.cpp.s
 
 utils/Utils.o: utils/Utils.cpp.o
@@ -418,7 +418,7 @@ utils/Utils.o: utils/Utils.cpp.o
 
 # target to build an object file
 utils/Utils.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.o
 .PHONY : utils/Utils.cpp.o
 
 utils/Utils.i: utils/Utils.cpp.i
@@ -427,7 +427,7 @@ utils/Utils.i: utils/Utils.cpp.i
 
 # target to preprocess a source file
 utils/Utils.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.i
 .PHONY : utils/Utils.cpp.i
 
 utils/Utils.s: utils/Utils.cpp.s
@@ -436,7 +436,7 @@ utils/Utils.s: utils/Utils.cpp.s
 
 # target to generate assembly for a file
 utils/Utils.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/utils/Utils.cpp.s
 .PHONY : utils/Utils.cpp.s
 
 xacc.o: xacc.cpp.o
@@ -445,7 +445,7 @@ xacc.o: xacc.cpp.o
 
 # target to build an object file
 xacc.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.o
 .PHONY : xacc.cpp.o
 
 xacc.i: xacc.cpp.i
@@ -454,7 +454,7 @@ xacc.i: xacc.cpp.i
 
 # target to preprocess a source file
 xacc.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.i
 .PHONY : xacc.cpp.i
 
 xacc.s: xacc.cpp.s
@@ -463,7 +463,7 @@ xacc.s: xacc.cpp.s
 
 # target to generate assembly for a file
 xacc.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f xacc/CMakeFiles/xacc.dir/build.make xacc/CMakeFiles/xacc.dir/xacc.cpp.s
 .PHONY : xacc.cpp.s
 
 # Help Target
@@ -520,6 +520,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -298,7 +298,7 @@ quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorT
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
+ /workspace/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h

@@ -792,15 +792,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/python/compiler/tests/PyXASMCompilerTester.cpp
+/workspace/xacc/python/compiler/tests/PyXASMCompilerTester.cpp
 gtest/gtest.h
-/Users/dhruvshah/git/xacc/python/compiler/tests/gtest/gtest.h
+/workspace/xacc/python/compiler/tests/gtest/gtest.h
 xacc.hpp
-/Users/dhruvshah/git/xacc/python/compiler/tests/xacc.hpp
+/workspace/xacc/python/compiler/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/python/compiler/tests/xacc_service.hpp
+/workspace/xacc/python/compiler/tests/xacc_service.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/python/compiler/tests/Circuit.hpp
+/workspace/xacc/python/compiler/tests/Circuit.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

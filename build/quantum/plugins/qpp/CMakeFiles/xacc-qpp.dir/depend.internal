@@ -311,7 +311,7 @@ quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/QppActivator.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/QppActivator.cpp
+ /workspace/xacc/quantum/plugins/qpp/QppActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -612,9 +612,9 @@ quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/accelerator/QppAccelerator.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
+ /workspace/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.cpp
+ /workspace/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
+ /workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
 quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/accelerator/QppVisitor.cpp.o
  ../quantum/gate/ir/Circuit.hpp
  ../quantum/gate/ir/CommonGates.hpp
@@ -910,9 +910,11 @@ quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/accelerator/QppVisitor.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
+ /workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.cpp
+ /workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
 quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/qpp/CMakeFiles/xacc-qpp.dir/xacc-qpp/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_resources.cpp

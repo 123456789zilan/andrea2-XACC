@@ -58,79 +58,46 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -142,33 +109,21 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-
-.PHONY : package/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -176,16 +131,61 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/quantum/examples/qasm//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/quantum/examples/qasm//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,187 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
-
-# Convenience name for target.
-qaoa_placement: quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
-
-.PHONY : qaoa_placement
-
-# fast build rule for target.
-qaoa_placement/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build
-.PHONY : qaoa_placement/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
-
-# Convenience name for target.
-bell_noisy: quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
-
-.PHONY : bell_noisy
-
-# fast build rule for target.
-bell_noisy/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build
-.PHONY : bell_noisy/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
-
-# Convenience name for target.
-quantum_phase_estimation: quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
-
-.PHONY : quantum_phase_estimation
-
-# fast build rule for target.
-quantum_phase_estimation/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build
-.PHONY : quantum_phase_estimation/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
-
-# Convenience name for target.
-qaoa_qubo: quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
-
-.PHONY : qaoa_qubo
-
-# fast build rule for target.
-qaoa_qubo/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build
-.PHONY : qaoa_qubo/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
-
-# Convenience name for target.
-deuteron_from_qasm_vqe_algo: quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
-
-.PHONY : deuteron_from_qasm_vqe_algo
-
-# fast build rule for target.
-deuteron_from_qasm_vqe_algo/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build
-.PHONY : deuteron_from_qasm_vqe_algo/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
-
-# Convenience name for target.
-phase_estimation_qasm: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
-
-.PHONY : phase_estimation_qasm
-
-# fast build rule for target.
-phase_estimation_qasm/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build
-.PHONY : phase_estimation_qasm/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
-
-# Convenience name for target.
-nah_ucc3: quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
-
-.PHONY : nah_ucc3
-
-# fast build rule for target.
-nah_ucc3/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build
-.PHONY : nah_ucc3/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
-
-# Convenience name for target.
-rotoselect: quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
-
-.PHONY : rotoselect
-
-# fast build rule for target.
-rotoselect/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/build
-.PHONY : rotoselect/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
-
-# Convenience name for target.
-ddcl_example: quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
-
-.PHONY : ddcl_example
-
-# fast build rule for target.
-ddcl_example/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build
-.PHONY : ddcl_example/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
-
-# Convenience name for target.
-deuteronH3_from_qasm_vqe_algo: quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
-
-.PHONY : deuteronH3_from_qasm_vqe_algo
-
-# fast build rule for target.
-deuteronH3_from_qasm_vqe_algo/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build
-.PHONY : deuteronH3_from_qasm_vqe_algo/fast
-
-# Convenience name for target.
-quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
-.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
-
-# Convenience name for target.
-qaoa_maxcut_qpp: quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
-
-.PHONY : qaoa_maxcut_qpp
-
-# fast build rule for target.
-qaoa_maxcut_qpp/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build
-.PHONY : qaoa_maxcut_qpp/fast
-
-# Convenience name for target.
 quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/rule
 .PHONY : quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/rule
 
 # Convenience name for target.
@@ -385,12 +220,12 @@ qeom_h2_sto-3g: quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/rule
 
 # fast build rule for target.
 qeom_h2_sto-3g/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build
 .PHONY : qeom_h2_sto-3g/fast
 
 # Convenience name for target.
 quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/rule
 .PHONY : quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/rule
 
 # Convenience name for target.
@@ -400,8 +235,173 @@ deuteron_from_qasm: quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/rule
 
 # fast build rule for target.
 deuteron_from_qasm/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build
 .PHONY : deuteron_from_qasm/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
+
+# Convenience name for target.
+qaoa_qubo: quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/rule
+
+.PHONY : qaoa_qubo
+
+# fast build rule for target.
+qaoa_qubo/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build
+.PHONY : qaoa_qubo/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
+
+# Convenience name for target.
+deuteron_from_qasm_vqe_algo: quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/rule
+
+.PHONY : deuteron_from_qasm_vqe_algo
+
+# fast build rule for target.
+deuteron_from_qasm_vqe_algo/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build
+.PHONY : deuteron_from_qasm_vqe_algo/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
+
+# Convenience name for target.
+rotoselect: quantum/examples/qasm/CMakeFiles/rotoselect.dir/rule
+
+.PHONY : rotoselect
+
+# fast build rule for target.
+rotoselect/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/build
+.PHONY : rotoselect/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
+
+# Convenience name for target.
+ddcl_example: quantum/examples/qasm/CMakeFiles/ddcl_example.dir/rule
+
+.PHONY : ddcl_example
+
+# fast build rule for target.
+ddcl_example/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build
+.PHONY : ddcl_example/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
+
+# Convenience name for target.
+bell_noisy: quantum/examples/qasm/CMakeFiles/bell_noisy.dir/rule
+
+.PHONY : bell_noisy
+
+# fast build rule for target.
+bell_noisy/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build
+.PHONY : bell_noisy/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
+
+# Convenience name for target.
+deuteronH3_from_qasm_vqe_algo: quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/rule
+
+.PHONY : deuteronH3_from_qasm_vqe_algo
+
+# fast build rule for target.
+deuteronH3_from_qasm_vqe_algo/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build
+.PHONY : deuteronH3_from_qasm_vqe_algo/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
+
+# Convenience name for target.
+nah_ucc3: quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/rule
+
+.PHONY : nah_ucc3
+
+# fast build rule for target.
+nah_ucc3/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build
+.PHONY : nah_ucc3/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
+
+# Convenience name for target.
+qaoa_placement: quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/rule
+
+.PHONY : qaoa_placement
+
+# fast build rule for target.
+qaoa_placement/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build
+.PHONY : qaoa_placement/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
+
+# Convenience name for target.
+qaoa_maxcut_qpp: quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/rule
+
+.PHONY : qaoa_maxcut_qpp
+
+# fast build rule for target.
+qaoa_maxcut_qpp/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build
+.PHONY : qaoa_maxcut_qpp/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
+
+# Convenience name for target.
+quantum_phase_estimation: quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/rule
+
+.PHONY : quantum_phase_estimation
+
+# fast build rule for target.
+quantum_phase_estimation/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build
+.PHONY : quantum_phase_estimation/fast
+
+# Convenience name for target.
+quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
+.PHONY : quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
+
+# Convenience name for target.
+phase_estimation_qasm: quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/rule
+
+.PHONY : phase_estimation_qasm
+
+# fast build rule for target.
+phase_estimation_qasm/fast:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build
+.PHONY : phase_estimation_qasm/fast
 
 bell_readout_py_load.o: bell_readout_py_load.cpp.o
 
@@ -409,7 +409,7 @@ bell_readout_py_load.o: bell_readout_py_load.cpp.o
 
 # target to build an object file
 bell_readout_py_load.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.o
 .PHONY : bell_readout_py_load.cpp.o
 
 bell_readout_py_load.i: bell_readout_py_load.cpp.i
@@ -418,7 +418,7 @@ bell_readout_py_load.i: bell_readout_py_load.cpp.i
 
 # target to preprocess a source file
 bell_readout_py_load.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.i
 .PHONY : bell_readout_py_load.cpp.i
 
 bell_readout_py_load.s: bell_readout_py_load.cpp.s
@@ -427,7 +427,7 @@ bell_readout_py_load.s: bell_readout_py_load.cpp.s
 
 # target to generate assembly for a file
 bell_readout_py_load.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/bell_noisy.dir/build.make quantum/examples/qasm/CMakeFiles/bell_noisy.dir/bell_readout_py_load.cpp.s
 .PHONY : bell_readout_py_load.cpp.s
 
 ddcl_example.o: ddcl_example.cpp.o
@@ -436,7 +436,7 @@ ddcl_example.o: ddcl_example.cpp.o
 
 # target to build an object file
 ddcl_example.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.o
 .PHONY : ddcl_example.cpp.o
 
 ddcl_example.i: ddcl_example.cpp.i
@@ -445,7 +445,7 @@ ddcl_example.i: ddcl_example.cpp.i
 
 # target to preprocess a source file
 ddcl_example.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.i
 .PHONY : ddcl_example.cpp.i
 
 ddcl_example.s: ddcl_example.cpp.s
@@ -454,7 +454,7 @@ ddcl_example.s: ddcl_example.cpp.s
 
 # target to generate assembly for a file
 ddcl_example.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/ddcl_example.dir/build.make quantum/examples/qasm/CMakeFiles/ddcl_example.dir/ddcl_example.cpp.s
 .PHONY : ddcl_example.cpp.s
 
 deuteron.o: deuteron.cpp.o
@@ -463,7 +463,7 @@ deuteron.o: deuteron.cpp.o
 
 # target to build an object file
 deuteron.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.o
 .PHONY : deuteron.cpp.o
 
 deuteron.i: deuteron.cpp.i
@@ -472,7 +472,7 @@ deuteron.i: deuteron.cpp.i
 
 # target to preprocess a source file
 deuteron.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.i
 .PHONY : deuteron.cpp.i
 
 deuteron.s: deuteron.cpp.s
@@ -481,7 +481,7 @@ deuteron.s: deuteron.cpp.s
 
 # target to generate assembly for a file
 deuteron.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm.dir/deuteron.cpp.s
 .PHONY : deuteron.cpp.s
 
 deuteronH3_vqe_algo.o: deuteronH3_vqe_algo.cpp.o
@@ -490,7 +490,7 @@ deuteronH3_vqe_algo.o: deuteronH3_vqe_algo.cpp.o
 
 # target to build an object file
 deuteronH3_vqe_algo.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.o
 .PHONY : deuteronH3_vqe_algo.cpp.o
 
 deuteronH3_vqe_algo.i: deuteronH3_vqe_algo.cpp.i
@@ -499,7 +499,7 @@ deuteronH3_vqe_algo.i: deuteronH3_vqe_algo.cpp.i
 
 # target to preprocess a source file
 deuteronH3_vqe_algo.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.i
 .PHONY : deuteronH3_vqe_algo.cpp.i
 
 deuteronH3_vqe_algo.s: deuteronH3_vqe_algo.cpp.s
@@ -508,7 +508,7 @@ deuteronH3_vqe_algo.s: deuteronH3_vqe_algo.cpp.s
 
 # target to generate assembly for a file
 deuteronH3_vqe_algo.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteronH3_from_qasm_vqe_algo.dir/deuteronH3_vqe_algo.cpp.s
 .PHONY : deuteronH3_vqe_algo.cpp.s
 
 deuteron_vqe_algo.o: deuteron_vqe_algo.cpp.o
@@ -517,7 +517,7 @@ deuteron_vqe_algo.o: deuteron_vqe_algo.cpp.o
 
 # target to build an object file
 deuteron_vqe_algo.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.o
 .PHONY : deuteron_vqe_algo.cpp.o
 
 deuteron_vqe_algo.i: deuteron_vqe_algo.cpp.i
@@ -526,7 +526,7 @@ deuteron_vqe_algo.i: deuteron_vqe_algo.cpp.i
 
 # target to preprocess a source file
 deuteron_vqe_algo.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.i
 .PHONY : deuteron_vqe_algo.cpp.i
 
 deuteron_vqe_algo.s: deuteron_vqe_algo.cpp.s
@@ -535,7 +535,7 @@ deuteron_vqe_algo.s: deuteron_vqe_algo.cpp.s
 
 # target to generate assembly for a file
 deuteron_vqe_algo.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/build.make quantum/examples/qasm/CMakeFiles/deuteron_from_qasm_vqe_algo.dir/deuteron_vqe_algo.cpp.s
 .PHONY : deuteron_vqe_algo.cpp.s
 
 nah_ucc3_psi4.o: nah_ucc3_psi4.cpp.o
@@ -544,7 +544,7 @@ nah_ucc3_psi4.o: nah_ucc3_psi4.cpp.o
 
 # target to build an object file
 nah_ucc3_psi4.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.o
 .PHONY : nah_ucc3_psi4.cpp.o
 
 nah_ucc3_psi4.i: nah_ucc3_psi4.cpp.i
@@ -553,7 +553,7 @@ nah_ucc3_psi4.i: nah_ucc3_psi4.cpp.i
 
 # target to preprocess a source file
 nah_ucc3_psi4.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.i
 .PHONY : nah_ucc3_psi4.cpp.i
 
 nah_ucc3_psi4.s: nah_ucc3_psi4.cpp.s
@@ -562,7 +562,7 @@ nah_ucc3_psi4.s: nah_ucc3_psi4.cpp.s
 
 # target to generate assembly for a file
 nah_ucc3_psi4.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/build.make quantum/examples/qasm/CMakeFiles/nah_ucc3.dir/nah_ucc3_psi4.cpp.s
 .PHONY : nah_ucc3_psi4.cpp.s
 
 phase_estimation_10q.o: phase_estimation_10q.cpp.o
@@ -571,7 +571,7 @@ phase_estimation_10q.o: phase_estimation_10q.cpp.o
 
 # target to build an object file
 phase_estimation_10q.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.o
 .PHONY : phase_estimation_10q.cpp.o
 
 phase_estimation_10q.i: phase_estimation_10q.cpp.i
@@ -580,7 +580,7 @@ phase_estimation_10q.i: phase_estimation_10q.cpp.i
 
 # target to preprocess a source file
 phase_estimation_10q.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.i
 .PHONY : phase_estimation_10q.cpp.i
 
 phase_estimation_10q.s: phase_estimation_10q.cpp.s
@@ -589,7 +589,7 @@ phase_estimation_10q.s: phase_estimation_10q.cpp.s
 
 # target to generate assembly for a file
 phase_estimation_10q.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/build.make quantum/examples/qasm/CMakeFiles/phase_estimation_qasm.dir/phase_estimation_10q.cpp.s
 .PHONY : phase_estimation_10q.cpp.s
 
 qaoa_maxcut_qpp.o: qaoa_maxcut_qpp.cpp.o
@@ -598,7 +598,7 @@ qaoa_maxcut_qpp.o: qaoa_maxcut_qpp.cpp.o
 
 # target to build an object file
 qaoa_maxcut_qpp.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.o
 .PHONY : qaoa_maxcut_qpp.cpp.o
 
 qaoa_maxcut_qpp.i: qaoa_maxcut_qpp.cpp.i
@@ -607,7 +607,7 @@ qaoa_maxcut_qpp.i: qaoa_maxcut_qpp.cpp.i
 
 # target to preprocess a source file
 qaoa_maxcut_qpp.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.i
 .PHONY : qaoa_maxcut_qpp.cpp.i
 
 qaoa_maxcut_qpp.s: qaoa_maxcut_qpp.cpp.s
@@ -616,7 +616,7 @@ qaoa_maxcut_qpp.s: qaoa_maxcut_qpp.cpp.s
 
 # target to generate assembly for a file
 qaoa_maxcut_qpp.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_maxcut_qpp.dir/qaoa_maxcut_qpp.cpp.s
 .PHONY : qaoa_maxcut_qpp.cpp.s
 
 qaoa_placement.o: qaoa_placement.cpp.o
@@ -625,7 +625,7 @@ qaoa_placement.o: qaoa_placement.cpp.o
 
 # target to build an object file
 qaoa_placement.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.o
 .PHONY : qaoa_placement.cpp.o
 
 qaoa_placement.i: qaoa_placement.cpp.i
@@ -634,7 +634,7 @@ qaoa_placement.i: qaoa_placement.cpp.i
 
 # target to preprocess a source file
 qaoa_placement.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.i
 .PHONY : qaoa_placement.cpp.i
 
 qaoa_placement.s: qaoa_placement.cpp.s
@@ -643,7 +643,7 @@ qaoa_placement.s: qaoa_placement.cpp.s
 
 # target to generate assembly for a file
 qaoa_placement.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_placement.dir/qaoa_placement.cpp.s
 .PHONY : qaoa_placement.cpp.s
 
 qeom_h2_sto-3g.o: qeom_h2_sto-3g.cpp.o
@@ -652,7 +652,7 @@ qeom_h2_sto-3g.o: qeom_h2_sto-3g.cpp.o
 
 # target to build an object file
 qeom_h2_sto-3g.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.o
 .PHONY : qeom_h2_sto-3g.cpp.o
 
 qeom_h2_sto-3g.i: qeom_h2_sto-3g.cpp.i
@@ -661,7 +661,7 @@ qeom_h2_sto-3g.i: qeom_h2_sto-3g.cpp.i
 
 # target to preprocess a source file
 qeom_h2_sto-3g.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.i
 .PHONY : qeom_h2_sto-3g.cpp.i
 
 qeom_h2_sto-3g.s: qeom_h2_sto-3g.cpp.s
@@ -670,7 +670,7 @@ qeom_h2_sto-3g.s: qeom_h2_sto-3g.cpp.s
 
 # target to generate assembly for a file
 qeom_h2_sto-3g.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/build.make quantum/examples/qasm/CMakeFiles/qeom_h2_sto-3g.dir/qeom_h2_sto-3g.cpp.s
 .PHONY : qeom_h2_sto-3g.cpp.s
 
 quantum_phase_estimation.o: quantum_phase_estimation.cpp.o
@@ -679,7 +679,7 @@ quantum_phase_estimation.o: quantum_phase_estimation.cpp.o
 
 # target to build an object file
 quantum_phase_estimation.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.o
 .PHONY : quantum_phase_estimation.cpp.o
 
 quantum_phase_estimation.i: quantum_phase_estimation.cpp.i
@@ -688,7 +688,7 @@ quantum_phase_estimation.i: quantum_phase_estimation.cpp.i
 
 # target to preprocess a source file
 quantum_phase_estimation.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.i
 .PHONY : quantum_phase_estimation.cpp.i
 
 quantum_phase_estimation.s: quantum_phase_estimation.cpp.s
@@ -697,7 +697,7 @@ quantum_phase_estimation.s: quantum_phase_estimation.cpp.s
 
 # target to generate assembly for a file
 quantum_phase_estimation.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/build.make quantum/examples/qasm/CMakeFiles/quantum_phase_estimation.dir/quantum_phase_estimation.cpp.s
 .PHONY : quantum_phase_estimation.cpp.s
 
 rotoselect_quantum_circuit_structure_learning.o: rotoselect_quantum_circuit_structure_learning.cpp.o
@@ -706,7 +706,7 @@ rotoselect_quantum_circuit_structure_learning.o: rotoselect_quantum_circuit_stru
 
 # target to build an object file
 rotoselect_quantum_circuit_structure_learning.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.o
 .PHONY : rotoselect_quantum_circuit_structure_learning.cpp.o
 
 rotoselect_quantum_circuit_structure_learning.i: rotoselect_quantum_circuit_structure_learning.cpp.i
@@ -715,7 +715,7 @@ rotoselect_quantum_circuit_structure_learning.i: rotoselect_quantum_circuit_stru
 
 # target to preprocess a source file
 rotoselect_quantum_circuit_structure_learning.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.i
 .PHONY : rotoselect_quantum_circuit_structure_learning.cpp.i
 
 rotoselect_quantum_circuit_structure_learning.s: rotoselect_quantum_circuit_structure_learning.cpp.s
@@ -724,7 +724,7 @@ rotoselect_quantum_circuit_structure_learning.s: rotoselect_quantum_circuit_stru
 
 # target to generate assembly for a file
 rotoselect_quantum_circuit_structure_learning.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/rotoselect.dir/build.make quantum/examples/qasm/CMakeFiles/rotoselect.dir/rotoselect_quantum_circuit_structure_learning.cpp.s
 .PHONY : rotoselect_quantum_circuit_structure_learning.cpp.s
 
 solve_qubo_with_qaoa.o: solve_qubo_with_qaoa.cpp.o
@@ -733,7 +733,7 @@ solve_qubo_with_qaoa.o: solve_qubo_with_qaoa.cpp.o
 
 # target to build an object file
 solve_qubo_with_qaoa.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.o
 .PHONY : solve_qubo_with_qaoa.cpp.o
 
 solve_qubo_with_qaoa.i: solve_qubo_with_qaoa.cpp.i
@@ -742,7 +742,7 @@ solve_qubo_with_qaoa.i: solve_qubo_with_qaoa.cpp.i
 
 # target to preprocess a source file
 solve_qubo_with_qaoa.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.i
 .PHONY : solve_qubo_with_qaoa.cpp.i
 
 solve_qubo_with_qaoa.s: solve_qubo_with_qaoa.cpp.s
@@ -751,7 +751,7 @@ solve_qubo_with_qaoa.s: solve_qubo_with_qaoa.cpp.s
 
 # target to generate assembly for a file
 solve_qubo_with_qaoa.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/build.make quantum/examples/qasm/CMakeFiles/qaoa_qubo.dir/solve_qubo_with_qaoa.cpp.s
 .PHONY : solve_qubo_with_qaoa.cpp.s
 
 # Help Target
@@ -832,6 +832,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

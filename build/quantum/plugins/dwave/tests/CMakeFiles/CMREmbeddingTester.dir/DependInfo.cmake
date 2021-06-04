@@ -4,19 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/CMREmbeddingTester.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/tests/CMakeFiles/CMREmbeddingTester.dir/CMREmbeddingTester.cpp.o"
+  "/workspace/xacc/quantum/plugins/dwave/tests/CMREmbeddingTester.cpp" "/workspace/xacc/build/quantum/plugins/dwave/tests/CMakeFiles/CMREmbeddingTester.dir/CMREmbeddingTester.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "BOOST_ALL_NO_LIB=1"
-  "BOOST_DISABLE_ASSERT"
-  "BOOST_SYSTEM_NO_DEPRECATED"
-  "BOOST_THREAD_PROVIDES_EXECUTORS"
-  "BOOST_THREAD_USES_CHRONO"
-  "BOOST_THREAD_VERSION=4"
-  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -64,23 +54,19 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../quantum/observable/fermion/."
   "../quantum/observable/fermion"
   "../quantum/observable/fermion/generated"
-  "../tpls/cpr/include"
-  "../tpls/boost-cmake/boost/boost_1_75_0"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/dhruvshah/git/xacc/build/tpls/cpr/opt/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/boost-cmake/CMakeFiles/Boost_system.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/cpr/cpr/CMakeFiles/cpr.dir/DependInfo.cmake"
+  "/workspace/xacc/build/tpls/cpr/opt/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/annealing/CMakeFiles/xacc-quantum-annealing.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/DependInfo.cmake"
+  "/workspace/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
+  "/workspace/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/CMakeFiles/dwave_sapi.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

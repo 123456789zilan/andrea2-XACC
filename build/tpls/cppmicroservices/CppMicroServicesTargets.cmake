@@ -47,7 +47,7 @@ add_executable(usResourceCompiler IMPORTED)
 # Import target "usResourceCompiler" for configuration "RELEASE"
 set_property(TARGET usResourceCompiler APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(usResourceCompiler PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4"
+  IMPORTED_LOCATION_RELEASE "/workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4"
   )
 
 # This file does not depend on other imported targets which have

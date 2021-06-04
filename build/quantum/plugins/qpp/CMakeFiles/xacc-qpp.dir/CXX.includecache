@@ -1858,55 +1858,59 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/QppActivator.cpp
+/workspace/xacc/build/quantum/plugins/qpp/xacc-qpp/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/qpp/QppActivator.cpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/qpp/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/qpp/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/qpp/cppmicroservices/ServiceProperties.h
 QppAccelerator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/QppAccelerator.hpp
+/workspace/xacc/quantum/plugins/qpp/QppAccelerator.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.cpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.cpp
 QppAccelerator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
 thread
 -
 mutex
 -
 IRUtils.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/IRUtils.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/IRUtils.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppAccelerator.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/xacc.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/xacc.hpp
 QppVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
 NoiseModel.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/NoiseModel.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/NoiseModel.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.cpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.cpp
 QppVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/xacc.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/xacc.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/QppVisitor.hpp
 Identifiable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/Identifiable.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/Identifiable.hpp
 AllGateVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/AllGateVisitor.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/AllGateVisitor.hpp
 AcceleratorBuffer.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/AcceleratorBuffer.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/AcceleratorBuffer.hpp
 OptionsProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/OptionsProvider.hpp
+/workspace/xacc/quantum/plugins/qpp/accelerator/OptionsProvider.hpp
 qpp.h
-/Users/dhruvshah/git/xacc/quantum/plugins/qpp/accelerator/qpp.h
+/workspace/xacc/quantum/plugins/qpp/accelerator/qpp.h
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

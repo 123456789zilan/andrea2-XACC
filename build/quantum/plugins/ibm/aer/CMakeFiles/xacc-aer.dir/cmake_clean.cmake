@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-aer.dir/accelerator/aer_accelerator.cpp.o"
   "CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_init.cpp.o"
-  "libxacc-aer.dylib"
+  "CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_resources.cpp.o"
   "libxacc-aer.pdb"
-  "xacc-aer/cppmicroservices_resources.o"
+  "libxacc-aer.so"
+  "xacc-aer/cppmicroservices_resources.cpp"
   "xacc-aer/res_0.zip"
 )
 

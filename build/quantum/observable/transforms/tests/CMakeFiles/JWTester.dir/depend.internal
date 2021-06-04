@@ -49,4 +49,4 @@ quantum/observable/transforms/tests/CMakeFiles/JWTester.dir/JWTester.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/transforms/tests/JWTester.cpp
+ /workspace/xacc/quantum/observable/transforms/tests/JWTester.cpp

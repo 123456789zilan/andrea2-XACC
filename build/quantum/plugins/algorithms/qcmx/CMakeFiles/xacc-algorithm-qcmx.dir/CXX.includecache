@@ -1722,35 +1722,39 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qcmx/xacc-algorithm-qcmx/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qcmx/xacc-algorithm-qcmx/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qcmx/xacc-algorithm-qcmx/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/qcmx/xacc-algorithm-qcmx/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/QCMXActivator.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qcmx/xacc-algorithm-qcmx/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/qcmx/QCMXActivator.cpp
 qcmx.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/algorithms/qcmx/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/qcmx.cpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/qcmx.cpp
 qcmx.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
 ObservableTransform.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/ObservableTransform.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/ObservableTransform.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/xacc_service.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/PauliOperator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/PauliOperator.hpp
 Eigen/Dense
 -
 complex
@@ -1766,13 +1770,13 @@ string
 vector
 -
 boost/math/special_functions/beta.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/boost/math/special_functions/beta.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/boost/math/special_functions/beta.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/qcmx.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/Algorithm.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/Observable.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

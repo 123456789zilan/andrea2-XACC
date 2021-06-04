@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/plugins/staq
+# Install script for directory: /workspace/xacc/quantum/plugins/staq
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,37 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so"
+         RPATH "$ORIGIN/../lib")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
+   "/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/plugins/staq/libxacc-staq-compiler.dylib")
-  if(EXISTS "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/gate"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path/../lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
+file(INSTALL DESTINATION "/home/gitpod/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/plugins/staq/libxacc-staq-compiler.so")
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/gate:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-staq-compiler.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-staq-compiler.so")
     endif()
   endif()
 endif()
@@ -78,8 +75,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/staq/compiler/tests/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/staq/transformations/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/staq/compiler/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/staq/transformations/tests/cmake_install.cmake")
 
 endif()
 

@@ -4,12 +4,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-xasm-compiler.dir/generated/xasmListener.cpp.o"
   "CMakeFiles/xacc-xasm-compiler.dir/generated/xasmParser.cpp.o"
   "CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmicroservices_init.cpp.o"
+  "CMakeFiles/xacc-xasm-compiler.dir/xacc-xasm-compiler/cppmicroservices_resources.cpp.o"
   "CMakeFiles/xacc-xasm-compiler.dir/xasm_activator.cpp.o"
   "CMakeFiles/xacc-xasm-compiler.dir/xasm_compiler.cpp.o"
   "CMakeFiles/xacc-xasm-compiler.dir/xasm_listener.cpp.o"
-  "libxacc-xasm-compiler.dylib"
   "libxacc-xasm-compiler.pdb"
-  "xacc-xasm-compiler/cppmicroservices_resources.o"
+  "libxacc-xasm-compiler.so"
+  "xacc-xasm-compiler/cppmicroservices_resources.cpp"
   "xacc-xasm-compiler/res_0.zip"
 )
 

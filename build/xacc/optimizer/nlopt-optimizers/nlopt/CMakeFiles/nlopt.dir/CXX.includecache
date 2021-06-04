@@ -18,11 +18,11 @@ nlopt_config.h
 nlopt.h
 ../xacc/optimizer/nlopt-optimizers/nlopt/src/util/nlopt.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.cc
 ags.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.h
 solver.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
 iostream
 -
 cstring
@@ -32,19 +32,19 @@ exception
 limits
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/ags.h
 nlopt-util.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/nlopt-util.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/nlopt-util.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
 stdexcept
 -
 string
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.cc
 evolvent.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
 cassert
 -
 cmath
@@ -52,13 +52,13 @@ cmath
 algorithm
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
 vector
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.cc
 local_optimizer.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
 cmath
 -
 algorithm
@@ -66,17 +66,17 @@ algorithm
 limits
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
 data_types.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
 memory
 -
 vector
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.cc
 solver.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
 algorithm
 -
 cmath
@@ -84,13 +84,13 @@ cmath
 iostream
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/solver.hpp
 data_types.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/data_types.hpp
 evolvent.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/evolvent.hpp
 local_optimizer.hpp
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/ags/local_optimizer.hpp
 vector
 -
 memory
@@ -104,7 +104,7 @@ functional
 limits
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.cc
 iostream
 -
 iterator
@@ -114,31 +114,31 @@ algorithm
 stack
 -
 stogo_config.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
 global.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
 local.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
 nlopt-util.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
 nlopt-util.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
 queue
 -
 tools.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.cc
 iostream
 -
 math.h
 -
 linalg.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
 iostream
 -
 math.h
@@ -146,51 +146,51 @@ math.h
 float.h
 -
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.cc
 iostream
 -
 stdlib.h
 -
 stogo_config.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
 global.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
 local.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
 tools.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
 nlopt.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/local.h
 tools.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
 global.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.cc
 stogo.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.h
 global.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/global.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo.h
 nlopt-util.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/nlopt-util.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.cc
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.cc
 float.h
 -
 iostream
 -
 stogo_config.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/stogo_config.h
 tools.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
 
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/tools.h
 float.h
 -
 iostream
@@ -202,7 +202,7 @@ iterator
 list
 -
 linalg.h
-/Users/dhruvshah/git/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
+/workspace/xacc/xacc/optimizer/nlopt-optimizers/nlopt/src/algs/stogo/linalg.h
 
 xacc/optimizer/nlopt-optimizers/nlopt/nlopt_config.h
 

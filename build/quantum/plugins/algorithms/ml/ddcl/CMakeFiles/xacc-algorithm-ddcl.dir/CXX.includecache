@@ -1698,17 +1698,21 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/ml/ddcl/xacc-algorithm-ddcl/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.cpp
 ddcl.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/xacc_service.hpp
 memory
 -
 iomanip
@@ -1720,49 +1724,49 @@ ctime
 regex
 -
 InstructionIterator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/InstructionIterator.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/InstructionIterator.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/Algorithm.hpp
 vector
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl_activator.cpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl_activator.cpp
 ddcl.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/ddcl.hpp
 strategies/js.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/js.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/js.hpp
 strategies/mmd.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/mmd.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/mmd.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/js.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/js.hpp
 ddcl.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/ddcl.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/ddcl.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/xacc.hpp
 cassert
 -
 set
 -
 InstructionIterator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/InstructionIterator.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/InstructionIterator.hpp
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/mmd.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/mmd.hpp
 ddcl.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/ddcl.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/ddcl.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/xacc.hpp
 cassert
 -
 set
@@ -1770,7 +1774,7 @@ set
 Eigen/Dense
 -
 InstructionIterator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/InstructionIterator.hpp
+/workspace/xacc/quantum/plugins/algorithms/ml/ddcl/strategies/InstructionIterator.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

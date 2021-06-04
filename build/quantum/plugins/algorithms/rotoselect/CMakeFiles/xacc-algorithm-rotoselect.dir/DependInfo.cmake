@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o"
-  "/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o"
-  "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp" "/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o"
+  "/workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o"
+  "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp" "/workspace/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -39,8 +40,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/dhruvshah/git/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
+  "/workspace/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
+  "/workspace/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -33,4 +33,4 @@ quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
+ /workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp

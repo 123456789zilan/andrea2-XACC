@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o"
   "CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o"
-  "libxacc-atos-qlm.dylib"
+  "CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o"
   "libxacc-atos-qlm.pdb"
-  "xacc-atos-qlm/cppmicroservices_resources.o"
+  "libxacc-atos-qlm.so"
+  "xacc-atos-qlm/cppmicroservices_resources.cpp"
   "xacc-atos-qlm/res_0.zip"
 )
 

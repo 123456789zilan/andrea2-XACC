@@ -1116,3 +1116,5 @@ python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicr
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o: python/compiler/xacc-pyxasm-compiler/cppmicroservices_init.cpp
 python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+python/compiler/CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o: python/compiler/xacc-pyxasm-compiler/cppmicroservices_resources.cpp
+

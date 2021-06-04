@@ -1139,3 +1139,5 @@ quantum/plugins/optimal_control/CMakeFiles/xacc-optimal-control.dir/xacc-optimal
 quantum/plugins/optimal_control/CMakeFiles/xacc-optimal-control.dir/xacc-optimal-control/cppmicroservices_init.cpp.o: quantum/plugins/optimal_control/xacc-optimal-control/cppmicroservices_init.cpp
 quantum/plugins/optimal_control/CMakeFiles/xacc-optimal-control.dir/xacc-optimal-control/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/optimal_control/CMakeFiles/xacc-optimal-control.dir/xacc-optimal-control/cppmicroservices_resources.cpp.o: quantum/plugins/optimal_control/xacc-optimal-control/cppmicroservices_resources.cpp
+

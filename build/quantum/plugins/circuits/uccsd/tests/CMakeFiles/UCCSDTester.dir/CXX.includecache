@@ -748,15 +748,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/tests/UCCSDTester.cpp
+/workspace/xacc/quantum/plugins/circuits/uccsd/tests/UCCSDTester.cpp
 gtest/gtest.h
 -
 Instruction.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/tests/Instruction.hpp
+/workspace/xacc/quantum/plugins/circuits/uccsd/tests/Instruction.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/circuits/uccsd/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/circuits/uccsd/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

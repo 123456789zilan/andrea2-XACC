@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-qsearch-optimizer.dir/qsearch.cpp.o"
   "CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qsearch-optimizer/cppmicroservices_init.cpp.o"
-  "libxacc-qsearch-optimizer.dylib"
+  "CMakeFiles/xacc-qsearch-optimizer.dir/xacc-qsearch-optimizer/cppmicroservices_resources.cpp.o"
   "libxacc-qsearch-optimizer.pdb"
-  "xacc-qsearch-optimizer/cppmicroservices_resources.o"
+  "libxacc-qsearch-optimizer.so"
+  "xacc-qsearch-optimizer/cppmicroservices_resources.cpp"
   "xacc-qsearch-optimizer/res_0.zip"
 )
 

@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include python/CMakeFiles/_pyxacc.dir/depend.make
@@ -78,133 +78,133 @@ include python/CMakeFiles/_pyxacc.dir/flags.make
 
 python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o: ../python/xacc-py.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/xacc-py.cpp.o -c /Users/dhruvshah/git/xacc/python/xacc-py.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/xacc-py.cpp.o -c /workspace/xacc/python/xacc-py.cpp
 
 python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/xacc-py.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/xacc-py.cpp > CMakeFiles/_pyxacc.dir/xacc-py.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/xacc-py.cpp > CMakeFiles/_pyxacc.dir/xacc-py.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/xacc-py.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/xacc-py.cpp -o CMakeFiles/_pyxacc.dir/xacc-py.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/xacc-py.cpp -o CMakeFiles/_pyxacc.dir/xacc-py.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o: ../python/py_heterogeneous_map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o -c /Users/dhruvshah/git/xacc/python/py_heterogeneous_map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o -c /workspace/xacc/python/py_heterogeneous_map.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_heterogeneous_map.cpp > CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_heterogeneous_map.cpp > CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_heterogeneous_map.cpp -o CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_heterogeneous_map.cpp -o CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o: ../python/py_ir.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_ir.cpp.o -c /Users/dhruvshah/git/xacc/python/py_ir.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_ir.cpp.o -c /workspace/xacc/python/py_ir.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_ir.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_ir.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_ir.cpp > CMakeFiles/_pyxacc.dir/py_ir.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_ir.cpp > CMakeFiles/_pyxacc.dir/py_ir.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_ir.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_ir.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_ir.cpp -o CMakeFiles/_pyxacc.dir/py_ir.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_ir.cpp -o CMakeFiles/_pyxacc.dir/py_ir.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o: ../python/py_accelerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o -c /Users/dhruvshah/git/xacc/python/py_accelerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o -c /workspace/xacc/python/py_accelerator.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_accelerator.cpp > CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_accelerator.cpp > CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_accelerator.cpp -o CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_accelerator.cpp -o CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o: ../python/py_compiler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_compiler.cpp.o -c /Users/dhruvshah/git/xacc/python/py_compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_compiler.cpp.o -c /workspace/xacc/python/py_compiler.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_compiler.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_compiler.cpp > CMakeFiles/_pyxacc.dir/py_compiler.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_compiler.cpp > CMakeFiles/_pyxacc.dir/py_compiler.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_compiler.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_compiler.cpp -o CMakeFiles/_pyxacc.dir/py_compiler.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_compiler.cpp -o CMakeFiles/_pyxacc.dir/py_compiler.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o: ../python/py_algorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o -c /Users/dhruvshah/git/xacc/python/py_algorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o -c /workspace/xacc/python/py_algorithm.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_algorithm.cpp > CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_algorithm.cpp > CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_algorithm.cpp -o CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_algorithm.cpp -o CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o: ../python/py_optimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o -c /Users/dhruvshah/git/xacc/python/py_optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o -c /workspace/xacc/python/py_optimizer.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_optimizer.cpp > CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_optimizer.cpp > CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_optimizer.cpp -o CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_optimizer.cpp -o CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o: ../python/py_observable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_observable.cpp.o -c /Users/dhruvshah/git/xacc/python/py_observable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_observable.cpp.o -c /workspace/xacc/python/py_observable.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_observable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_observable.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_observable.cpp > CMakeFiles/_pyxacc.dir/py_observable.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_observable.cpp > CMakeFiles/_pyxacc.dir/py_observable.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_observable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_observable.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_observable.cpp -o CMakeFiles/_pyxacc.dir/py_observable.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_observable.cpp -o CMakeFiles/_pyxacc.dir/py_observable.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o: ../python/py_graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_graph.cpp.o -c /Users/dhruvshah/git/xacc/python/py_graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/py_graph.cpp.o -c /workspace/xacc/python/py_graph.cpp
 
 python/CMakeFiles/_pyxacc.dir/py_graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/py_graph.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/python/py_graph.cpp > CMakeFiles/_pyxacc.dir/py_graph.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/python/py_graph.cpp > CMakeFiles/_pyxacc.dir/py_graph.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/py_graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/py_graph.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/python/py_graph.cpp -o CMakeFiles/_pyxacc.dir/py_graph.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/python/py_graph.cpp -o CMakeFiles/_pyxacc.dir/py_graph.cpp.s
 
 python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o: python/CMakeFiles/_pyxacc.dir/flags.make
 python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o: ../quantum/python/xacc-quantum-py.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o -c /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o"
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o -c /workspace/xacc/quantum/python/xacc-quantum-py.cpp
 
 python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp > CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/python/xacc-quantum-py.cpp > CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i
 
 python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp -o CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s
+	cd /workspace/xacc/build/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/python/xacc-quantum-py.cpp -o CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s
 
 # Object files for target _pyxacc
 _pyxacc_OBJECTS = \
@@ -233,15 +233,14 @@ python/_pyxacc.so: python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o
 python/_pyxacc.so: python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o
 python/_pyxacc.so: python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o
 python/_pyxacc.so: python/CMakeFiles/_pyxacc.dir/build.make
-python/_pyxacc.so: quantum/gate/libxacc-quantum-gate.dylib
-python/_pyxacc.so: quantum/observable/pauli/libxacc-pauli.dylib
-python/_pyxacc.so: quantum/observable/fermion/libxacc-fermion.dylib
-python/_pyxacc.so: ../dist/libantlr4-runtime.dylib
-python/_pyxacc.so: xacc/libxacc.dylib
-python/_pyxacc.so: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+python/_pyxacc.so: quantum/gate/libxacc-quantum-gate.so
+python/_pyxacc.so: quantum/observable/pauli/libxacc-pauli.so
+python/_pyxacc.so: quantum/observable/fermion/libxacc-fermion.so
+python/_pyxacc.so: xacc/libxacc.so
+python/_pyxacc.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 python/_pyxacc.so: python/CMakeFiles/_pyxacc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library _pyxacc.so"
-	cd /Users/dhruvshah/git/xacc/build/python && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_pyxacc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library _pyxacc.so"
+	cd /workspace/xacc/build/python && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_pyxacc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 python/CMakeFiles/_pyxacc.dir/build: python/_pyxacc.so
@@ -249,10 +248,10 @@ python/CMakeFiles/_pyxacc.dir/build: python/_pyxacc.so
 .PHONY : python/CMakeFiles/_pyxacc.dir/build
 
 python/CMakeFiles/_pyxacc.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/python && $(CMAKE_COMMAND) -P CMakeFiles/_pyxacc.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/python && $(CMAKE_COMMAND) -P CMakeFiles/_pyxacc.dir/cmake_clean.cmake
 .PHONY : python/CMakeFiles/_pyxacc.dir/clean
 
 python/CMakeFiles/_pyxacc.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/python /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/python /Users/dhruvshah/git/xacc/build/python/CMakeFiles/_pyxacc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/python /workspace/xacc/build /workspace/xacc/build/python /workspace/xacc/build/python/CMakeFiles/_pyxacc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : python/CMakeFiles/_pyxacc.dir/depend
 

@@ -9,11 +9,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/gate/ir/Gate.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/accelerator/DWave.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/CMREmbedding.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/fastrng.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/pairing_queue.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/util.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/generators/rbm.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
@@ -43,6 +38,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ac
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/algorithm/Algorithm.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/compiler/Compiler.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ir/CompositeInstruction.hpp
+quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ir/Graph.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ir/IR.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ir/IRProvider.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o: ../xacc/ir/IRTransformation.hpp
@@ -73,11 +69,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quan
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/annealing/compiler/EmbeddingAlgorithm.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/annealing/ir/AnnealingProgram.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/annealing/ir/DWQMI.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/fastrng.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/pairing_queue.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/util.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/AnyMap.h
@@ -105,6 +96,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/algorithm/Algorithm.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/compiler/Compiler.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/ir/CompositeInstruction.hpp
+quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/ir/Graph.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/ir/IR.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/ir/IRProvider.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: ../xacc/ir/IRTransformation.hpp
@@ -132,7 +124,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o: tpls/cp
 
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/annealing/compiler/Embedding.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/annealing/compiler/EmbeddingAlgorithm.hpp
-quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/chain.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../quantum/plugins/dwave/embedding/minorminer/include/embedding.hpp
@@ -150,6 +141,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ..
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/algorithm/Algorithm.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/compiler/Compiler.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/ir/CompositeInstruction.hpp
+quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/ir/Graph.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/ir/IR.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/ir/IRProvider.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o: ../xacc/ir/IRTransformation.hpp
@@ -229,4 +221,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/generators/rbm.cpp.o: tpls/cppmi
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_init.cpp.o: ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_init.cpp.o: quantum/plugins/dwave/xacc-dwave/cppmicroservices_init.cpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+
+quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_resources.cpp.o: quantum/plugins/dwave/xacc-dwave/cppmicroservices_resources.cpp
 

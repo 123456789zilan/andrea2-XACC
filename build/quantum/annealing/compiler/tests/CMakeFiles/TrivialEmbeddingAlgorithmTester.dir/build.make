@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTes
 
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o: quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/flags.make
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o: ../quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o -c /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o"
+	cd /workspace/xacc/build/quantum/annealing/compiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o -c /workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
 
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp > CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.i
+	cd /workspace/xacc/build/quantum/annealing/compiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp > CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.i
 
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp -o CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.s
+	cd /workspace/xacc/build/quantum/annealing/compiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp -o CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.s
 
 # Object files for target TrivialEmbeddingAlgorithmTester
 TrivialEmbeddingAlgorithmTester_OBJECTS = \
@@ -98,13 +98,13 @@ TrivialEmbeddingAlgorithmTester_EXTERNAL_OBJECTS =
 
 quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/TrivialEmbeddingAlgorithmTester.cpp.o
 quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build.make
-quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: tpls/cpr/opt/googletest/libgtest.dylib
-quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: quantum/annealing/libxacc-quantum-annealing.dylib
-quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: xacc/libxacc.dylib
-quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: tpls/cpr/opt/googletest/libgtest.so
+quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: quantum/annealing/libxacc-quantum-annealing.so
+quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: xacc/libxacc.so
+quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester: quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TrivialEmbeddingAlgorithmTester"
-	cd /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TrivialEmbeddingAlgorithmTester"
+	cd /workspace/xacc/build/quantum/annealing/compiler/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build: quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester
@@ -112,10 +112,10 @@ quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/
 .PHONY : quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/build
 
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests && $(CMAKE_COMMAND) -P CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/annealing/compiler/tests && $(CMAKE_COMMAND) -P CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/cmake_clean.cmake
 .PHONY : quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/clean
 
 quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests /Users/dhruvshah/git/xacc/build/quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/annealing/compiler/tests /workspace/xacc/build /workspace/xacc/build/quantum/annealing/compiler/tests /workspace/xacc/build/quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/annealing/compiler/tests/CMakeFiles/TrivialEmbeddingAlgorithmTester.dir/depend
 

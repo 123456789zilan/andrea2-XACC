@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/depend.make
@@ -76,88 +76,102 @@ include quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotosele
 # Include the compile flags for this target's objects.
 include quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/flags.make
 
-quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.o: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-algorithm-rotoselect"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect && /usr/local/bin/g++-8 -Wno-attributes -Wno-return-type -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.o
+quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-algorithm-rotoselect"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
 
 quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip: ../quantum/plugins/algorithms/rotoselect/manifest.json
 quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-algorithm-rotoselect"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip -n xacc_algorithm_rotoselect -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-algorithm-rotoselect"
+	cd /workspace/xacc/quantum/plugins/algorithms/rotoselect && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect
+	cd /workspace/xacc/quantum/plugins/algorithms/rotoselect && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip -n xacc_algorithm_rotoselect -r manifest.json
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/flags.make
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o: ../quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o -c /workspace/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.i
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/algorithms/rotoselect/RotoselectActivator.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.s
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/flags.make
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o: ../quantum/plugins/algorithms/rotoselect/rotoselect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o -c /workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.i
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/algorithms/rotoselect/rotoselect.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.s
+
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/flags.make
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
+
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.i
+
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.s
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/flags.make
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp > CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.i
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_init.cpp -o CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-algorithm-rotoselect
 xacc__algorithm__rotoselect_OBJECTS = \
 "CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o" \
 "CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o" \
+"CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-algorithm-rotoselect
-xacc__algorithm__rotoselect_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.o"
+xacc__algorithm__rotoselect_EXTERNAL_OBJECTS =
 
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.o
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/build.make
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: xacc/libxacc.dylib
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-algorithm-rotoselect.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-algorithm-rotoselect.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/RotoselectActivator.cpp.o
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/rotoselect.cpp.o
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp.o
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/xacc-algorithm-rotoselect/cppmicroservices_init.cpp.o
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/build.make
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: xacc/libxacc.so
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so: quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libxacc-algorithm-rotoselect.so"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-algorithm-rotoselect.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-algorithm-rotoselect"
+	cd /workspace/xacc/quantum/plugins/algorithms/rotoselect && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so -z /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/build: quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.dylib
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/build: quantum/plugins/algorithms/rotoselect/libxacc-algorithm-rotoselect.so
 
 .PHONY : quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/build
 
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect && $(CMAKE_COMMAND) -P CMakeFiles/xacc-algorithm-rotoselect.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect && $(CMAKE_COMMAND) -P CMakeFiles/xacc-algorithm-rotoselect.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/clean
 
-quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/depend: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.o
+quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/depend: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/cppmicroservices_resources.cpp
 quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/depend: quantum/plugins/algorithms/rotoselect/xacc-algorithm-rotoselect/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/algorithms/rotoselect /workspace/xacc/build /workspace/xacc/build/quantum/plugins/algorithms/rotoselect /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/algorithms/rotoselect/CMakeFiles/xacc-algorithm-rotoselect.dir/depend
 

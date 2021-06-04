@@ -226,61 +226,61 @@ cpr/cprtypes.h
 cstdbool
 -
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/auth.cpp
+/workspace/xacc/tpls/cpr/cpr/auth.cpp
 cpr/auth.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/auth.h
+/workspace/xacc/tpls/cpr/cpr/cpr/auth.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cookies.cpp
+/workspace/xacc/tpls/cpr/cpr/cookies.cpp
 cpr/cookies.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/cookies.h
+/workspace/xacc/tpls/cpr/cpr/cpr/cookies.h
 cpr/util.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/util.h
+/workspace/xacc/tpls/cpr/cpr/cpr/util.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cprtypes.cpp
+/workspace/xacc/tpls/cpr/cpr/cprtypes.cpp
 cpr/cprtypes.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/cprtypes.h
+/workspace/xacc/tpls/cpr/cpr/cpr/cprtypes.h
 algorithm
 -
 cctype
 -
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/digest.cpp
+/workspace/xacc/tpls/cpr/cpr/digest.cpp
 cpr/digest.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/digest.h
+/workspace/xacc/tpls/cpr/cpr/cpr/digest.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/error.cpp
+/workspace/xacc/tpls/cpr/cpr/error.cpp
 cpr/error.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/error.h
+/workspace/xacc/tpls/cpr/cpr/cpr/error.h
 curl/curl.h
 -
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/multipart.cpp
+/workspace/xacc/tpls/cpr/cpr/multipart.cpp
 cpr/multipart.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/multipart.h
+/workspace/xacc/tpls/cpr/cpr/cpr/multipart.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/parameters.cpp
+/workspace/xacc/tpls/cpr/cpr/parameters.cpp
 cpr/parameters.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/parameters.h
+/workspace/xacc/tpls/cpr/cpr/cpr/parameters.h
 initializer_list
 -
 string
 -
 cpr/util.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/util.h
+/workspace/xacc/tpls/cpr/cpr/cpr/util.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/payload.cpp
+/workspace/xacc/tpls/cpr/cpr/payload.cpp
 cpr/payload.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/payload.h
+/workspace/xacc/tpls/cpr/cpr/cpr/payload.h
 initializer_list
 -
 string
 -
 cpr/util.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/util.h
+/workspace/xacc/tpls/cpr/cpr/cpr/util.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/proxies.cpp
+/workspace/xacc/tpls/cpr/cpr/proxies.cpp
 cpr/proxies.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/proxies.h
+/workspace/xacc/tpls/cpr/cpr/cpr/proxies.h
 initializer_list
 -
 map
@@ -290,9 +290,9 @@ string
 utility
 -
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/session.cpp
+/workspace/xacc/tpls/cpr/cpr/session.cpp
 cpr/session.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/session.h
+/workspace/xacc/tpls/cpr/cpr/cpr/session.h
 algorithm
 -
 cstdlib
@@ -306,17 +306,17 @@ string
 curl/curl.h
 -
 cpr/curlholder.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/curlholder.h
+/workspace/xacc/tpls/cpr/cpr/cpr/curlholder.h
 cpr/util.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/util.h
+/workspace/xacc/tpls/cpr/cpr/cpr/util.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/ssl_options.cpp
+/workspace/xacc/tpls/cpr/cpr/ssl_options.cpp
 cpr/ssl_options.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/ssl_options.h
+/workspace/xacc/tpls/cpr/cpr/cpr/ssl_options.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/timeout.cpp
+/workspace/xacc/tpls/cpr/cpr/timeout.cpp
 cpr/timeout.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/timeout.h
+/workspace/xacc/tpls/cpr/cpr/cpr/timeout.h
 limits
 -
 stdexcept
@@ -326,13 +326,13 @@ string
 type_traits
 -
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/unix_socket.cpp
+/workspace/xacc/tpls/cpr/cpr/unix_socket.cpp
 cpr/unix_socket.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/unix_socket.h
+/workspace/xacc/tpls/cpr/cpr/cpr/unix_socket.h
 
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/util.cpp
+/workspace/xacc/tpls/cpr/cpr/util.cpp
 cpr/util.h
-/Users/dhruvshah/git/xacc/tpls/cpr/cpr/cpr/util.h
+/workspace/xacc/tpls/cpr/cpr/cpr/util.h
 algorithm
 -
 cctype

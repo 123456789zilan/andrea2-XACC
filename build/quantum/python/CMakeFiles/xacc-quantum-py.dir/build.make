@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/python/CMakeFiles/xacc-quantum-py.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/python/CMakeFiles/xacc-quantum-py.dir/flags.make
 
 quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o: quantum/python/CMakeFiles/xacc-quantum-py.dir/flags.make
 quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o: ../quantum/python/xacc-quantum-py.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o -c /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o"
+	cd /workspace/xacc/build/quantum/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o -c /workspace/xacc/quantum/python/xacc-quantum-py.cpp
 
 quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp > CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.i
+	cd /workspace/xacc/build/quantum/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/python/xacc-quantum-py.cpp > CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.i
 
 quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/python && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/python/xacc-quantum-py.cpp -o CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.s
+	cd /workspace/xacc/build/quantum/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/python/xacc-quantum-py.cpp -o CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.s
 
 # Object files for target xacc-quantum-py
 xacc__quantum__py_OBJECTS = \
@@ -96,28 +96,27 @@ xacc__quantum__py_OBJECTS = \
 # External object files for target xacc-quantum-py
 xacc__quantum__py_EXTERNAL_OBJECTS =
 
-quantum/python/libxacc-quantum-py.dylib: quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o
-quantum/python/libxacc-quantum-py.dylib: quantum/python/CMakeFiles/xacc-quantum-py.dir/build.make
-quantum/python/libxacc-quantum-py.dylib: quantum/gate/libxacc-quantum-gate.dylib
-quantum/python/libxacc-quantum-py.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/python/libxacc-quantum-py.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/python/libxacc-quantum-py.dylib: xacc/libxacc.dylib
-quantum/python/libxacc-quantum-py.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/python/libxacc-quantum-py.dylib: ../dist/libantlr4-runtime.dylib
-quantum/python/libxacc-quantum-py.dylib: quantum/python/CMakeFiles/xacc-quantum-py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libxacc-quantum-py.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/python && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quantum-py.dir/link.txt --verbose=$(VERBOSE)
+quantum/python/libxacc-quantum-py.so: quantum/python/CMakeFiles/xacc-quantum-py.dir/xacc-quantum-py.cpp.o
+quantum/python/libxacc-quantum-py.so: quantum/python/CMakeFiles/xacc-quantum-py.dir/build.make
+quantum/python/libxacc-quantum-py.so: quantum/gate/libxacc-quantum-gate.so
+quantum/python/libxacc-quantum-py.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/python/libxacc-quantum-py.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/python/libxacc-quantum-py.so: xacc/libxacc.so
+quantum/python/libxacc-quantum-py.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/python/libxacc-quantum-py.so: quantum/python/CMakeFiles/xacc-quantum-py.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libxacc-quantum-py.so"
+	cd /workspace/xacc/build/quantum/python && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quantum-py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-quantum/python/CMakeFiles/xacc-quantum-py.dir/build: quantum/python/libxacc-quantum-py.dylib
+quantum/python/CMakeFiles/xacc-quantum-py.dir/build: quantum/python/libxacc-quantum-py.so
 
 .PHONY : quantum/python/CMakeFiles/xacc-quantum-py.dir/build
 
 quantum/python/CMakeFiles/xacc-quantum-py.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/python && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quantum-py.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/python && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quantum-py.dir/cmake_clean.cmake
 .PHONY : quantum/python/CMakeFiles/xacc-quantum-py.dir/clean
 
 quantum/python/CMakeFiles/xacc-quantum-py.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/python /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/python /Users/dhruvshah/git/xacc/build/quantum/python/CMakeFiles/xacc-quantum-py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/python /workspace/xacc/build /workspace/xacc/build/quantum/python /workspace/xacc/build/quantum/python/CMakeFiles/xacc-quantum-py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/python/CMakeFiles/xacc-quantum-py.dir/depend
 

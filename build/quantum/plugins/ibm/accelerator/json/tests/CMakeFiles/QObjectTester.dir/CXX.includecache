@@ -574,9 +574,9 @@ vector
 utility
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/QObjectTester.cpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/QObjectTester.cpp
 QObject.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/QObject.hpp
+/workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/QObject.hpp
 gtest/gtest.h
 -
 

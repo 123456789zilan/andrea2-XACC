@@ -68,7 +68,7 @@ quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/Roto
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp
+ /workspace/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h

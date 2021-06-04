@@ -56,7 +56,7 @@
 #define US_LITTLE_ENDIAN
 
 #define US_LIB_PREFIX "lib"
-#define US_LIB_EXT ".dylib"
+#define US_LIB_EXT ".so"
 #define US_EXE_EXT ""
 
 ///-------------------------------------------------------------------

@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-quilc.dir/quilc.cpp.o"
   "CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o"
   "CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o"
-  "libxacc-quilc.dylib"
+  "CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o"
   "libxacc-quilc.pdb"
-  "xacc-quilc/cppmicroservices_resources.o"
+  "libxacc-quilc.so"
+  "xacc-quilc/cppmicroservices_resources.cpp"
   "xacc-quilc/res_0.zip"
 )
 

@@ -25,4 +25,4 @@ quantum/examples/qst-publication/CMakeFiles/hybrid_ddcl.dir/hybrid_ddcl.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp
+ /workspace/xacc/quantum/examples/qst-publication/hybrid_ddcl.cpp

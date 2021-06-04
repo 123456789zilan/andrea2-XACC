@@ -3,9 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-graph.dir/boost/DirectedBoostGraph.cpp.o"
   "CMakeFiles/xacc-graph.dir/boost/UndirectedBoostGraph.cpp.o"
   "CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_init.cpp.o"
-  "libxacc-graph.dylib"
+  "CMakeFiles/xacc-graph.dir/xacc-graph/cppmicroservices_resources.cpp.o"
   "libxacc-graph.pdb"
-  "xacc-graph/cppmicroservices_resources.o"
+  "libxacc-graph.so"
+  "xacc-graph/cppmicroservices_resources.cpp"
   "xacc-graph/res_0.zip"
 )
 

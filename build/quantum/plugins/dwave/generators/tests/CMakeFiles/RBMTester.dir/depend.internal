@@ -69,7 +69,7 @@ quantum/plugins/dwave/generators/tests/CMakeFiles/RBMTester.dir/RBMTester.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/tests/RBMTester.cpp
+ /workspace/xacc/quantum/plugins/dwave/generators/tests/RBMTester.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h

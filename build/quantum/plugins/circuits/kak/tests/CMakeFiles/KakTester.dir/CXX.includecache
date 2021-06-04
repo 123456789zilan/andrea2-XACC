@@ -1978,15 +1978,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/tests/KakTester.cpp
+/workspace/xacc/quantum/plugins/circuits/kak/tests/KakTester.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/circuits/kak/tests/xacc.hpp
 gtest/gtest.h
 -
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/tests/Circuit.hpp
+/workspace/xacc/quantum/plugins/circuits/kak/tests/Circuit.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/circuits/kak/tests/xacc_service.hpp
 Eigen/Dense
 -
 

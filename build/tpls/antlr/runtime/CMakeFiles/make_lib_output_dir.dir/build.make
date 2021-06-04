@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Utility rule file for make_lib_output_dir.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 include tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/progress.make
 
 tpls/antlr/runtime/CMakeFiles/make_lib_output_dir:
-	cd /Users/dhruvshah/git/xacc/build/tpls/antlr/runtime && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/dist
+	cd /workspace/xacc/build/tpls/antlr/runtime && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/dist
 
 make_lib_output_dir: tpls/antlr/runtime/CMakeFiles/make_lib_output_dir
 make_lib_output_dir: tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build.make
@@ -86,10 +86,10 @@ tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build: make_lib_output_dir
 .PHONY : tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/build
 
 tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/tpls/antlr/runtime && $(CMAKE_COMMAND) -P CMakeFiles/make_lib_output_dir.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/tpls/antlr/runtime && $(CMAKE_COMMAND) -P CMakeFiles/make_lib_output_dir.dir/cmake_clean.cmake
 .PHONY : tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/clean
 
 tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/tpls/antlr/runtime /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/tpls/antlr/runtime /Users/dhruvshah/git/xacc/build/tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/tpls/antlr/runtime /workspace/xacc/build /workspace/xacc/build/tpls/antlr/runtime /workspace/xacc/build/tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tpls/antlr/runtime/CMakeFiles/make_lib_output_dir.dir/depend
 

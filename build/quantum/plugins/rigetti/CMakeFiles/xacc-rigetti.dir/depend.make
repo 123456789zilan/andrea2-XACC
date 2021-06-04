@@ -1112,3 +1112,5 @@ quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservice
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_init.cpp
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/xacc-rigetti/cppmicroservices_resources.cpp
+

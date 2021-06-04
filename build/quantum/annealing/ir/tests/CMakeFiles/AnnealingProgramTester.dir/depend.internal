@@ -47,4 +47,4 @@ quantum/annealing/ir/tests/CMakeFiles/AnnealingProgramTester.dir/AnnealingProgra
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/AnnealingProgramTester.cpp
+ /workspace/xacc/quantum/annealing/ir/tests/AnnealingProgramTester.cpp

@@ -2936,37 +2936,41 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/QITEActivator.cpp
+/workspace/xacc/build/quantum/plugins/algorithms/qite/xacc-algorithm-qite/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/plugins/algorithms/qite/QITEActivator.cpp
 qite.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/qite.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/plugins/algorithms/qite/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/plugins/algorithms/qite/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/plugins/algorithms/qite/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.cpp
+/workspace/xacc/quantum/plugins/algorithms/qite/qite.cpp
 qite.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/qite.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/Observable.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/xacc_service.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/PauliOperator.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/PauliOperator.hpp
 Circuit.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/Circuit.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/Circuit.hpp
 memory
 -
 armadillo
@@ -2974,11 +2978,11 @@ armadillo
 cassert
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/qite.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/qite.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/Algorithm.hpp
 IRTransformation.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qite/IRTransformation.hpp
+/workspace/xacc/quantum/plugins/algorithms/qite/IRTransformation.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

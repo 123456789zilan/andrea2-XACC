@@ -70,7 +70,7 @@ python/compiler/tests/CMakeFiles/PyXASMCompilerTester.dir/PyXASMCompilerTester.c
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/python/compiler/tests/PyXASMCompilerTester.cpp
+ /workspace/xacc/python/compiler/tests/PyXASMCompilerTester.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h

@@ -7,9 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-pauli.dir/generated/PauliOperatorListener.cpp.o"
   "CMakeFiles/xacc-pauli.dir/generated/PauliOperatorParser.cpp.o"
   "CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_init.cpp.o"
-  "libxacc-pauli.dylib"
+  "CMakeFiles/xacc-pauli.dir/xacc-pauli/cppmicroservices_resources.cpp.o"
   "libxacc-pauli.pdb"
-  "xacc-pauli/cppmicroservices_resources.o"
+  "libxacc-pauli.so"
+  "xacc-pauli/cppmicroservices_resources.cpp"
   "xacc-pauli/res_0.zip"
 )
 

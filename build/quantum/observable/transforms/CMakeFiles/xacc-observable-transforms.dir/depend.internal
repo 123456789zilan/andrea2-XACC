@@ -21,8 +21,8 @@ quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/JW.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/transforms/JW.cpp
- /Users/dhruvshah/git/xacc/quantum/observable/transforms/JW.hpp
+ /workspace/xacc/quantum/observable/transforms/JW.cpp
+ /workspace/xacc/quantum/observable/transforms/JW.hpp
 quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/ObservableTransformsActivator.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleActivator.h
@@ -49,12 +49,14 @@ quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/Observab
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/transforms/JW.hpp
- /Users/dhruvshah/git/xacc/quantum/observable/transforms/ObservableTransformsActivator.cpp
+ /workspace/xacc/quantum/observable/transforms/JW.hpp
+ /workspace/xacc/quantum/observable/transforms/ObservableTransformsActivator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_resources.cpp

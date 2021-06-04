@@ -526,11 +526,11 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/aer/tests/AerAcceleratorTester.cpp
+/workspace/xacc/quantum/plugins/ibm/aer/tests/AerAcceleratorTester.cpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/aer/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/ibm/aer/tests/xacc.hpp
 gtest/gtest.h
 -
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/aer/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/ibm/aer/tests/xacc_observable.hpp
 

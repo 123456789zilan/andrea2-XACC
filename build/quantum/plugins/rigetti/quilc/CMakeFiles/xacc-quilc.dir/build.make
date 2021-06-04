@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/depend.make
@@ -76,90 +76,104 @@ include quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/flags.make
 
-quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.o: quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-quilc"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.o
+quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp: quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-quilc"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp
 
 quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip: ../quantum/plugins/rigetti/quilc/manifest.json
 quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-quilc"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip -n xacc_quilc -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-quilc"
+	cd /workspace/xacc/quantum/plugins/rigetti/quilc && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc
+	cd /workspace/xacc/quantum/plugins/rigetti/quilc && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip -n xacc_quilc -r manifest.json
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/flags.make
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o: ../quantum/plugins/rigetti/quilc/quilc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/quilc.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/quilc.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.cpp
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quilc.dir/quilc.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.cpp > CMakeFiles/xacc-quilc.dir/quilc.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.cpp > CMakeFiles/xacc-quilc.dir/quilc.cpp.i
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quilc.dir/quilc.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.cpp -o CMakeFiles/xacc-quilc.dir/quilc.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.cpp -o CMakeFiles/xacc-quilc.dir/quilc.cpp.s
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/flags.make
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o: ../quantum/plugins/rigetti/quilc/quilc_activator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o -c /workspace/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp > CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp > CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.i
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp -o CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp -o CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.s
+
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/flags.make
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp
+
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp > CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.i
+
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.s
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/flags.make
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp > CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp > CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.i
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp -o CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-quilc
 xacc__quilc_OBJECTS = \
 "CMakeFiles/xacc-quilc.dir/quilc.cpp.o" \
 "CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o" \
+"CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-quilc
-xacc__quilc_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.o"
+xacc__quilc_EXTERNAL_OBJECTS =
 
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.o
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/build.make
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: xacc/libxacc.dylib
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: lib/libcpr.a
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libcurl.tbd
-quantum/plugins/rigetti/quilc/libxacc-quilc.dylib: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-quilc.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quilc.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/build.make
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: xacc/libxacc.so
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: lib/libcpr.a
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: /usr/lib/x86_64-linux-gnu/libcurl.so
+quantum/plugins/rigetti/quilc/libxacc-quilc.so: quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libxacc-quilc.so"
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quilc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-quilc"
+	cd /workspace/xacc/quantum/plugins/rigetti/quilc && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/rigetti/quilc/libxacc-quilc.so -z /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/build: quantum/plugins/rigetti/quilc/libxacc-quilc.dylib
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/build: quantum/plugins/rigetti/quilc/libxacc-quilc.so
 
 .PHONY : quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/build
 
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quilc.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/rigetti/quilc && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quilc.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/clean
 
-quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/depend: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.o
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/depend: quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/depend: quantum/plugins/rigetti/quilc/xacc-quilc/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/rigetti/quilc /workspace/xacc/build /workspace/xacc/build/quantum/plugins/rigetti/quilc /workspace/xacc/build/quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/depend
 

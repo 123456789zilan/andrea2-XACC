@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/flags.ma
 
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o: quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/flags.make
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o: ../quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/qsim/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o -c /workspace/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp
 
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp > CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/qsim/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp > CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.i
 
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp -o CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/qsim/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/qsim/tests/QsimAcceleratorTester.cpp -o CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.s
 
 # Object files for target QsimAcceleratorTester
 QsimAcceleratorTester_OBJECTS = \
@@ -98,16 +98,15 @@ QsimAcceleratorTester_EXTERNAL_OBJECTS =
 
 quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/QsimAcceleratorTester.cpp.o
 quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/build.make
-quantum/plugins/qsim/tests/QsimAcceleratorTester: tpls/cpr/opt/googletest/libgtest.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/gate/libxacc-quantum-gate.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: ../dist/libantlr4-runtime.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: xacc/libxacc.dylib
-quantum/plugins/qsim/tests/QsimAcceleratorTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/plugins/qsim/tests/QsimAcceleratorTester: tpls/cpr/opt/googletest/libgtest.so
+quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/gate/libxacc-quantum-gate.so
+quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/qsim/tests/QsimAcceleratorTester: xacc/libxacc.so
+quantum/plugins/qsim/tests/QsimAcceleratorTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/plugins/qsim/tests/QsimAcceleratorTester: quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable QsimAcceleratorTester"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QsimAcceleratorTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable QsimAcceleratorTester"
+	cd /workspace/xacc/build/quantum/plugins/qsim/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QsimAcceleratorTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/build: quantum/plugins/qsim/tests/QsimAcceleratorTester
@@ -115,10 +114,10 @@ quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/build: quantum/p
 .PHONY : quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/build
 
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests && $(CMAKE_COMMAND) -P CMakeFiles/QsimAcceleratorTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/qsim/tests && $(CMAKE_COMMAND) -P CMakeFiles/QsimAcceleratorTester.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/clean
 
 quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/qsim/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests /Users/dhruvshah/git/xacc/build/quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/qsim/tests /workspace/xacc/build /workspace/xacc/build/quantum/plugins/qsim/tests /workspace/xacc/build/quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/qsim/tests/CMakeFiles/QsimAcceleratorTester.dir/depend
 

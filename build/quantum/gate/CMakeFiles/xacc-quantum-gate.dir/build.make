@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/gate/CMakeFiles/xacc-quantum-gate.dir/depend.make
@@ -76,172 +76,184 @@ include quantum/gate/CMakeFiles/xacc-quantum-gate.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 
-quantum/gate/xacc-quantum-gate/cppmicroservices_resources.o: quantum/gate/xacc-quantum-gate/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-quantum-gate"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.o
+quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp: quantum/gate/xacc-quantum-gate/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-quantum-gate"
+	cd /workspace/xacc/build/quantum/gate && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp
 
 quantum/gate/xacc-quantum-gate/res_0.zip: ../quantum/gate/manifest.json
 quantum/gate/xacc-quantum-gate/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-quantum-gate"
-	cd /Users/dhruvshah/git/xacc/quantum/gate && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate
-	cd /Users/dhruvshah/git/xacc/quantum/gate && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/res_0.zip -n xacc_quantum_gate -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-quantum-gate"
+	cd /workspace/xacc/quantum/gate && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/gate/xacc-quantum-gate
+	cd /workspace/xacc/quantum/gate && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/gate/xacc-quantum-gate/res_0.zip -n xacc_quantum_gate -r manifest.json
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o: ../quantum/gate/GateQuantumActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/GateQuantumActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o -c /workspace/xacc/quantum/gate/GateQuantumActivator.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/GateQuantumActivator.cpp > CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/GateQuantumActivator.cpp > CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/GateQuantumActivator.cpp -o CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/GateQuantumActivator.cpp -o CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o: ../quantum/gate/ir/Circuit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/Circuit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o -c /workspace/xacc/quantum/gate/ir/Circuit.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/Circuit.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/Circuit.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/Circuit.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/Circuit.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o: ../quantum/gate/ir/CommonGates.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/CommonGates.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o -c /workspace/xacc/quantum/gate/ir/CommonGates.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/CommonGates.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/CommonGates.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/CommonGates.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/CommonGates.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o: ../quantum/gate/ir/Gate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/Gate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o -c /workspace/xacc/quantum/gate/ir/Gate.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/Gate.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/Gate.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/Gate.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/Gate.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o: ../quantum/gate/ir/GateIR.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/GateIR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o -c /workspace/xacc/quantum/gate/ir/GateIR.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/GateIR.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/GateIR.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/GateIR.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/GateIR.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o: ../quantum/gate/ir/Pulse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/Pulse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o -c /workspace/xacc/quantum/gate/ir/Pulse.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/Pulse.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/Pulse.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/Pulse.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/Pulse.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o: ../quantum/gate/ir/PulseScheduler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/ir/PulseScheduler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o -c /workspace/xacc/quantum/gate/ir/PulseScheduler.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/ir/PulseScheduler.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/ir/PulseScheduler.cpp > CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/ir/PulseScheduler.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/ir/PulseScheduler.cpp -o CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o: ../quantum/gate/utils/IRToGraphVisitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/utils/IRToGraphVisitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o -c /workspace/xacc/quantum/gate/utils/IRToGraphVisitor.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/utils/IRToGraphVisitor.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/utils/IRToGraphVisitor.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/utils/IRToGraphVisitor.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/utils/IRToGraphVisitor.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o: ../quantum/gate/utils/IRUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/utils/IRUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o -c /workspace/xacc/quantum/gate/utils/IRUtils.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/utils/IRUtils.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/utils/IRUtils.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/utils/IRUtils.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/utils/IRUtils.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o: ../quantum/gate/utils/JsonVisitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/utils/JsonVisitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o -c /workspace/xacc/quantum/gate/utils/JsonVisitor.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/utils/JsonVisitor.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/utils/JsonVisitor.cpp > CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/utils/JsonVisitor.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/utils/JsonVisitor.cpp -o CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o: ../quantum/gate/xacc_quantum_gate_api.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o -c /Users/dhruvshah/git/xacc/quantum/gate/xacc_quantum_gate_api.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o -c /workspace/xacc/quantum/gate/xacc_quantum_gate_api.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/gate/xacc_quantum_gate_api.cpp > CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/gate/xacc_quantum_gate_api.cpp > CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/gate/xacc_quantum_gate_api.cpp -o CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/gate/xacc_quantum_gate_api.cpp -o CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.s
+
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o: quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp
+
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp > CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.i
+
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.s
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/flags.make
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o: quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp > CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp > CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.i
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/gate && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_init.cpp -o CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-quantum-gate
 xacc__quantum__gate_OBJECTS = \
@@ -256,46 +268,47 @@ xacc__quantum__gate_OBJECTS = \
 "CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o" \
 "CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o" \
 "CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o" \
+"CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-quantum-gate
-xacc__quantum__gate_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/gate/xacc-quantum-gate/cppmicroservices_resources.o"
+xacc__quantum__gate_EXTERNAL_OBJECTS =
 
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/xacc-quantum-gate/cppmicroservices_resources.o
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make
-quantum/gate/libxacc-quantum-gate.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/gate/libxacc-quantum-gate.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/gate/libxacc-quantum-gate.dylib: ../dist/libantlr4-runtime.dylib
-quantum/gate/libxacc-quantum-gate.dylib: xacc/libxacc.dylib
-quantum/gate/libxacc-quantum-gate.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/gate/libxacc-quantum-gate.dylib: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library libxacc-quantum-gate.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quantum-gate.dir/link.txt --verbose=$(VERBOSE)
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/GateQuantumActivator.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Circuit.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/CommonGates.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Gate.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/GateIR.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/Pulse.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/ir/PulseScheduler.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRToGraphVisitor.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build.make
+quantum/gate/libxacc-quantum-gate.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/gate/libxacc-quantum-gate.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/gate/libxacc-quantum-gate.so: xacc/libxacc.so
+quantum/gate/libxacc-quantum-gate.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/gate/libxacc-quantum-gate.so: quantum/gate/CMakeFiles/xacc-quantum-gate.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libxacc-quantum-gate.so"
+	cd /workspace/xacc/build/quantum/gate && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-quantum-gate.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-quantum-gate"
+	cd /workspace/xacc/quantum/gate && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/gate/libxacc-quantum-gate.so -z /workspace/xacc/build/quantum/gate/xacc-quantum-gate/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build: quantum/gate/libxacc-quantum-gate.dylib
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build: quantum/gate/libxacc-quantum-gate.so
 
 .PHONY : quantum/gate/CMakeFiles/xacc-quantum-gate.dir/build
 
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/gate && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quantum-gate.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/gate && $(CMAKE_COMMAND) -P CMakeFiles/xacc-quantum-gate.dir/cmake_clean.cmake
 .PHONY : quantum/gate/CMakeFiles/xacc-quantum-gate.dir/clean
 
-quantum/gate/CMakeFiles/xacc-quantum-gate.dir/depend: quantum/gate/xacc-quantum-gate/cppmicroservices_resources.o
+quantum/gate/CMakeFiles/xacc-quantum-gate.dir/depend: quantum/gate/xacc-quantum-gate/cppmicroservices_resources.cpp
 quantum/gate/CMakeFiles/xacc-quantum-gate.dir/depend: quantum/gate/xacc-quantum-gate/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/gate /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/gate /Users/dhruvshah/git/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/gate /workspace/xacc/build /workspace/xacc/build/quantum/gate /workspace/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/gate/CMakeFiles/xacc-quantum-gate.dir/depend
 

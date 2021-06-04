@@ -4,9 +4,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-optimal-control.dir/OptimalControl.cpp.o"
   "CMakeFiles/xacc-optimal-control.dir/OptimalControlActivator.cpp.o"
   "CMakeFiles/xacc-optimal-control.dir/xacc-optimal-control/cppmicroservices_init.cpp.o"
-  "libxacc-optimal-control.dylib"
+  "CMakeFiles/xacc-optimal-control.dir/xacc-optimal-control/cppmicroservices_resources.cpp.o"
   "libxacc-optimal-control.pdb"
-  "xacc-optimal-control/cppmicroservices_resources.o"
+  "libxacc-optimal-control.so"
+  "xacc-optimal-control/cppmicroservices_resources.cpp"
   "xacc-optimal-control/res_0.zip"
 )
 

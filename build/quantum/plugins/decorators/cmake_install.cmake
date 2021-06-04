@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/plugins/decorators
+# Install script for directory: /workspace/xacc/quantum/plugins/decorators
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,37 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so"
+         RPATH "$ORIGIN/../lib:$ORIGIN")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
+   "/home/gitpod/.xacc/plugins/libxacc-decorators.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/libxacc-decorators.dylib")
-  if(EXISTS "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path/../lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
+file(INSTALL DESTINATION "/home/gitpod/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/plugins/decorators/libxacc-decorators.so")
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN/../lib:$ORIGIN")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-decorators.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-decorators.so")
     endif()
   endif()
 endif()
@@ -78,27 +75,27 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/include/vqe/AssignmentErrorKernelDecorator.hpp;/Users/dhruvshah/.xacc/include/vqe/ImprovedSamplingDecorator.hpp;/Users/dhruvshah/.xacc/include/vqe/RDMPurificationDecorator.hpp;/Users/dhruvshah/.xacc/include/vqe/ROErrorDecorator.hpp;/Users/dhruvshah/.xacc/include/vqe/RichExtrapDecorator.hpp;/Users/dhruvshah/.xacc/include/vqe/hpc_virt_decorator.hpp")
+   "/home/gitpod/.xacc/include/vqe/AssignmentErrorKernelDecorator.hpp;/home/gitpod/.xacc/include/vqe/ImprovedSamplingDecorator.hpp;/home/gitpod/.xacc/include/vqe/RDMPurificationDecorator.hpp;/home/gitpod/.xacc/include/vqe/ROErrorDecorator.hpp;/home/gitpod/.xacc/include/vqe/RichExtrapDecorator.hpp;/home/gitpod/.xacc/include/vqe/hpc_virt_decorator.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc/include/vqe" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/plugins/decorators/hpc-virtualization/hpc_virt_decorator.hpp"
+file(INSTALL DESTINATION "/home/gitpod/.xacc/include/vqe" TYPE FILE FILES
+    "/workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.hpp"
+    "/workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.hpp"
+    "/workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.hpp"
+    "/workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.hpp"
+    "/workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.hpp"
+    "/workspace/xacc/quantum/plugins/decorators/hpc-virtualization/hpc_virt_decorator.hpp"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/tests/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/hpc-virtualization/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/decorators/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/decorators/hpc-virtualization/cmake_install.cmake")
 
 endif()
 

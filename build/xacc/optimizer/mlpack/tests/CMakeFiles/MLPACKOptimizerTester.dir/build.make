@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/depend.make
@@ -78,16 +78,16 @@ include xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/flags.m
 
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o: xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/flags.make
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o: ../xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o -c /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o -c /workspace/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp
 
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp > CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.i
+	cd /workspace/xacc/build/xacc/optimizer/mlpack/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp > CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.i
 
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp -o CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.s
+	cd /workspace/xacc/build/xacc/optimizer/mlpack/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/optimizer/mlpack/tests/MLPACKOptimizerTester.cpp -o CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.s
 
 # Object files for target MLPACKOptimizerTester
 MLPACKOptimizerTester_OBJECTS = \
@@ -98,12 +98,12 @@ MLPACKOptimizerTester_EXTERNAL_OBJECTS =
 
 xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/MLPACKOptimizerTester.cpp.o
 xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/build.make
-xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: tpls/cpr/opt/googletest/libgtest.dylib
-xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: xacc/libxacc.dylib
-xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: tpls/cpr/opt/googletest/libgtest.so
+xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: xacc/libxacc.so
+xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 xacc/optimizer/mlpack/tests/MLPACKOptimizerTester: xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MLPACKOptimizerTester"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLPACKOptimizerTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MLPACKOptimizerTester"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MLPACKOptimizerTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/build: xacc/optimizer/mlpack/tests/MLPACKOptimizerTester
@@ -111,10 +111,10 @@ xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/build: xacc/opt
 .PHONY : xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/build
 
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests && $(CMAKE_COMMAND) -P CMakeFiles/MLPACKOptimizerTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc/optimizer/mlpack/tests && $(CMAKE_COMMAND) -P CMakeFiles/MLPACKOptimizerTester.dir/cmake_clean.cmake
 .PHONY : xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/clean
 
 xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc/optimizer/mlpack/tests /workspace/xacc/build /workspace/xacc/build/xacc/optimizer/mlpack/tests /workspace/xacc/build/xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/optimizer/mlpack/tests/CMakeFiles/MLPACKOptimizerTester.dir/depend
 

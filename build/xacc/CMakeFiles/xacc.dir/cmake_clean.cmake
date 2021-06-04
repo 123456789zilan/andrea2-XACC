@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc.dir/utils/CLIParser.cpp.o"
   "CMakeFiles/xacc.dir/utils/Utils.cpp.o"
   "CMakeFiles/xacc.dir/xacc.cpp.o"
-  "libxacc.dylib"
   "libxacc.pdb"
+  "libxacc.so"
 )
 
 # Per-language clean rules from dependency scanning.

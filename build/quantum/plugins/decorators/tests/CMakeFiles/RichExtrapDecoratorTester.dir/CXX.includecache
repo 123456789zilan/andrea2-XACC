@@ -748,15 +748,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/RichExtrapDecoratorTester.cpp
+/workspace/xacc/quantum/plugins/decorators/tests/RichExtrapDecoratorTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/xacc_service.hpp
 AcceleratorDecorator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/decorators/tests/AcceleratorDecorator.hpp
+/workspace/xacc/quantum/plugins/decorators/tests/AcceleratorDecorator.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

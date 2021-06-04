@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
 
   // Read the ground state circuit source code
   std::ifstream inFile;
-  inFile.open("/Users/dhruvshah/git/xacc/quantum/examples/hpc_virtualization/h4.qasm");
+  inFile.open("/workspace/xacc/quantum/examples/hpc_virtualization/h4.qasm");
   std::stringstream strStream;
   strStream << inFile.rdbuf();
   const std::string kernelName = "h4_adapt_gs";

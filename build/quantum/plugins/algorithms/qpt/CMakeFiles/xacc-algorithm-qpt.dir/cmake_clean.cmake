@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-algorithm-qpt.dir/QPTActivator.cpp.o"
   "CMakeFiles/xacc-algorithm-qpt.dir/qpt.cpp.o"
   "CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-qpt/cppmicroservices_init.cpp.o"
-  "libxacc-algorithm-qpt.dylib"
+  "CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-qpt/cppmicroservices_resources.cpp.o"
   "libxacc-algorithm-qpt.pdb"
-  "xacc-algorithm-qpt/cppmicroservices_resources.o"
+  "libxacc-algorithm-qpt.so"
+  "xacc-algorithm-qpt/cppmicroservices_resources.cpp"
   "xacc-algorithm-qpt/res_0.zip"
 )
 

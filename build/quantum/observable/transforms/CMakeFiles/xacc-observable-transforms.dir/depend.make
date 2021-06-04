@@ -58,3 +58,5 @@ quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-obs
 quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o: quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_init.cpp
 quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_resources.cpp.o: quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_resources.cpp
+

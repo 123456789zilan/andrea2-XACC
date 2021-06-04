@@ -23,5 +23,5 @@ quantum/plugins/ibm/accelerator/json/tests/CMakeFiles/PulseQObjectTester.dir/Pul
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-tuple.h
  ../tpls/cpr/opt/googletest/include/gtest/internal/gtest-type-util.h
  ../tpls/nlohmann/json.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObjectTester.cpp
+ /workspace/xacc/quantum/plugins/ibm/accelerator/json/tests/PulseQObjectTester.cpp
  xacc_config.hpp

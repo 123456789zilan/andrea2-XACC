@@ -272,11 +272,11 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/examples/hpc_virtualization/tnqvm_h4_chain_8qbit_adapt_gs.cpp
+/workspace/xacc/build/quantum/examples/hpc_virtualization/tnqvm_h4_chain_8qbit_adapt_gs.cpp
 Utils.hpp
-/Users/dhruvshah/git/xacc/build/quantum/examples/hpc_virtualization/Utils.hpp
+/workspace/xacc/build/quantum/examples/hpc_virtualization/Utils.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/build/quantum/examples/hpc_virtualization/xacc.hpp
+/workspace/xacc/build/quantum/examples/hpc_virtualization/xacc.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/build/quantum/examples/hpc_virtualization/xacc_observable.hpp
+/workspace/xacc/build/quantum/examples/hpc_virtualization/xacc_observable.hpp
 

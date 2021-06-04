@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/depend.make
@@ -76,185 +76,197 @@ include quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 
-quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.o: quantum/plugins/circuits/xacc-circuits/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-circuits"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.o
+quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp: quantum/plugins/circuits/xacc-circuits/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-circuits"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp
 
 quantum/plugins/circuits/xacc-circuits/res_0.zip: ../quantum/plugins/circuits/manifest.json
 quantum/plugins/circuits/xacc-circuits/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-circuits"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/circuits && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/circuits && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/res_0.zip -n xacc_generators -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-circuits"
+	cd /workspace/xacc/quantum/plugins/circuits && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits
+	cd /workspace/xacc/quantum/plugins/circuits && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/res_0.zip -n xacc_generators -r manifest.json
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o: ../quantum/plugins/circuits/GeneratorsActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o -c /workspace/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp > CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp > CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp -o CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/GeneratorsActivator.cpp -o CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o: ../quantum/plugins/circuits/aswap/aswap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/aswap/aswap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o -c /workspace/xacc/quantum/plugins/circuits/aswap/aswap.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/aswap/aswap.cpp > CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/aswap/aswap.cpp > CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/aswap/aswap.cpp -o CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/aswap/aswap.cpp -o CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o: ../quantum/plugins/circuits/exp/exp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/exp/exp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o -c /workspace/xacc/quantum/plugins/circuits/exp/exp.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/exp/exp.cpp > CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/exp/exp.cpp > CMakeFiles/xacc-circuits.dir/exp/exp.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/exp/exp.cpp -o CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/exp/exp.cpp -o CMakeFiles/xacc-circuits.dir/exp/exp.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o: ../quantum/plugins/circuits/hwe/hwe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/hwe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o -c /workspace/xacc/quantum/plugins/circuits/hwe/hwe.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/hwe.cpp > CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/hwe/hwe.cpp > CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/hwe/hwe.cpp -o CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/hwe/hwe.cpp -o CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o: ../quantum/plugins/circuits/kak/kak.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/kak.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o -c /workspace/xacc/quantum/plugins/circuits/kak/kak.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/kak.cpp > CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/kak/kak.cpp > CMakeFiles/xacc-circuits.dir/kak/kak.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/kak/kak.cpp -o CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/kak/kak.cpp -o CMakeFiles/xacc-circuits.dir/kak/kak.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o: ../quantum/plugins/circuits/qfast/qfast.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qfast/qfast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o -c /workspace/xacc/quantum/plugins/circuits/qfast/qfast.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qfast/qfast.cpp > CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/qfast/qfast.cpp > CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qfast/qfast.cpp -o CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/qfast/qfast.cpp -o CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o: ../quantum/plugins/circuits/qft/InverseQFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o -c /workspace/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp > CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp > CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp -o CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/qft/InverseQFT.cpp -o CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o: ../quantum/plugins/circuits/qft/QFT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/QFT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o -c /workspace/xacc/quantum/plugins/circuits/qft/QFT.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/QFT.cpp > CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/qft/QFT.cpp > CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/qft/QFT.cpp -o CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/qft/QFT.cpp -o CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o: ../quantum/plugins/circuits/range/range.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/range/range.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/range/range.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/range/range.cpp.o -c /workspace/xacc/quantum/plugins/circuits/range/range.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/range/range.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/range/range.cpp > CMakeFiles/xacc-circuits.dir/range/range.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/range/range.cpp > CMakeFiles/xacc-circuits.dir/range/range.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/range/range.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/range/range.cpp -o CMakeFiles/xacc-circuits.dir/range/range.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/range/range.cpp -o CMakeFiles/xacc-circuits.dir/range/range.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o: ../quantum/plugins/circuits/ucc1/ucc1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o -c /workspace/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp > CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp > CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp -o CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/ucc1/ucc1.cpp -o CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o: ../quantum/plugins/circuits/ucc3/ucc3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o -c /workspace/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp > CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp > CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp -o CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/ucc3/ucc3.cpp -o CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o: ../quantum/plugins/circuits/uccsd/uccsd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o -c /workspace/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp > CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp > CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp -o CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/circuits/uccsd/uccsd.cpp -o CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.s
+
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o: quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp
+
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp > CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.i
+
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.s
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/flags.make
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o: quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp > CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp > CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.i
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/circuits && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_init.cpp -o CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-circuits
 xacc__circuits_OBJECTS = \
@@ -270,48 +282,49 @@ xacc__circuits_OBJECTS = \
 "CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o" \
 "CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o" \
 "CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o" \
+"CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-circuits
-xacc__circuits_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.o"
+xacc__circuits_EXTERNAL_OBJECTS =
 
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.o
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/gate/libxacc-quantum-gate.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: xacc/libxacc.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/circuits/libxacc-circuits.dylib: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library libxacc-circuits.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-circuits.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/GeneratorsActivator.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/aswap/aswap.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/exp/exp.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/hwe/hwe.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/kak/kak.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qfast/qfast.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/InverseQFT.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/qft/QFT.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/range/range.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc1/ucc1.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/ucc3/ucc3.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/uccsd/uccsd.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_resources.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/xacc-circuits/cppmicroservices_init.cpp.o
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build.make
+quantum/plugins/circuits/libxacc-circuits.so: quantum/gate/libxacc-quantum-gate.so
+quantum/plugins/circuits/libxacc-circuits.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/circuits/libxacc-circuits.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/circuits/libxacc-circuits.so: xacc/libxacc.so
+quantum/plugins/circuits/libxacc-circuits.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/circuits/libxacc-circuits.so: quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libxacc-circuits.so"
+	cd /workspace/xacc/build/quantum/plugins/circuits && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-circuits.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-circuits"
+	cd /workspace/xacc/quantum/plugins/circuits && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/circuits/libxacc-circuits.so -z /workspace/xacc/build/quantum/plugins/circuits/xacc-circuits/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build: quantum/plugins/circuits/libxacc-circuits.dylib
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build: quantum/plugins/circuits/libxacc-circuits.so
 
 .PHONY : quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/build
 
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits && $(CMAKE_COMMAND) -P CMakeFiles/xacc-circuits.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/circuits && $(CMAKE_COMMAND) -P CMakeFiles/xacc-circuits.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/clean
 
-quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/depend: quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.o
+quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/depend: quantum/plugins/circuits/xacc-circuits/cppmicroservices_resources.cpp
 quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/depend: quantum/plugins/circuits/xacc-circuits/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/circuits /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits /Users/dhruvshah/git/xacc/build/quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/circuits /workspace/xacc/build /workspace/xacc/build/quantum/plugins/circuits /workspace/xacc/build/quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/circuits/CMakeFiles/xacc-circuits.dir/depend
 

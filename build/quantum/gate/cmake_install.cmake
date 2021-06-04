@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/gate
+# Install script for directory: /workspace/xacc/quantum/gate
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,46 +44,41 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quantum/gate" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/Circuit.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/CommonGates.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/Gate.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/GateIR.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/Pulse.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/ir/PulseScheduler.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/pulse/pulse_composite.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/pulse/pulse_instruction.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/AllGateVisitor.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/CountGatesOfTypeVisitor.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/IRToGraphVisitor.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/IRUtils.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/JsonVisitor.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/utils/tests/AllGateVisitorTester.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/xacc_observable.hpp"
-    "/Users/dhruvshah/git/xacc/quantum/gate/xacc_quantum_gate_api.hpp"
+    "/workspace/xacc/quantum/gate/ir/Circuit.hpp"
+    "/workspace/xacc/quantum/gate/ir/CommonGates.hpp"
+    "/workspace/xacc/quantum/gate/ir/Gate.hpp"
+    "/workspace/xacc/quantum/gate/ir/GateIR.hpp"
+    "/workspace/xacc/quantum/gate/ir/Pulse.hpp"
+    "/workspace/xacc/quantum/gate/ir/PulseScheduler.hpp"
+    "/workspace/xacc/quantum/gate/pulse/pulse_composite.hpp"
+    "/workspace/xacc/quantum/gate/pulse/pulse_instruction.hpp"
+    "/workspace/xacc/quantum/gate/utils/AllGateVisitor.hpp"
+    "/workspace/xacc/quantum/gate/utils/CountGatesOfTypeVisitor.hpp"
+    "/workspace/xacc/quantum/gate/utils/IRToGraphVisitor.hpp"
+    "/workspace/xacc/quantum/gate/utils/IRUtils.hpp"
+    "/workspace/xacc/quantum/gate/utils/JsonVisitor.hpp"
+    "/workspace/xacc/quantum/gate/utils/tests/AllGateVisitorTester.hpp"
+    "/workspace/xacc/quantum/gate/xacc_observable.hpp"
+    "/workspace/xacc/quantum/gate/xacc_quantum_gate_api.hpp"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/gate/libxacc-quantum-gate.dylib")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so"
+         RPATH "$ORIGIN")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/gate/libxacc-quantum-gate.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxacc-quantum-gate.so")
     endif()
   endif()
 endif()
@@ -88,8 +88,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/gate/ir/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/gate/utils/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/gate/ir/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/gate/utils/cmake_install.cmake")
 
 endif()
 

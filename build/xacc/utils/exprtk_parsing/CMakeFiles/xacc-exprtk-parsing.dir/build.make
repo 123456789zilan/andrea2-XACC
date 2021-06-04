@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/depend.make
@@ -76,88 +76,102 @@ include xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/progress.ma
 # Include the compile flags for this target's objects.
 include xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/flags.make
 
-xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.o: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-exprtk-parsing"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.o
+xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-exprtk-parsing"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp
 
 xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip: ../xacc/utils/exprtk_parsing/manifest.json
 xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-exprtk-parsing"
-	cd /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing
-	cd /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip -n xacc_exprtk_parsing -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-exprtk-parsing"
+	cd /workspace/xacc/xacc/utils/exprtk_parsing && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing
+	cd /workspace/xacc/xacc/utils/exprtk_parsing && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip -n xacc_exprtk_parsing -r manifest.json
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/flags.make
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o: ../xacc/utils/exprtk_parsing/exprtk_activator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o -c /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o -c /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp > CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.i
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp > CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.i
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.s
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_activator.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.s
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/flags.make
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o: ../xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o -c /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o -c /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp > CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.i
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp > CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.i
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.s
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/utils/exprtk_parsing/exprtk_parsing_util.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.s
+
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/flags.make
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp
+
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp > CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.i
+
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.s
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/flags.make
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o -c /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp > CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp > CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.i
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp -o CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-exprtk-parsing
 xacc__exprtk__parsing_OBJECTS = \
 "CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o" \
 "CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o" \
+"CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-exprtk-parsing
-xacc__exprtk__parsing_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.o"
+xacc__exprtk__parsing_EXTERNAL_OBJECTS =
 
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.o
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/build.make
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/libxacc.dylib
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-exprtk-parsing.dylib"
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-exprtk-parsing.dir/link.txt --verbose=$(VERBOSE)
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_activator.cpp.o
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/exprtk_parsing_util.cpp.o
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/build.make
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/libxacc.so
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so: xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libxacc-exprtk-parsing.so"
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-exprtk-parsing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-exprtk-parsing"
+	cd /workspace/xacc/xacc/utils/exprtk_parsing && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so -z /workspace/xacc/build/xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip
 
 # Rule to build all files generated by this target.
-xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/build: xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.dylib
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/build: xacc/utils/exprtk_parsing/libxacc-exprtk-parsing.so
 
 .PHONY : xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/build
 
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing && $(CMAKE_COMMAND) -P CMakeFiles/xacc-exprtk-parsing.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc/utils/exprtk_parsing && $(CMAKE_COMMAND) -P CMakeFiles/xacc-exprtk-parsing.dir/cmake_clean.cmake
 .PHONY : xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/clean
 
-xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/depend: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.o
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/depend: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/depend: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc/utils/exprtk_parsing /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing /Users/dhruvshah/git/xacc/build/xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc/utils/exprtk_parsing /workspace/xacc/build /workspace/xacc/build/xacc/utils/exprtk_parsing /workspace/xacc/build/xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/depend
 

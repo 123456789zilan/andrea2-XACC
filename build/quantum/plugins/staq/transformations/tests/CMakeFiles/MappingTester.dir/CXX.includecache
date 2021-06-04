@@ -748,13 +748,13 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/staq/transformations/tests/MappingTester.cpp
+/workspace/xacc/quantum/plugins/staq/transformations/tests/MappingTester.cpp
 gtest/gtest.h
-/Users/dhruvshah/git/xacc/quantum/plugins/staq/transformations/tests/gtest/gtest.h
+/workspace/xacc/quantum/plugins/staq/transformations/tests/gtest/gtest.h
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/staq/transformations/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/staq/transformations/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/staq/transformations/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/staq/transformations/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

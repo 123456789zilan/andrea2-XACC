@@ -53,8 +53,8 @@ quantum/plugins/algorithms/qpe/CMakeFiles/xacc-algorithm-qpe.dir/ControlledGateA
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -100,9 +100,9 @@ quantum/plugins/algorithms/qpe/CMakeFiles/xacc-algorithm-qpe.dir/QpeActivator.cp
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/QpeActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/ControlledGateApplicator.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/QpeActivator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -158,12 +158,14 @@ quantum/plugins/algorithms/qpe/CMakeFiles/xacc-algorithm-qpe.dir/qpe.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/qpe.cpp
+ /workspace/xacc/quantum/plugins/algorithms/qpe/qpe.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/algorithms/qpe/CMakeFiles/xacc-algorithm-qpe.dir/xacc-algorithm-qpe/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/qpe/CMakeFiles/xacc-algorithm-qpe.dir/xacc-algorithm-qpe/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/qpe/xacc-algorithm-qpe/cppmicroservices_resources.cpp

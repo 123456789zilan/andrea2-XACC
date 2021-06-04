@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc
+# Install script for directory: /workspace/xacc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,52 +43,52 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "/Users/dhruvshah/git/xacc/build/xacc-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "/workspace/xacc/build/xacc-config.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xacc" TYPE FILE FILES "/Users/dhruvshah/git/xacc/cmake/Modules/format.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xacc" TYPE FILE FILES "/workspace/xacc/cmake/Modules/format.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/Users/dhruvshah/git/xacc/tpls/mpark-variant/variant.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/workspace/xacc/tpls/mpark-variant/variant.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/Users/dhruvshah/git/xacc/tpls/taocpp/operators.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/workspace/xacc/tpls/taocpp/operators.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/Users/dhruvshah/git/xacc/tpls/nlohmann/json.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xacc" TYPE FILE FILES "/workspace/xacc/tpls/nlohmann/json.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/tpls/spdlog")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/workspace/xacc/tpls/spdlog")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/tpls/exprtk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/workspace/xacc/tpls/exprtk")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/tpls/eigen")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/workspace/xacc/tpls/eigen")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/tpls/rapidjson")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/workspace/xacc/tpls/rapidjson")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/tpls/pybind11")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/workspace/xacc/tpls/pybind11")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/tpls/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/xacc/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/python/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/python/cmake_install.cmake")
+  include("/workspace/xacc/build/tpls/cmake_install.cmake")
+  include("/workspace/xacc/build/xacc/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/cmake_install.cmake")
+  include("/workspace/xacc/build/python/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/python/cmake_install.cmake")
 
 endif()
 
@@ -95,5 +100,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/dhruvshah/git/xacc/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspace/xacc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

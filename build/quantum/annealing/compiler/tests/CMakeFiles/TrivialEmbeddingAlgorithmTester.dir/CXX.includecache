@@ -404,9 +404,9 @@ complex
 any
 -
 
-/Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
+/workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithmTester.cpp
 gtest/gtest.h
 -
 TrivialEmbeddingAlgorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithm.hpp
+/workspace/xacc/quantum/annealing/compiler/tests/TrivialEmbeddingAlgorithm.hpp
 

@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xacc-qubit-tapering.dir/qubit_tapering.cpp.o"
   "CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_init.cpp.o"
-  "libxacc-qubit-tapering.dylib"
+  "CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_resources.cpp.o"
   "libxacc-qubit-tapering.pdb"
-  "xacc-qubit-tapering/cppmicroservices_resources.o"
+  "libxacc-qubit-tapering.so"
+  "xacc-qubit-tapering/cppmicroservices_resources.cpp"
   "xacc-qubit-tapering/res_0.zip"
 )
 

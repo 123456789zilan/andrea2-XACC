@@ -788,25 +788,25 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/GradientStrategiesTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/GradientStrategiesTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/xacc_observable.hpp
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Observable.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Algorithm.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Algorithm.hpp
 AlgorithmGradientStrategy.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/AlgorithmGradientStrategy.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/AlgorithmGradientStrategy.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/PauliOperator.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/PauliOperator.hpp
 Optimizer.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Optimizer.hpp
+/workspace/xacc/quantum/plugins/algorithms/gradient_strategies/tests/Optimizer.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

@@ -786,17 +786,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/CMREmbeddingTester.cpp
+/workspace/xacc/quantum/plugins/dwave/tests/CMREmbeddingTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/dwave/tests/xacc.hpp
 CMREmbedding.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/CMREmbedding.hpp
+/workspace/xacc/quantum/plugins/dwave/tests/CMREmbedding.hpp
 Graph.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/Graph.hpp
+/workspace/xacc/quantum/plugins/dwave/tests/Graph.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/dwave/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/dwave/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

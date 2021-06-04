@@ -74,3 +74,5 @@ quantum/plugins/ionq/CMakeFiles/xacc-ionq.dir/xacc-ionq/cppmicroservices_init.cp
 quantum/plugins/ionq/CMakeFiles/xacc-ionq.dir/xacc-ionq/cppmicroservices_init.cpp.o: quantum/plugins/ionq/xacc-ionq/cppmicroservices_init.cpp
 quantum/plugins/ionq/CMakeFiles/xacc-ionq.dir/xacc-ionq/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/ionq/CMakeFiles/xacc-ionq.dir/xacc-ionq/cppmicroservices_resources.cpp.o: quantum/plugins/ionq/xacc-ionq/cppmicroservices_resources.cpp
+

@@ -402,3 +402,5 @@ quantum/plugins/algorithms/qpt/CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-
 quantum/plugins/algorithms/qpt/CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-qpt/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/qpt/xacc-algorithm-qpt/cppmicroservices_init.cpp
 quantum/plugins/algorithms/qpt/CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-qpt/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/qpt/CMakeFiles/xacc-algorithm-qpt.dir/xacc-algorithm-qpt/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/qpt/xacc-algorithm-qpt/cppmicroservices_resources.cpp
+

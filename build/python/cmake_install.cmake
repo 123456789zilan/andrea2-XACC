@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/python
+# Install script for directory: /workspace/xacc/python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,37 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so"
+         RPATH "$ORIGIN/lib")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/_pyxacc.so")
+   "/home/gitpod/.xacc/_pyxacc.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/python/_pyxacc.so")
-  if(EXISTS "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/gate"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path/lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
+file(INSTALL DESTINATION "/home/gitpod/.xacc" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/python/_pyxacc.so")
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/gate:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/dhruvshah/.xacc/_pyxacc.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/gitpod/.xacc/_pyxacc.so")
     endif()
   endif()
 endif()
@@ -78,72 +75,72 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/xacc.py")
+   "/home/gitpod/.xacc/xacc.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc" TYPE FILE FILES "/Users/dhruvshah/git/xacc/python/xacc.py")
+file(INSTALL DESTINATION "/home/gitpod/.xacc" TYPE FILE FILES "/workspace/xacc/python/xacc.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/plugin_generator")
+   "/home/gitpod/.xacc/plugin_generator")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/python/plugin_generator")
+file(INSTALL DESTINATION "/home/gitpod/.xacc" TYPE DIRECTORY FILES "/workspace/xacc/python/plugin_generator")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/benchmark")
+   "/home/gitpod/.xacc/benchmark")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc" TYPE DIRECTORY FILES "/Users/dhruvshah/git/xacc/python/benchmark")
+file(INSTALL DESTINATION "/home/gitpod/.xacc" TYPE DIRECTORY FILES "/workspace/xacc/python/benchmark")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/py-plugins/chemistry_benchmark.py;/Users/dhruvshah/.xacc/py-plugins/qpt_benchmark.py;/Users/dhruvshah/.xacc/py-plugins/aer_accelerator.py;/Users/dhruvshah/.xacc/py-plugins/cirq_accelerator.py;/Users/dhruvshah/.xacc/py-plugins/dwave_accelerator.py;/Users/dhruvshah/.xacc/py-plugins/dwave_neal_accelerator.py;/Users/dhruvshah/.xacc/py-plugins/qmasm_compiler.py;/Users/dhruvshah/.xacc/py-plugins/mitiq_decorator.py;/Users/dhruvshah/.xacc/py-plugins/psi4_observable.py;/Users/dhruvshah/.xacc/py-plugins/pyscf_observable.py;/Users/dhruvshah/.xacc/py-plugins/pycma_optimizer.py;/Users/dhruvshah/.xacc/py-plugins/pyzx_pass.py;/Users/dhruvshah/.xacc/py-plugins/easy_qiskit_pass.py;/Users/dhruvshah/.xacc/py-plugins/expectation_strategies.py;/Users/dhruvshah/.xacc/py-plugins/rbm_classification.py")
+   "/home/gitpod/.xacc/py-plugins/chemistry_benchmark.py;/home/gitpod/.xacc/py-plugins/qpt_benchmark.py;/home/gitpod/.xacc/py-plugins/aer_accelerator.py;/home/gitpod/.xacc/py-plugins/cirq_accelerator.py;/home/gitpod/.xacc/py-plugins/dwave_accelerator.py;/home/gitpod/.xacc/py-plugins/dwave_neal_accelerator.py;/home/gitpod/.xacc/py-plugins/qmasm_compiler.py;/home/gitpod/.xacc/py-plugins/mitiq_decorator.py;/home/gitpod/.xacc/py-plugins/psi4_observable.py;/home/gitpod/.xacc/py-plugins/pyscf_observable.py;/home/gitpod/.xacc/py-plugins/pycma_optimizer.py;/home/gitpod/.xacc/py-plugins/pyzx_pass.py;/home/gitpod/.xacc/py-plugins/easy_qiskit_pass.py;/home/gitpod/.xacc/py-plugins/expectation_strategies.py;/home/gitpod/.xacc/py-plugins/rbm_classification.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc/py-plugins" TYPE FILE FILES
-    "/Users/dhruvshah/git/xacc/python/benchmark/chemistry/chemistry_benchmark.py"
-    "/Users/dhruvshah/git/xacc/python/benchmark/qpt/qpt_benchmark.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/aer/aer_accelerator.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/cirq/cirq_accelerator.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/dwave/dwave_accelerator.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/dwave/dwave_neal_accelerator.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/dwave/qmasm_compiler.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/mitiq/mitiq_decorator.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/observables/psi4_observable.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/observables/pyscf_observable.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/optimizers/pycma_optimizer.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/pyzx/pyzx_pass.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/qiskit/easy_qiskit_pass.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/rbm_classification/expectation_strategies.py"
-    "/Users/dhruvshah/git/xacc/python/plugins/rbm_classification/rbm_classification.py"
+file(INSTALL DESTINATION "/home/gitpod/.xacc/py-plugins" TYPE FILE FILES
+    "/workspace/xacc/python/benchmark/chemistry/chemistry_benchmark.py"
+    "/workspace/xacc/python/benchmark/qpt/qpt_benchmark.py"
+    "/workspace/xacc/python/plugins/aer/aer_accelerator.py"
+    "/workspace/xacc/python/plugins/cirq/cirq_accelerator.py"
+    "/workspace/xacc/python/plugins/dwave/dwave_accelerator.py"
+    "/workspace/xacc/python/plugins/dwave/dwave_neal_accelerator.py"
+    "/workspace/xacc/python/plugins/dwave/qmasm_compiler.py"
+    "/workspace/xacc/python/plugins/mitiq/mitiq_decorator.py"
+    "/workspace/xacc/python/plugins/observables/psi4_observable.py"
+    "/workspace/xacc/python/plugins/observables/pyscf_observable.py"
+    "/workspace/xacc/python/plugins/optimizers/pycma_optimizer.py"
+    "/workspace/xacc/python/plugins/pyzx/pyzx_pass.py"
+    "/workspace/xacc/python/plugins/qiskit/easy_qiskit_pass.py"
+    "/workspace/xacc/python/plugins/rbm_classification/expectation_strategies.py"
+    "/workspace/xacc/python/plugins/rbm_classification/rbm_classification.py"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/python/compiler/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/python/plugins/cmake_install.cmake")
+  include("/workspace/xacc/build/python/compiler/cmake_install.cmake")
+  include("/workspace/xacc/build/python/plugins/cmake_install.cmake")
 
 endif()
 

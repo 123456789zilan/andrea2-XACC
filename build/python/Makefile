@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,37 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,44 +121,10 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -154,10 +132,21 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -165,10 +154,21 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -178,14 +178,14 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/python//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/python//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 python/CMakeFiles/_pyxacc.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/CMakeFiles/_pyxacc.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/CMakeFiles/_pyxacc.dir/rule
 .PHONY : python/CMakeFiles/_pyxacc.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ _pyxacc: python/CMakeFiles/_pyxacc.dir/rule
 
 # fast build rule for target.
 _pyxacc/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/build
 .PHONY : _pyxacc/fast
 
 __/quantum/python/xacc-quantum-py.o: __/quantum/python/xacc-quantum-py.cpp.o
@@ -229,7 +229,7 @@ __/quantum/python/xacc-quantum-py.o: __/quantum/python/xacc-quantum-py.cpp.o
 
 # target to build an object file
 __/quantum/python/xacc-quantum-py.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.o
 .PHONY : __/quantum/python/xacc-quantum-py.cpp.o
 
 __/quantum/python/xacc-quantum-py.i: __/quantum/python/xacc-quantum-py.cpp.i
@@ -238,7 +238,7 @@ __/quantum/python/xacc-quantum-py.i: __/quantum/python/xacc-quantum-py.cpp.i
 
 # target to preprocess a source file
 __/quantum/python/xacc-quantum-py.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.i
 .PHONY : __/quantum/python/xacc-quantum-py.cpp.i
 
 __/quantum/python/xacc-quantum-py.s: __/quantum/python/xacc-quantum-py.cpp.s
@@ -247,7 +247,7 @@ __/quantum/python/xacc-quantum-py.s: __/quantum/python/xacc-quantum-py.cpp.s
 
 # target to generate assembly for a file
 __/quantum/python/xacc-quantum-py.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/__/quantum/python/xacc-quantum-py.cpp.s
 .PHONY : __/quantum/python/xacc-quantum-py.cpp.s
 
 py_accelerator.o: py_accelerator.cpp.o
@@ -256,7 +256,7 @@ py_accelerator.o: py_accelerator.cpp.o
 
 # target to build an object file
 py_accelerator.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.o
 .PHONY : py_accelerator.cpp.o
 
 py_accelerator.i: py_accelerator.cpp.i
@@ -265,7 +265,7 @@ py_accelerator.i: py_accelerator.cpp.i
 
 # target to preprocess a source file
 py_accelerator.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.i
 .PHONY : py_accelerator.cpp.i
 
 py_accelerator.s: py_accelerator.cpp.s
@@ -274,7 +274,7 @@ py_accelerator.s: py_accelerator.cpp.s
 
 # target to generate assembly for a file
 py_accelerator.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_accelerator.cpp.s
 .PHONY : py_accelerator.cpp.s
 
 py_algorithm.o: py_algorithm.cpp.o
@@ -283,7 +283,7 @@ py_algorithm.o: py_algorithm.cpp.o
 
 # target to build an object file
 py_algorithm.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.o
 .PHONY : py_algorithm.cpp.o
 
 py_algorithm.i: py_algorithm.cpp.i
@@ -292,7 +292,7 @@ py_algorithm.i: py_algorithm.cpp.i
 
 # target to preprocess a source file
 py_algorithm.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.i
 .PHONY : py_algorithm.cpp.i
 
 py_algorithm.s: py_algorithm.cpp.s
@@ -301,7 +301,7 @@ py_algorithm.s: py_algorithm.cpp.s
 
 # target to generate assembly for a file
 py_algorithm.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_algorithm.cpp.s
 .PHONY : py_algorithm.cpp.s
 
 py_compiler.o: py_compiler.cpp.o
@@ -310,7 +310,7 @@ py_compiler.o: py_compiler.cpp.o
 
 # target to build an object file
 py_compiler.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.o
 .PHONY : py_compiler.cpp.o
 
 py_compiler.i: py_compiler.cpp.i
@@ -319,7 +319,7 @@ py_compiler.i: py_compiler.cpp.i
 
 # target to preprocess a source file
 py_compiler.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.i
 .PHONY : py_compiler.cpp.i
 
 py_compiler.s: py_compiler.cpp.s
@@ -328,7 +328,7 @@ py_compiler.s: py_compiler.cpp.s
 
 # target to generate assembly for a file
 py_compiler.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_compiler.cpp.s
 .PHONY : py_compiler.cpp.s
 
 py_graph.o: py_graph.cpp.o
@@ -337,7 +337,7 @@ py_graph.o: py_graph.cpp.o
 
 # target to build an object file
 py_graph.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.o
 .PHONY : py_graph.cpp.o
 
 py_graph.i: py_graph.cpp.i
@@ -346,7 +346,7 @@ py_graph.i: py_graph.cpp.i
 
 # target to preprocess a source file
 py_graph.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.i
 .PHONY : py_graph.cpp.i
 
 py_graph.s: py_graph.cpp.s
@@ -355,7 +355,7 @@ py_graph.s: py_graph.cpp.s
 
 # target to generate assembly for a file
 py_graph.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_graph.cpp.s
 .PHONY : py_graph.cpp.s
 
 py_heterogeneous_map.o: py_heterogeneous_map.cpp.o
@@ -364,7 +364,7 @@ py_heterogeneous_map.o: py_heterogeneous_map.cpp.o
 
 # target to build an object file
 py_heterogeneous_map.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.o
 .PHONY : py_heterogeneous_map.cpp.o
 
 py_heterogeneous_map.i: py_heterogeneous_map.cpp.i
@@ -373,7 +373,7 @@ py_heterogeneous_map.i: py_heterogeneous_map.cpp.i
 
 # target to preprocess a source file
 py_heterogeneous_map.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.i
 .PHONY : py_heterogeneous_map.cpp.i
 
 py_heterogeneous_map.s: py_heterogeneous_map.cpp.s
@@ -382,7 +382,7 @@ py_heterogeneous_map.s: py_heterogeneous_map.cpp.s
 
 # target to generate assembly for a file
 py_heterogeneous_map.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_heterogeneous_map.cpp.s
 .PHONY : py_heterogeneous_map.cpp.s
 
 py_ir.o: py_ir.cpp.o
@@ -391,7 +391,7 @@ py_ir.o: py_ir.cpp.o
 
 # target to build an object file
 py_ir.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.o
 .PHONY : py_ir.cpp.o
 
 py_ir.i: py_ir.cpp.i
@@ -400,7 +400,7 @@ py_ir.i: py_ir.cpp.i
 
 # target to preprocess a source file
 py_ir.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.i
 .PHONY : py_ir.cpp.i
 
 py_ir.s: py_ir.cpp.s
@@ -409,7 +409,7 @@ py_ir.s: py_ir.cpp.s
 
 # target to generate assembly for a file
 py_ir.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_ir.cpp.s
 .PHONY : py_ir.cpp.s
 
 py_observable.o: py_observable.cpp.o
@@ -418,7 +418,7 @@ py_observable.o: py_observable.cpp.o
 
 # target to build an object file
 py_observable.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.o
 .PHONY : py_observable.cpp.o
 
 py_observable.i: py_observable.cpp.i
@@ -427,7 +427,7 @@ py_observable.i: py_observable.cpp.i
 
 # target to preprocess a source file
 py_observable.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.i
 .PHONY : py_observable.cpp.i
 
 py_observable.s: py_observable.cpp.s
@@ -436,7 +436,7 @@ py_observable.s: py_observable.cpp.s
 
 # target to generate assembly for a file
 py_observable.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_observable.cpp.s
 .PHONY : py_observable.cpp.s
 
 py_optimizer.o: py_optimizer.cpp.o
@@ -445,7 +445,7 @@ py_optimizer.o: py_optimizer.cpp.o
 
 # target to build an object file
 py_optimizer.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.o
 .PHONY : py_optimizer.cpp.o
 
 py_optimizer.i: py_optimizer.cpp.i
@@ -454,7 +454,7 @@ py_optimizer.i: py_optimizer.cpp.i
 
 # target to preprocess a source file
 py_optimizer.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.i
 .PHONY : py_optimizer.cpp.i
 
 py_optimizer.s: py_optimizer.cpp.s
@@ -463,7 +463,7 @@ py_optimizer.s: py_optimizer.cpp.s
 
 # target to generate assembly for a file
 py_optimizer.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/py_optimizer.cpp.s
 .PHONY : py_optimizer.cpp.s
 
 xacc-py.o: xacc-py.cpp.o
@@ -472,7 +472,7 @@ xacc-py.o: xacc-py.cpp.o
 
 # target to build an object file
 xacc-py.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.o
 .PHONY : xacc-py.cpp.o
 
 xacc-py.i: xacc-py.cpp.i
@@ -481,7 +481,7 @@ xacc-py.i: xacc-py.cpp.i
 
 # target to preprocess a source file
 xacc-py.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.i
 .PHONY : xacc-py.cpp.i
 
 xacc-py.s: xacc-py.cpp.s
@@ -490,7 +490,7 @@ xacc-py.s: xacc-py.cpp.s
 
 # target to generate assembly for a file
 xacc-py.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f python/CMakeFiles/_pyxacc.dir/build.make python/CMakeFiles/_pyxacc.dir/xacc-py.cpp.s
 .PHONY : xacc-py.cpp.s
 
 # Help Target
@@ -550,6 +550,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

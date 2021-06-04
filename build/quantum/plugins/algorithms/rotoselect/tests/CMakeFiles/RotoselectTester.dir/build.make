@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.
 
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o: quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/flags.make
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o: ../quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o -c /workspace/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp
 
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp > CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp > CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.i
 
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp -o CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/algorithms/rotoselect/tests/RotoselectTester.cpp -o CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.s
 
 # Object files for target RotoselectTester
 RotoselectTester_OBJECTS = \
@@ -98,14 +98,13 @@ RotoselectTester_EXTERNAL_OBJECTS =
 
 quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/RotoselectTester.cpp.o
 quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/build.make
-quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: tpls/cpr/opt/googletest/libgtest.dylib
-quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: xacc/libxacc.dylib
-quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: ../dist/libantlr4-runtime.dylib
+quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: tpls/cpr/opt/googletest/libgtest.so
+quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: xacc/libxacc.so
+quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/plugins/algorithms/rotoselect/tests/RotoselectTester: quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RotoselectTester"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RotoselectTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RotoselectTester"
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RotoselectTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/build: quantum/plugins/algorithms/rotoselect/tests/RotoselectTester
@@ -113,10 +112,10 @@ quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/buil
 .PHONY : quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/build
 
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests && $(CMAKE_COMMAND) -P CMakeFiles/RotoselectTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests && $(CMAKE_COMMAND) -P CMakeFiles/RotoselectTester.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/clean
 
 quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/rotoselect/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/algorithms/rotoselect/tests /workspace/xacc/build /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests /workspace/xacc/build/quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/algorithms/rotoselect/tests/CMakeFiles/RotoselectTester.dir/depend
 

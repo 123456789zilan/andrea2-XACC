@@ -59,8 +59,8 @@ quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/adapt.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/adapt.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/adapt.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/adapt.cpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/adapt.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -122,21 +122,23 @@ quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/adapt_activ
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/adapt.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/adapt_activator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/CustomPool.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/ElectronAttachment.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/IonizationPotential.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/MultiQubitQAOA.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/QubitPool.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/SingleQubitQAOA.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/SinglesDoublesPool.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/SingletAdaptedUCCSD.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/algorithms/adapt/operator_pools/SpinFlip.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/adapt.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/adapt_activator.cpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/CustomPool.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/ElectronAttachment.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/IonizationPotential.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/MultiQubitQAOA.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/QubitPool.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/SingleQubitQAOA.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/SinglesDoublesPool.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/SingletAdaptedUCCSD.hpp
+ /workspace/xacc/quantum/plugins/algorithms/adapt/operator_pools/SpinFlip.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algorithm-adapt/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/algorithms/adapt/xacc-algorithm-adapt/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/algorithms/adapt/xacc-algorithm-adapt/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/algorithms/adapt/CMakeFiles/xacc-algorithm-adapt.dir/xacc-algorithm-adapt/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/algorithms/adapt/xacc-algorithm-adapt/cppmicroservices_resources.cpp

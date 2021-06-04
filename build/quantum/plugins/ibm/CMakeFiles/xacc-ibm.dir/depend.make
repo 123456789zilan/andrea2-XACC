@@ -1343,3 +1343,5 @@ quantum/plugins/ibm/CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_init.cpp.o
 quantum/plugins/ibm/CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_init.cpp.o: quantum/plugins/ibm/xacc-ibm/cppmicroservices_init.cpp
 quantum/plugins/ibm/CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/ibm/CMakeFiles/xacc-ibm.dir/xacc-ibm/cppmicroservices_resources.cpp.o: quantum/plugins/ibm/xacc-ibm/cppmicroservices_resources.cpp
+

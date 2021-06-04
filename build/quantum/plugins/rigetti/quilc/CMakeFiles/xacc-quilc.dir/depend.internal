@@ -73,8 +73,8 @@ quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.hpp
+ /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.cpp
+ /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -108,12 +108,14 @@ quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/quilc_activator.cpp.o
  ../xacc/utils/Singleton.hpp
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp
+ /workspace/xacc/quantum/plugins/rigetti/quilc/quilc.hpp
+ /workspace/xacc/quantum/plugins/rigetti/quilc/quilc_activator.cpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/rigetti/quilc/CMakeFiles/xacc-quilc.dir/xacc-quilc/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/rigetti/quilc/xacc-quilc/cppmicroservices_resources.cpp

@@ -540,9 +540,9 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/AnnealingProgramTester.cpp
+/workspace/xacc/quantum/annealing/ir/tests/AnnealingProgramTester.cpp
 gtest/gtest.h
 -
 AnnealingProgram.hpp
-/Users/dhruvshah/git/xacc/quantum/annealing/ir/tests/AnnealingProgram.hpp
+/workspace/xacc/quantum/annealing/ir/tests/AnnealingProgram.hpp
 

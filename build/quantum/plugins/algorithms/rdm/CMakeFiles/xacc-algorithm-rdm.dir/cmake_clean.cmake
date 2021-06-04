@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-algorithm-rdm.dir/RDMActivator.cpp.o"
   "CMakeFiles/xacc-algorithm-rdm.dir/rdm.cpp.o"
   "CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_init.cpp.o"
-  "libxacc-algorithm-rdm.dylib"
+  "CMakeFiles/xacc-algorithm-rdm.dir/xacc-algorithm-rdm/cppmicroservices_resources.cpp.o"
   "libxacc-algorithm-rdm.pdb"
-  "xacc-algorithm-rdm/cppmicroservices_resources.o"
+  "libxacc-algorithm-rdm.so"
+  "xacc-algorithm-rdm/cppmicroservices_resources.cpp"
   "xacc-algorithm-rdm/res_0.zip"
 )
 

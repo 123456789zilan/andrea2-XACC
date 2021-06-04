@@ -1704,13 +1704,13 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/optimal_control/tests/OptimalControlTester.cpp
+/workspace/xacc/quantum/plugins/optimal_control/tests/OptimalControlTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimal_control/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/optimal_control/tests/xacc.hpp
 Optimizer.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/optimal_control/tests/Optimizer.hpp
+/workspace/xacc/quantum/plugins/optimal_control/tests/Optimizer.hpp
 Eigen/Dense
 -
 

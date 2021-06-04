@@ -31,3 +31,5 @@ xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_init.cpp
 xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+xacc/utils/exprtk_parsing/CMakeFiles/xacc-exprtk-parsing.dir/xacc-exprtk-parsing/cppmicroservices_resources.cpp.o: xacc/utils/exprtk_parsing/xacc-exprtk-parsing/cppmicroservices_resources.cpp
+

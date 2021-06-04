@@ -518,11 +518,11 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/xacc/tests/AlgorithmTester.cpp
+/workspace/xacc/xacc/tests/AlgorithmTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/xacc/tests/xacc.hpp
+/workspace/xacc/xacc/tests/xacc.hpp
 Algorithm.hpp
-/Users/dhruvshah/git/xacc/xacc/tests/Algorithm.hpp
+/workspace/xacc/xacc/tests/Algorithm.hpp
 

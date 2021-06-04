@@ -6,9 +6,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o"
   "CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o"
   "CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o"
-  "libxacc-decorators.dylib"
+  "CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o"
   "libxacc-decorators.pdb"
-  "xacc-decorators/cppmicroservices_resources.o"
+  "libxacc-decorators.so"
+  "xacc-decorators/cppmicroservices_resources.cpp"
   "xacc-decorators/res_0.zip"
 )
 

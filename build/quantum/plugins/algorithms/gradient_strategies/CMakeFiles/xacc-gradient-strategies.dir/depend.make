@@ -1264,3 +1264,5 @@ quantum/plugins/algorithms/gradient_strategies/CMakeFiles/xacc-gradient-strategi
 quantum/plugins/algorithms/gradient_strategies/CMakeFiles/xacc-gradient-strategies.dir/xacc-gradient-strategies/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/gradient_strategies/xacc-gradient-strategies/cppmicroservices_init.cpp
 quantum/plugins/algorithms/gradient_strategies/CMakeFiles/xacc-gradient-strategies.dir/xacc-gradient-strategies/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/gradient_strategies/CMakeFiles/xacc-gradient-strategies.dir/xacc-gradient-strategies/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/gradient_strategies/xacc-gradient-strategies/cppmicroservices_resources.cpp
+

@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dhruvshah/git/xacc/quantum/observable/transforms/JW.cpp" "/Users/dhruvshah/git/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/JW.cpp.o"
-  "/Users/dhruvshah/git/xacc/quantum/observable/transforms/ObservableTransformsActivator.cpp" "/Users/dhruvshah/git/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/ObservableTransformsActivator.cpp.o"
-  "/Users/dhruvshah/git/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_init.cpp" "/Users/dhruvshah/git/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/quantum/observable/transforms/JW.cpp" "/workspace/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/JW.cpp.o"
+  "/workspace/xacc/quantum/observable/transforms/ObservableTransformsActivator.cpp" "/workspace/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/ObservableTransformsActivator.cpp.o"
+  "/workspace/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_init.cpp" "/workspace/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o"
+  "/workspace/xacc/build/quantum/observable/transforms/xacc-observable-transforms/cppmicroservices_resources.cpp" "/workspace/xacc/build/quantum/observable/transforms/CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_resources.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -57,11 +58,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/dhruvshah/git/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
-  "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/gate/CMakeFiles/xacc-quantum-gate.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/observable/pauli/CMakeFiles/xacc-pauli.dir/DependInfo.cmake"
+  "/workspace/xacc/build/quantum/observable/fermion/CMakeFiles/xacc-fermion.dir/DependInfo.cmake"
+  "/workspace/xacc/build/xacc/CMakeFiles/xacc.dir/DependInfo.cmake"
+  "/workspace/xacc/build/tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

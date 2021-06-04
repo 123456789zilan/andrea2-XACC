@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-minor-graph-embedding-placement.dir/MapToPhysical.cpp.o"
   "CMakeFiles/xacc-minor-graph-embedding-placement.dir/MapToPhysicalActivator.cpp.o"
   "CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_init.cpp.o"
-  "libxacc-minor-graph-embedding-placement.dylib"
+  "CMakeFiles/xacc-minor-graph-embedding-placement.dir/xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp.o"
   "libxacc-minor-graph-embedding-placement.pdb"
-  "xacc-minor-graph-embedding-placement/cppmicroservices_resources.o"
+  "libxacc-minor-graph-embedding-placement.so"
+  "xacc-minor-graph-embedding-placement/cppmicroservices_resources.cpp"
   "xacc-minor-graph-embedding-placement/res_0.zip"
 )
 

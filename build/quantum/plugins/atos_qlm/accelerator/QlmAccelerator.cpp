@@ -343,7 +343,7 @@ void QlmAccelerator::initialize(const HeterogeneousMap &params) {
       // Note: we don't need to dlclose, just need to load the lib to prevent
       // linking issue on Linux.
       auto libPythonPreload =
-          dlopen("libpython3.9.dylib", RTLD_LAZY | RTLD_GLOBAL);
+          dlopen("libpython3.8.so", RTLD_LAZY | RTLD_GLOBAL);
     }
     try {
       pybind11::initialize_interpreter();

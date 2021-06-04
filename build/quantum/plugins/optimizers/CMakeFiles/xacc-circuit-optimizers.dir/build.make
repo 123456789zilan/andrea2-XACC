@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/depend.make
@@ -76,120 +76,132 @@ include quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/progre
 # Include the compile flags for this target's objects.
 include quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 
-quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.o: quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-circuit-optimizers"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.o
+quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp: quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-circuit-optimizers"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp
 
 quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip: ../quantum/plugins/optimizers/manifest.json
 quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-circuit-optimizers"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/optimizers && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/optimizers && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip -n xacc_circuit_optimizers -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-circuit-optimizers"
+	cd /workspace/xacc/quantum/plugins/optimizers && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers
+	cd /workspace/xacc/quantum/plugins/optimizers && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip -n xacc_circuit_optimizers -r manifest.json
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o: ../quantum/plugins/optimizers/OptimizersActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp > CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp > CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/OptimizersActivator.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o: ../quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp > CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp > CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/gate_merge/GateMergeOptimizer.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o: ../quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp > CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp > CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/lnn_transform/NearestNeighborTransform.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o: ../quantum/plugins/optimizers/pulse/GateFusion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp > CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp > CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/pulse/GateFusion.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o: ../quantum/plugins/optimizers/pulse/PulseTransform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp > CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp > CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/pulse/PulseTransform.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o: ../quantum/plugins/optimizers/simple/CircuitOptimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp > CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp > CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/simple/CircuitOptimizer.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o: ../quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o -c /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp > CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp > CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/optimizers/simple/PhasePolynomialRepresentation.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.s
+
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp
+
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp > CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.i
+
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.s
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/flags.make
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp > CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp > CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.i
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/optimizers && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_init.cpp -o CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-circuit-optimizers
 xacc__circuit__optimizers_OBJECTS = \
@@ -200,43 +212,44 @@ xacc__circuit__optimizers_OBJECTS = \
 "CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o" \
 "CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o" \
 "CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o" \
+"CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-circuit-optimizers
-xacc__circuit__optimizers_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.o"
+xacc__circuit__optimizers_EXTERNAL_OBJECTS =
 
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.o
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/build.make
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/gate/libxacc-quantum-gate.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: xacc/libxacc.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libxacc-circuit-optimizers.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-circuit-optimizers.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/OptimizersActivator.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/gate_merge/GateMergeOptimizer.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/lnn_transform/NearestNeighborTransform.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/GateFusion.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/pulse/PulseTransform.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/CircuitOptimizer.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/simple/PhasePolynomialRepresentation.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_resources.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/xacc-circuit-optimizers/cppmicroservices_init.cpp.o
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/build.make
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/gate/libxacc-quantum-gate.so
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: xacc/libxacc.so
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/optimizers/libxacc-circuit-optimizers.so: quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libxacc-circuit-optimizers.so"
+	cd /workspace/xacc/build/quantum/plugins/optimizers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-circuit-optimizers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-circuit-optimizers"
+	cd /workspace/xacc/quantum/plugins/optimizers && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/optimizers/libxacc-circuit-optimizers.so -z /workspace/xacc/build/quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/build: quantum/plugins/optimizers/libxacc-circuit-optimizers.dylib
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/build: quantum/plugins/optimizers/libxacc-circuit-optimizers.so
 
 .PHONY : quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/build
 
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers && $(CMAKE_COMMAND) -P CMakeFiles/xacc-circuit-optimizers.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/optimizers && $(CMAKE_COMMAND) -P CMakeFiles/xacc-circuit-optimizers.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/clean
 
-quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/depend: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.o
+quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/depend: quantum/plugins/optimizers/xacc-circuit-optimizers/cppmicroservices_resources.cpp
 quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/depend: quantum/plugins/optimizers/xacc-circuit-optimizers/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/optimizers /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers /Users/dhruvshah/git/xacc/build/quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/optimizers /workspace/xacc/build /workspace/xacc/build/quantum/plugins/optimizers /workspace/xacc/build/quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/optimizers/CMakeFiles/xacc-circuit-optimizers.dir/depend
 

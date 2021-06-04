@@ -3,6 +3,8 @@
 
 tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/__/third_party/miniz.c.o: ../tpls/cppmicroservices/third_party/miniz.c
 
+tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/CppMicroServices/cppmicroservices_resources.cpp.o: tpls/cppmicroservices/framework/CppMicroServices/cppmicroservices_resources.cpp
+
 tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/__/third_party/jsoncpp.cpp.o: ../tpls/cppmicroservices/third_party/json/json.h
 tpls/cppmicroservices/framework/CMakeFiles/CppMicroServices.dir/__/third_party/jsoncpp.cpp.o: ../tpls/cppmicroservices/third_party/jsoncpp.cpp
 

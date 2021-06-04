@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/flags.make
 
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o: quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/flags.make
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o: ../quantum/examples/base_api/bell_xasm_ibm_local.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/base_api && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o -c /Users/dhruvshah/git/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o"
+	cd /workspace/xacc/build/quantum/examples/base_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o -c /workspace/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp
 
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/base_api && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp > CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.i
+	cd /workspace/xacc/build/quantum/examples/base_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp > CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.i
 
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/base_api && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp -o CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.s
+	cd /workspace/xacc/build/quantum/examples/base_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/examples/base_api/bell_xasm_ibm_local.cpp -o CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.s
 
 # Object files for target bell_xasm_ibm_local
 bell_xasm_ibm_local_OBJECTS = \
@@ -98,11 +98,11 @@ bell_xasm_ibm_local_EXTERNAL_OBJECTS =
 
 quantum/examples/base_api/bell_xasm_ibm_local: quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/bell_xasm_ibm_local.cpp.o
 quantum/examples/base_api/bell_xasm_ibm_local: quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/build.make
-quantum/examples/base_api/bell_xasm_ibm_local: xacc/libxacc.dylib
-quantum/examples/base_api/bell_xasm_ibm_local: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
+quantum/examples/base_api/bell_xasm_ibm_local: xacc/libxacc.so
+quantum/examples/base_api/bell_xasm_ibm_local: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/examples/base_api/bell_xasm_ibm_local: quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bell_xasm_ibm_local"
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/base_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bell_xasm_ibm_local.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bell_xasm_ibm_local"
+	cd /workspace/xacc/build/quantum/examples/base_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bell_xasm_ibm_local.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/build: quantum/examples/base_api/bell_xasm_ibm_local
@@ -110,10 +110,10 @@ quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/build: quantum/exam
 .PHONY : quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/build
 
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/examples/base_api && $(CMAKE_COMMAND) -P CMakeFiles/bell_xasm_ibm_local.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/examples/base_api && $(CMAKE_COMMAND) -P CMakeFiles/bell_xasm_ibm_local.dir/cmake_clean.cmake
 .PHONY : quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/clean
 
 quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/examples/base_api /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/examples/base_api /Users/dhruvshah/git/xacc/build/quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/examples/base_api /workspace/xacc/build /workspace/xacc/build/quantum/examples/base_api /workspace/xacc/build/quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/examples/base_api/CMakeFiles/bell_xasm_ibm_local.dir/depend
 

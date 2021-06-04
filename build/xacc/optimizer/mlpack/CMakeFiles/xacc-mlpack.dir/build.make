@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/depend.make
@@ -76,77 +76,89 @@ include xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/progress.make
 # Include the compile flags for this target's objects.
 include xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/flags.make
 
-xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.o: xacc/optimizer/mlpack/xacc-mlpack/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-mlpack"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack && /usr/local/bin/g++-8 -Wno-attributes -DHAS_LAPACK -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.o
+xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp: xacc/optimizer/mlpack/xacc-mlpack/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-mlpack"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp
 
 xacc/optimizer/mlpack/xacc-mlpack/res_0.zip: ../xacc/optimizer/mlpack/manifest.json
 xacc/optimizer/mlpack/xacc-mlpack/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-mlpack"
-	cd /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack
-	cd /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/res_0.zip -n xacc_mlpack -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-mlpack"
+	cd /workspace/xacc/xacc/optimizer/mlpack && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack
+	cd /workspace/xacc/xacc/optimizer/mlpack && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/res_0.zip -n xacc_mlpack -r manifest.json
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/flags.make
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o: ../xacc/optimizer/mlpack/mlpack_optimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o -c /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o -c /workspace/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp > CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.i
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp > CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.i
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp -o CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.s
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/xacc/optimizer/mlpack/mlpack_optimizer.cpp -o CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.s
+
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/flags.make
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp
+
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp > CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.i
+
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.s
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/flags.make
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o -c /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp > CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp > CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.i
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_init.cpp -o CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-mlpack
 xacc__mlpack_OBJECTS = \
 "CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o" \
+"CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-mlpack
-xacc__mlpack_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.o"
+xacc__mlpack_EXTERNAL_OBJECTS =
 
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.o
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/build.make
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/libxacc.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: /usr/local/anaconda3/lib/libmkl_intel_lp64.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: /usr/local/anaconda3/lib/libmkl_intel_thread.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: /usr/local/anaconda3/lib/libmkl_core.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: /usr/local/anaconda3/lib/libiomp5.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-xacc/optimizer/mlpack/libxacc-mlpack.dylib: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libxacc-mlpack.dylib"
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-mlpack.dir/link.txt --verbose=$(VERBOSE)
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/mlpack_optimizer.cpp.o
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_resources.cpp.o
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/xacc-mlpack/cppmicroservices_init.cpp.o
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/build.make
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/libxacc.so
+xacc/optimizer/mlpack/libxacc-mlpack.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+xacc/optimizer/mlpack/libxacc-mlpack.so: /usr/lib/x86_64-linux-gnu/libblas.so
+xacc/optimizer/mlpack/libxacc-mlpack.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+xacc/optimizer/mlpack/libxacc-mlpack.so: xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-mlpack.so"
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-mlpack.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-mlpack"
+	cd /workspace/xacc/xacc/optimizer/mlpack && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/xacc/optimizer/mlpack/libxacc-mlpack.so -z /workspace/xacc/build/xacc/optimizer/mlpack/xacc-mlpack/res_0.zip
 
 # Rule to build all files generated by this target.
-xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/build: xacc/optimizer/mlpack/libxacc-mlpack.dylib
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/build: xacc/optimizer/mlpack/libxacc-mlpack.so
 
 .PHONY : xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/build
 
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack && $(CMAKE_COMMAND) -P CMakeFiles/xacc-mlpack.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/xacc/optimizer/mlpack && $(CMAKE_COMMAND) -P CMakeFiles/xacc-mlpack.dir/cmake_clean.cmake
 .PHONY : xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/clean
 
-xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/depend: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.o
+xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/depend: xacc/optimizer/mlpack/xacc-mlpack/cppmicroservices_resources.cpp
 xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/depend: xacc/optimizer/mlpack/xacc-mlpack/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/xacc/optimizer/mlpack /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack /Users/dhruvshah/git/xacc/build/xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/xacc/optimizer/mlpack /workspace/xacc/build /workspace/xacc/build/xacc/optimizer/mlpack /workspace/xacc/build/xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xacc/optimizer/mlpack/CMakeFiles/xacc-mlpack.dir/depend
 

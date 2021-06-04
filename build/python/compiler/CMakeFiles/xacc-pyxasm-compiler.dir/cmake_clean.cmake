@@ -7,9 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_compiler.cpp.o"
   "CMakeFiles/xacc-pyxasm-compiler.dir/pyxasm_listener.cpp.o"
   "CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_init.cpp.o"
-  "libxacc-pyxasm-compiler.dylib"
+  "CMakeFiles/xacc-pyxasm-compiler.dir/xacc-pyxasm-compiler/cppmicroservices_resources.cpp.o"
   "libxacc-pyxasm-compiler.pdb"
-  "xacc-pyxasm-compiler/cppmicroservices_resources.o"
+  "libxacc-pyxasm-compiler.so"
+  "xacc-pyxasm-compiler/cppmicroservices_resources.cpp"
   "xacc-pyxasm-compiler/res_0.zip"
 )
 

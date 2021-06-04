@@ -96,3 +96,5 @@ quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/
 quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_init.cpp.o: quantum/provider/xacc-quantum-irprovider/cppmicroservices_init.cpp
 quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/provider/CMakeFiles/xacc-quantum-irprovider.dir/xacc-quantum-irprovider/cppmicroservices_resources.cpp.o: quantum/provider/xacc-quantum-irprovider/cppmicroservices_resources.cpp
+

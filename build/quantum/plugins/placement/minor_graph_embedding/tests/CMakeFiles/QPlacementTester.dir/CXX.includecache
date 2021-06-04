@@ -748,15 +748,15 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/tests/QPlacementTester.cpp
+/workspace/xacc/quantum/plugins/placement/minor_graph_embedding/tests/QPlacementTester.cpp
 memory
 -
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/placement/minor_graph_embedding/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/placement/minor_graph_embedding/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/placement/minor_graph_embedding/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

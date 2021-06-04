@@ -25,4 +25,4 @@ quantum/examples/pulse/CMakeFiles/test_open_pulse.dir/test_open_pulse.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/examples/pulse/test_open_pulse.cpp
+ /workspace/xacc/quantum/examples/pulse/test_open_pulse.cpp

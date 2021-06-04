@@ -1,8 +1,8 @@
-# Install script for directory: /Users/dhruvshah/git/xacc/quantum/plugins/dwave
+# Install script for directory: /workspace/xacc/quantum/plugins/dwave
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/dhruvshah/.xacc")
+  set(CMAKE_INSTALL_PREFIX "/home/gitpod/.xacc")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -38,40 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so"
+         RPATH "$ORIGIN/../lib")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
+   "/home/gitpod/.xacc/plugins/libxacc-dwave.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/dhruvshah/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/libxacc-dwave.dylib")
-  if(EXISTS "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/annealing"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/gate"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/pauli"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/quantum/observable/fermion"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/xacc"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -add_rpath "@loader_path/../lib"
-      "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
+file(INSTALL DESTINATION "/home/gitpod/.xacc/plugins" TYPE SHARED_LIBRARY FILES "/workspace/xacc/build/quantum/plugins/dwave/libxacc-dwave.so")
+  if(EXISTS "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so"
+         OLD_RPATH "/workspace/xacc/build/quantum/annealing:/workspace/xacc/build/quantum/gate:/workspace/xacc/dist:/workspace/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client:/workspace/xacc/build/quantum/observable/pauli:/workspace/xacc/build/quantum/observable/fermion:/workspace/xacc/build/xacc:/workspace/xacc/build/tpls/cppmicroservices/lib:"
+         NEW_RPATH "$ORIGIN/../lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}/Users/dhruvshah/.xacc/plugins/libxacc-dwave.dylib")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/gitpod/.xacc/plugins/libxacc-dwave.so")
     endif()
   endif()
 endif()
@@ -81,9 +75,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/tests/cmake_install.cmake")
-  include("/Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/generators/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/dwave/tests/cmake_install.cmake")
+  include("/workspace/xacc/build/quantum/plugins/dwave/generators/tests/cmake_install.cmake")
 
 endif()
 

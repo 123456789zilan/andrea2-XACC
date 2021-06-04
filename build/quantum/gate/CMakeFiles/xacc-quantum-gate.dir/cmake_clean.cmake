@@ -10,10 +10,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-quantum-gate.dir/utils/IRUtils.cpp.o"
   "CMakeFiles/xacc-quantum-gate.dir/utils/JsonVisitor.cpp.o"
   "CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_init.cpp.o"
+  "CMakeFiles/xacc-quantum-gate.dir/xacc-quantum-gate/cppmicroservices_resources.cpp.o"
   "CMakeFiles/xacc-quantum-gate.dir/xacc_quantum_gate_api.cpp.o"
-  "libxacc-quantum-gate.dylib"
   "libxacc-quantum-gate.pdb"
-  "xacc-quantum-gate/cppmicroservices_resources.o"
+  "libxacc-quantum-gate.so"
+  "xacc-quantum-gate/cppmicroservices_resources.cpp"
   "xacc-quantum-gate/res_0.zip"
 )
 

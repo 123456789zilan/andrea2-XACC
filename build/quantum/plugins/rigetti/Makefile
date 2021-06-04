@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,25 +78,92 @@ CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /workspace/xacc/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /workspace/xacc/build && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+	/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -109,83 +176,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/dhruvshah/git/xacc/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/dhruvshah/git/xacc/build && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-
-.PHONY : package/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles /Users/dhruvshah/git/xacc/build/quantum/plugins/rigetti//CMakeFiles/progress.marks
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dhruvshah/git/xacc/build/CMakeFiles 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles /workspace/xacc/build/quantum/plugins/rigetti//CMakeFiles/progress.marks
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/xacc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/clean
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/clean
 .PHONY : clean
 
 # The main clean target
@@ -195,22 +195,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/preinstall
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/rule:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/rule
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/rule
 .PHONY : quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/rule
 
 # Convenience name for target.
@@ -220,7 +220,7 @@ xacc-rigetti: quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/rule
 
 # fast build rule for target.
 xacc-rigetti/fast:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build
 .PHONY : xacc-rigetti/fast
 
 RigettiActivator.o: RigettiActivator.cpp.o
@@ -229,7 +229,7 @@ RigettiActivator.o: RigettiActivator.cpp.o
 
 # target to build an object file
 RigettiActivator.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.o
 .PHONY : RigettiActivator.cpp.o
 
 RigettiActivator.i: RigettiActivator.cpp.i
@@ -238,7 +238,7 @@ RigettiActivator.i: RigettiActivator.cpp.i
 
 # target to preprocess a source file
 RigettiActivator.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.i
 .PHONY : RigettiActivator.cpp.i
 
 RigettiActivator.s: RigettiActivator.cpp.s
@@ -247,7 +247,7 @@ RigettiActivator.s: RigettiActivator.cpp.s
 
 # target to generate assembly for a file
 RigettiActivator.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/RigettiActivator.cpp.s
 .PHONY : RigettiActivator.cpp.s
 
 compiler/QuilCompiler.o: compiler/QuilCompiler.cpp.o
@@ -256,7 +256,7 @@ compiler/QuilCompiler.o: compiler/QuilCompiler.cpp.o
 
 # target to build an object file
 compiler/QuilCompiler.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.o
 .PHONY : compiler/QuilCompiler.cpp.o
 
 compiler/QuilCompiler.i: compiler/QuilCompiler.cpp.i
@@ -265,7 +265,7 @@ compiler/QuilCompiler.i: compiler/QuilCompiler.cpp.i
 
 # target to preprocess a source file
 compiler/QuilCompiler.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.i
 .PHONY : compiler/QuilCompiler.cpp.i
 
 compiler/QuilCompiler.s: compiler/QuilCompiler.cpp.s
@@ -274,7 +274,7 @@ compiler/QuilCompiler.s: compiler/QuilCompiler.cpp.s
 
 # target to generate assembly for a file
 compiler/QuilCompiler.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilCompiler.cpp.s
 .PHONY : compiler/QuilCompiler.cpp.s
 
 compiler/QuilToXACCListener.o: compiler/QuilToXACCListener.cpp.o
@@ -283,7 +283,7 @@ compiler/QuilToXACCListener.o: compiler/QuilToXACCListener.cpp.o
 
 # target to build an object file
 compiler/QuilToXACCListener.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.o
 .PHONY : compiler/QuilToXACCListener.cpp.o
 
 compiler/QuilToXACCListener.i: compiler/QuilToXACCListener.cpp.i
@@ -292,7 +292,7 @@ compiler/QuilToXACCListener.i: compiler/QuilToXACCListener.cpp.i
 
 # target to preprocess a source file
 compiler/QuilToXACCListener.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.i
 .PHONY : compiler/QuilToXACCListener.cpp.i
 
 compiler/QuilToXACCListener.s: compiler/QuilToXACCListener.cpp.s
@@ -301,7 +301,7 @@ compiler/QuilToXACCListener.s: compiler/QuilToXACCListener.cpp.s
 
 # target to generate assembly for a file
 compiler/QuilToXACCListener.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/QuilToXACCListener.cpp.s
 .PHONY : compiler/QuilToXACCListener.cpp.s
 
 compiler/generated/QuilBaseListener.o: compiler/generated/QuilBaseListener.cpp.o
@@ -310,7 +310,7 @@ compiler/generated/QuilBaseListener.o: compiler/generated/QuilBaseListener.cpp.o
 
 # target to build an object file
 compiler/generated/QuilBaseListener.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.o
 .PHONY : compiler/generated/QuilBaseListener.cpp.o
 
 compiler/generated/QuilBaseListener.i: compiler/generated/QuilBaseListener.cpp.i
@@ -319,7 +319,7 @@ compiler/generated/QuilBaseListener.i: compiler/generated/QuilBaseListener.cpp.i
 
 # target to preprocess a source file
 compiler/generated/QuilBaseListener.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.i
 .PHONY : compiler/generated/QuilBaseListener.cpp.i
 
 compiler/generated/QuilBaseListener.s: compiler/generated/QuilBaseListener.cpp.s
@@ -328,7 +328,7 @@ compiler/generated/QuilBaseListener.s: compiler/generated/QuilBaseListener.cpp.s
 
 # target to generate assembly for a file
 compiler/generated/QuilBaseListener.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilBaseListener.cpp.s
 .PHONY : compiler/generated/QuilBaseListener.cpp.s
 
 compiler/generated/QuilLexer.o: compiler/generated/QuilLexer.cpp.o
@@ -337,7 +337,7 @@ compiler/generated/QuilLexer.o: compiler/generated/QuilLexer.cpp.o
 
 # target to build an object file
 compiler/generated/QuilLexer.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.o
 .PHONY : compiler/generated/QuilLexer.cpp.o
 
 compiler/generated/QuilLexer.i: compiler/generated/QuilLexer.cpp.i
@@ -346,7 +346,7 @@ compiler/generated/QuilLexer.i: compiler/generated/QuilLexer.cpp.i
 
 # target to preprocess a source file
 compiler/generated/QuilLexer.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.i
 .PHONY : compiler/generated/QuilLexer.cpp.i
 
 compiler/generated/QuilLexer.s: compiler/generated/QuilLexer.cpp.s
@@ -355,7 +355,7 @@ compiler/generated/QuilLexer.s: compiler/generated/QuilLexer.cpp.s
 
 # target to generate assembly for a file
 compiler/generated/QuilLexer.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilLexer.cpp.s
 .PHONY : compiler/generated/QuilLexer.cpp.s
 
 compiler/generated/QuilListener.o: compiler/generated/QuilListener.cpp.o
@@ -364,7 +364,7 @@ compiler/generated/QuilListener.o: compiler/generated/QuilListener.cpp.o
 
 # target to build an object file
 compiler/generated/QuilListener.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.o
 .PHONY : compiler/generated/QuilListener.cpp.o
 
 compiler/generated/QuilListener.i: compiler/generated/QuilListener.cpp.i
@@ -373,7 +373,7 @@ compiler/generated/QuilListener.i: compiler/generated/QuilListener.cpp.i
 
 # target to preprocess a source file
 compiler/generated/QuilListener.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.i
 .PHONY : compiler/generated/QuilListener.cpp.i
 
 compiler/generated/QuilListener.s: compiler/generated/QuilListener.cpp.s
@@ -382,7 +382,7 @@ compiler/generated/QuilListener.s: compiler/generated/QuilListener.cpp.s
 
 # target to generate assembly for a file
 compiler/generated/QuilListener.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilListener.cpp.s
 .PHONY : compiler/generated/QuilListener.cpp.s
 
 compiler/generated/QuilParser.o: compiler/generated/QuilParser.cpp.o
@@ -391,7 +391,7 @@ compiler/generated/QuilParser.o: compiler/generated/QuilParser.cpp.o
 
 # target to build an object file
 compiler/generated/QuilParser.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.o
 .PHONY : compiler/generated/QuilParser.cpp.o
 
 compiler/generated/QuilParser.i: compiler/generated/QuilParser.cpp.i
@@ -400,7 +400,7 @@ compiler/generated/QuilParser.i: compiler/generated/QuilParser.cpp.i
 
 # target to preprocess a source file
 compiler/generated/QuilParser.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.i
 .PHONY : compiler/generated/QuilParser.cpp.i
 
 compiler/generated/QuilParser.s: compiler/generated/QuilParser.cpp.s
@@ -409,7 +409,7 @@ compiler/generated/QuilParser.s: compiler/generated/QuilParser.cpp.s
 
 # target to generate assembly for a file
 compiler/generated/QuilParser.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/compiler/generated/QuilParser.cpp.s
 .PHONY : compiler/generated/QuilParser.cpp.s
 
 xacc-rigetti/cppmicroservices_init.o: xacc-rigetti/cppmicroservices_init.cpp.o
@@ -418,7 +418,7 @@ xacc-rigetti/cppmicroservices_init.o: xacc-rigetti/cppmicroservices_init.cpp.o
 
 # target to build an object file
 xacc-rigetti/cppmicroservices_init.cpp.o:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.o
 .PHONY : xacc-rigetti/cppmicroservices_init.cpp.o
 
 xacc-rigetti/cppmicroservices_init.i: xacc-rigetti/cppmicroservices_init.cpp.i
@@ -427,7 +427,7 @@ xacc-rigetti/cppmicroservices_init.i: xacc-rigetti/cppmicroservices_init.cpp.i
 
 # target to preprocess a source file
 xacc-rigetti/cppmicroservices_init.cpp.i:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.i
 .PHONY : xacc-rigetti/cppmicroservices_init.cpp.i
 
 xacc-rigetti/cppmicroservices_init.s: xacc-rigetti/cppmicroservices_init.cpp.s
@@ -436,8 +436,35 @@ xacc-rigetti/cppmicroservices_init.s: xacc-rigetti/cppmicroservices_init.cpp.s
 
 # target to generate assembly for a file
 xacc-rigetti/cppmicroservices_init.cpp.s:
-	cd /Users/dhruvshah/git/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_init.cpp.s
 .PHONY : xacc-rigetti/cppmicroservices_init.cpp.s
+
+xacc-rigetti/cppmicroservices_resources.o: xacc-rigetti/cppmicroservices_resources.cpp.o
+
+.PHONY : xacc-rigetti/cppmicroservices_resources.o
+
+# target to build an object file
+xacc-rigetti/cppmicroservices_resources.cpp.o:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.o
+.PHONY : xacc-rigetti/cppmicroservices_resources.cpp.o
+
+xacc-rigetti/cppmicroservices_resources.i: xacc-rigetti/cppmicroservices_resources.cpp.i
+
+.PHONY : xacc-rigetti/cppmicroservices_resources.i
+
+# target to preprocess a source file
+xacc-rigetti/cppmicroservices_resources.cpp.i:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.i
+.PHONY : xacc-rigetti/cppmicroservices_resources.cpp.i
+
+xacc-rigetti/cppmicroservices_resources.s: xacc-rigetti/cppmicroservices_resources.cpp.s
+
+.PHONY : xacc-rigetti/cppmicroservices_resources.s
+
+# target to generate assembly for a file
+xacc-rigetti/cppmicroservices_resources.cpp.s:
+	cd /workspace/xacc/build && $(MAKE) $(MAKESILENT) -f quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/build.make quantum/plugins/rigetti/CMakeFiles/xacc-rigetti.dir/xacc-rigetti/cppmicroservices_resources.cpp.s
+.PHONY : xacc-rigetti/cppmicroservices_resources.cpp.s
 
 # Help Target
 help:
@@ -479,6 +506,9 @@ help:
 	@echo "... xacc-rigetti/cppmicroservices_init.o"
 	@echo "... xacc-rigetti/cppmicroservices_init.i"
 	@echo "... xacc-rigetti/cppmicroservices_init.s"
+	@echo "... xacc-rigetti/cppmicroservices_resources.o"
+	@echo "... xacc-rigetti/cppmicroservices_resources.i"
+	@echo "... xacc-rigetti/cppmicroservices_resources.s"
 .PHONY : help
 
 
@@ -490,6 +520,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/depend.make
@@ -78,16 +78,16 @@ include quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/flags.
 
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o: quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/flags.make
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o: ../quantum/observable/pauli/tests/PauliOperatorTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o -c /Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o"
+	cd /workspace/xacc/build/quantum/observable/pauli/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o -c /workspace/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp
 
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp > CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.i
+	cd /workspace/xacc/build/quantum/observable/pauli/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp > CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.i
 
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp -o CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.s
+	cd /workspace/xacc/build/quantum/observable/pauli/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/observable/pauli/tests/PauliOperatorTester.cpp -o CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.s
 
 # Object files for target PauliOperatorTester
 PauliOperatorTester_OBJECTS = \
@@ -98,14 +98,13 @@ PauliOperatorTester_EXTERNAL_OBJECTS =
 
 quantum/observable/pauli/tests/PauliOperatorTester: quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/PauliOperatorTester.cpp.o
 quantum/observable/pauli/tests/PauliOperatorTester: quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/build.make
-quantum/observable/pauli/tests/PauliOperatorTester: tpls/cpr/opt/googletest/libgtest.dylib
-quantum/observable/pauli/tests/PauliOperatorTester: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/observable/pauli/tests/PauliOperatorTester: xacc/libxacc.dylib
-quantum/observable/pauli/tests/PauliOperatorTester: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/observable/pauli/tests/PauliOperatorTester: ../dist/libantlr4-runtime.dylib
+quantum/observable/pauli/tests/PauliOperatorTester: tpls/cpr/opt/googletest/libgtest.so
+quantum/observable/pauli/tests/PauliOperatorTester: quantum/observable/pauli/libxacc-pauli.so
+quantum/observable/pauli/tests/PauliOperatorTester: xacc/libxacc.so
+quantum/observable/pauli/tests/PauliOperatorTester: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
 quantum/observable/pauli/tests/PauliOperatorTester: quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PauliOperatorTester"
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PauliOperatorTester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PauliOperatorTester"
+	cd /workspace/xacc/build/quantum/observable/pauli/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PauliOperatorTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/build: quantum/observable/pauli/tests/PauliOperatorTester
@@ -113,10 +112,10 @@ quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/build: quantum
 .PHONY : quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/build
 
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests && $(CMAKE_COMMAND) -P CMakeFiles/PauliOperatorTester.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/observable/pauli/tests && $(CMAKE_COMMAND) -P CMakeFiles/PauliOperatorTester.dir/cmake_clean.cmake
 .PHONY : quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/clean
 
 quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/depend:
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/observable/pauli/tests /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests /Users/dhruvshah/git/xacc/build/quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/observable/pauli/tests /workspace/xacc/build /workspace/xacc/build/quantum/observable/pauli/tests /workspace/xacc/build/quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/observable/pauli/tests/CMakeFiles/PauliOperatorTester.dir/depend
 

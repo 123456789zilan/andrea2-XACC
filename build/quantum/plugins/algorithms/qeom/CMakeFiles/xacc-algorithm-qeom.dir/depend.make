@@ -295,3 +295,5 @@ quantum/plugins/algorithms/qeom/CMakeFiles/xacc-algorithm-qeom.dir/xacc-algorith
 quantum/plugins/algorithms/qeom/CMakeFiles/xacc-algorithm-qeom.dir/xacc-algorithm-qeom/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/qeom/xacc-algorithm-qeom/cppmicroservices_init.cpp
 quantum/plugins/algorithms/qeom/CMakeFiles/xacc-algorithm-qeom.dir/xacc-algorithm-qeom/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/qeom/CMakeFiles/xacc-algorithm-qeom.dir/xacc-algorithm-qeom/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/qeom/xacc-algorithm-qeom/cppmicroservices_resources.cpp
+

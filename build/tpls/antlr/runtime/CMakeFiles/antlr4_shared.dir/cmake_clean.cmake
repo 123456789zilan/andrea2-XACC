@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../../../dist/libantlr4-runtime.SOVERSION.dylib"
-  "../../../../dist/libantlr4-runtime.dylib"
   "../../../../dist/libantlr4-runtime.pdb"
+  "../../../../dist/libantlr4-runtime.so"
+  "../../../../dist/libantlr4-runtime.so.SOVERSION"
   "CMakeFiles/antlr4_shared.dir/src/ANTLRErrorListener.cpp.o"
   "CMakeFiles/antlr4_shared.dir/src/ANTLRErrorStrategy.cpp.o"
   "CMakeFiles/antlr4_shared.dir/src/ANTLRFileStream.cpp.o"

@@ -27,8 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dwave_sapi.dir/src/sapi-impl.cpp.o"
   "CMakeFiles/dwave_sapi.dir/src/unembed-answer.cpp.o"
   "CMakeFiles/dwave_sapi.dir/src/version.c.o"
-  "libdwave_sapi.a"
   "libdwave_sapi.pdb"
+  "libdwave_sapi.so"
 )
 
 # Per-language clean rules from dependency scanning.

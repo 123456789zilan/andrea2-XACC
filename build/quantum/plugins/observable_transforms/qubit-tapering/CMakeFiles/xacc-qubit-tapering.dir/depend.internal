@@ -858,12 +858,14 @@ quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-taper
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/observable_transforms/qubit-tapering/qubit_tapering.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/observable_transforms/qubit-tapering/qubit_tapering.hpp
+ /workspace/xacc/quantum/plugins/observable_transforms/qubit-tapering/qubit_tapering.cpp
+ /workspace/xacc/quantum/plugins/observable_transforms/qubit-tapering/qubit_tapering.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/observable_transforms/qubit-tapering/xacc-qubit-tapering/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/observable_transforms/qubit-tapering/xacc-qubit-tapering/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/observable_transforms/qubit-tapering/CMakeFiles/xacc-qubit-tapering.dir/xacc-qubit-tapering/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/observable_transforms/qubit-tapering/xacc-qubit-tapering/cppmicroservices_resources.cpp

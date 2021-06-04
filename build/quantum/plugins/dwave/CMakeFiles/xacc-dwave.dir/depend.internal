@@ -10,11 +10,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o
  ../quantum/gate/ir/Gate.hpp
  ../quantum/plugins/dwave/accelerator/DWave.hpp
  ../quantum/plugins/dwave/embedding/CMREmbedding.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/fastrng.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/pairing_queue.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/util.hpp
  ../quantum/plugins/dwave/generators/rbm.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
@@ -44,6 +39,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o
  ../xacc/algorithm/Algorithm.hpp
  ../xacc/compiler/Compiler.hpp
  ../xacc/ir/CompositeInstruction.hpp
+ ../xacc/ir/Graph.hpp
  ../xacc/ir/IR.hpp
  ../xacc/ir/IRProvider.hpp
  ../xacc/ir/IRTransformation.hpp
@@ -64,8 +60,8 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/DWaveActivator.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/DWaveActivator.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/rbm.hpp
+ /workspace/xacc/quantum/plugins/dwave/DWaveActivator.cpp
+ /workspace/xacc/quantum/plugins/dwave/generators/rbm.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
@@ -74,11 +70,6 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o
  ../quantum/annealing/compiler/EmbeddingAlgorithm.hpp
  ../quantum/annealing/ir/AnnealingProgram.hpp
  ../quantum/annealing/ir/DWQMI.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/fastrng.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/pairing_queue.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/util.hpp
  ../quantum/plugins/dwave/tpls/legacy-sapi-clients/c-client/include/dwave_sapi.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/Any.h
  ../tpls/cppmicroservices/framework/include/cppmicroservices/AnyMap.h
@@ -106,6 +97,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o
  ../xacc/algorithm/Algorithm.hpp
  ../xacc/compiler/Compiler.hpp
  ../xacc/ir/CompositeInstruction.hpp
+ ../xacc/ir/Graph.hpp
  ../xacc/ir/IR.hpp
  ../xacc/ir/IRProvider.hpp
  ../xacc/ir/IRTransformation.hpp
@@ -125,15 +117,14 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/accelerator/DWave.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/accelerator/DWave.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/accelerator/DWave.hpp
+ /workspace/xacc/quantum/plugins/dwave/accelerator/DWave.cpp
+ /workspace/xacc/quantum/plugins/dwave/accelerator/DWave.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o
  ../quantum/annealing/compiler/Embedding.hpp
  ../quantum/annealing/compiler/EmbeddingAlgorithm.hpp
- ../quantum/plugins/dwave/embedding/minorminer/include/Graph.hpp
  ../quantum/plugins/dwave/embedding/minorminer/include/chain.hpp
  ../quantum/plugins/dwave/embedding/minorminer/include/debug.hpp
  ../quantum/plugins/dwave/embedding/minorminer/include/embedding.hpp
@@ -151,6 +142,7 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o
  ../xacc/algorithm/Algorithm.hpp
  ../xacc/compiler/Compiler.hpp
  ../xacc/ir/CompositeInstruction.hpp
+ ../xacc/ir/Graph.hpp
  ../xacc/ir/IR.hpp
  ../xacc/ir/IRProvider.hpp
  ../xacc/ir/IRTransformation.hpp
@@ -166,8 +158,8 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/embedding/CMREmbedding.cpp.o
  ../xacc/utils/Utils.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/embedding/CMREmbedding.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/embedding/CMREmbedding.hpp
+ /workspace/xacc/quantum/plugins/dwave/embedding/CMREmbedding.cpp
+ /workspace/xacc/quantum/plugins/dwave/embedding/CMREmbedding.hpp
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/generators/rbm.cpp.o
  ../quantum/annealing/ir/AnnealingProgram.hpp
  ../quantum/annealing/ir/DWQMI.hpp
@@ -221,12 +213,14 @@ quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/generators/rbm.cpp.o
  ../xacc/utils/expression_parsing_util.hpp
  ../xacc/utils/heterogeneous.hpp
  ../xacc/xacc.hpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/rbm.cpp
- /Users/dhruvshah/git/xacc/quantum/plugins/dwave/generators/rbm.hpp
+ /workspace/xacc/quantum/plugins/dwave/generators/rbm.cpp
+ /workspace/xacc/quantum/plugins/dwave/generators/rbm.hpp
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
  tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkExport.h
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_init.cpp.o
  ../tpls/cppmicroservices/framework/include/cppmicroservices/BundleInitialization.h
- /Users/dhruvshah/git/xacc/build/quantum/plugins/dwave/xacc-dwave/cppmicroservices_init.cpp
+ /workspace/xacc/build/quantum/plugins/dwave/xacc-dwave/cppmicroservices_init.cpp
  tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
+quantum/plugins/dwave/CMakeFiles/xacc-dwave.dir/xacc-dwave/cppmicroservices_resources.cpp.o
+ /workspace/xacc/build/quantum/plugins/dwave/xacc-dwave/cppmicroservices_resources.cpp

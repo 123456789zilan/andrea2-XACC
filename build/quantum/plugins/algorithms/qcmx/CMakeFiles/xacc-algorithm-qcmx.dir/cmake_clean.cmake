@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-algorithm-qcmx.dir/QCMXActivator.cpp.o"
   "CMakeFiles/xacc-algorithm-qcmx.dir/qcmx.cpp.o"
   "CMakeFiles/xacc-algorithm-qcmx.dir/xacc-algorithm-qcmx/cppmicroservices_init.cpp.o"
-  "libxacc-algorithm-qcmx.dylib"
+  "CMakeFiles/xacc-algorithm-qcmx.dir/xacc-algorithm-qcmx/cppmicroservices_resources.cpp.o"
   "libxacc-algorithm-qcmx.pdb"
-  "xacc-algorithm-qcmx/cppmicroservices_resources.o"
+  "libxacc-algorithm-qcmx.so"
+  "xacc-algorithm-qcmx/cppmicroservices_resources.cpp"
   "xacc-algorithm-qcmx/res_0.zip"
 )
 

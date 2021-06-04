@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/depend.make
@@ -76,78 +76,91 @@ include quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/progre
 # Include the compile flags for this target's objects.
 include quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/flags.make
 
-quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.o: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-atos-qlm"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm && /usr/local/bin/g++-8 -Wno-attributes -fno-strict-aliasing -O2 -g -pipe -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wformat -fexceptions --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=native -D_GNU_SOURCE -fPIC -fwrapv -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.o
+quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-atos-qlm"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp
 
 quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip: ../quantum/plugins/atos_qlm/accelerator/manifest.json
 quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-atos-qlm"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/atos_qlm/accelerator && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/atos_qlm/accelerator && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip -n xacc_qlm -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-atos-qlm"
+	cd /workspace/xacc/quantum/plugins/atos_qlm/accelerator && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm
+	cd /workspace/xacc/quantum/plugins/atos_qlm/accelerator && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip -n xacc_qlm -r manifest.json
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/flags.make
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o: quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o -c /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp > CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp > CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.i
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp -o CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/QlmAccelerator.cpp -o CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.s
+
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/flags.make
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp
+
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp > CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.i
+
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.s
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/flags.make
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp > CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp > CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.i
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_init.cpp -o CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-atos-qlm
 xacc__atos__qlm_OBJECTS = \
 "CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o" \
+"CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-atos-qlm
-xacc__atos__qlm_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.o"
+xacc__atos__qlm_EXTERNAL_OBJECTS =
 
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.o
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/build.make
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/gate/libxacc-quantum-gate.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: /Library/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: xacc/libxacc.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libxacc-atos-qlm.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-atos-qlm.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/QlmAccelerator.cpp.o
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_resources.cpp.o
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/xacc-atos-qlm/cppmicroservices_init.cpp.o
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/build.make
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/gate/libxacc-quantum-gate.so
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: xacc/libxacc.so
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so: quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libxacc-atos-qlm.so"
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-atos-qlm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-atos-qlm"
+	cd /workspace/xacc/quantum/plugins/atos_qlm/accelerator && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so -z /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/build: quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.dylib
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/build: quantum/plugins/atos_qlm/accelerator/libxacc-atos-qlm.so
 
 .PHONY : quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/build
 
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator && $(CMAKE_COMMAND) -P CMakeFiles/xacc-atos-qlm.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator && $(CMAKE_COMMAND) -P CMakeFiles/xacc-atos-qlm.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/clean
 
-quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/depend: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.o
+quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/depend: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/cppmicroservices_resources.cpp
 quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/depend: quantum/plugins/atos_qlm/accelerator/xacc-atos-qlm/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/atos_qlm/accelerator /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator /Users/dhruvshah/git/xacc/build/quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/atos_qlm/accelerator /workspace/xacc/build /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator /workspace/xacc/build/quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/atos_qlm/accelerator/CMakeFiles/xacc-atos-qlm.dir/depend
 

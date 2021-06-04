@@ -756,17 +756,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/tests/QCMXTester.cpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/tests/QCMXTester.cpp
 gtest/gtest.h
 -
 memory
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/tests/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/tests/xacc_service.hpp
 xacc_observable.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/algorithms/qcmx/tests/xacc_observable.hpp
+/workspace/xacc/quantum/plugins/algorithms/qcmx/tests/xacc_observable.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

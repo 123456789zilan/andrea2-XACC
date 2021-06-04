@@ -2,9 +2,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xacc-observable-transforms.dir/JW.cpp.o"
   "CMakeFiles/xacc-observable-transforms.dir/ObservableTransformsActivator.cpp.o"
   "CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_init.cpp.o"
-  "libxacc-observable-transforms.dylib"
+  "CMakeFiles/xacc-observable-transforms.dir/xacc-observable-transforms/cppmicroservices_resources.cpp.o"
   "libxacc-observable-transforms.pdb"
-  "xacc-observable-transforms/cppmicroservices_resources.o"
+  "libxacc-observable-transforms.so"
+  "xacc-observable-transforms/cppmicroservices_resources.cpp"
   "xacc-observable-transforms/res_0.zip"
 )
 

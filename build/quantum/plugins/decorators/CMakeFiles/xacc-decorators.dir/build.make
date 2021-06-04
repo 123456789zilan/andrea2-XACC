@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dhruvshah/git/xacc
+CMAKE_SOURCE_DIR = /workspace/xacc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dhruvshah/git/xacc/build
+CMAKE_BINARY_DIR = /workspace/xacc/build
 
 # Include any dependencies generated for this target.
 include quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/depend.make
@@ -76,107 +76,119 @@ include quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/progress.make
 # Include the compile flags for this target's objects.
 include quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 
-quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.o: quantum/plugins/decorators/xacc-decorators/res_0.zip
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking resources zip file for xacc-decorators"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators && /usr/local/bin/g++-8 -Wno-attributes -c /Users/dhruvshah/git/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp -o stub.o
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators && /usr/bin/ld -r -sectcreate __TEXT us_resources res_0.zip stub.o -o /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.o
+quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp: quantum/plugins/decorators/xacc-decorators/res_0.zip
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Checking resource dependencies for xacc-decorators"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E copy /workspace/xacc/tpls/cppmicroservices/cmake/CMakeResourceDependencies.cpp /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp
 
 quantum/plugins/decorators/xacc-decorators/res_0.zip: ../quantum/plugins/decorators/manifest.json
 quantum/plugins/decorators/xacc-decorators/res_0.zip: tpls/cppmicroservices/bin/usResourceCompiler4
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-decorators"
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/decorators && /usr/local/anaconda3/lib/python3.8/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E make_directory /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators
-	cd /Users/dhruvshah/git/xacc/quantum/plugins/decorators && /Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/res_0.zip -n xacc_decorators -r manifest.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Checking resource dependencies for xacc-decorators"
+	cd /workspace/xacc/quantum/plugins/decorators && /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E make_directory /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators
+	cd /workspace/xacc/quantum/plugins/decorators && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -o /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/res_0.zip -n xacc_decorators -r manifest.json
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o: ../quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp > CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp > CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp -o CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/AssignmentErrorKernelDecorator.cpp -o CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o: ../quantum/plugins/decorators/DecoratorsActivator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp > CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp > CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp -o CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/DecoratorsActivator.cpp -o CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o: ../quantum/plugins/decorators/ImprovedSamplingDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp > CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp > CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp -o CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/ImprovedSamplingDecorator.cpp -o CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o: ../quantum/plugins/decorators/RDMPurificationDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp > CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp > CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp -o CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/RDMPurificationDecorator.cpp -o CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o: ../quantum/plugins/decorators/ROErrorDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp > CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp > CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp -o CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/ROErrorDecorator.cpp -o CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o: ../quantum/plugins/decorators/RichExtrapDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o -c /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o -c /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp > CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp > CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp -o CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/quantum/plugins/decorators/RichExtrapDecorator.cpp -o CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.s
+
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o: quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o -c /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp
+
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.i"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp > CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.i
+
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.s"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.s
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/flags.make
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o: quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o -c /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o"
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o -c /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.i"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp > CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.i
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp > CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.i
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.s"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.s
+	cd /workspace/xacc/build/quantum/plugins/decorators && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp -o CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.s
 
 # Object files for target xacc-decorators
 xacc__decorators_OBJECTS = \
@@ -186,41 +198,42 @@ xacc__decorators_OBJECTS = \
 "CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o" \
 "CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o" \
 "CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o" \
+"CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o" \
 "CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o"
 
 # External object files for target xacc-decorators
-xacc__decorators_EXTERNAL_OBJECTS = \
-"/Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.o"
+xacc__decorators_EXTERNAL_OBJECTS =
 
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.o
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/build.make
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/observable/fermion/libxacc-fermion.dylib
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/observable/pauli/libxacc-pauli.dylib
-quantum/plugins/decorators/libxacc-decorators.dylib: xacc/libxacc.dylib
-quantum/plugins/decorators/libxacc-decorators.dylib: tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib
-quantum/plugins/decorators/libxacc-decorators.dylib: ../dist/libantlr4-runtime.dylib
-quantum/plugins/decorators/libxacc-decorators.dylib: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dhruvshah/git/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libxacc-decorators.dylib"
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-decorators.dir/link.txt --verbose=$(VERBOSE)
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/AssignmentErrorKernelDecorator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DecoratorsActivator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ImprovedSamplingDecorator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RDMPurificationDecorator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/ROErrorDecorator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/RichExtrapDecorator.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/build.make
+quantum/plugins/decorators/libxacc-decorators.so: quantum/observable/fermion/libxacc-fermion.so
+quantum/plugins/decorators/libxacc-decorators.so: quantum/observable/pauli/libxacc-pauli.so
+quantum/plugins/decorators/libxacc-decorators.so: xacc/libxacc.so
+quantum/plugins/decorators/libxacc-decorators.so: tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0
+quantum/plugins/decorators/libxacc-decorators.so: quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/xacc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libxacc-decorators.so"
+	cd /workspace/xacc/build/quantum/plugins/decorators && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xacc-decorators.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Appending zipped resources to xacc-decorators"
+	cd /workspace/xacc/quantum/plugins/decorators && /workspace/xacc/build/tpls/cppmicroservices/bin/usResourceCompiler4 -b /workspace/xacc/build/quantum/plugins/decorators/libxacc-decorators.so -z /workspace/xacc/build/quantum/plugins/decorators/xacc-decorators/res_0.zip
 
 # Rule to build all files generated by this target.
-quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/build: quantum/plugins/decorators/libxacc-decorators.dylib
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/build: quantum/plugins/decorators/libxacc-decorators.so
 
 .PHONY : quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/build
 
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/clean:
-	cd /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators && $(CMAKE_COMMAND) -P CMakeFiles/xacc-decorators.dir/cmake_clean.cmake
+	cd /workspace/xacc/build/quantum/plugins/decorators && $(CMAKE_COMMAND) -P CMakeFiles/xacc-decorators.dir/cmake_clean.cmake
 .PHONY : quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/clean
 
-quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/depend: quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.o
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/depend: quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/depend: quantum/plugins/decorators/xacc-decorators/res_0.zip
-	cd /Users/dhruvshah/git/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dhruvshah/git/xacc /Users/dhruvshah/git/xacc/quantum/plugins/decorators /Users/dhruvshah/git/xacc/build /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators /Users/dhruvshah/git/xacc/build/quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/xacc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/xacc /workspace/xacc/quantum/plugins/decorators /workspace/xacc/build /workspace/xacc/build/quantum/plugins/decorators /workspace/xacc/build/quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/depend
 

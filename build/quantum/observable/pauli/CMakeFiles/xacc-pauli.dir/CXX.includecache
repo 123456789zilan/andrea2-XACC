@@ -4826,43 +4826,47 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
+/workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_init.cpp
 cppmicroservices/BundleInitialization.h
-/Users/dhruvshah/git/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices/BundleInitialization.h
+/workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices/BundleInitialization.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliActivator.cpp
+/workspace/xacc/build/quantum/observable/pauli/xacc-pauli/cppmicroservices_resources.cpp
+iostream
+-
+
+/workspace/xacc/quantum/observable/pauli/PauliActivator.cpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+/workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
 cppmicroservices/BundleActivator.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/cppmicroservices/BundleActivator.h
+/workspace/xacc/quantum/observable/pauli/cppmicroservices/BundleActivator.h
 cppmicroservices/BundleContext.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/cppmicroservices/BundleContext.h
+/workspace/xacc/quantum/observable/pauli/cppmicroservices/BundleContext.h
 cppmicroservices/ServiceProperties.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/cppmicroservices/ServiceProperties.h
+/workspace/xacc/quantum/observable/pauli/cppmicroservices/ServiceProperties.h
 memory
 -
 set
 -
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
+/workspace/xacc/quantum/observable/pauli/PauliListenerImpl.cpp
 PauliListenerImpl.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
+/workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
+/workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+/workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
 PauliOperatorParser.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperatorParser.h
+/workspace/xacc/quantum/observable/pauli/PauliOperatorParser.h
 PauliOperatorBaseListener.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperatorBaseListener.h
+/workspace/xacc/quantum/observable/pauli/PauliOperatorBaseListener.h
 Utils.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/Utils.hpp
+/workspace/xacc/quantum/observable/pauli/Utils.hpp
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.cpp
+/workspace/xacc/quantum/observable/pauli/PauliOperator.cpp
 PauliOperator.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+/workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
 IRProvider.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/IRProvider.hpp
+/workspace/xacc/quantum/observable/pauli/IRProvider.hpp
 cmath
 -
 regex
@@ -4872,21 +4876,21 @@ set
 iostream
 -
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/Observable.hpp
+/workspace/xacc/quantum/observable/pauli/Observable.hpp
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/xacc.hpp
+/workspace/xacc/quantum/observable/pauli/xacc.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/xacc_service.hpp
+/workspace/xacc/quantum/observable/pauli/xacc_service.hpp
 Eigen/Core
 -
 PauliOperatorLexer.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperatorLexer.h
+/workspace/xacc/quantum/observable/pauli/PauliOperatorLexer.h
 PauliListenerImpl.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
+/workspace/xacc/quantum/observable/pauli/PauliListenerImpl.hpp
 armadillo
 -
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/PauliOperator.hpp
+/workspace/xacc/quantum/observable/pauli/PauliOperator.hpp
 unordered_map
 -
 complex
@@ -4900,51 +4904,51 @@ stdlib.h
 iostream
 -
 Observable.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/Observable.hpp
+/workspace/xacc/quantum/observable/pauli/Observable.hpp
 IR.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/IR.hpp
+/workspace/xacc/quantum/observable/pauli/IR.hpp
 Cloneable.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/Cloneable.hpp
+/workspace/xacc/quantum/observable/pauli/Cloneable.hpp
 operators.hpp
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/operators.hpp
+/workspace/xacc/quantum/observable/pauli/operators.hpp
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.cpp
 PauliOperatorBaseListener.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorBaseListener.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
+/workspace/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
 PauliOperatorListener.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.cpp
 PauliOperatorLexer.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorLexer.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
+/workspace/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.cpp
 PauliOperatorListener.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
+/workspace/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
 PauliOperatorParser.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.cpp
 PauliOperatorListener.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorListener.h
 PauliOperatorParser.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
+/workspace/xacc/quantum/observable/pauli/generated/PauliOperatorParser.h
 antlr4-runtime.h
-/Users/dhruvshah/git/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
+/workspace/xacc/quantum/observable/pauli/generated/antlr4-runtime.h
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

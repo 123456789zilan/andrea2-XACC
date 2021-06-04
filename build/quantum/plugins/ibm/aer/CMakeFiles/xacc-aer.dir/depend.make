@@ -139,3 +139,5 @@ quantum/plugins/ibm/aer/CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_init.c
 quantum/plugins/ibm/aer/CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_init.cpp.o: quantum/plugins/ibm/aer/xacc-aer/cppmicroservices_init.cpp
 quantum/plugins/ibm/aer/CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/ibm/aer/CMakeFiles/xacc-aer.dir/xacc-aer/cppmicroservices_resources.cpp.o: quantum/plugins/ibm/aer/xacc-aer/cppmicroservices_resources.cpp
+

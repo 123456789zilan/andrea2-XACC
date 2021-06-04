@@ -46,15 +46,15 @@ add_library(CppMicroServices SHARED IMPORTED)
 
 set_target_properties(CppMicroServices PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_variadic_templates;cxx_nullptr"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/dhruvshah/git/xacc/tpls/cppmicroservices/framework/include;/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/framework/include;/Users/dhruvshah/git/xacc/build/include"
-  INTERFACE_LINK_LIBRARIES "dl"
+  INTERFACE_INCLUDE_DIRECTORIES "/workspace/xacc/tpls/cppmicroservices/framework/include;/workspace/xacc/build/tpls/cppmicroservices/framework/include;/workspace/xacc/build/include"
+  INTERFACE_LINK_LIBRARIES "dl;-pthread"
 )
 
 # Import target "CppMicroServices" for configuration "RELEASE"
 set_property(TARGET CppMicroServices APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(CppMicroServices PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/Users/dhruvshah/git/xacc/build/tpls/cppmicroservices/lib/libCppMicroServices.4.0.0.dylib"
-  IMPORTED_SONAME_RELEASE "@rpath/libCppMicroServices.4.0.0.dylib"
+  IMPORTED_LOCATION_RELEASE "/workspace/xacc/build/tpls/cppmicroservices/lib/libCppMicroServices.so.4.0.0"
+  IMPORTED_SONAME_RELEASE "libCppMicroServices.so.4.0.0"
   )
 
 # This file does not depend on other imported targets which have

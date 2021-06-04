@@ -966,3 +966,5 @@ quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmic
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o: quantum/plugins/decorators/xacc-decorators/cppmicroservices_init.cpp
 quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/decorators/CMakeFiles/xacc-decorators.dir/xacc-decorators/cppmicroservices_resources.cpp.o: quantum/plugins/decorators/xacc-decorators/cppmicroservices_resources.cpp
+

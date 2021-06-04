@@ -810,17 +810,17 @@ sys/stat.h
 fstream
 -
 
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/OQASMCompilerTester.cpp
+/workspace/xacc/quantum/plugins/ibm/tests/OQASMCompilerTester.cpp
 gtest/gtest.h
 -
 xacc.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/xacc.hpp
+/workspace/xacc/quantum/plugins/ibm/tests/xacc.hpp
 CountGatesOfTypeVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/CountGatesOfTypeVisitor.hpp
+/workspace/xacc/quantum/plugins/ibm/tests/CountGatesOfTypeVisitor.hpp
 AllGateVisitor.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/AllGateVisitor.hpp
+/workspace/xacc/quantum/plugins/ibm/tests/AllGateVisitor.hpp
 xacc_service.hpp
-/Users/dhruvshah/git/xacc/quantum/plugins/ibm/tests/xacc_service.hpp
+/workspace/xacc/quantum/plugins/ibm/tests/xacc_service.hpp
 
 tpls/cppmicroservices/framework/include/cppmicroservices/FrameworkConfig.h
 cppmicroservices/FrameworkExport.h

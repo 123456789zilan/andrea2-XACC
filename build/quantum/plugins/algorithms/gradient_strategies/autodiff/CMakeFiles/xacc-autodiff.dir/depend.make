@@ -287,3 +287,5 @@ quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff
 quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_init.cpp.o: quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_init.cpp
 quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_init.cpp.o: tpls/cppmicroservices/include/cppmicroservices/GlobalConfig.h
 
+quantum/plugins/algorithms/gradient_strategies/autodiff/CMakeFiles/xacc-autodiff.dir/xacc-autodiff/cppmicroservices_resources.cpp.o: quantum/plugins/algorithms/gradient_strategies/autodiff/xacc-autodiff/cppmicroservices_resources.cpp
+

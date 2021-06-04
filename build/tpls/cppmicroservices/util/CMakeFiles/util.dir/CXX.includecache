@@ -24,11 +24,11 @@ string
 sstream
 -
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/Error.cpp
+/workspace/xacc/tpls/cppmicroservices/util/src/Error.cpp
 cppmicroservices/util/Error.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
 cppmicroservices/util/String.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
 errno.h
 -
 string.h
@@ -38,13 +38,13 @@ windows.h
 crtdbg.h
 -
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/FileSystem.cpp
+/workspace/xacc/tpls/cppmicroservices/util/src/FileSystem.cpp
 cppmicroservices/util/FileSystem.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/FileSystem.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/FileSystem.h
 cppmicroservices/util/Error.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
 cppmicroservices/util/String.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
 cppmicroservices/GlobalConfig.h
 -
 string
@@ -76,7 +76,7 @@ stdint.h
 dirent.h
 -
 dirent_win32.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/dirent_win32.h
+/workspace/xacc/tpls/cppmicroservices/util/src/dirent_win32.h
 mach-o/dyld.h
 -
 sys/stat.h
@@ -84,13 +84,13 @@ sys/stat.h
 sys/types.h
 -
 
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/String.cpp
+/workspace/xacc/tpls/cppmicroservices/util/src/String.cpp
 cppmicroservices/GlobalConfig.h
 -
 cppmicroservices/util/String.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/String.h
 cppmicroservices/util/Error.h
-/Users/dhruvshah/git/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
+/workspace/xacc/tpls/cppmicroservices/util/src/cppmicroservices/util/Error.h
 exception
 -
 memory
